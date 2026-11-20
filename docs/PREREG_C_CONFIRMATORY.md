@@ -86,4 +86,21 @@ entities are not used, and no other analysis on bio_confirm is called confirmato
 
 ## 7. Deviations
 
-None so far.
+- **2026-11-20, after the analysis ran (13:05Z) — decision field of the script.** `scripts/confirmatory_c.py` (written
+  before section 5 was finalised) sets its `SUPPORTED` field as "Holm rejects AND difference > 0 AND precision guard
+  holds" — the H1/H2 rule. Section 5 of this preregistration, committed and pushed before any output existed,
+  makes the guard secondary and defines SUPPORTED as "Holm rejects AND difference > 0". The preregistered rule is
+  applied; the script output is left unchanged (`results/confirm/confirmatory_c.json`, which contains every quantity
+  needed for both rules) and both readings are reported: H3 is supported under section 5 and would not be under the
+  H1/H2 rule (its guard bound is −0.063); H4 and H5 are the same under both.
+
+## 8. Result (added 2026-11-20 after the single analysis run; nothing above was changed)
+
+Run log `logs/confirm_runs.log` (CONFIRM_START 11:36:51Z at commit df1568c, CONFIRM_END 13:05:36Z, exit 0); 183
+answers per generator, no unreadable judge verdicts, every claim with a knowledge-base page. Evaluation half n = 91.
+
+| | C − CF supported claims / answer [95% CI] | p | Holm | Decision (section 5) | Precision diff (one-sided 95% bound) |
+|---|---|---|---|---|---|
+| H3 Qwen2.5-7B | +1.077 [+0.549, +1.670] | < 0.0001 | reject | **SUPPORTED** | +0.029 (−0.063, guard fails) |
+| H4 Mistral-7B | +0.538 [+0.242, +0.846] | 0.0002 | reject | **SUPPORTED** | +0.148 (−0.000, guard holds) |
+| H5 Falcon3-7B | −0.088 [−0.451, +0.297] | 0.668 | not rejected | not supported (as predicted) | +0.109 (+0.025, guard holds) |

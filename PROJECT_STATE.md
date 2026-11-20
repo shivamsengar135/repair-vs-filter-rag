@@ -29,7 +29,20 @@ docs/TARGET_JOURNAL.md). Corresponding author = Bansidhar Joshi (user); emails c
 Shivam Sengar, blind (user, 2026-11-20); paper says "one of the authors" (anonymised). **Failure categorisation DONE 2026-11-20** by Shivam Sengar, blind to the
 assistant pre-annotation (agreement 68.8%, κ 0.56); paper Section 6 now reports the human counts (ledger "Failure
 analysis — human categorisation"). All human tasks done. Still open: anonymised code link for review, Overleaf
-check of the hyperref warning, optional confirmatory test of C.
+check of the hyperref warning.
+**Second annotator (2026-11-20):** Bansidhar Joshi will label `labelling/human_labels_annotator2.csv` by hand
+(user). Score with `python3 scripts/score_two_annotators.py`. Archived, NOT used: `human_labels_revised_joint.csv`
+(joint revision after the first result) and `external_llm_labels_NOT_HUMAN.csv` (made by an LLM). Ask whether he
+took part in the joint review (then his labels are not fully independent; say so in the paper).
+**Confirmatory test of C DONE 2026-11-20 13:05Z: H3 (Qwen) and H4 (Mistral) SUPPORTED, H5 (Falcon3) not (as
+predicted); ledger "Follow-up confirmatory test of C"; paper Sections 1, 4, 5.3, 7, 8, appendix, abstract updated
+(21 pages, layout re-tuned); prereg §7 records the script's decision-field mismatch.** Original record:
+**Confirmatory test of C (H3–H5) — RUNNING since 2026-11-20 11:36Z** (user: "preregister and run the confirmatory
+test of method C"). Prereg `docs/PREREG_C_CONFIRMATORY.md` (commit df1568c; public on GitHub as 1f59c23 before any
+output). Data: 183 fresh FActScore biographies (`bio_confirm`). Decision: Holm over H3 (Qwen) / H4 (Mistral) /
+H5 (Falcon3, expected not supported); precision guard secondary (power simulation). Run: tmux `confirm`,
+`scripts/confirm_runs.sh`, log `logs/confirm_runs.log` (resumable: `bash scripts/start_confirm.sh`); the analysis
+`scripts/confirmatory_c.py` runs once at the end → `results/confirm/confirmatory_c.json`. Then: ledger + paper.
 
 ### ★ Phase 6 GATE summary (2026-11-18)
 All §8 runs done (`PHASE6_RUNS_END` 12:30:33Z). Exploratory findings: repair ≈ CF in every configuration (|Δ| < 0.07;

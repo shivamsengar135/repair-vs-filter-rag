@@ -1,0 +1,19 @@
+{
+ "run": "results/confirm/bio/longform__Mistral-7B-Instruct-v0.3__8b05f2e45c90",
+ "judge_model": "RedHatAI/phi-4-FP8-dynamic",
+ "judge_prompts": "factscore-layout (hallu.factscore_kb)",
+ "claims_without_kb_page": 0,
+ "n_claims": 3377,
+ "n_supported": 2605,
+ "supported_rate": 0.7713947290494522,
+ "n_unreadable": 0,
+ "cost": {
+  "judge": {
+   "calls": 3377,
+   "cache_hits": 398,
+   "prompt_tokens": 3839209,
+   "completion_tokens": 3377
+  }
+ },
+ "git_commit": "cc9f792+dirty"
+}

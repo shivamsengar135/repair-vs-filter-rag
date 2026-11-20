@@ -1,0 +1,48 @@
+===== CONFIRM_START 2026-11-20T11:36:51Z commit df1568c
+===== 2026-11-20T11:36:51Z serve Qwen/Qwen2.5-7B-Instruct
+VLLM_READY
+##### generate+decompose G1
+STOP_AFTER decompose: 183 items, 3480 claims cached
+===== 2026-11-20T11:46:10Z serve mistralai/Mistral-7B-Instruct-v0.3
+VLLM_READY
+##### generate+decompose G2
+STOP_AFTER decompose: 183 items, 3353 claims cached
+===== 2026-11-20T11:54:20Z serve tiiuae/Falcon3-7B-Instruct
+VLLM_READY
+##### generate+decompose G3
+STOP_AFTER decompose: 183 items, 2594 claims cached
+##### 2026-11-20T12:00:19Z verifier scores Qwen/Qwen2.5-7B-Instruct (GPU)
+STOP_AFTER score: 17400 pairs scored (minicheck misses 17321, nli misses 17321)
+##### 2026-11-20T12:08:41Z verifier scores mistralai/Mistral-7B-Instruct-v0.3 (GPU)
+STOP_AFTER score: 16765 pairs scored (minicheck misses 14886, nli misses 14886)
+##### 2026-11-20T12:15:56Z verifier scores tiiuae/Falcon3-7B-Instruct (GPU)
+STOP_AFTER score: 12970 pairs scored (minicheck misses 10283, nli misses 10283)
+===== 2026-11-20T12:20:56Z serve Qwen/Qwen2.5-7B-Instruct
+VLLM_READY
+##### full run G1
+{"n": 183, "claims_per_response_mean": 19.016393442622952, "responses_with_zero_claims": 11, "answers_truncated": 11, "decompositions_truncated": 0, "actions": {"keep": 3043, "revise": 168, "reretrieve": 131, "low": 138}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 168, "revise_deleted": 166, "revise_now_supported": 2, "reretrieve_attempted": 131, "reretrieve_now_supported": 32}, "mean_support_all_claims": 0.8377349049400207}
+wrote results/confirm/bio/longform__Qwen2.5-7B-Instruct__0c492df3704c/summary.json
+===== 2026-11-20T12:26:41Z serve mistralai/Mistral-7B-Instruct-v0.3
+VLLM_READY
+##### full run G2
+{"n": 183, "claims_per_response_mean": 18.3224043715847, "responses_with_zero_claims": 0, "answers_truncated": 33, "decompositions_truncated": 0, "actions": {"keep": 2825, "revise": 208, "reretrieve": 217, "low": 103}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 208, "revise_deleted": 184, "revise_now_supported": 10, "reretrieve_attempted": 217, "reretrieve_now_supported": 38}, "mean_support_all_claims": 0.8072988088877386}
+wrote results/confirm/bio/longform__Mistral-7B-Instruct-v0.3__8b05f2e45c90/summary.json
+===== 2026-11-20T12:32:05Z serve tiiuae/Falcon3-7B-Instruct
+VLLM_READY
+##### full run G3
+{"n": 183, "claims_per_response_mean": 14.174863387978142, "responses_with_zero_claims": 5, "answers_truncated": 4, "decompositions_truncated": 1, "actions": {"keep": 2314, "revise": 116, "reretrieve": 137, "low": 27}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 116, "revise_deleted": 81, "revise_now_supported": 15, "reretrieve_attempted": 137, "reretrieve_now_supported": 27}, "mean_support_all_claims": 0.8509053812669582}
+wrote results/confirm/bio/longform__Falcon3-7B-Instruct__2c4566655882/summary.json
+VLLM_READY
+##### 2026-11-20T12:38:50Z judge results/confirm/bio/longform__Falcon3-7B-Instruct__2c4566655882/
+{"run": "results/confirm/bio/longform__Falcon3-7B-Instruct__2c4566655882", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 2628, "n_supported": 2107, "supported_rate": 0.8017503805175038, "n_unreadable": 0, "cost": {"judge": {"calls": 2628, "cache_hits": 80, "prompt_tokens": 2920889, "completion_tokens"
+##### 2026-11-20T12:46:33Z judge results/confirm/bio/longform__Mistral-7B-Instruct-v0.3__8b05f2e45c90/
+{"run": "results/confirm/bio/longform__Mistral-7B-Instruct-v0.3__8b05f2e45c90", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 3377, "n_supported": 2605, "supported_rate": 0.7713947290494522, "n_unreadable": 0, "cost": {"judge": {"calls": 3377, "cache_hits": 398, "prompt_tokens": 3839209, "completion_t
+##### 2026-11-20T12:56:10Z judge results/confirm/bio/longform__Qwen2.5-7B-Instruct__0c492df3704c/
+{"run": "results/confirm/bio/longform__Qwen2.5-7B-Instruct__0c492df3704c", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 3482, "n_supported": 2836, "supported_rate": 0.8144744399770247, "n_unreadable": 0, "cost": {"judge": {"calls": 3482, "cache_hits": 585, "prompt_tokens": 4041917, "completion_tokens
+##### 2026-11-20T13:05:32Z preregistered analysis (once)
+H3 Qwen2.5-7B-Instruct: C-CF supported/answer +1.077 [+0.549, +1.670] p=0.0000 Holm=True | precision diff +0.029 (lb -0.063, guard False) -> SUPPORTED=False | n_eval 91 | AUROC s 0.641 c 0.579 C 0.634
+H4 Mistral-7B-Instruct-v0.3: C-CF supported/answer +0.538 [+0.242, +0.846] p=0.0002 Holm=True | precision diff +0.148 (lb -0.000, guard True) -> SUPPORTED=True | n_eval 91 | AUROC s 0.592 c 0.579 C 0.605
+H5 Falcon3-7B-Instruct: C-CF supported/answer -0.088 [-0.451, +0.297] p=0.6684 Holm=False | precision diff +0.109 (lb +0.025, guard True) -> SUPPORTED=False | n_eval 91 | AUROC s 0.639 c 0.524 C 0.604
+wrote results/confirm/confirmatory_c.json
+===== CONFIRM_END 2026-11-20T13:05:36Z
+CONFIRM_EXIT 0 2026-11-20T13:05:36Z

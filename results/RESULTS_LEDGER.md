@@ -164,9 +164,37 @@ labels file); output `labelling/agreement.json`. κ CI = bootstrap, 10,000 resam
 | Original claims (RAG / CF) | 75 | 0.867 | 0.507 | 0.507 |
 | A's final candidate claims | 74 | 0.919 | 0.446 | 0.500 |
 
-Caveats: the sample is balanced by judge label, so κ is not on the natural label distribution; one labeller (no
-human-human agreement); ASQA only (biographies are covered by validation 1). On A's claims the judge's supported rate
+Later the same day the user sent a jointly revised version of these labels by both authors
+(`labelling/human_labels_revised_joint.csv`, sha256 8a4265c78a212fb8…: 11 labels changed, 10 of them NS → S, 93
+notes rewritten). It was made AFTER the result above was known, so it is archived and not scored as validation; the
+κ above stays the primary result. A second, independent annotator (Bansidhar Joshi, blank reshuffled file
+`labelling/human_labels_annotator2.csv`) was set up instead (`scripts/score_two_annotators.py`). The file then returned for that slot
+(`labelling/external_llm_labels_NOT_HUMAN.csv`, sha256 27d262fa3995e08c…) is marked on every row "LLM judge (Claude
+Opus 5.5) - not a human annotator"; it is archived and NOT used (not a human annotation; prompt, inputs and whether
+it saw annotator 1's labels are unknown — it matches annotator 1 on 144/150). Caveats: the
+sample is balanced by judge label, so κ is not on the natural label distribution; one labeller (no
+human-human agreement yet); ASQA only (biographies are covered by validation 1). On A's claims the judge's supported rate
 is 5.4 points above the human rate (lenient, as in validation 1).
+
+### Follow-up confirmatory test of C (H3–H5), bio_confirm (183 unseen biographies) — 2026-11-20
+
+Preregistration `docs/PREREG_C_CONFIRMATORY.md` (commit df1568c; public on GitHub as 1f59c23 before any output).
+Runs `scripts/confirm_runs.sh` (log `logs/confirm_runs.log`, 11:36:51Z–13:05:36Z, exit 0): Qwen2.5-7B
+`results/confirm/bio/longform__Qwen2.5-7B-Instruct__0c492df3704c`, Mistral-7B `…__8b05f2e45c90`, Falcon3-7B
+`…__2c4566655882`; judge Phi-4 FP8 (supported rates 0.814 / 0.773 / 0.805; 0 unreadable; 0 claims without KB page).
+Analysis `scripts/confirmatory_c.py` (unchanged since df1568c; run once; output `results/confirm/confirmatory_c.json`,
+its git field reads cc9f792+dirty because of uncommitted logs). Paired bootstrap 10,000, seed 0, partition 0,
+evaluation n = 91; Holm over {H3, H4, H5}, α = 0.05; decision = Holm reject AND diff > 0 (prereg §5).
+
+| Hypothesis | C − CF supported claims / answer @0.90 [95% CI] | p | Holm | Decision | Precision diff (one-sided 95% lb; guard −0.02, secondary) | 100 partitions mean ± sd (share > 0) | AUROC s / c / C |
+|---|---|---|---|---|---|---|---|
+| H3 Qwen2.5-7B | +1.077 [+0.549, +1.670] | < 0.0001 | reject | SUPPORTED | +0.029 (−0.063, fails) | +0.905 ± 0.413 (1.00) | 0.641 / 0.579 / 0.634 |
+| H4 Mistral-7B | +0.538 [+0.242, +0.846] | 0.0002 | reject | SUPPORTED | +0.148 (−0.000, holds) | +0.709 ± 0.365 (1.00) | 0.592 / 0.579 / 0.605 |
+| H5 Falcon3-7B | −0.088 [−0.451, +0.297] | 0.668 | no | not supported (predicted) | +0.109 (+0.025, holds) | +0.312 ± 0.331 (0.84) | 0.639 / 0.524 / 0.604 |
+
+Descriptive, other targets (C − CF, partition 0): H3 +0.92 @0.80, +0.87 @0.85, +0.35 @0.95; H4 +0.63, +0.79, −0.04;
+H5 +0.31, −0.20, +0.16. Deviation (prereg §7): the script's own SUPPORTED field applies the H1/H2 guard (H3 = False
+there); the preregistered rule makes the guard secondary; both readings are reported.
 
 ### Failure analysis — human categorisation (EXPERIMENT_PLAN.md §8), test, G1, target 0.90, partition 0 — 2026-11-20
 

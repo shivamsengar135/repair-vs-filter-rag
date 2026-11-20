@@ -1,0 +1,19 @@
+{
+ "run": "results/confirm/bio/longform__Falcon3-7B-Instruct__2c4566655882",
+ "judge_model": "RedHatAI/phi-4-FP8-dynamic",
+ "judge_prompts": "factscore-layout (hallu.factscore_kb)",
+ "claims_without_kb_page": 0,
+ "n_claims": 2628,
+ "n_supported": 2107,
+ "supported_rate": 0.8017503805175038,
+ "n_unreadable": 0,
+ "cost": {
+  "judge": {
+   "calls": 2628,
+   "cache_hits": 80,
+   "prompt_tokens": 2920889,
+   "completion_tokens": 2628
+  }
+ },
+ "git_commit": "cc9f792+dirty"
+}

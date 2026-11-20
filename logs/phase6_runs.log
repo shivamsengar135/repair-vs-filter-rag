@@ -1,0 +1,418 @@
+===== 2026-11-17T20:41:03Z START phase6_runs.sh
+##### 2026-11-17T20:41:03Z fit tests
+{"model": "Qwen/Qwen2.5-3B-Instruct", "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1", "extra_args": "", "status": "VLLM_READY", "model_load_GiB": 5.79,
+ "kv_cache_tokens": 318336, "gpu_used_MiB_with_server": 19222, "fits_rule_ge_16000_kv_tokens": true,
+ "bench": "results/phase4/fit/Qwen_Qwen2.5-3B-Instruct_bench.json", "server_log": "logs/vllm_docker_20261117_204103.log", "errors": "", "date_utc": "2026-11-17T20:43:15Z", "git_commit": "c2816f5"}
+concurrency=  1 n=  8 wall=20.4s throughput=50.1 out tok/s per-request=50.1 tok/s lat_mean=2.56s
+concurrency= 32 n= 64 wall=5.6s throughput=1455.5 out tok/s per-request=45.8 tok/s lat_mean=2.79s
+{"model": "Qwen/Qwen2.5-3B-Instruct", "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1", "extra_args": "", "status": "VLLM_READY", "model_load_GiB": 5.79,
+ "kv_cache_tokens": 318336, "gpu_used_MiB_with_server": 19222, "fits_rule_ge_16000_kv_tokens": true,
+ "bench": "results/phase4/fit/Qwen_Qwen2.5-3B-Instruct_bench.json", "server_log": "logs/vllm_docker_20261117_204103.log", "errors": "", "da
+{"model": "Qwen/Qwen2.5-14B-Instruct-AWQ", "revision": "539535859b135b0244c91f3e59816150c8056698", "extra_args": "", "status": "VLLM_READY", "model_load_GiB": 9.38,
+ "kv_cache_tokens": 34688, "gpu_used_MiB_with_server": 18384, "fits_rule_ge_16000_kv_tokens": true,
+ "bench": "results/phase4/fit/Qwen_Qwen2.5-14B-Instruct-AWQ_bench.json", "server_log": "logs/vllm_docker_20261117_204316.log", "errors": "", "date_utc": "2026-11-17T20:45:38Z", "git_commit": "c2816f5"}
+concurrency=  1 n=  8 wall=28.1s throughput=36.5 out tok/s per-request=36.5 tok/s lat_mean=3.51s
+concurrency= 32 n= 64 wall=8.6s throughput=952.3 out tok/s per-request=29.9 tok/s lat_mean=4.28s
+{"model": "Qwen/Qwen2.5-14B-Instruct-AWQ", "revision": "539535859b135b0244c91f3e59816150c8056698", "extra_args": "", "status": "VLLM_READY", "model_load_GiB": 9.38,
+ "kv_cache_tokens": 34688, "gpu_used_MiB_with_server": 18384, "fits_rule_ge_16000_kv_tokens": true,
+ "bench": "results/phase4/fit/Qwen_Qwen2.5-14B-Instruct-AWQ_bench.json", "server_log": "logs/vllm_docker_20261117_204316.log", "errors"
+===== 2026-11-17T20:45:40Z serve Qwen/Qwen2.5-7B-Instruct bfloat16
+VLLM_READY
+##### 2026-11-17T20:47:03Z G1 bio --k 3: generate + decompose
+STOP_AFTER decompose: 350 items, 5482 claims cached
+##### 2026-11-17T20:55:19Z G1 bio --k 10: generate + decompose
+STOP_AFTER decompose: 350 items, 6825 claims cached
+##### 2026-11-17T21:08:33Z G1 bio --decompose sentences: generate + decompose
+STOP_AFTER decompose: 350 items, 3927 claims cached
+##### 2026-11-17T21:08:37Z G1 asqa --k 3: generate + decompose
+STOP_AFTER decompose: 748 items, 1561 claims cached
+##### 2026-11-17T21:14:31Z G1 asqa --k 10: generate + decompose
+STOP_AFTER decompose: 748 items, 1897 claims cached
+##### 2026-11-17T21:24:24Z G1 asqa --decompose sentences: generate + decompose
+STOP_AFTER decompose: 748 items, 2605 claims cached
+===== 2026-11-17T21:24:29Z serve Qwen/Qwen2.5-3B-Instruct bfloat16
+VLLM_READY
+##### 2026-11-17T21:26:03Z size Qwen/Qwen2.5-3B-Instruct bio: generate + decompose
+STOP_AFTER decompose: 350 items, 67 claims cached
+##### 2026-11-17T21:28:55Z size Qwen/Qwen2.5-3B-Instruct asqa: generate + decompose
+STOP_AFTER decompose: 748 items, 513 claims cached
+##### 2026-11-17T21:31:13Z size Qwen/Qwen2.5-3B-Instruct short-form popqa
+{"n": 1000, "match_accuracy": 0.15, "em": 0.122, "f1": 0.15955000000000003, "abstention_rate": 0.034, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+{"n": 1000, "match_accuracy": 0.303, "em": 0.244, "f1": 0.28554531024531027, "abstention_rate": 0.021, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.416}
+{"n": 1000, "rag_match": 0.303, "A_match_no_abstention": 0.304, "actions": {"keep": 605, "revise": 265, "reretrieve": 14, "low": 116}, "answers_changed_by_repair": 278, "repair_effect_on_match": {"fixed": 15, "broken": 14}, "mean_s": 0.5975098911472596, "closed_book_unreadable": 0}
+wrote results/test/popqa/shortform__Qwen2.5-3B-Instruct__b3ee4906c897/summary.json
+##### 2026-11-17T21:58:40Z size Qwen/Qwen2.5-3B-Instruct short-form nq
+{"n": 1000, "match_accuracy": 0.172, "em": 0.106, "f1": 0.19606329226329225, "abstention_rate": 0.006, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+{"n": 1000, "match_accuracy": 0.296, "em": 0.215, "f1": 0.3190384470188009, "abstention_rate": 0.006, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.476}
+{"n": 1000, "rag_match": 0.296, "A_match_no_abstention": 0.296, "actions": {"keep": 505, "revise": 263, "reretrieve": 45, "low": 187}, "answers_changed_by_repair": 294, "repair_effect_on_match": {"fixed": 22, "broken": 22}, "mean_s": 0.5167175461016595, "closed_book_unreadable": 0}
+wrote results/test/nq/shortform__Qwen2.5-3B-Instruct__b15ba6fb3638/summary.json
+##### 2026-11-17T22:25:02Z size Qwen/Qwen2.5-3B-Instruct short-form triviaqa
+{"n": 1000, "match_accuracy": 0.427, "em": 0.369, "f1": 0.43292979797979797, "abstention_rate": 0.001, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+{"n": 1000, "match_accuracy": 0.626, "em": 0.534, "f1": 0.6139306356182517, "abstention_rate": 0.003, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.753}
+{"n": 1000, "rag_match": 0.626, "A_match_no_abstention": 0.604, "actions": {"keep": 530, "revise": 252, "reretrieve": 71, "low": 147}, "answers_changed_by_repair": 288, "repair_effect_on_match": {"fixed": 28, "broken": 50}, "mean_s": 0.5318647354687565, "closed_book_unreadable": 0}
+wrote results/test/triviaqa/shortform__Qwen2.5-3B-Instruct__816b53b2ad17/summary.json
+##### 2026-11-17T22:52:21Z size Qwen/Qwen2.5-3B-Instruct short-form hotpotqa
+{"n": 1000, "match_accuracy": 0.172, "em": 0.148, "f1": 0.23016056258842632, "abstention_rate": 0.018, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+{"n": 1000, "match_accuracy": 0.316, "em": 0.284, "f1": 0.380101579812663, "abstention_rate": 0.003, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.482}
+{"n": 1000, "rag_match": 0.316, "A_match_no_abstention": 0.279, "actions": {"keep": 215, "revise": 413, "reretrieve": 57, "low": 315}, "answers_changed_by_repair": 431, "repair_effect_on_match": {"fixed": 22, "broken": 59}, "mean_s": 0.250994937076699, "closed_book_unreadable": 0}
+wrote results/test/hotpotqa/shortform__Qwen2.5-3B-Instruct__1fa953454511/summary.json
+##### 2026-11-17T23:21:44Z size Qwen/Qwen2.5-3B-Instruct short-form 2wiki
+{"n": 1000, "match_accuracy": 0.238, "em": 0.234, "f1": 0.26333077755577755, "abstention_rate": 0.071, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+{"n": 1000, "match_accuracy": 0.272, "em": 0.253, "f1": 0.30314471814734967, "abstention_rate": 0.034, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.335}
+{"n": 1000, "rag_match": 0.272, "A_match_no_abstention": 0.264, "actions": {"keep": 179, "revise": 353, "reretrieve": 21, "low": 447}, "answers_changed_by_repair": 358, "repair_effect_on_match": {"fixed": 20, "broken": 28}, "mean_s": 0.2570131525839679, "closed_book_unreadable": 0}
+wrote results/test/2wiki/shortform__Qwen2.5-3B-Instruct__f6abd13666e9/summary.json
+===== 2026-11-17T23:50:43Z serve Qwen/Qwen2.5-14B-Instruct-AWQ float16
+VLLM_READY
+##### 2026-11-17T23:52:36Z size Qwen/Qwen2.5-14B-Instruct-AWQ bio: generate + decompose
+STOP_AFTER decompose: 350 items, 5330 claims cached
+##### 2026-11-18T00:00:50Z size Qwen/Qwen2.5-14B-Instruct-AWQ asqa: generate + decompose
+STOP_AFTER decompose: 748 items, 1936 claims cached
+##### 2026-11-18T00:08:22Z size Qwen/Qwen2.5-14B-Instruct-AWQ short-form popqa
+{"n": 1000, "match_accuracy": 0.213, "em": 0.165, "f1": 0.2282285714285714, "abstention_rate": 0.064, "truncated_rate": 0.003, "retrieval_recall_at_k": null}
+{"n": 1000, "match_accuracy": 0.343, "em": 0.272, "f1": 0.32839763350385576, "abstention_rate": 0.037, "truncated_rate": 0.005, "retrieval_recall_at_k": 0.416}
+{"n": 1000, "rag_match": 0.343, "A_match_no_abstention": 0.327, "actions": {"keep": 646, "revise": 218, "reretrieve": 24, "low": 112}, "answers_changed_by_repair": 238, "repair_effect_on_match": {"fixed": 7, "broken": 23}, "mean_s": 0.6379622823907993, "closed_book_unreadable": 0}
+wrote results/test/popqa/shortform__Qwen2.5-14B-Instruct-AWQ__08c823906ae2/summary.json
+##### 2026-11-18T00:41:39Z size Qwen/Qwen2.5-14B-Instruct-AWQ short-form nq
+{"n": 1000, "match_accuracy": 0.265, "em": 0.159, "f1": 0.2800538709352663, "abstention_rate": 0.001, "truncated_rate": 0.003, "retrieval_recall_at_k": null}
+{"n": 1000, "match_accuracy": 0.378, "em": 0.267, "f1": 0.39116772262824895, "abstention_rate": 0.005, "truncated_rate": 0.004, "retrieval_recall_at_k": 0.476}
+{"n": 1000, "rag_match": 0.378, "A_match_no_abstention": 0.361, "actions": {"keep": 512, "revise": 206, "reretrieve": 88, "low": 194}, "answers_changed_by_repair": 270, "repair_effect_on_match": {"fixed": 13, "broken": 30}, "mean_s": 0.5217241313657723, "closed_book_unreadable": 0}
+wrote results/test/nq/shortform__Qwen2.5-14B-Instruct-AWQ__c2fd7f79df73/summary.json
+##### 2026-11-18T01:14:17Z size Qwen/Qwen2.5-14B-Instruct-AWQ short-form triviaqa
+{"n": 1000, "match_accuracy": 0.595, "em": 0.449, "f1": 0.5603611111111111, "abstention_rate": 0.0, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+{"n": 1000, "match_accuracy": 0.733, "em": 0.634, "f1": 0.7089150256978164, "abstention_rate": 0.004, "truncated_rate": 0.004, "retrieval_recall_at_k": 0.753}
+{"n": 1000, "rag_match": 0.733, "A_match_no_abstention": 0.701, "actions": {"keep": 568, "revise": 207, "reretrieve": 80, "low": 145}, "answers_changed_by_repair": 263, "repair_effect_on_match": {"fixed": 16, "broken": 48}, "mean_s": 0.5678167558214627, "closed_book_unreadable": 0}
+wrote results/test/triviaqa/shortform__Qwen2.5-14B-Instruct-AWQ__2657c8d0feb4/summary.json
+##### 2026-11-18T01:47:36Z size Qwen/Qwen2.5-14B-Instruct-AWQ short-form hotpotqa
+{"n": 1000, "match_accuracy": 0.225, "em": 0.14, "f1": 0.26488383087500733, "abstention_rate": 0.012, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+{"n": 1000, "match_accuracy": 0.405, "em": 0.342, "f1": 0.47227962775211063, "abstention_rate": 0.003, "truncated_rate": 0.008, "retrieval_recall_at_k": 0.482}
+{"n": 1000, "rag_match": 0.405, "A_match_no_abstention": 0.348, "actions": {"keep": 303, "revise": 328, "reretrieve": 73, "low": 296}, "answers_changed_by_repair": 350, "repair_effect_on_match": {"fixed": 14, "broken": 71}, "mean_s": 0.3342461147615686, "closed_book_unreadable": 0}
+wrote results/test/hotpotqa/shortform__Qwen2.5-14B-Instruct-AWQ__3eb4b1786be4/summary.json
+##### 2026-11-18T02:22:35Z size Qwen/Qwen2.5-14B-Instruct-AWQ short-form 2wiki
+{"n": 1000, "match_accuracy": 0.238, "em": 0.198, "f1": 0.25096137196137197, "abstention_rate": 0.079, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+{"n": 1000, "match_accuracy": 0.32, "em": 0.288, "f1": 0.3508878953399542, "abstention_rate": 0.009, "truncated_rate": 0.006, "retrieval_recall_at_k": 0.335}
+{"n": 1000, "rag_match": 0.32, "A_match_no_abstention": 0.301, "actions": {"keep": 221, "revise": 259, "reretrieve": 31, "low": 489}, "answers_changed_by_repair": 265, "repair_effect_on_match": {"fixed": 18, "broken": 37}, "mean_s": 0.28256324521871284, "closed_book_unreadable": 0}
+wrote results/test/2wiki/shortform__Qwen2.5-14B-Instruct-AWQ__e8f6432639e8/summary.json
+##### 2026-11-18T02:57:18Z GPU scores G1 bio --k 3
+STOP_AFTER score: 16446 pairs scored (minicheck misses 11266, nli misses 11269)
+##### 2026-11-18T03:02:38Z GPU scores G1 bio --k 10
+STOP_AFTER score: 68120 pairs scored (minicheck misses 58169, nli misses 58184)
+##### 2026-11-18T03:29:56Z GPU scores G1 bio --decompose sentences
+STOP_AFTER score: 19611 pairs scored (minicheck misses 19332, nli misses 19332)
+##### 2026-11-18T03:39:56Z GPU scores G1 bio --verifier nli
+STOP_AFTER score: 31126 pairs scored (minicheck misses 0, nli misses 0)
+##### 2026-11-18T03:43:01Z GPU scores G1 bio --verifier alignscore
+STOP_AFTER score: 31126 pairs scored (minicheck misses 0, nli misses 0)
+##### 2026-11-18T03:49:29Z GPU scores Qwen/Qwen2.5-3B-Instruct bio
+STOP_AFTER score: 335 pairs scored (minicheck misses 275, nli misses 275)
+##### 2026-11-18T03:49:49Z GPU scores Qwen/Qwen2.5-14B-Instruct-AWQ bio
+STOP_AFTER score: 26632 pairs scored (minicheck misses 20521, nli misses 20523)
+##### 2026-11-18T03:59:17Z GPU scores G1 asqa --k 3
+STOP_AFTER score: 4683 pairs scored (minicheck misses 3513, nli misses 3513)
+##### 2026-11-18T04:01:00Z GPU scores G1 asqa --k 10
+STOP_AFTER score: 18970 pairs scored (minicheck misses 16849, nli misses 16854)
+##### 2026-11-18T04:08:33Z GPU scores G1 asqa --decompose sentences
+STOP_AFTER score: 13025 pairs scored (minicheck misses 12134, nli misses 12134)
+##### 2026-11-18T04:14:39Z GPU scores G1 asqa --verifier nli
+STOP_AFTER score: 8460 pairs scored (minicheck misses 0, nli misses 0)
+##### 2026-11-18T04:15:35Z GPU scores G1 asqa --verifier alignscore
+STOP_AFTER score: 8460 pairs scored (minicheck misses 0, nli misses 0)
+##### 2026-11-18T04:17:23Z GPU scores Qwen/Qwen2.5-3B-Instruct asqa
+STOP_AFTER score: 2565 pairs scored (minicheck misses 2089, nli misses 2089)
+##### 2026-11-18T04:18:30Z GPU scores Qwen/Qwen2.5-14B-Instruct-AWQ asqa
+STOP_AFTER score: 9680 pairs scored (minicheck misses 8255, nli misses 8255)
+===== 2026-11-18T04:22:15Z serve Qwen/Qwen2.5-7B-Instruct bfloat16
+VLLM_READY
+##### 2026-11-18T04:23:59Z G1 bio --triage one_axis: full run
+{"n": 350, "claims_per_response_mean": 17.8, "responses_with_zero_claims": 39, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 5384, "revise": 361, "reretrieve": 485, "low": 0}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 361, "revise_deleted": 348, "revise_now_supported": 5, "reretrieve_attempted": 485, "reretrieve_now_supported": 112}, "mean_support_all
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__cd460a62b69c/summary.json
+##### 2026-11-18T04:26:07Z G1 bio --tau-s 0.3: full run
+{"n": 350, "claims_per_response_mean": 17.8, "responses_with_zero_claims": 39, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 5521, "revise": 312, "reretrieve": 232, "low": 165}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 312, "revise_deleted": 302, "revise_now_supported": 4, "reretrieve_attempted": 232, "reretrieve_now_supported": 80}, "mean_support_al
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__af8c5653c812/summary.json
+##### 2026-11-18T04:26:19Z G1 bio --tau-s 0.4: full run
+{"n": 350, "claims_per_response_mean": 17.8, "responses_with_zero_claims": 39, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 5444, "revise": 340, "reretrieve": 260, "low": 186}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 340, "revise_deleted": 327, "revise_now_supported": 5, "reretrieve_attempted": 260, "reretrieve_now_supported": 86}, "mean_support_al
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__b5c2bf5746b9/summary.json
+##### 2026-11-18T04:26:30Z G1 bio --tau-s 0.6: full run
+{"n": 350, "claims_per_response_mean": 17.8, "responses_with_zero_claims": 39, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 5296, "revise": 396, "reretrieve": 306, "low": 232}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 396, "revise_deleted": 383, "revise_now_supported": 5, "reretrieve_attempted": 306, "reretrieve_now_supported": 91}, "mean_support_al
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__62b4d999eca8/summary.json
+##### 2026-11-18T04:27:19Z G1 bio --tau-s 0.7: full run
+{"n": 350, "claims_per_response_mean": 17.8, "responses_with_zero_claims": 39, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 5207, "revise": 432, "reretrieve": 334, "low": 257}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 432, "revise_deleted": 419, "revise_now_supported": 5, "reretrieve_attempted": 334, "reretrieve_now_supported": 91}, "mean_support_al
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__92c48c6e3941/summary.json
+##### 2026-11-18T04:28:07Z G1 bio --k 3: full run
+{"n": 350, "claims_per_response_mean": 15.662857142857144, "responses_with_zero_claims": 40, "answers_truncated": 1, "decompositions_truncated": 0, "actions": {"keep": 4751, "revise": 199, "reretrieve": 314, "low": 218}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 199, "revise_deleted": 189, "revise_now_supported": 4, "reretrieve_attempted": 314, "reretrieve_now_supported": 102}, "
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__a50158f36360/summary.json
+##### 2026-11-18T04:31:14Z G1 bio --k 10: full run
+{"n": 350, "claims_per_response_mean": 19.5, "responses_with_zero_claims": 34, "answers_truncated": 33, "decompositions_truncated": 0, "actions": {"keep": 5875, "revise": 519, "reretrieve": 264, "low": 167}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 519, "revise_deleted": 512, "revise_now_supported": 1, "reretrieve_attempted": 264, "reretrieve_now_supported": 101}, "mean_support_
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__db1b6e9a32c0/summary.json
+##### 2026-11-18T04:36:19Z G1 bio --decompose sentences: full run
+{"n": 350, "claims_per_response_mean": 11.22, "responses_with_zero_claims": 0, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 2749, "revise": 365, "reretrieve": 488, "low": 325}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 365, "revise_deleted": 362, "revise_now_supported": 2, "reretrieve_attempted": 488, "reretrieve_now_supported": 62}, "mean_support_al
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__d228ec686d7e/summary.json
+##### 2026-11-18T04:42:01Z G1 bio --verifier nli: full run
+{"n": 350, "claims_per_response_mean": 17.8, "responses_with_zero_claims": 39, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 5519, "revise": 383, "reretrieve": 202, "low": 126}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 383, "revise_deleted": 350, "revise_now_supported": 14, "reretrieve_attempted": 202, "reretrieve_now_supported": 70}, "mean_support_a
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__c8b6adffcf79/summary.json
+##### 2026-11-18T04:44:02Z G1 bio --verifier alignscore: full run
+{"n": 350, "claims_per_response_mean": 17.8, "responses_with_zero_claims": 39, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 5343, "revise": 364, "reretrieve": 331, "low": 192}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 364, "revise_deleted": 351, "revise_now_supported": 9, "reretrieve_attempted": 331, "reretrieve_now_supported": 84}, "mean_support_al
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__ba94ef7ad841/summary.json
+##### 2026-11-18T04:45:54Z G1 bio --verifier generator: full run
+{"n": 350, "claims_per_response_mean": 17.8, "responses_with_zero_claims": 39, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 5556, "revise": 311, "reretrieve": 162, "low": 201}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 311, "revise_deleted": 309, "revise_now_supported": 1, "reretrieve_attempted": 162, "reretrieve_now_supported": 48}, "mean_support_al
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__c53c0bdcd9d1/summary.json
+##### 2026-11-18T04:51:22Z G1 asqa --triage one_axis: full run
+{"n": 748, "claims_per_response_mean": 2.2620320855614975, "responses_with_zero_claims": 229, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1377, "revise": 123, "reretrieve": 192, "low": 0}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 123, "revise_deleted": 123, "revise_now_supported": 0, "reretrieve_attempted": 192, "reretrieve_now_supported": 87}, "me
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__075bf2a4bce2/summary.json
+##### 2026-11-18T04:52:39Z G1 asqa --tau-s 0.3: full run
+{"n": 748, "claims_per_response_mean": 2.2620320855614975, "responses_with_zero_claims": 229, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1418, "revise": 111, "reretrieve": 99, "low": 64}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 111, "revise_deleted": 111, "revise_now_supported": 0, "reretrieve_attempted": 99, "reretrieve_now_supported": 52}, "mea
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__9701c1926850/summary.json
+##### 2026-11-18T04:52:54Z G1 asqa --tau-s 0.4: full run
+{"n": 748, "claims_per_response_mean": 2.2620320855614975, "responses_with_zero_claims": 229, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1400, "revise": 118, "reretrieve": 107, "low": 67}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 118, "revise_deleted": 118, "revise_now_supported": 0, "reretrieve_attempted": 107, "reretrieve_now_supported": 55}, "m
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__cb37c5d379a4/summary.json
+##### 2026-11-18T04:53:08Z G1 asqa --tau-s 0.6: full run
+{"n": 748, "claims_per_response_mean": 2.2620320855614975, "responses_with_zero_claims": 229, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1353, "revise": 135, "reretrieve": 118, "low": 86}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 135, "revise_deleted": 135, "revise_now_supported": 0, "reretrieve_attempted": 118, "reretrieve_now_supported": 60}, "m
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__5ac458e26c22/summary.json
+##### 2026-11-18T04:53:50Z G1 asqa --tau-s 0.7: full run
+{"n": 748, "claims_per_response_mean": 2.2620320855614975, "responses_with_zero_claims": 229, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1330, "revise": 142, "reretrieve": 129, "low": 91}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 142, "revise_deleted": 142, "revise_now_supported": 0, "reretrieve_attempted": 129, "reretrieve_now_supported": 60}, "m
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__f6b68f99f33c/summary.json
+##### 2026-11-18T04:54:35Z G1 asqa --k 3: full run
+{"n": 748, "claims_per_response_mean": 2.086898395721925, "responses_with_zero_claims": 257, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1189, "revise": 98, "reretrieve": 161, "low": 113}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 98, "revise_deleted": 95, "revise_now_supported": 1, "reretrieve_attempted": 161, "reretrieve_now_supported": 81}, "mean
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__bb2109d563bc/summary.json
+##### 2026-11-18T04:56:32Z G1 asqa --k 10: full run
+{"n": 748, "claims_per_response_mean": 2.536096256684492, "responses_with_zero_claims": 174, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1593, "revise": 161, "reretrieve": 76, "low": 67}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 161, "revise_deleted": 159, "revise_now_supported": 1, "reretrieve_attempted": 76, "reretrieve_now_supported": 47}, "mean
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__1b3f6f14a811/summary.json
+##### 2026-11-18T04:58:49Z G1 asqa --decompose sentences: full run
+{"n": 748, "claims_per_response_mean": 3.482620320855615, "responses_with_zero_claims": 0, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1809, "revise": 267, "reretrieve": 289, "low": 240}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 267, "revise_deleted": 266, "revise_now_supported": 1, "reretrieve_attempted": 289, "reretrieve_now_supported": 96}, "mea
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__198a5eaf25ba/summary.json
+##### 2026-11-18T05:03:11Z G1 asqa --verifier nli: full run
+{"n": 748, "claims_per_response_mean": 2.2620320855614975, "responses_with_zero_claims": 229, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1462, "revise": 116, "reretrieve": 71, "low": 43}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 116, "revise_deleted": 113, "revise_now_supported": 1, "reretrieve_attempted": 71, "reretrieve_now_supported": 47}, "mea
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__5a9ca638e935/summary.json
+##### 2026-11-18T05:04:28Z G1 asqa --verifier alignscore: full run
+{"n": 748, "claims_per_response_mean": 2.2620320855614975, "responses_with_zero_claims": 229, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1399, "revise": 105, "reretrieve": 124, "low": 64}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 105, "revise_deleted": 104, "revise_now_supported": 1, "reretrieve_attempted": 124, "reretrieve_now_supported": 55}, "m
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__0038e48831f4/summary.json
+##### 2026-11-18T05:05:47Z G1 asqa --verifier generator: full run
+{"n": 748, "claims_per_response_mean": 2.2620320855614975, "responses_with_zero_claims": 229, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1431, "revise": 119, "reretrieve": 63, "low": 79}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 119, "revise_deleted": 119, "revise_now_supported": 0, "reretrieve_attempted": 63, "reretrieve_now_supported": 31}, "mea
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__fa090cc79839/summary.json
+===== 2026-11-18T05:08:46Z serve Qwen/Qwen2.5-3B-Instruct bfloat16
+VLLM_READY
+##### 2026-11-18T05:10:14Z size Qwen/Qwen2.5-3B-Instruct bio: full run
+{"n": 350, "claims_per_response_mean": 0.19142857142857142, "responses_with_zero_claims": 345, "answers_truncated": 131, "decompositions_truncated": 0, "actions": {"keep": 48, "revise": 17, "reretrieve": 2, "low": 0}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 17, "revise_deleted": 16, "revise_now_supported": 0, "reretrieve_attempted": 2, "reretrieve_now_supported": 0}, "mean_supp
+wrote results/test/bio/longform__Qwen2.5-3B-Instruct__80df448d8a06/summary.json
+##### 2026-11-18T05:10:54Z size Qwen/Qwen2.5-3B-Instruct asqa: full run
+{"n": 748, "claims_per_response_mean": 0.6858288770053476, "responses_with_zero_claims": 521, "answers_truncated": 1, "decompositions_truncated": 0, "actions": {"keep": 438, "revise": 38, "reretrieve": 9, "low": 28}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 38, "revise_deleted": 37, "revise_now_supported": 0, "reretrieve_attempted": 9, "reretrieve_now_supported": 5}, "mean_suppo
+wrote results/test/asqa/longform__Qwen2.5-3B-Instruct__6dcd23bed256/summary.json
+===== 2026-11-18T05:11:43Z serve Qwen/Qwen2.5-14B-Instruct-AWQ float16
+VLLM_READY
+##### 2026-11-18T05:13:42Z size Qwen/Qwen2.5-14B-Instruct-AWQ bio: full run
+{"n": 350, "claims_per_response_mean": 15.228571428571428, "responses_with_zero_claims": 36, "answers_truncated": 5, "decompositions_truncated": 0, "actions": {"keep": 4474, "revise": 288, "reretrieve": 282, "low": 286}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 288, "revise_deleted": 269, "revise_now_supported": 12, "reretrieve_attempted": 282, "reretrieve_now_supported": 134}, 
+wrote results/test/bio/longform__Qwen2.5-14B-Instruct-AWQ__e08037b6190d/summary.json
+##### 2026-11-18T05:18:58Z size Qwen/Qwen2.5-14B-Instruct-AWQ asqa: full run
+{"n": 748, "claims_per_response_mean": 2.588235294117647, "responses_with_zero_claims": 159, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1371, "revise": 201, "reretrieve": 174, "low": 190}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 201, "revise_deleted": 191, "revise_now_supported": 4, "reretrieve_attempted": 174, "reretrieve_now_supported": 121}, "
+wrote results/test/asqa/longform__Qwen2.5-14B-Instruct-AWQ__6c9d825d2a21/summary.json
+##### 2026-11-18T05:22:29Z judge all long-form test runs (cached labels are reused)
+VLLM_READY
+##### 2026-11-18T05:24:45Z judge results/test/asqa/cove-closed_book__Qwen2.5-7B-Instruct__cd920a30dc7b/
+{"run": "results/test/asqa/cove-closed_book__Qwen2.5-7B-Instruct__cd920a30dc7b", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1699, "n_supported": 906, "supported_rate": 0.533254855797528, "n_unreadable": 0, "cost": {"judge": {"calls": 1699, "cache_hits": 1699, "prompt_tokens": 1692282, "completion_tokens": 1699}}, "git_commit":
+##### 2026-11-18T05:24:50Z judge results/test/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__d90c9ff5fd30/
+{"run": "results/test/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__d90c9ff5fd30", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1440, "n_supported": 852, "supported_rate": 0.5916666666666667, "n_unreadable": 0, "cost": {"judge": {"calls": 1440, "cache_hits": 1440, "prompt_tokens": 1433351, "completion_tokens": 1440}}, "git_commit":
+##### 2026-11-18T05:24:55Z judge results/test/asqa/flare__Qwen2.5-7B-Instruct__2dc14b1e5f08/
+{"run": "results/test/asqa/flare__Qwen2.5-7B-Instruct__2dc14b1e5f08", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1547, "n_supported": 1067, "supported_rate": 0.6897220426632191, "n_unreadable": 0, "cost": {"judge": {"calls": 1547, "cache_hits": 1547, "prompt_tokens": 1560174, "completion_tokens": 1547}}, "git_commit": "16dce0a
+##### 2026-11-18T05:25:00Z judge results/test/asqa/longform__Falcon3-7B-Instruct__6394ad333550/
+{"run": "results/test/asqa/longform__Falcon3-7B-Instruct__6394ad333550", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 2071, "n_supported": 1188, "supported_rate": 0.5736359246740705, "n_unreadable": 0, "cost": {"judge": {"calls": 2071, "cache_hits": 2071, "prompt_tokens": 2076554, "completion_tokens": 2071}}, "git_commit": "16dc
+##### 2026-11-18T05:25:05Z judge results/test/asqa/longform__Mistral-7B-Instruct-v0.3__42d6faf1c66b/
+{"run": "results/test/asqa/longform__Mistral-7B-Instruct-v0.3__42d6faf1c66b", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 3321, "n_supported": 1844, "supported_rate": 0.5552544414333033, "n_unreadable": 0, "cost": {"judge": {"calls": 3321, "cache_hits": 3321, "prompt_tokens": 3342424, "completion_tokens": 3321}}, "git_commit": 
+##### 2026-11-18T05:25:09Z judge results/test/asqa/longform__Qwen2.5-14B-Instruct-AWQ__6c9d825d2a21/
+{"run": "results/test/asqa/longform__Qwen2.5-14B-Instruct-AWQ__6c9d825d2a21", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1946, "n_supported": 1422, "supported_rate": 0.7307297019527236, "n_unreadable": 0, "cost": {"judge": {"calls": 1946, "cache_hits": 273, "prompt_tokens": 1956233, "completion_tokens": 1946}}, "git_commit": "
+##### 2026-11-18T05:27:58Z judge results/test/asqa/longform__Qwen2.5-3B-Instruct__6dcd23bed256/
+{"run": "results/test/asqa/longform__Qwen2.5-3B-Instruct__6dcd23bed256", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 514, "n_supported": 361, "supported_rate": 0.7023346303501945, "n_unreadable": 0, "cost": {"judge": {"calls": 514, "cache_hits": 103, "prompt_tokens": 513976, "completion_tokens": 514}}, "git_commit": "16dce0a+di
+##### 2026-11-18T05:28:54Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__0038e48831f4/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__0038e48831f4", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1693, "n_supported": 1185, "supported_rate": 0.6999409332545776, "n_unreadable": 0, "cost": {"judge": {"calls": 1693, "cache_hits": 1692, "prompt_tokens": 1704343, "completion_tokens": 1693}}, "git_commit": "16dc
+##### 2026-11-18T05:29:11Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__075bf2a4bce2/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__075bf2a4bce2", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "16dce
+##### 2026-11-18T05:29:25Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__198a5eaf25ba/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__198a5eaf25ba", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 2605, "n_supported": 1247, "supported_rate": 0.4786948176583493, "n_unreadable": 0, "cost": {"judge": {"calls": 2605, "cache_hits": 185, "prompt_tokens": 2659007, "completion_tokens": 2605}}, "git_commit": "16dce
+##### 2026-11-18T05:33:32Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__1b3f6f14a811/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__1b3f6f14a811", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1899, "n_supported": 1313, "supported_rate": 0.6914165350184307, "n_unreadable": 0, "cost": {"judge": {"calls": 1899, "cache_hits": 439, "prompt_tokens": 1920151, "completion_tokens": 1899}}, "git_commit": "16dce
+##### 2026-11-18T05:36:01Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__5a9ca638e935/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__5a9ca638e935", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1694, "n_supported": 1186, "supported_rate": 0.7001180637544274, "n_unreadable": 0, "cost": {"judge": {"calls": 1694, "cache_hits": 1692, "prompt_tokens": 1705698, "completion_tokens": 1694}}, "git_commit": "16dc
+##### 2026-11-18T05:36:19Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__5ac458e26c22/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__5ac458e26c22", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "16dce
+##### 2026-11-18T05:36:35Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__9701c1926850/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__9701c1926850", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "16dce
+##### 2026-11-18T05:36:48Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__bb2109d563bc/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__bb2109d563bc", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1563, "n_supported": 1068, "supported_rate": 0.6833013435700576, "n_unreadable": 0, "cost": {"judge": {"calls": 1563, "cache_hits": 489, "prompt_tokens": 1575248, "completion_tokens": 1563}}, "git_commit": "16dce
+##### 2026-11-18T05:38:43Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__cb37c5d379a4/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__cb37c5d379a4", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "16dce
+##### 2026-11-18T05:38:57Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "16dce
+##### 2026-11-18T05:39:00Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__f6b68f99f33c/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__f6b68f99f33c", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "16dce
+##### 2026-11-18T05:39:16Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__fa090cc79839/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__fa090cc79839", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "16dce
+##### 2026-11-18T05:39:31Z judge results/test/asqa/rarr__Qwen2.5-7B-Instruct__1198a177de8a/
+{"run": "results/test/asqa/rarr__Qwen2.5-7B-Instruct__1198a177de8a", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 3087, "n_supported": 1401, "supported_rate": 0.45383867832847424, "n_unreadable": 0, "cost": {"judge": {"calls": 3087, "cache_hits": 3087, "prompt_tokens": 3103395, "completion_tokens": 3087}}, "git_commit": "16dce0a
+##### 2026-11-18T05:39:35Z judge results/test/bio/cove-closed_book__Qwen2.5-7B-Instruct__c7fd56e96a83/
+{"run": "results/test/bio/cove-closed_book__Qwen2.5-7B-Instruct__c7fd56e96a83", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 1889, "n_supported": 842, "supported_rate": 0.44573848597141347, "n_unreadable": 0, "cost": {"judge": {"calls": 1889, "cache_hits": 1889, "prompt_tokens": 2238436, "completion_
+##### 2026-11-18T05:39:39Z judge results/test/bio/cove-rag_verify__Qwen2.5-7B-Instruct__0006f33b638c/
+{"run": "results/test/bio/cove-rag_verify__Qwen2.5-7B-Instruct__0006f33b638c", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 1730, "n_supported": 971, "supported_rate": 0.5612716763005781, "n_unreadable": 0, "cost": {"judge": {"calls": 1730, "cache_hits": 1730, "prompt_tokens": 2154326, "completion_to
+##### 2026-11-18T05:39:42Z judge results/test/bio/flare__Qwen2.5-7B-Instruct__28a6eee53ce5/
+{"run": "results/test/bio/flare__Qwen2.5-7B-Instruct__28a6eee53ce5", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 2988, "n_supported": 1979, "supported_rate": 0.6623159303882196, "n_unreadable": 0, "cost": {"judge": {"calls": 2988, "cache_hits": 2988, "prompt_tokens": 3523554, "completion_tokens": 29
+##### 2026-11-18T05:39:46Z judge results/test/bio/longform__Falcon3-7B-Instruct__0b9ff4861d3b/
+{"run": "results/test/bio/longform__Falcon3-7B-Instruct__0b9ff4861d3b", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 4718, "n_supported": 3866, "supported_rate": 0.8194150063586265, "n_unreadable": 0, "cost": {"judge": {"calls": 4718, "cache_hits": 4718, "prompt_tokens": 5194224, "completion_tokens":
+##### 2026-11-18T05:39:51Z judge results/test/bio/longform__Mistral-7B-Instruct-v0.3__3f20b417147d/
+{"run": "results/test/bio/longform__Mistral-7B-Instruct-v0.3__3f20b417147d", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 3, "n_claims": 6263, "n_supported": 4877, "supported_rate": 0.7787003033689925, "n_unreadable": 0, "cost": {"judge": {"calls": 6263, "cache_hits": 6263, "prompt_tokens": 7013690, "completion_tok
+##### 2026-11-18T05:39:56Z judge results/test/bio/longform__Qwen2.5-14B-Instruct-AWQ__e08037b6190d/
+{"run": "results/test/bio/longform__Qwen2.5-14B-Instruct-AWQ__e08037b6190d", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 5349, "n_supported": 4651, "supported_rate": 0.8695083193120209, "n_unreadable": 0, "cost": {"judge": {"calls": 5349, "cache_hits": 1113, "prompt_tokens": 6090230, "completion_tok
+##### 2026-11-18T05:53:44Z judge results/test/bio/longform__Qwen2.5-3B-Instruct__80df448d8a06/
+{"run": "results/test/bio/longform__Qwen2.5-3B-Instruct__80df448d8a06", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 68, "n_supported": 45, "supported_rate": 0.6617647058823529, "n_unreadable": 0, "cost": {"judge": {"calls": 68, "cache_hits": 15, "prompt_tokens": 64360, "completion_tokens": 68}}, "gi
+##### 2026-11-18T05:53:55Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 6240, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-18T05:54:00Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__62b4d999eca8/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__62b4d999eca8", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 6240, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-18T05:54:54Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__92c48c6e3941/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__92c48c6e3941", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 6240, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-18T05:55:49Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__a50158f36360/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__a50158f36360", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 19, "n_claims": 5488, "n_supported": 4511, "supported_rate": 0.8219752186588921, "n_unreadable": 0, "cost": {"judge": {"calls": 5488, "cache_hits": 1899, "prompt_tokens": 6129510, "completion_tokens"
+##### 2026-11-18T06:08:01Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__af8c5653c812/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__af8c5653c812", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6238, "n_supported": 5180, "supported_rate": 0.8303943571657583, "n_unreadable": 0, "cost": {"judge": {"calls": 6238, "cache_hits": 6238, "prompt_tokens": 7067861, "completion_tokens":
+##### 2026-11-18T06:08:55Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__b5c2bf5746b9/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__b5c2bf5746b9", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 6240, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-18T06:09:49Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__ba94ef7ad841/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__ba94ef7ad841", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6241, "n_supported": 5185, "supported_rate": 0.8307963467393046, "n_unreadable": 0, "cost": {"judge": {"calls": 6241, "cache_hits": 6237, "prompt_tokens": 7070096, "completion_tokens":
+##### 2026-11-18T06:10:47Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__c53c0bdcd9d1/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__c53c0bdcd9d1", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6232, "n_supported": 5178, "supported_rate": 0.8308729139922978, "n_unreadable": 0, "cost": {"judge": {"calls": 6232, "cache_hits": 6232, "prompt_tokens": 7060306, "completion_tokens":
+##### 2026-11-18T06:11:41Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__c8b6adffcf79/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__c8b6adffcf79", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6248, "n_supported": 5188, "supported_rate": 0.8303457106274008, "n_unreadable": 0, "cost": {"judge": {"calls": 6248, "cache_hits": 6243, "prompt_tokens": 7075982, "completion_tokens":
+##### 2026-11-18T06:12:39Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__cd460a62b69c/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__cd460a62b69c", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 6240, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-18T06:13:34Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__d228ec686d7e/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__d228ec686d7e", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 3, "n_claims": 3930, "n_supported": 3164, "supported_rate": 0.805089058524173, "n_unreadable": 0, "cost": {"judge": {"calls": 3930, "cache_hits": 37, "prompt_tokens": 4352339, "completion_tokens": 39
+##### 2026-11-18T06:27:15Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__db1b6e9a32c0/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__db1b6e9a32c0", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6830, "n_supported": 5695, "supported_rate": 0.8338213762811127, "n_unreadable": 0, "cost": {"judge": {"calls": 6830, "cache_hits": 2201, "prompt_tokens": 7866139, "completion_tokens":
+##### 2026-11-18T06:43:32Z judge results/test/bio/rarr__Qwen2.5-7B-Instruct__23a9fb6f10bd/
+{"run": "results/test/bio/rarr__Qwen2.5-7B-Instruct__23a9fb6f10bd", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 4508, "n_supported": 1911, "supported_rate": 0.42391304347826086, "n_unreadable": 0, "cost": {"judge": {"calls": 4508, "cache_hits": 4508, "prompt_tokens": 5387709, "completion_tokens": 45
+##### JUDGE_STAGE_END
+##### 2026-11-18T06:43:38Z dense index build (resumes from finished shards)
+shard 2/22 [1000000, 2000000) 803s (1245 passages/s), total 803s, truncated so far 241
+shard 3/22 [2000000, 3000000) 801s (1248 passages/s), total 1604s, truncated so far 667
+shard 4/22 [3000000, 4000000) 837s (1194 passages/s), total 2442s, truncated so far 1169
+shard 5/22 [4000000, 5000000) 875s (1143 passages/s), total 3316s, truncated so far 1785
+shard 6/22 [5000000, 6000000) 870s (1149 passages/s), total 4187s, truncated so far 2399
+shard 7/22 [6000000, 7000000) 787s (1271 passages/s), total 4974s, truncated so far 3464
+shard 8/22 [7000000, 8000000) 835s (1198 passages/s), total 5809s, truncated so far 4115
+shard 9/22 [8000000, 9000000) 817s (1224 passages/s), total 6626s, truncated so far 4851
+shard 10/22 [9000000, 10000000) 826s (1211 passages/s), total 7452s, truncated so far 5448
+shard 11/22 [10000000, 11000000) 805s (1241 passages/s), total 8257s, truncated so far 6235
+shard 12/22 [11000000, 12000000) 826s (1211 passages/s), total 9083s, truncated so far 8145
+shard 13/22 [12000000, 13000000) 810s (1234 passages/s), total 9894s, truncated so far 9035
+shard 14/22 [13000000, 14000000) 837s (1195 passages/s), total 10730s, truncated so far 9888
+shard 15/22 [14000000, 15000000) 868s (1152 passages/s), total 11599s, truncated so far 10940
+shard 16/22 [15000000, 16000000) 855s (1170 passages/s), total 12454s, truncated so far 12072
+shard 17/22 [16000000, 17000000) 827s (1209 passages/s), total 13281s, truncated so far 12994
+shard 18/22 [17000000, 18000000) 898s (1114 passages/s), total 14179s, truncated so far 13893
+shard 19/22 [18000000, 19000000) 816s (1226 passages/s), total 14995s, truncated so far 14958
+shard 20/22 [19000000, 20000000) 869s (1150 passages/s), total 15864s, truncated so far 16230
+shard 21/22 [20000000, 21000000) 893s (1120 passages/s), total 16757s, truncated so far 17387
+shard 22/22 [21000000, 21015324) 16s (972 passages/s), total 16773s, truncated so far 17410
+DENSE_INDEX_DONE {"model": "BAAI/bge-small-en-v1.5", "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a", "n_passages": 21015324, "shard_size": 1000000, "n_shards": 22, "dim": 384, "dtype": "float16", "pooling": "cls", "normalized": true, "passage_text": "title + ' ' + text", "max_len": 256, "que
+===== 2026-11-18T11:23:51Z serve Qwen/Qwen2.5-7B-Instruct bfloat16
+VLLM_READY
+##### 2026-11-18T11:25:55Z G1 bio dense: generate + decompose
+STOP_AFTER decompose: 350 items, 4635 claims cached
+##### 2026-11-18T11:35:43Z G1 asqa dense: generate + decompose
+STOP_AFTER decompose: 748 items, 2349 claims cached
+##### 2026-11-18T11:43:34Z GPU scores G1 bio dense
+STOP_AFTER score: 23175 pairs scored (minicheck misses 20887, nli misses 20898)
+##### 2026-11-18T11:54:03Z GPU scores G1 asqa dense
+STOP_AFTER score: 11745 pairs scored (minicheck misses 11152, nli misses 11157)
+===== 2026-11-18T11:59:19Z serve Qwen/Qwen2.5-7B-Instruct bfloat16
+VLLM_READY
+##### 2026-11-18T12:01:44Z G1 bio dense: full run
+{"n": 350, "claims_per_response_mean": 13.242857142857142, "responses_with_zero_claims": 85, "answers_truncated": 5, "decompositions_truncated": 0, "actions": {"keep": 4102, "revise": 237, "reretrieve": 168, "low": 128}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 237, "revise_deleted": 230, "revise_now_supported": 3, "reretrieve_attempted": 168, "reretrieve_now_supported": 66}, "m
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__dbd130b24564/summary.json
+##### 2026-11-18T12:06:07Z G1 asqa dense: full run
+{"n": 748, "claims_per_response_mean": 3.140374331550802, "responses_with_zero_claims": 115, "answers_truncated": 1, "decompositions_truncated": 0, "actions": {"keep": 2043, "revise": 125, "reretrieve": 81, "low": 100}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 125, "revise_deleted": 122, "revise_now_supported": 1, "reretrieve_attempted": 81, "reretrieve_now_supported": 41}, "mea
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__cf7f9adc1fca/summary.json
+##### 2026-11-18T12:08:44Z judge dense runs
+VLLM_READY
+##### 2026-11-18T12:11:11Z judge results/test/asqa/cove-closed_book__Qwen2.5-7B-Instruct__cd920a30dc7b/
+{"run": "results/test/asqa/cove-closed_book__Qwen2.5-7B-Instruct__cd920a30dc7b", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1699, "n_supported": 906, "supported_rate": 0.533254855797528, "n_unreadable": 0, "cost": {"judge": {"calls": 1699, "cache_hits": 1699, "prompt_tokens": 1692282, "completion_tokens": 1699}}, "git_commit":
+##### 2026-11-18T12:11:17Z judge results/test/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__d90c9ff5fd30/
+{"run": "results/test/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__d90c9ff5fd30", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1440, "n_supported": 852, "supported_rate": 0.5916666666666667, "n_unreadable": 0, "cost": {"judge": {"calls": 1440, "cache_hits": 1440, "prompt_tokens": 1433351, "completion_tokens": 1440}}, "git_commit":
+##### 2026-11-18T12:11:23Z judge results/test/asqa/flare__Qwen2.5-7B-Instruct__2dc14b1e5f08/
+{"run": "results/test/asqa/flare__Qwen2.5-7B-Instruct__2dc14b1e5f08", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1547, "n_supported": 1067, "supported_rate": 0.6897220426632191, "n_unreadable": 0, "cost": {"judge": {"calls": 1547, "cache_hits": 1547, "prompt_tokens": 1560174, "completion_tokens": 1547}}, "git_commit": "1da0a4c
+##### 2026-11-18T12:11:28Z judge results/test/asqa/longform__Falcon3-7B-Instruct__6394ad333550/
+{"run": "results/test/asqa/longform__Falcon3-7B-Instruct__6394ad333550", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 2071, "n_supported": 1188, "supported_rate": 0.5736359246740705, "n_unreadable": 0, "cost": {"judge": {"calls": 2071, "cache_hits": 2071, "prompt_tokens": 2076554, "completion_tokens": 2071}}, "git_commit": "1da0
+##### 2026-11-18T12:11:35Z judge results/test/asqa/longform__Mistral-7B-Instruct-v0.3__42d6faf1c66b/
+{"run": "results/test/asqa/longform__Mistral-7B-Instruct-v0.3__42d6faf1c66b", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 3321, "n_supported": 1844, "supported_rate": 0.5552544414333033, "n_unreadable": 0, "cost": {"judge": {"calls": 3321, "cache_hits": 3321, "prompt_tokens": 3342424, "completion_tokens": 3321}}, "git_commit": 
+##### 2026-11-18T12:11:41Z judge results/test/asqa/longform__Qwen2.5-14B-Instruct-AWQ__6c9d825d2a21/
+{"run": "results/test/asqa/longform__Qwen2.5-14B-Instruct-AWQ__6c9d825d2a21", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1946, "n_supported": 1422, "supported_rate": 0.7307297019527236, "n_unreadable": 0, "cost": {"judge": {"calls": 1946, "cache_hits": 1946, "prompt_tokens": 1956233, "completion_tokens": 1946}}, "git_commit": 
+##### 2026-11-18T12:11:47Z judge results/test/asqa/longform__Qwen2.5-3B-Instruct__6dcd23bed256/
+{"run": "results/test/asqa/longform__Qwen2.5-3B-Instruct__6dcd23bed256", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 514, "n_supported": 361, "supported_rate": 0.7023346303501945, "n_unreadable": 0, "cost": {"judge": {"calls": 514, "cache_hits": 514, "prompt_tokens": 513976, "completion_tokens": 514}}, "git_commit": "1da0a4c+di
+##### 2026-11-18T12:11:53Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__0038e48831f4/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__0038e48831f4", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1693, "n_supported": 1185, "supported_rate": 0.6999409332545776, "n_unreadable": 0, "cost": {"judge": {"calls": 1693, "cache_hits": 1693, "prompt_tokens": 1704343, "completion_tokens": 1693}}, "git_commit": "1da0
+##### 2026-11-18T12:11:58Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__075bf2a4bce2/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__075bf2a4bce2", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "1da0a
+##### 2026-11-18T12:12:01Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__198a5eaf25ba/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__198a5eaf25ba", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 2605, "n_supported": 1247, "supported_rate": 0.4786948176583493, "n_unreadable": 0, "cost": {"judge": {"calls": 2605, "cache_hits": 2605, "prompt_tokens": 2659007, "completion_tokens": 2605}}, "git_commit": "1da0
+##### 2026-11-18T12:12:07Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__1b3f6f14a811/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__1b3f6f14a811", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1899, "n_supported": 1313, "supported_rate": 0.6914165350184307, "n_unreadable": 0, "cost": {"judge": {"calls": 1899, "cache_hits": 1899, "prompt_tokens": 1920151, "completion_tokens": 1899}}, "git_commit": "1da0
+##### 2026-11-18T12:12:11Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__5a9ca638e935/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__5a9ca638e935", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1694, "n_supported": 1186, "supported_rate": 0.7001180637544274, "n_unreadable": 0, "cost": {"judge": {"calls": 1694, "cache_hits": 1694, "prompt_tokens": 1705698, "completion_tokens": 1694}}, "git_commit": "1da0
+##### 2026-11-18T12:12:14Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__5ac458e26c22/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__5ac458e26c22", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "1da0a
+##### 2026-11-18T12:12:19Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__9701c1926850/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__9701c1926850", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "1da0a
+##### 2026-11-18T12:12:23Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__bb2109d563bc/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__bb2109d563bc", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1563, "n_supported": 1068, "supported_rate": 0.6833013435700576, "n_unreadable": 0, "cost": {"judge": {"calls": 1563, "cache_hits": 1563, "prompt_tokens": 1575248, "completion_tokens": 1563}}, "git_commit": "1da0
+##### 2026-11-18T12:12:27Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__cb37c5d379a4/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__cb37c5d379a4", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "1da0a
+##### 2026-11-18T12:12:30Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "1da0a
+##### 2026-11-18T12:12:35Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__cf7f9adc1fca/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__cf7f9adc1fca", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 2351, "n_supported": 1711, "supported_rate": 0.7277754147171417, "n_unreadable": 0, "cost": {"judge": {"calls": 2351, "cache_hits": 336, "prompt_tokens": 2373179, "completion_tokens": 2351}}, "git_commit": "1da0a
+##### 2026-11-18T12:15:36Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__f6b68f99f33c/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__f6b68f99f33c", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "1da0a
+##### 2026-11-18T12:15:40Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__fa090cc79839/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__fa090cc79839", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 1692, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "1da0a
+##### 2026-11-18T12:15:44Z judge results/test/asqa/rarr__Qwen2.5-7B-Instruct__1198a177de8a/
+{"run": "results/test/asqa/rarr__Qwen2.5-7B-Instruct__1198a177de8a", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 3087, "n_supported": 1401, "supported_rate": 0.45383867832847424, "n_unreadable": 0, "cost": {"judge": {"calls": 3087, "cache_hits": 3087, "prompt_tokens": 3103395, "completion_tokens": 3087}}, "git_commit": "1da0a4c
+##### 2026-11-18T12:15:49Z judge results/test/bio/cove-closed_book__Qwen2.5-7B-Instruct__c7fd56e96a83/
+{"run": "results/test/bio/cove-closed_book__Qwen2.5-7B-Instruct__c7fd56e96a83", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 1889, "n_supported": 842, "supported_rate": 0.44573848597141347, "n_unreadable": 0, "cost": {"judge": {"calls": 1889, "cache_hits": 1889, "prompt_tokens": 2238436, "completion_
+##### 2026-11-18T12:15:55Z judge results/test/bio/cove-rag_verify__Qwen2.5-7B-Instruct__0006f33b638c/
+{"run": "results/test/bio/cove-rag_verify__Qwen2.5-7B-Instruct__0006f33b638c", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 1730, "n_supported": 971, "supported_rate": 0.5612716763005781, "n_unreadable": 0, "cost": {"judge": {"calls": 1730, "cache_hits": 1730, "prompt_tokens": 2154326, "completion_to
+##### 2026-11-18T12:15:59Z judge results/test/bio/flare__Qwen2.5-7B-Instruct__28a6eee53ce5/
+{"run": "results/test/bio/flare__Qwen2.5-7B-Instruct__28a6eee53ce5", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 2988, "n_supported": 1979, "supported_rate": 0.6623159303882196, "n_unreadable": 0, "cost": {"judge": {"calls": 2988, "cache_hits": 2988, "prompt_tokens": 3523554, "completion_tokens": 29
+##### 2026-11-18T12:16:04Z judge results/test/bio/longform__Falcon3-7B-Instruct__0b9ff4861d3b/
+{"run": "results/test/bio/longform__Falcon3-7B-Instruct__0b9ff4861d3b", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 4718, "n_supported": 3866, "supported_rate": 0.8194150063586265, "n_unreadable": 0, "cost": {"judge": {"calls": 4718, "cache_hits": 4718, "prompt_tokens": 5194224, "completion_tokens":
+##### 2026-11-18T12:16:09Z judge results/test/bio/longform__Mistral-7B-Instruct-v0.3__3f20b417147d/
+{"run": "results/test/bio/longform__Mistral-7B-Instruct-v0.3__3f20b417147d", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 3, "n_claims": 6263, "n_supported": 4877, "supported_rate": 0.7787003033689925, "n_unreadable": 0, "cost": {"judge": {"calls": 6263, "cache_hits": 6263, "prompt_tokens": 7013690, "completion_tok
+##### 2026-11-18T12:16:15Z judge results/test/bio/longform__Qwen2.5-14B-Instruct-AWQ__e08037b6190d/
+{"run": "results/test/bio/longform__Qwen2.5-14B-Instruct-AWQ__e08037b6190d", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 5349, "n_supported": 4651, "supported_rate": 0.8695083193120209, "n_unreadable": 0, "cost": {"judge": {"calls": 5349, "cache_hits": 5349, "prompt_tokens": 6090230, "completion_tok
+##### 2026-11-18T12:16:21Z judge results/test/bio/longform__Qwen2.5-3B-Instruct__80df448d8a06/
+{"run": "results/test/bio/longform__Qwen2.5-3B-Instruct__80df448d8a06", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 68, "n_supported": 45, "supported_rate": 0.6617647058823529, "n_unreadable": 0, "cost": {"judge": {"calls": 68, "cache_hits": 68, "prompt_tokens": 64360, "completion_tokens": 68}}, "gi
+##### 2026-11-18T12:16:25Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 6240, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-18T12:16:31Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__62b4d999eca8/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__62b4d999eca8", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 6240, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-18T12:16:37Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__92c48c6e3941/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__92c48c6e3941", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 6240, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-18T12:16:42Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__a50158f36360/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__a50158f36360", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 19, "n_claims": 5488, "n_supported": 4511, "supported_rate": 0.8219752186588921, "n_unreadable": 0, "cost": {"judge": {"calls": 5488, "cache_hits": 5488, "prompt_tokens": 6129510, "completion_tokens"
+##### 2026-11-18T12:16:49Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__af8c5653c812/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__af8c5653c812", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6238, "n_supported": 5180, "supported_rate": 0.8303943571657583, "n_unreadable": 0, "cost": {"judge": {"calls": 6238, "cache_hits": 6238, "prompt_tokens": 7067861, "completion_tokens":
+##### 2026-11-18T12:16:57Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__b5c2bf5746b9/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__b5c2bf5746b9", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 6240, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-18T12:17:06Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__ba94ef7ad841/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__ba94ef7ad841", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6241, "n_supported": 5185, "supported_rate": 0.8307963467393046, "n_unreadable": 0, "cost": {"judge": {"calls": 6241, "cache_hits": 6241, "prompt_tokens": 7070096, "completion_tokens":
+##### 2026-11-18T12:17:15Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__c53c0bdcd9d1/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__c53c0bdcd9d1", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6232, "n_supported": 5178, "supported_rate": 0.8308729139922978, "n_unreadable": 0, "cost": {"judge": {"calls": 6232, "cache_hits": 6232, "prompt_tokens": 7060306, "completion_tokens":
+##### 2026-11-18T12:17:24Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__c8b6adffcf79/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__c8b6adffcf79", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6248, "n_supported": 5188, "supported_rate": 0.8303457106274008, "n_unreadable": 0, "cost": {"judge": {"calls": 6248, "cache_hits": 6248, "prompt_tokens": 7075982, "completion_tokens":
+##### 2026-11-18T12:17:32Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__cd460a62b69c/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__cd460a62b69c", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 6240, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-18T12:17:41Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__d228ec686d7e/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__d228ec686d7e", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 3, "n_claims": 3930, "n_supported": 3164, "supported_rate": 0.805089058524173, "n_unreadable": 0, "cost": {"judge": {"calls": 3930, "cache_hits": 3930, "prompt_tokens": 4352339, "completion_tokens": 
+##### 2026-11-18T12:17:50Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__db1b6e9a32c0/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__db1b6e9a32c0", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6830, "n_supported": 5695, "supported_rate": 0.8338213762811127, "n_unreadable": 0, "cost": {"judge": {"calls": 6830, "cache_hits": 6830, "prompt_tokens": 7866139, "completion_tokens":
+##### 2026-11-18T12:17:58Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__dbd130b24564/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__dbd130b24564", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 4642, "n_supported": 3736, "supported_rate": 0.8048255062473072, "n_unreadable": 0, "cost": {"judge": {"calls": 4642, "cache_hits": 1206, "prompt_tokens": 5464896, "completion_tokens":
+##### 2026-11-18T12:30:26Z judge results/test/bio/rarr__Qwen2.5-7B-Instruct__23a9fb6f10bd/
+{"run": "results/test/bio/rarr__Qwen2.5-7B-Instruct__23a9fb6f10bd", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 4508, "n_supported": 1911, "supported_rate": 0.42391304347826086, "n_unreadable": 0, "cost": {"judge": {"calls": 4508, "cache_hits": 4508, "prompt_tokens": 5387709, "completion_tokens": 45
+##### JUDGE_STAGE_END
+===== PHASE6_RUNS_END 2026-11-18T12:30:33Z

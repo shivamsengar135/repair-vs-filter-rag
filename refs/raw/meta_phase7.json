@@ -1,0 +1,884 @@
+{
+ "fetched_utc": "2026-11-18T06:54:53Z",
+ "records": [
+  {
+   "arxiv_id": "2412.15115",
+   "key": "qwen25",
+   "expect": [
+    "qwen2.5",
+    "technical report"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2412.15115v2",
+    "title": "Qwen2.5 Technical Report",
+    "authors": [
+     " Qwen",
+     " :",
+     "An Yang",
+     "Baosong Yang",
+     "Beichen Zhang",
+     "Binyuan Hui",
+     "Bo Zheng",
+     "Bowen Yu",
+     "Chengyuan Li",
+     "Dayiheng Liu",
+     "Fei Huang",
+     "Haoran Wei",
+     "Huan Lin",
+     "Jian Yang",
+     "Jianhong Tu",
+     "Jianwei Zhang",
+     "Jianxin Yang",
+     "Jiaxi Yang",
+     "Jingren Zhou",
+     "Junyang Lin",
+     "Kai Dang",
+     "Keming Lu",
+     "Keqin Bao",
+     "Kexin Yang",
+     "Le Yu",
+     "Mei Li",
+     "Mingfeng Xue",
+     "Pei Zhang",
+     "Qin Zhu",
+     "Rui Men",
+     "Runji Lin",
+     "Tianhao Li",
+     "Tianyi Tang",
+     "Tingyu Xia",
+     "Xingzhang Ren",
+     "Xuancheng Ren",
+     "Yang Fan",
+     "Yang Su",
+     "Yichang Zhang",
+     "Yu Wan",
+     "Yuqiong Liu",
+     "Zeyu Cui",
+     "Zhenru Zhang",
+     "Zihan Qiu"
+    ],
+    "published": "2024-12-19T17:56:09Z",
+    "updated": "2025-01-03T02:18:21Z",
+    "abstract": "In this report, we introduce Qwen2.5, a comprehensive series of large language models (LLMs) designed to meet diverse needs. Compared to previous iterations, Qwen 2.5 has been significantly improved during both the pre-training and post-training stages. In terms of pre-training, we have scaled the high-quality pre-training datasets from the previous 7 trillion tokens to 18 trillion tokens. This provides a strong foundation for common sense, expert knowledge, and reasoning capabilities. In terms of post-training, we implement intricate supervised finetuning with over 1 million samples, as well as multistage reinforcement learning. Post-training techniques enhance human preference, and notably improve long text generation, structural data analysis, and instruction following. To handle diverse and varied use cases effectively, we present Qwen2.5 LLM series in rich sizes. Open-weight offerings include base and instruction-tuned models, with quantized versions available. In addition, for hosted solutions, the proprietary models currently include two mixture-of-experts (MoE) variants: Qwen2.5-Turbo and Qwen2.5-Plus, both available from Alibaba Cloud Model Studio. Qwen2.5 has demonstrated top-tier performance on a wide range of benchmarks evaluating language understanding, reasoning, mathematics, coding, human preference alignment, etc. Specifically, the open-weight flagship Qwen2.5-72B-Instruct outperforms a number of open and proprietary models and demonstrates competitive performance to the state-of-the-art open-weight model, Llama-3-405B-Instruct, which is around 5 times larger. Qwen2.5-Turbo and Qwen2.5-Plus offer superior cost-effectiveness while performing competitively against GPT-4o-mini and GPT-4o respectively. Additionally, as the foundation, Qwen2.5 models have been instrumental in training specialized models such as Qwen2.5-Math, Qwen2.5-Coder, QwQ, and multimodal models.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "88aa6b1f37d1fd8e0a40499ce9bb87873f03aaa8",
+    "externalIds": {
+     "ArXiv": "2412.15115",
+     "DBLP": "journals/corr/abs-2412-15115",
+     "DOI": "10.48550/arXiv.2412.15115",
+     "CorpusId": 274859421
+    },
+    "publicationVenue": {
+     "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+     "name": "arXiv.org",
+     "alternate_names": [
+      "ArXiv"
+     ],
+     "issn": "2331-8422",
+     "url": "https://arxiv.org"
+    },
+    "title": "Qwen2.5 Technical Report",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 5996,
+    "publicationDate": "2024-12-19"
+   }
+  },
+  {
+   "arxiv_id": "2310.06825",
+   "key": "mistral7b",
+   "expect": [
+    "mistral 7b"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2310.06825v1",
+    "title": "Mistral 7B",
+    "authors": [
+     "Albert Q. Jiang",
+     "Alexandre Sablayrolles",
+     "Arthur Mensch",
+     "Chris Bamford",
+     "Devendra Singh Chaplot",
+     "Diego de las Casas",
+     "Florian Bressand",
+     "Gianna Lengyel",
+     "Guillaume Lample",
+     "Lucile Saulnier",
+     "L\u00e9lio Renard Lavaud",
+     "Marie-Anne Lachaux",
+     "Pierre Stock",
+     "Teven Le Scao",
+     "Thibaut Lavril",
+     "Thomas Wang",
+     "Timoth\u00e9e Lacroix",
+     "William El Sayed"
+    ],
+    "published": "2023-10-10T17:54:58Z",
+    "updated": "2023-10-10T17:54:58Z",
+    "abstract": "We introduce Mistral 7B v0.1, a 7-billion-parameter language model engineered for superior performance and efficiency. Mistral 7B outperforms Llama 2 13B across all evaluated benchmarks, and Llama 1 34B in reasoning, mathematics, and code generation. Our model leverages grouped-query attention (GQA) for faster inference, coupled with sliding window attention (SWA) to effectively handle sequences of arbitrary length with a reduced inference cost. We also provide a model fine-tuned to follow instructions, Mistral 7B -- Instruct, that surpasses the Llama 2 13B -- Chat model both on human and automated benchmarks. Our models are released under the Apache 2.0 license.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Models and code are available at https://mistral.ai/news/announcing-mistral-7b/",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "db633c6b1c286c0386f0078d8a2e6224e03a6227",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2310-06825",
+     "ArXiv": "2310.06825",
+     "DOI": "10.48550/arXiv.2310.06825",
+     "CorpusId": 263830494
+    },
+    "publicationVenue": {
+     "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+     "name": "arXiv.org",
+     "alternate_names": [
+      "ArXiv"
+     ],
+     "issn": "2331-8422",
+     "url": "https://arxiv.org"
+    },
+    "title": "Mistral 7B",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 4211,
+    "publicationDate": "2023-10-10"
+   }
+  },
+  {
+   "arxiv_id": "2412.08905",
+   "key": "phi4",
+   "expect": [
+    "phi-4",
+    "technical report"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2412.08905v1",
+    "title": "Phi-4 Technical Report",
+    "authors": [
+     "Marah Abdin",
+     "Jyoti Aneja",
+     "Harkirat Behl",
+     "S\u00e9bastien Bubeck",
+     "Ronen Eldan",
+     "Suriya Gunasekar",
+     "Michael Harrison",
+     "Russell J. Hewett",
+     "Mojan Javaheripi",
+     "Piero Kauffmann",
+     "James R. Lee",
+     "Yin Tat Lee",
+     "Yuanzhi Li",
+     "Weishung Liu",
+     "Caio C. T. Mendes",
+     "Anh Nguyen",
+     "Eric Price",
+     "Gustavo de Rosa",
+     "Olli Saarikivi",
+     "Adil Salim",
+     "Shital Shah",
+     "Xin Wang",
+     "Rachel Ward",
+     "Yue Wu",
+     "Dingli Yu",
+     "Cyril Zhang",
+     "Yi Zhang"
+    ],
+    "published": "2024-12-12T03:37:41Z",
+    "updated": "2024-12-12T03:37:41Z",
+    "abstract": "We present phi-4, a 14-billion parameter language model developed with a training recipe that is centrally focused on data quality. Unlike most language models, where pre-training is based primarily on organic data sources such as web content or code, phi-4 strategically incorporates synthetic data throughout the training process. While previous models in the Phi family largely distill the capabilities of a teacher model (specifically GPT-4), phi-4 substantially surpasses its teacher model on STEM-focused QA capabilities, giving evidence that our data-generation and post-training techniques go beyond distillation. Despite minimal changes to the phi-3 architecture, phi-4 achieves strong performance relative to its size -- especially on reasoning-focused benchmarks -- due to improved data, training curriculum, and innovations in the post-training scheme.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "6485be47d22b7c2b07886af397c460e81f4d29a5",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2412-08905",
+     "ArXiv": "2412.08905",
+     "CorpusId": 274656307
+    },
+    "publicationVenue": {
+     "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+     "name": "arXiv.org",
+     "alternate_names": [
+      "ArXiv"
+     ],
+     "issn": "2331-8422",
+     "url": "https://arxiv.org"
+    },
+    "title": "Phi-4 Technical Report",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 911,
+    "publicationDate": "2024-12-12"
+   }
+  },
+  {
+   "arxiv_id": "2004.04906",
+   "key": "dpr",
+   "expect": [
+    "dense passage retrieval"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2004.04906v3",
+    "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "authors": [
+     "Vladimir Karpukhin",
+     "Barlas O\u011fuz",
+     "Sewon Min",
+     "Patrick Lewis",
+     "Ledell Wu",
+     "Sergey Edunov",
+     "Danqi Chen",
+     "Wen-tau Yih"
+    ],
+    "published": "2020-04-10T04:53:17Z",
+    "updated": "2020-09-30T21:27:13Z",
+    "abstract": "Open-domain question answering relies on efficient passage retrieval to select candidate contexts, where traditional sparse vector space models, such as TF-IDF or BM25, are the de facto method. In this work, we show that retrieval can be practically implemented using dense representations alone, where embeddings are learned from a small number of questions and passages by a simple dual-encoder framework. When evaluated on a wide range of open-domain QA datasets, our dense retriever outperforms a strong Lucene-BM25 system largely by 9%-19% absolute in terms of top-20 passage retrieval accuracy, and helps our end-to-end QA system establish new state-of-the-art on multiple open-domain QA benchmarks.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "EMNLP 2020",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "b26f2037f769d5ffc5f7bdcec2de8da28ec14bee",
+    "externalIds": {
+     "MAG": "3015883388",
+     "ArXiv": "2004.04906",
+     "DBLP": "conf/emnlp/KarpukhinOMLWEC20",
+     "ACL": "2020.emnlp-main.550",
+     "DOI": "10.48550/arXiv.2004.04906",
+     "CorpusId": 215737187
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2020,
+    "citationCount": 7964,
+    "publicationDate": "2020-04-10"
+   }
+  },
+  {
+   "arxiv_id": "2407.03618",
+   "key": "bm25s",
+   "expect": [
+    "bm25s"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2407.03618v1",
+    "title": "BM25S: Orders of magnitude faster lexical search via eager sparse scoring",
+    "authors": [
+     "Xing Han L\u00f9"
+    ],
+    "published": "2024-07-04T04:01:05Z",
+    "updated": "2024-07-04T04:01:05Z",
+    "abstract": "We introduce BM25S, an efficient Python-based implementation of BM25 that only depends on Numpy and Scipy. BM25S achieves up to a 500x speedup compared to the most popular Python-based framework by eagerly computing BM25 scores during indexing and storing them into sparse matrices. It also achieves considerable speedups compared to highly optimized Java-based implementations, which are used by popular commercial products. Finally, BM25S reproduces the exact implementation of five BM25 variants based on Kamphuis et al. (2020) by extending eager scoring to non-sparse variants using a novel score shifting method. The code can be found at https://github.com/xhluca/bm25s",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Technical Report",
+    "primary_category": "cs.IR"
+   },
+   "s2": {
+    "paperId": "1f45dfdb7e2cf24c03c183ff878f7868130083f5",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2407-03618",
+     "ArXiv": "2407.03618",
+     "CorpusId": 271038831
+    },
+    "publicationVenue": {
+     "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+     "name": "arXiv.org",
+     "alternate_names": [
+      "ArXiv"
+     ],
+     "issn": "2331-8422",
+     "url": "https://arxiv.org"
+    },
+    "title": "BM25S: Orders of magnitude faster lexical search via eager sparse scoring",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 148,
+    "publicationDate": "2024-07-04"
+   }
+  },
+  {
+   "arxiv_id": "2309.07597",
+   "key": "cpack_bge",
+   "expect": [
+    "c-pack"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2309.07597v5",
+    "title": "C-Pack: Packed Resources For General Chinese Embeddings",
+    "authors": [
+     "Shitao Xiao",
+     "Zheng Liu",
+     "Peitian Zhang",
+     "Niklas Muennighoff",
+     "Defu Lian",
+     "Jian-Yun Nie"
+    ],
+    "published": "2023-09-14T10:57:50Z",
+    "updated": "2024-09-24T03:01:25Z",
+    "abstract": "We introduce C-Pack, a package of resources that significantly advance the field of general Chinese embeddings. C-Pack includes three critical resources. 1) C-MTEB is a comprehensive benchmark for Chinese text embeddings covering 6 tasks and 35 datasets. 2) C-MTP is a massive text embedding dataset curated from labeled and unlabeled Chinese corpora for training embedding models. 3) C-TEM is a family of embedding models covering multiple sizes. Our models outperform all prior Chinese text embeddings on C-MTEB by up to +10% upon the time of the release. We also integrate and optimize the entire suite of training methods for C-TEM. Along with our resources on general Chinese embedding, we release our data and models for English text embeddings. The English models achieve state-of-the-art performance on MTEB benchmark; meanwhile, our released English data is 2 times larger than the Chinese data. All these resources are made publicly available at https://github.com/FlagOpen/FlagEmbedding.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "SIGIR 2024",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "95dda1571f1a33245726fb53e9d5060ac7a0af25",
+    "externalIds": {
+     "DBLP": "conf/sigir/XiaoLZMLN24",
+     "ArXiv": "2309.07597",
+     "DOI": "10.1145/3626772.3657878",
+     "CorpusId": 271114619
+    },
+    "publicationVenue": {
+     "id": "8dce23a9-44e0-4381-a39e-2acc1edff700",
+     "name": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+     "type": "conference",
+     "alternate_names": [
+      "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "Int ACM SIGIR Conf Res Dev Inf Retr",
+      "SIGIR",
+      "Annu Int ACM SIGIR Conf Res Dev Inf Retr"
+     ],
+     "url": "http://www.acm.org/sigir/"
+    },
+    "title": "C-Pack: Packed Resources For General Chinese Embeddings",
+    "venue": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "year": 2023,
+    "citationCount": 1214,
+    "publicationDate": "2023-09-14"
+   }
+  },
+  {
+   "arxiv_id": "2309.06180",
+   "key": "vllm",
+   "expect": [
+    "pagedattention"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2309.06180v1",
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "authors": [
+     "Woosuk Kwon",
+     "Zhuohan Li",
+     "Siyuan Zhuang",
+     "Ying Sheng",
+     "Lianmin Zheng",
+     "Cody Hao Yu",
+     "Joseph E. Gonzalez",
+     "Hao Zhang",
+     "Ion Stoica"
+    ],
+    "published": "2023-09-12T12:50:04Z",
+    "updated": "2023-09-12T12:50:04Z",
+    "abstract": "High throughput serving of large language models (LLMs) requires batching sufficiently many requests at a time. However, existing systems struggle because the key-value cache (KV cache) memory for each request is huge and grows and shrinks dynamically. When managed inefficiently, this memory can be significantly wasted by fragmentation and redundant duplication, limiting the batch size. To address this problem, we propose PagedAttention, an attention algorithm inspired by the classical virtual memory and paging techniques in operating systems. On top of it, we build vLLM, an LLM serving system that achieves (1) near-zero waste in KV cache memory and (2) flexible sharing of KV cache within and across requests to further reduce memory usage. Our evaluations show that vLLM improves the throughput of popular LLMs by 2-4$\\times$ with the same level of latency compared to the state-of-the-art systems, such as FasterTransformer and Orca. The improvement is more pronounced with longer sequences, larger models, and more complex decoding algorithms. vLLM's source code is publicly available at https://github.com/vllm-project/vllm",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "SOSP 2023",
+    "primary_category": "cs.LG"
+   },
+   "s2": {
+    "paperId": "83b90f4a0ae4cc214eb3cc140ccfef9cd99fac05",
+    "externalIds": {
+     "DBLP": "conf/sosp/KwonLZ0ZY0ZS23",
+     "ArXiv": "2309.06180",
+     "DOI": "10.1145/3600006.3613165",
+     "CorpusId": 261697361
+    },
+    "publicationVenue": {
+     "id": "6c6fcaa9-fd25-488b-8050-995227ac671c",
+     "name": "Symposium on Operating Systems Principles",
+     "type": "conference",
+     "alternate_names": [
+      "Symp Oper Syst Princ",
+      "SOSP"
+     ],
+     "url": "http://sosp.org/"
+    },
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "venue": "Symposium on Operating Systems Principles",
+    "year": 2023,
+    "citationCount": 10276,
+    "publicationDate": "2023-09-12"
+   }
+  },
+  {
+   "arxiv_id": "1705.03551",
+   "key": "triviaqa",
+   "expect": [
+    "triviaqa"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "1705.03551v2",
+    "title": "TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension",
+    "authors": [
+     "Mandar Joshi",
+     "Eunsol Choi",
+     "Daniel S. Weld",
+     "Luke Zettlemoyer"
+    ],
+    "published": "2017-05-09T21:35:07Z",
+    "updated": "2017-05-13T21:12:37Z",
+    "abstract": "We present TriviaQA, a challenging reading comprehension dataset containing over 650K question-answer-evidence triples. TriviaQA includes 95K question-answer pairs authored by trivia enthusiasts and independently gathered evidence documents, six per question on average, that provide high quality distant supervision for answering the questions. We show that, in comparison to other recently introduced large-scale datasets, TriviaQA (1) has relatively complex, compositional questions, (2) has considerable syntactic and lexical variability between questions and corresponding answer-evidence sentences, and (3) requires more cross sentence reasoning to find answers. We also present two baseline algorithms: a feature-based classifier and a state-of-the-art neural network, that performs well on SQuAD reading comprehension. Neither approach comes close to human performance (23% and 40% vs. 80%), suggesting that TriviaQA is a challenging testbed that is worth significant future study. Data and code available at -- http://nlp.cs.washington.edu/triviaqa/",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Added references, fixed typos, minor baseline update",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "f010affab57b5fcf1cd6be23df79d8ec98c7289c",
+    "externalIds": {
+     "ACL": "P17-1147",
+     "ArXiv": "1705.03551",
+     "MAG": "2949136194",
+     "DBLP": "conf/acl/JoshiCWZ17",
+     "DOI": "10.18653/v1/P17-1147",
+     "CorpusId": 26501419
+    },
+    "publicationVenue": {
+     "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+     "name": "Annual Meeting of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Annu Meet Assoc Comput Linguistics",
+      "Meeting of the Association for Computational Linguistics",
+      "ACL",
+      "Meet Assoc Comput Linguistics"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/acl/"
+    },
+    "title": "TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2017,
+    "citationCount": 4719,
+    "publicationDate": "2017-05-01"
+   }
+  },
+  {
+   "arxiv_id": "1809.09600",
+   "key": "hotpotqa",
+   "expect": [
+    "hotpotqa"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "1809.09600v1",
+    "title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+    "authors": [
+     "Zhilin Yang",
+     "Peng Qi",
+     "Saizheng Zhang",
+     "Yoshua Bengio",
+     "William W. Cohen",
+     "Ruslan Salakhutdinov",
+     "Christopher D. Manning"
+    ],
+    "published": "2018-09-25T17:28:20Z",
+    "updated": "2018-09-25T17:28:20Z",
+    "abstract": "Existing question answering (QA) datasets fail to train QA systems to perform complex reasoning and provide explanations for answers. We introduce HotpotQA, a new dataset with 113k Wikipedia-based question-answer pairs with four key features: (1) the questions require finding and reasoning over multiple supporting documents to answer; (2) the questions are diverse and not constrained to any pre-existing knowledge bases or knowledge schemas; (3) we provide sentence-level supporting facts required for reasoning, allowing QA systems to reason with strong supervision and explain the predictions; (4) we offer a new type of factoid comparison questions to test QA systems' ability to extract relevant facts and perform necessary comparison. We show that HotpotQA is challenging for the latest QA systems, and the supporting facts enable models to improve performance and make explainable predictions.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "EMNLP 2018 long paper. The first three authors contribute equally. Data, code, and blog posts available at https://hotpotqa.github.io/",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "22655979df781d222eaf812b0d325fa9adf11594",
+    "externalIds": {
+     "ACL": "D18-1259",
+     "MAG": "2952862139",
+     "DBLP": "conf/emnlp/Yang0ZBCSM18",
+     "ArXiv": "1809.09600",
+     "DOI": "10.18653/v1/D18-1259",
+     "CorpusId": 52822214
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2018,
+    "citationCount": 6143,
+    "publicationDate": "2018-09-25"
+   }
+  },
+  {
+   "arxiv_id": "2011.01060",
+   "key": "twowiki",
+   "expect": [
+    "multi-hop qa",
+    "comprehensive evaluation of reasoning steps"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2011.01060v2",
+    "title": "Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps",
+    "authors": [
+     "Xanh Ho",
+     "Anh-Khoa Duong Nguyen",
+     "Saku Sugawara",
+     "Akiko Aizawa"
+    ],
+    "published": "2020-11-02T15:42:40Z",
+    "updated": "2020-11-12T07:47:48Z",
+    "abstract": "A multi-hop question answering (QA) dataset aims to test reasoning and inference skills by requiring a model to read multiple paragraphs to answer a given question. However, current datasets do not provide a complete explanation for the reasoning process from the question to the answer. Further, previous studies revealed that many examples in existing multi-hop datasets do not require multi-hop reasoning to answer a question. In this study, we present a new multi-hop QA dataset, called 2WikiMultiHopQA, which uses structured and unstructured data. In our dataset, we introduce the evidence information containing a reasoning path for multi-hop questions. The evidence information has two benefits: (i) providing a comprehensive explanation for predictions and (ii) evaluating the reasoning skills of a model. We carefully design a pipeline and a set of templates when generating a question-answer pair that guarantees the multi-hop steps and the quality of the questions. We also exploit the structured format in Wikidata and use logical rules to create questions that are natural but still require multi-hop reasoning. Through experiments, we demonstrate that our dataset is challenging for multi-hop models and it ensures that multi-hop reasoning is required.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Accepted by COLING 2020",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "9001eb3c3d5a96ad3d804410c2437e6f60feade9",
+    "externalIds": {
+     "ArXiv": "2011.01060",
+     "MAG": "3115947671",
+     "DBLP": "conf/coling/HoNSA20",
+     "ACL": "2020.coling-main.580",
+     "DOI": "10.48550/arXiv.2011.01060",
+     "CorpusId": 226236740
+    },
+    "publicationVenue": {
+     "id": "f51ff783-cdff-4e22-94fb-28e6336d17b3",
+     "name": "International Conference on Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Int Conf Comput Linguistics",
+      "COLING"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/coling/"
+    },
+    "title": "Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps",
+    "venue": "International Conference on Computational Linguistics",
+    "year": 2020,
+    "citationCount": 1962,
+    "publicationDate": "2020-11-02"
+   }
+  },
+  {
+   "arxiv_id": "2204.06092",
+   "key": "asqa",
+   "expect": [
+    "asqa"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2204.06092v2",
+    "title": "ASQA: Factoid Questions Meet Long-Form Answers",
+    "authors": [
+     "Ivan Stelmakh",
+     "Yi Luan",
+     "Bhuwan Dhingra",
+     "Ming-Wei Chang"
+    ],
+    "published": "2022-04-12T21:58:44Z",
+    "updated": "2023-01-22T14:25:40Z",
+    "abstract": "An abundance of datasets and availability of reliable evaluation metrics have resulted in strong progress in factoid question answering (QA). This progress, however, does not easily transfer to the task of long-form QA, where the goal is to answer questions that require in-depth explanations. The hurdles include (i) a lack of high-quality data, and (ii) the absence of a well-defined notion of the answer's quality. In this work, we address these problems by (i) releasing a novel dataset and a task that we call ASQA (Answer Summaries for Questions which are Ambiguous); and (ii) proposing a reliable metric for measuring performance on ASQA. Our task focuses on factoid questions that are ambiguous, that is, have different correct answers depending on interpretation. Answers to ambiguous questions should synthesize factual information from multiple sources into a long-form summary that resolves the ambiguity. In contrast to existing long-form QA tasks (such as ELI5), ASQA admits a clear notion of correctness: a user faced with a good summary should be able to answer different interpretations of the original ambiguous question. We use this notion of correctness to define an automated metric of performance for ASQA. Our analysis demonstrates an agreement between this metric and human judgments, and reveals a considerable gap between human performance and strong baselines.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "A minor bug in computing the ROUGE score was fixed. The fix **did not** result in any changes in observations and conclusions",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "fcd7bdf37cec0845f6960aa1ab87685b73fcfd2f",
+    "externalIds": {
+     "ACL": "2022.emnlp-main.566",
+     "DBLP": "conf/emnlp/StelmakhLDC22",
+     "ArXiv": "2204.06092",
+     "DOI": "10.48550/arXiv.2204.06092",
+     "CorpusId": 248157463
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "ASQA: Factoid Questions Meet Long-Form Answers",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2022,
+    "citationCount": 340,
+    "publicationDate": "2022-04-12"
+   }
+  },
+  {
+   "arxiv_id": "2107.07511",
+   "key": "conformal_intro",
+   "expect": [
+    "conformal prediction"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2107.07511v6",
+    "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+    "authors": [
+     "Anastasios N. Angelopoulos",
+     "Stephen Bates"
+    ],
+    "published": "2021-07-15T17:59:50Z",
+    "updated": "2022-12-07T05:08:01Z",
+    "abstract": "Black-box machine learning models are now routinely used in high-risk settings, like medical diagnostics, which demand uncertainty quantification to avoid consequential model failures. Conformal prediction is a user-friendly paradigm for creating statistically rigorous uncertainty sets/intervals for the predictions of such models. Critically, the sets are valid in a distribution-free sense: they possess explicit, non-asymptotic guarantees even without distributional assumptions or model assumptions. One can use conformal prediction with any pre-trained model, such as a neural network, to produce sets that are guaranteed to contain the ground truth with a user-specified probability, such as 90%. It is easy-to-understand, easy-to-use, and general, applying naturally to problems arising in the fields of computer vision, natural language processing, deep reinforcement learning, and so on. This hands-on introduction is aimed to provide the reader a working understanding of conformal prediction and related distribution-free uncertainty quantification techniques with one self-contained document. We lead the reader through practical theory for and examples of conformal prediction and describe its extensions to complex machine learning tasks involving structured outputs, distribution shift, time-series, outliers, models that abstain, and more. Throughout, there are many explanatory illustrations, examples, and code samples in Python. With each code sample comes a Jupyter notebook implementing the method on a real-data example; the notebooks can be accessed and easily run using our codebase.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Blog and tutorial video at http://angelopoulos.ai/blog/posts/gentle-intro/ ; Code is available at https://github.com/aangelopoulos/conformal-prediction",
+    "primary_category": "cs.LG"
+   },
+   "s2": {
+    "paperId": "c3ea8eb80bc8ca0b21efa273b9e4a9fd059c65be",
+    "externalIds": {
+     "ArXiv": "2107.07511",
+     "DBLP": "journals/corr/abs-2107-07511",
+     "DOI": "10.48550/arXiv.2107.07511",
+     "CorpusId": 235899036
+    },
+    "publicationVenue": {
+     "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+     "name": "arXiv.org",
+     "alternate_names": [
+      "ArXiv"
+     ],
+     "issn": "2331-8422",
+     "url": "https://arxiv.org"
+    },
+    "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+    "venue": "arXiv.org",
+    "year": 2021,
+    "citationCount": 1482,
+    "publicationDate": "2021-07-15"
+   }
+  },
+  {
+   "arxiv_id": "2111.09543",
+   "key": "debertav3",
+   "expect": [
+    "debertav3"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2111.09543v4",
+    "title": "DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing",
+    "authors": [
+     "Pengcheng He",
+     "Jianfeng Gao",
+     "Weizhu Chen"
+    ],
+    "published": "2021-11-18T06:48:00Z",
+    "updated": "2023-03-24T09:17:17Z",
+    "abstract": "This paper presents a new pre-trained language model, DeBERTaV3, which improves the original DeBERTa model by replacing mask language modeling (MLM) with replaced token detection (RTD), a more sample-efficient pre-training task. Our analysis shows that vanilla embedding sharing in ELECTRA hurts training efficiency and model performance. This is because the training losses of the discriminator and the generator pull token embeddings in different directions, creating the \"tug-of-war\" dynamics. We thus propose a new gradient-disentangled embedding sharing method that avoids the tug-of-war dynamics, improving both training efficiency and the quality of the pre-trained model. We have pre-trained DeBERTaV3 using the same settings as DeBERTa to demonstrate its exceptional performance on a wide range of downstream natural language understanding (NLU) tasks. Taking the GLUE benchmark with eight tasks as an example, the DeBERTaV3 Large model achieves a 91.37% average score, which is 1.37% over DeBERTa and 1.91% over ELECTRA, setting a new state-of-the-art (SOTA) among the models with a similar structure. Furthermore, we have pre-trained a multi-lingual model mDeBERTa and observed a larger improvement over strong baselines compared to English models. For example, the mDeBERTa Base achieves a 79.8% zero-shot cross-lingual accuracy on XNLI and a 3.6% improvement over XLM-R Base, creating a new SOTA on this benchmark. We have made our pre-trained models and inference code publicly available at https://github.com/microsoft/DeBERTa.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "16 pages, 10 tables, 2 Figures. The DeBERTaV3 model significantly improves performance of the downstream NLU tasks over models with a similar structure, e.g. DeBERTaV3 large achieves 91.37% average GLUE score which is 1.37% over DeBERTa large. XSmall has only 22M backbone parameters, but significantly outperforms RoBERTa/XLNet-base. Paper is published as a conference paper at ICLR 2023",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "972706306f85b1bfb40c7d35c796ad5174eb0c9c",
+    "externalIds": {
+     "ArXiv": "2111.09543",
+     "DBLP": "journals/corr/abs-2111-09543",
+     "DOI": "10.48550/arXiv.2111.09543",
+     "CorpusId": 244346093
+    },
+    "publicationVenue": {
+     "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+     "name": "International Conference on Learning Representations",
+     "type": "conference",
+     "alternate_names": [
+      "Int Conf Learn Represent",
+      "ICLR"
+     ],
+     "url": "https://iclr.cc/"
+    },
+    "title": "DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing",
+    "venue": "International Conference on Learning Representations",
+    "year": 2021,
+    "citationCount": 2430,
+    "publicationDate": "2021-11-18"
+   }
+  },
+  {
+   "arxiv_id": "2210.11416",
+   "key": "flan",
+   "expect": [
+    "scaling instruction-finetuned language models"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2210.11416v5",
+    "title": "Scaling Instruction-Finetuned Language Models",
+    "authors": [
+     "Hyung Won Chung",
+     "Le Hou",
+     "Shayne Longpre",
+     "Barret Zoph",
+     "Yi Tay",
+     "William Fedus",
+     "Yunxuan Li",
+     "Xuezhi Wang",
+     "Mostafa Dehghani",
+     "Siddhartha Brahma",
+     "Albert Webson",
+     "Shixiang Shane Gu",
+     "Zhuyun Dai",
+     "Mirac Suzgun",
+     "Xinyun Chen",
+     "Aakanksha Chowdhery",
+     "Alex Castro-Ros",
+     "Marie Pellat",
+     "Kevin Robinson",
+     "Dasha Valter",
+     "Sharan Narang",
+     "Gaurav Mishra",
+     "Adams Yu",
+     "Vincent Zhao",
+     "Yanping Huang",
+     "Andrew Dai",
+     "Hongkun Yu",
+     "Slav Petrov",
+     "Ed H. Chi",
+     "Jeff Dean",
+     "Jacob Devlin",
+     "Adam Roberts",
+     "Denny Zhou",
+     "Quoc V. Le",
+     "Jason Wei"
+    ],
+    "published": "2022-10-20T16:58:32Z",
+    "updated": "2022-12-06T21:39:48Z",
+    "abstract": "Finetuning language models on a collection of datasets phrased as instructions has been shown to improve model performance and generalization to unseen tasks. In this paper we explore instruction finetuning with a particular focus on (1) scaling the number of tasks, (2) scaling the model size, and (3) finetuning on chain-of-thought data. We find that instruction finetuning with the above aspects dramatically improves performance on a variety of model classes (PaLM, T5, U-PaLM), prompting setups (zero-shot, few-shot, CoT), and evaluation benchmarks (MMLU, BBH, TyDiQA, MGSM, open-ended generation). For instance, Flan-PaLM 540B instruction-finetuned on 1.8K tasks outperforms PALM 540B by a large margin (+9.4% on average). Flan-PaLM 540B achieves state-of-the-art performance on several benchmarks, such as 75.2% on five-shot MMLU. We also publicly release Flan-T5 checkpoints, which achieve strong few-shot performance even compared to much larger models, such as PaLM 62B. Overall, instruction finetuning is a general method for improving the performance and usability of pretrained language models.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Public checkpoints: https://huggingface.co/docs/transformers/model_doc/flan-t5",
+    "primary_category": "cs.LG"
+   },
+   "s2": {
+    "paperId": "cdbd4f9b6ab2e2fd1ddf5400d5ed2c18960635d1",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2210-11416",
+     "ArXiv": "2210.11416",
+     "DOI": "10.48550/arXiv.2210.11416",
+     "CorpusId": 253018554
+    },
+    "publicationVenue": {
+     "id": "c22e7c36-3bfa-43e1-bb7b-edccdea2a780",
+     "name": "Journal of machine learning research",
+     "type": "journal",
+     "alternate_names": [
+      "Journal of Machine Learning Research",
+      "J mach learn res",
+      "J Mach Learn Res"
+     ],
+     "issn": "1532-4435",
+     "alternate_issns": [
+      "1533-7928"
+     ],
+     "url": "http://www.ai.mit.edu/projects/jmlr/",
+     "alternate_urls": [
+      "http://jmlr.csail.mit.edu/",
+      "http://www.jmlr.org/",
+      "http://portal.acm.org/affiliated/jmlr"
+     ]
+    },
+    "title": "Scaling Instruction-Finetuned Language Models",
+    "venue": "Journal of machine learning research",
+    "year": 2022,
+    "citationCount": 4600,
+    "publicationDate": "2022-10-20"
+   }
+  },
+  {
+   "arxiv_id": "2305.16739",
+   "key": "alignscore",
+   "expect": [
+    "alignscore"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2305.16739v1",
+    "title": "AlignScore: Evaluating Factual Consistency with a Unified Alignment Function",
+    "authors": [
+     "Yuheng Zha",
+     "Yichi Yang",
+     "Ruichen Li",
+     "Zhiting Hu"
+    ],
+    "published": "2023-05-26T08:41:59Z",
+    "updated": "2023-05-26T08:41:59Z",
+    "abstract": "Many text generation applications require the generated text to be factually consistent with input information. Automatic evaluation of factual consistency is challenging. Previous work has developed various metrics that often depend on specific functions, such as natural language inference (NLI) or question answering (QA), trained on limited data. Those metrics thus can hardly assess diverse factual inconsistencies (e.g., contradictions, hallucinations) that occur in varying inputs/outputs (e.g., sentences, documents) from different tasks. In this paper, we propose AlignScore, a new holistic metric that applies to a variety of factual inconsistency scenarios as above. AlignScore is based on a general function of information alignment between two arbitrary text pieces. Crucially, we develop a unified training framework of the alignment function by integrating a large diversity of data sources, resulting in 4.7M training examples from 7 well-established tasks (NLI, QA, paraphrasing, fact verification, information retrieval, semantic similarity, and summarization). We conduct extensive experiments on large-scale benchmarks including 22 evaluation datasets, where 19 of the datasets were never seen in the alignment training. AlignScore achieves substantial improvement over a wide range of previous metrics. Moreover, AlignScore (355M parameters) matches or even outperforms metrics based on ChatGPT and GPT-4 that are orders of magnitude larger.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "19 pages, 5 figures, ACL2023",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "27cb586fcea5ec076b984750e9c77f0d7fc976e5",
+    "externalIds": {
+     "ArXiv": "2305.16739",
+     "ACL": "2023.acl-long.634",
+     "DBLP": "journals/corr/abs-2305-16739",
+     "DOI": "10.48550/arXiv.2305.16739",
+     "CorpusId": 258947273
+    },
+    "publicationVenue": {
+     "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+     "name": "Annual Meeting of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Annu Meet Assoc Comput Linguistics",
+      "Meeting of the Association for Computational Linguistics",
+      "ACL",
+      "Meet Assoc Comput Linguistics"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/acl/"
+    },
+    "title": "AlignScore: Evaluating Factual Consistency with A Unified Alignment Function",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2023,
+    "citationCount": 469,
+    "publicationDate": "2023-05-26"
+   }
+  }
+ ]
+}

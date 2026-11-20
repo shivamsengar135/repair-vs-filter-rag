@@ -1,0 +1,206 @@
+{
+ "run": "results/test/triviaqa/shortform__Mistral-7B-Instruct-v0.3__6d17dab1b4f1",
+ "n": 1000,
+ "git_commit": "4b94969+dirty",
+ "standard_rag": {
+  "accuracy": 0.711,
+  "coverage": 1.0
+ },
+ "methods": {
+  "CF (score s)": {
+   "accuracy_no_abstention": 0.711,
+   "aurc": 0.17429569758552008,
+   "selective_acc_cov50": 0.868,
+   "selective_acc_cov80": 0.76125,
+   "ece": 0.23280037722550334,
+   "targets": {
+    "0.8": {
+     "coverage": {
+      "mean": 0.81042,
+      "std": 0.026891919855885193
+     },
+     "accuracy_answered": {
+      "mean": 0.7605402474331041,
+      "std": 0.022462112333297438
+     },
+     "abstain_or_correct": {
+      "mean": 0.8054399999999999,
+      "std": 0.02369516849699552
+     }
+    },
+    "0.85": {
+     "coverage": {
+      "mean": 0.7090400000000002,
+      "std": 0.03916139100510279
+     },
+     "accuracy_answered": {
+      "mean": 0.7970958888834694,
+      "std": 0.021585807889516764
+     },
+     "abstain_or_correct": {
+      "mean": 0.8554200000000002,
+      "std": 0.022459471916941393
+     }
+    },
+    "0.9": {
+     "coverage": {
+      "mean": 0.5937199999999999,
+      "std": 0.027622301047369593
+     },
+     "accuracy_answered": {
+      "mean": 0.8378202047358404,
+      "std": 0.02574317869704649
+     },
+     "abstain_or_correct": {
+      "mean": 0.9031800000000001,
+      "std": 0.018673364599197047
+     }
+    },
+    "0.95": {
+     "coverage": {
+      "mean": 0.42384000000000005,
+      "std": 0.04421588909526584
+     },
+     "accuracy_answered": {
+      "mean": 0.8877383014418702,
+      "std": 0.021764294802673893
+     },
+     "abstain_or_correct": {
+      "mean": 0.9515999999999998,
+      "std": 0.013624102231565982
+     }
+    }
+   }
+  },
+  "C (two-signal)": {
+   "accuracy_no_abstention": 0.711,
+   "aurc": 0.15736616056728508,
+   "selective_acc_cov50": 0.832,
+   "selective_acc_cov80": 0.78125,
+   "ece": 0.22601194893955368,
+   "targets": {
+    "0.8": {
+     "coverage": {
+      "mean": 0.8466599999999999,
+      "std": 0.030290252457505107
+     },
+     "accuracy_answered": {
+      "mean": 0.7694943427245239,
+      "std": 0.020354430182501104
+     },
+     "abstain_or_correct": {
+      "mean": 0.80432,
+      "std": 0.023349293243040442
+     }
+    },
+    "0.85": {
+     "coverage": {
+      "mean": 0.6992,
+      "std": 0.05034507188023732
+     },
+     "accuracy_answered": {
+      "mean": 0.7932925773036282,
+      "std": 0.016554325157098402
+     },
+     "abstain_or_correct": {
+      "mean": 0.8548,
+      "std": 0.020927966885959045
+     }
+    },
+    "0.9": {
+     "coverage": {
+      "mean": 0.53624,
+      "std": 0.03817797768083034
+     },
+     "accuracy_answered": {
+      "mean": 0.8238532288284598,
+      "std": 0.024828601750110056
+     },
+     "abstain_or_correct": {
+      "mean": 0.90476,
+      "std": 0.019679820973153034
+     }
+    },
+    "0.95": {
+     "coverage": {
+      "mean": 0.39821999999999996,
+      "std": 0.03794828485231346
+     },
+     "accuracy_answered": {
+      "mean": 0.8814269105949201,
+      "std": 0.026321570189653136
+     },
+     "abstain_or_correct": {
+      "mean": 0.9519199999999998,
+      "std": 0.014795358267464353
+     }
+    }
+   }
+  },
+  "A (repair)": {
+   "accuracy_no_abstention": 0.689,
+   "aurc": 0.1819621651509551,
+   "selective_acc_cov50": 0.86,
+   "selective_acc_cov80": 0.75,
+   "ece": 0.20080714295106006,
+   "targets": {
+    "0.8": {
+     "coverage": {
+      "mean": 0.79696,
+      "std": 0.026561124474188447
+     },
+     "accuracy_answered": {
+      "mean": 0.7522244505993234,
+      "std": 0.0255086844005133
+     },
+     "abstain_or_correct": {
+      "mean": 0.80198,
+      "std": 0.026052774721842385
+     }
+    },
+    "0.85": {
+     "coverage": {
+      "mean": 0.701,
+      "std": 0.028115921654910222
+     },
+     "accuracy_answered": {
+      "mean": 0.7910443049200374,
+      "std": 0.024780908839240404
+     },
+     "abstain_or_correct": {
+      "mean": 0.8529800000000001,
+      "std": 0.022208370430351655
+     }
+    },
+    "0.9": {
+     "coverage": {
+      "mean": 0.59978,
+      "std": 0.031167057200599712
+     },
+     "accuracy_answered": {
+      "mean": 0.836274383139055,
+      "std": 0.024154245029930663
+     },
+     "abstain_or_correct": {
+      "mean": 0.9012199999999999,
+      "std": 0.018761436915959176
+     }
+    },
+    "0.95": {
+     "coverage": {
+      "mean": 0.38762,
+      "std": 0.05325273834662534
+     },
+     "accuracy_answered": {
+      "mean": 0.8768252983163997,
+      "std": 0.01975118123287056
+     },
+     "abstain_or_correct": {
+      "mean": 0.95136,
+      "std": 0.013747741779667075
+     }
+    }
+   }
+  }
+ }
+}

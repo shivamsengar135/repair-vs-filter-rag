@@ -1,0 +1,41 @@
+{
+ "config": {
+  "dataset": "2wiki",
+  "split": "test",
+  "method": "closed_book",
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "prompts": "v1",
+  "max_tokens": 64,
+  "temperature": 0.0,
+  "seed": 0
+ },
+ "config_hash": "0959c66f5c23",
+ "git_commit": "4b94969+dirty",
+ "n": 1000,
+ "match_accuracy": 0.282,
+ "em": 0.011,
+ "f1": 0.1737306472415179,
+ "abstention_rate": 0.039,
+ "truncated_rate": 0.0,
+ "retrieval_recall_at_k": null,
+ "cost": {
+  "llm": {
+   "answer": {
+    "calls": 1000,
+    "cache_hits": 1000,
+    "prompt_tokens": 45942,
+    "completion_tokens": 15140
+   }
+  },
+  "prompt_tokens_per_q": 45.942,
+  "completion_tokens_per_q": 15.14,
+  "retrieval_calls_per_q": 0.0,
+  "wall_seconds": {
+   "retrieval": 0.0,
+   "generation": 0.04,
+   "total": 1.93
+  },
+  "note": "wall-clock includes cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-17T13:18:20Z"
+}

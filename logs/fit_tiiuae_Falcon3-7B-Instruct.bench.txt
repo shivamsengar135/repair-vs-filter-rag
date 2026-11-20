@@ -1,0 +1,3 @@
+concurrency=  1 n=  8 wall=44.5s throughput=23.0 out tok/s per-request=23.0 tok/s lat_mean=5.57s
+concurrency= 32 n= 64 wall=12.4s throughput=660.9 out tok/s per-request=20.8 tok/s lat_mean=6.16s
+wrote results/phase4/fit/tiiuae_Falcon3-7B-Instruct_bench.json

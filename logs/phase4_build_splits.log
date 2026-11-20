@@ -1,0 +1,12 @@
+popqa     dev  n= 500 from test (14267 rows) sha256=b8c61d3267f193c6  e.g. 'Who is the author of The Hit?' -> ['David Baldacci']
+popqa     test n=1000 from test (14267 rows) sha256=c460bd269b613522  e.g. 'Who was the producer of Spy?' -> ['Paul Feig', 'Paul Samuel Feig']
+nq        dev  n= 500 from train (87925 rows) sha256=5a50e02576802009  e.g. "who wrote please daddy don't get drunk this christmas" -> ['Bill Danoff', 'Taffy Danoff']
+nq        test n=1000 from validation (3610 rows) sha256=841e9d191dc6fd50  e.g. 'which state is located in the centre of india' -> ['Chhattisgarh', 'Madhya Pradesh']
+triviaqa  dev  n= 500 from train (138384 rows) sha256=edd5df00e005d6a3  e.g. 'An adaptation of which classic 1905 story by E Nesbit receiv' -> ['The Railway Children', 'Railway Children']
+triviaqa  test n=1000 from validation (17944 rows) sha256=332949bf443218f7  e.g. 'The new £340m Aviva Stadium in Ireland opened in 2010 on the' -> ['Landsdowne Road', 'Landsdowne road']
+hotpotqa  dev  n= 500 from train (90447 rows) sha256=7500504edbd36a53  e.g. 'Who appeared in the 1979 Italian-American science fiction ho' -> ['Neal A Boortz, Jr.']
+hotpotqa  test n=1000 from validation (7405 rows) sha256=0089f77a78433369  e.g. 'Which battle, the Battle of Cold Harbor, or the Second Battl' -> ['Second Battle of Bull Run']
+  2wiki columns: ['_id', 'type', 'question', 'context', 'supporting_facts', 'evidences', 'answer']
+2wiki     dev  n= 500 from train (167454 rows) sha256=026052cb8eed2b60  e.g. 'Which country the director of film Mungarina Minchu is from?' -> ['India']
+2wiki     test n=1000 from dev (12576 rows) sha256=5a0582f520eb3883  e.g. "Did the movies Cock Of The Roost and Nobody'S Perfect, origi" -> ['yes']
+wrote data/splits/MANIFEST.json

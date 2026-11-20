@@ -1,0 +1,41 @@
+{
+ "config": {
+  "dataset": "hotpotqa",
+  "split": "test",
+  "method": "closed_book",
+  "model": "tiiuae/Falcon3-7B-Instruct",
+  "prompts": "v1",
+  "max_tokens": 64,
+  "temperature": 0.0,
+  "seed": 0
+ },
+ "config_hash": "0986bb062b38",
+ "git_commit": "4b94969+dirty",
+ "n": 1000,
+ "match_accuracy": 0.193,
+ "em": 0.181,
+ "f1": 0.2572497016725964,
+ "abstention_rate": 0.001,
+ "truncated_rate": 0.0,
+ "retrieval_recall_at_k": null,
+ "cost": {
+  "llm": {
+   "answer": {
+    "calls": 1000,
+    "cache_hits": 1000,
+    "prompt_tokens": 54725,
+    "completion_tokens": 4282
+   }
+  },
+  "prompt_tokens_per_q": 54.725,
+  "completion_tokens_per_q": 4.282,
+  "retrieval_calls_per_q": 0.0,
+  "wall_seconds": {
+   "retrieval": 0.0,
+   "generation": 0.04,
+   "total": 1.96
+  },
+  "note": "wall-clock includes cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-17T13:20:32Z"
+}

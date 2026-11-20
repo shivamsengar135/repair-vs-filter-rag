@@ -1,0 +1,44 @@
+{
+ "config": {
+  "dataset": "2wiki",
+  "split": "test",
+  "method": "rag",
+  "model": "Qwen/Qwen2.5-14B-Instruct-AWQ",
+  "prompts": "v1",
+  "max_tokens": 64,
+  "temperature": 0.0,
+  "seed": 0,
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100"
+ },
+ "config_hash": "bbeee17438e8",
+ "git_commit": "8123ab7+dirty",
+ "n": 1000,
+ "match_accuracy": 0.32,
+ "em": 0.288,
+ "f1": 0.3508878953399542,
+ "abstention_rate": 0.009,
+ "truncated_rate": 0.006,
+ "retrieval_recall_at_k": 0.335,
+ "cost": {
+  "llm": {
+   "answer": {
+    "calls": 1000,
+    "cache_hits": 0,
+    "prompt_tokens": 901581,
+    "completion_tokens": 6446
+   }
+  },
+  "prompt_tokens_per_q": 901.581,
+  "completion_tokens_per_q": 6.446,
+  "retrieval_calls_per_q": 1.0,
+  "wall_seconds": {
+   "retrieval": 0.88,
+   "generation": 369.86,
+   "total": 387.13
+  },
+  "note": "wall-clock includes cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-18T02:29:36Z"
+}

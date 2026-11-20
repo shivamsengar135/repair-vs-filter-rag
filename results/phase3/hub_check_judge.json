@@ -1,0 +1,288 @@
+{
+ "checked_utc": "2026-11-13T07:43:47Z",
+ "models": [
+  {
+   "id": "microsoft/phi-4",
+   "gated": false,
+   "license": "mit",
+   "license_name": null,
+   "params_B": 14.66,
+   "weights_GB": 29.3,
+   "lastModified": "2026-07-14",
+   "downloads": 245258,
+   "sha": "2db69c1c3e91",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "Qwen/Qwen3-14B",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 14.77,
+   "weights_GB": 29.5,
+   "lastModified": "2025-07-26",
+   "downloads": 12965376,
+   "sha": "40c069824f42",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "Qwen/Qwen3-14B-AWQ",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 14.77,
+   "weights_GB": 10.0,
+   "lastModified": "2025-05-21",
+   "downloads": 1797732,
+   "sha": "31c69efc2946",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "mistralai/Mistral-Nemo-Instruct-2407",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 12.25,
+   "weights_GB": 49.0,
+   "lastModified": "2025-07-28",
+   "downloads": 94901,
+   "sha": "04d8a90549d2",
+   "pipeline": null,
+   "library": "vllm"
+  },
+  {
+   "id": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+   "gated": "manual",
+   "license": "gemma",
+   "license_name": null,
+   "params_B": 12.19,
+   "weights_GB": 24.4,
+   "lastModified": "2025-04-15",
+   "downloads": 7825,
+   "sha": "68f7ee4fbd59",
+   "pipeline": "image-text-to-text",
+   "library": "transformers"
+  },
+  {
+   "id": "ibm-granite/granite-4.2-30b",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 29.28,
+   "weights_GB": 58.6,
+   "lastModified": "2026-09-04",
+   "downloads": 36287,
+   "sha": "9e668ce1c538",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "meta-llama/Llama-3.3-70B-Instruct",
+   "gated": "manual",
+   "license": "llama3.3",
+   "license_name": null,
+   "params_B": 70.55,
+   "weights_GB": 141.1,
+   "lastModified": "2024-12-21",
+   "downloads": 349398,
+   "sha": "6f6073b42301",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  }
+ ],
+ "datasets": [],
+ "model_searches": {
+  "phi-4 AWQ": [
+   {
+    "id": "stelterlab/phi-4-AWQ",
+    "downloads": 1698,
+    "gated": null,
+    "created": "2025-01-11"
+   },
+   {
+    "id": "Sreenington/Phi-3-mini-4k-instruct-AWQ",
+    "downloads": 278,
+    "gated": null,
+    "created": "2024-05-05"
+   },
+   {
+    "id": "drawais/Phi-4-mini-instruct-AWQ-INT4",
+    "downloads": 189,
+    "gated": null,
+    "created": "2026-05-03"
+   },
+   {
+    "id": "pytorch/Phi-4-mini-instruct-AWQ-INT4",
+    "downloads": 164,
+    "gated": null,
+    "created": "2025-08-28"
+   },
+   {
+    "id": "curiousmind147/microsoft-phi-4-AWQ-4bit-GEMM",
+    "downloads": 76,
+    "gated": null,
+    "created": "2025-02-04"
+   },
+   {
+    "id": "danieldk/Phi-3.5-MoE-instruct-AWQ-INT4",
+    "downloads": 63,
+    "gated": null,
+    "created": "2024-11-18"
+   }
+  ],
+  "phi-4 FP8": [
+   {
+    "id": "RedHatAI/phi-4-FP8-dynamic",
+    "downloads": 16730,
+    "gated": null,
+    "created": "2025-03-03"
+   },
+   {
+    "id": "RedHatAI/Phi-4-mini-instruct-FP8-dynamic",
+    "downloads": 1933,
+    "gated": null,
+    "created": "2025-03-03"
+   },
+   {
+    "id": "pytorch/Phi-4-mini-instruct-FP8",
+    "downloads": 187,
+    "gated": null,
+    "created": "2025-04-08"
+   },
+   {
+    "id": "RedHatAI/Phi-4-reasoning-FP8-dynamic",
+    "downloads": 66,
+    "gated": null,
+    "created": "2026-01-27"
+   },
+   {
+    "id": "liodon-ai/Phi-3-mini-4k-instruct-FP8",
+    "downloads": 16,
+    "gated": null,
+    "created": "2026-08-30"
+   },
+   {
+    "id": "SicariusSicariiStuff/Phi-lthy4_FP8",
+    "downloads": 13,
+    "gated": null,
+    "created": "2025-02-12"
+   }
+  ],
+  "phi-4 NVFP4": [
+   {
+    "id": "Shoolife/Phi-4-mini-instruct-TensorRT-LLM-Checkpoint-NVFP4",
+    "downloads": 14,
+    "gated": null,
+    "created": "2026-03-26"
+   },
+   {
+    "id": "drawais/Phi-4-reasoning-NVFP4",
+    "downloads": 10,
+    "gated": null,
+    "created": "2026-05-06"
+   },
+   {
+    "id": "drawais/Phi-4-NVFP4",
+    "downloads": 8,
+    "gated": null,
+    "created": "2026-05-06"
+   }
+  ],
+  "Mistral-Nemo-Instruct-2407 AWQ": [
+   {
+    "id": "casperhansen/mistral-nemo-instruct-2407-awq",
+    "downloads": 1485,
+    "gated": null,
+    "created": "2024-07-23"
+   },
+   {
+    "id": "Ichigo2899/mistralai-Mistral-Nemo-Instruct-2407-AWQ",
+    "downloads": 6,
+    "gated": null,
+    "created": "2024-07-18"
+   }
+  ],
+  "Qwen3-14B AWQ": [
+   {
+    "id": "Qwen/Qwen3-14B-AWQ",
+    "downloads": 1797732,
+    "gated": null,
+    "created": "2025-05-01"
+   },
+   {
+    "id": "warshanks/Huihui-Qwen3-14B-abliterated-v2-AWQ",
+    "downloads": 1075,
+    "gated": null,
+    "created": "2025-08-05"
+   },
+   {
+    "id": "mlx-community/Qwen3-14B-4bit-AWQ",
+    "downloads": 192,
+    "gated": null,
+    "created": "2025-05-06"
+   },
+   {
+    "id": "stelterlab/Qwen3-14B-AWQ",
+    "downloads": 23,
+    "gated": null,
+    "created": "2025-04-30"
+   },
+   {
+    "id": "drawais/Qwen3-14B-AWQ-INT4",
+    "downloads": 23,
+    "gated": null,
+    "created": "2026-04-27"
+   },
+   {
+    "id": "nicklas373/Qwen3-14B-AWQ",
+    "downloads": 15,
+    "gated": null,
+    "created": "2025-12-31"
+   }
+  ],
+  "gemma-3-12b-it AWQ": [],
+  "Phi-4-reasoning": [
+   {
+    "id": "microsoft/Phi-4-reasoning",
+    "downloads": 36934,
+    "gated": null,
+    "created": "2025-04-09"
+   },
+   {
+    "id": "microsoft/Phi-4-mini-reasoning",
+    "downloads": 36157,
+    "gated": null,
+    "created": "2025-04-29"
+   },
+   {
+    "id": "lmstudio-community/Phi-4-mini-reasoning-MLX-4bit",
+    "downloads": 25934,
+    "gated": null,
+    "created": "2025-05-01"
+   },
+   {
+    "id": "lmstudio-community/Phi-4-reasoning-plus-MLX-4bit",
+    "downloads": 14987,
+    "gated": null,
+    "created": "2025-05-01"
+   },
+   {
+    "id": "unsloth/Phi-4-mini-reasoning-GGUF",
+    "downloads": 11941,
+    "gated": null,
+    "created": "2025-05-01"
+   },
+   {
+    "id": "unsloth/Phi-4-reasoning-plus-GGUF",
+    "downloads": 11587,
+    "gated": null,
+    "created": "2025-05-01"
+   }
+  ]
+ },
+ "dataset_searches": {},
+ "github": []
+}

@@ -1,0 +1,44 @@
+{
+ "config": {
+  "dataset": "nq",
+  "split": "test",
+  "method": "rag",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "prompts": "v1",
+  "max_tokens": 64,
+  "temperature": 0.0,
+  "seed": 0,
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100"
+ },
+ "config_hash": "b2bd49398fd9",
+ "git_commit": "8123ab7+dirty",
+ "n": 1000,
+ "match_accuracy": 0.296,
+ "em": 0.215,
+ "f1": 0.3190384470188009,
+ "abstention_rate": 0.006,
+ "truncated_rate": 0.0,
+ "retrieval_recall_at_k": 0.476,
+ "cost": {
+  "llm": {
+   "answer": {
+    "calls": 1000,
+    "cache_hits": 0,
+    "prompt_tokens": 818679,
+    "completion_tokens": 6774
+   }
+  },
+  "prompt_tokens_per_q": 818.679,
+  "completion_tokens_per_q": 6.774,
+  "retrieval_calls_per_q": 1.0,
+  "wall_seconds": {
+   "retrieval": 1.07,
+   "generation": 70.21,
+   "total": 81.17
+  },
+  "note": "wall-clock includes cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-17T22:00:19Z"
+}

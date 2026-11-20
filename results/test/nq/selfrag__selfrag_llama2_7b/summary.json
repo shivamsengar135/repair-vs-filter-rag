@@ -1,0 +1,26 @@
+{
+ "n": 1000,
+ "dataset": "nq",
+ "split": "test",
+ "match_official": 0.288,
+ "match_ours_normalised": 0.32,
+ "retrieval_frequency": 1.0,
+ "passages": "our BM25 top-10",
+ "model": "selfrag/selfrag_llama2_7b",
+ "settings": {
+  "threshold": 0.2,
+  "ndocs": 10,
+  "max_new_tokens": 100,
+  "w_rel": 1.0,
+  "w_sup": 1.0,
+  "w_use": 1.0,
+  "dtype": "float16"
+ },
+ "cost": {
+  "calls": 11000,
+  "prompt_tokens": 1933613,
+  "completion_tokens": 109414,
+  "seconds": 468.9
+ },
+ "git_commit": "f25e5d7+dirty"
+}

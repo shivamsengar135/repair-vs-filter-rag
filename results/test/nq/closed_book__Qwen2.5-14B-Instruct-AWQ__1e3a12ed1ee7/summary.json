@@ -1,0 +1,41 @@
+{
+ "config": {
+  "dataset": "nq",
+  "split": "test",
+  "method": "closed_book",
+  "model": "Qwen/Qwen2.5-14B-Instruct-AWQ",
+  "prompts": "v1",
+  "max_tokens": 64,
+  "temperature": 0.0,
+  "seed": 0
+ },
+ "config_hash": "1e3a12ed1ee7",
+ "git_commit": "8123ab7+dirty",
+ "n": 1000,
+ "match_accuracy": 0.265,
+ "em": 0.159,
+ "f1": 0.2800538709352663,
+ "abstention_rate": 0.001,
+ "truncated_rate": 0.003,
+ "retrieval_recall_at_k": null,
+ "cost": {
+  "llm": {
+   "answer": {
+    "calls": 1000,
+    "cache_hits": 0,
+    "prompt_tokens": 60351,
+    "completion_tokens": 5840
+   }
+  },
+  "prompt_tokens_per_q": 60.351,
+  "completion_tokens_per_q": 5.84,
+  "retrieval_calls_per_q": 0.0,
+  "wall_seconds": {
+   "retrieval": 0.0,
+   "generation": 19.77,
+   "total": 28.83
+  },
+  "note": "wall-clock includes cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-18T00:42:08Z"
+}

@@ -1,0 +1,18 @@
+bio retriever=dense                          CF 0.888 ± 0.293 [0.906] | C 2.158 ± 0.353 [0.907] | A 0.918 ± 0.298 [0.906]
+asqa retriever=dense                          CF 0.685 ± 0.122 [0.900] | C 0.782 ± 0.079 [0.897] | A 0.689 ± 0.120 [0.900]
+wrote results/test/ablations.json results/test/tables_ablations.md
+wrote ['results/figures/test/deltas_vs_cf.pdf', 'results/figures/test/retention_vs_target__Falcon3-7B-Instruct.pdf', 'results/figures/test/retention_vs_target__Mistral-7B-Instruct-v0.3.pdf', 'results/figures/test/retention_vs_target__Qwen2.5-7B-Instruct.pdf', 'results/figures/test/shortform_risk_coverage__Falcon3-7B-Instruct.pdf', 'results/figures/test/shortform_risk_coverage__Mistral-7B-Instruct-v0.3.pdf', 'results/figures/test/shortform_risk_coverage__Qwen2.5-7B-Instruct.pdf']
+wrote results/test/tables_phase5.md 204 lines
+done
+wrote paper/references.bib with 54 entries
+missing labels: none | missing inputs: none | missing figures: none
+TODO markers: 2
+PAPER_ASSEMBLED
+| retriever=dense | 13.24 | 0.888 ± 0.293 [0.906] | 2.158 ± 0.353 [0.907] | 0.918 ± 0.298 [0.906] | +0.029 [+0.006, +0.057], p=0.0130 | +1.531 [+1.040, +2.057], p=0.0000 | `longform__Qwen2.5-7B-Instruct__dbd130b24564` |
+| model=Qwen/Qwen2.5-14B-Instruct-AWQ | 15.23 | 0.934 ± 0.209 [0.901] | 2.325 ± 0.311 [0.908] | 0.934 ± 0.219 [0.902] | +0.034 [+0.011, +0.063], p=0.0038 | +1.566 [+1.046, +2.126], p=0.0000 | `longform__Qwen2.5-14B-Instruct-AWQ__e08037b6190d` |
+| model=Qwen/Qwen2.5-3B-Instruct | 0.19 | 0.129 ± 0.058 [0.991] | 0.129 ± 0.058 [0.991] | 0.119 ± 0.057 [0.991] | -0.023 [-0.063, +0.000], p=0.2664 | +0.000 [+0.000, +0.000], p=1.0000 | `longform__Qwen2.5-3B-Instruct__80df448d8a06` |
+
+--
+| retriever=dense | 3.14 | 0.685 ± 0.122 [0.900] | 0.782 ± 0.079 [0.897] | 0.689 ± 0.120 [0.900] | -0.035 [-0.064, -0.005], p=0.0310 | -0.099 [-0.219, +0.024], p=0.1182 | `longform__Qwen2.5-7B-Instruct__cf7f9adc1fca` |
+| model=Qwen/Qwen2.5-14B-Instruct-AWQ | 2.59 | 0.709 ± 0.104 [0.902] | 0.742 ± 0.078 [0.902] | 0.736 ± 0.112 [0.900] | +0.067 [+0.032, +0.107], p=0.0000 | +0.024 [-0.099, +0.147], p=0.7190 | `longform__Qwen2.5-14B-Instruct-AWQ__6c9d825d2a21` |
+| model=Qwen/Qwen2.5-3B-Instruct | 0.69 | 0.465 ± 0.044 [0.901] | 0.465 ± 0.045 [0.900] | 0.470 ± 0.045 [0.904] | +0.000 [-0.008, +0.008], p=1.0000 | +0.000 [-0.008, +0.008], p=1.0000 | `longform__Qwen2.5-3B-Instruct__6dcd23bed256` |

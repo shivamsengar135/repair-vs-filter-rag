@@ -1,0 +1,7 @@
+{
+  "models": ["meta-llama/Llama-2-7b-chat-hf"],
+  "datasets": ["selfrag/selfrag_train_data", "akariasai/popqa_longtail_w_gs"],
+  "model_searches": [],
+  "dataset_searches": ["popqa_longtail", "selfrag eval", "self-rag eval_data", "popqa contriever", "selfrag"],
+  "github": []
+}

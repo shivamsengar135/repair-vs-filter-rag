@@ -1,0 +1,2 @@
+samples: {"selfcheck_samples": {"calls": 1000, "cache_hits": 0, "prompt_tokens": 806720, "completion_tokens": 105537}}
+SC_SAMPLE_END

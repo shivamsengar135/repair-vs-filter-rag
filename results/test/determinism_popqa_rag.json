@@ -1,0 +1,23 @@
+{
+ "runs": {
+  "cached": "results/test/popqa/rag__Qwen2.5-7B-Instruct__f1efe9be936b",
+  "rep1": "results/test/popqa/rag__Qwen2.5-7B-Instruct__f1efe9be936b__rep1",
+  "rep2": "results/test/popqa/rag__Qwen2.5-7B-Instruct__f1efe9be936b__rep2",
+  "rep3": "results/test/popqa/rag__Qwen2.5-7B-Instruct__f1efe9be936b__rep3"
+ },
+ "accuracy": {
+  "cached": 0.316,
+  "rep1": 0.316,
+  "rep2": 0.316,
+  "rep3": 0.316
+ },
+ "accuracy_mean": 0.316,
+ "accuracy_std": 0.0,
+ "identical_prediction_rate_vs_cached": {
+  "rep1": 0.999,
+  "rep2": 0.999,
+  "rep3": 0.999
+ },
+ "identical_across_all_4": 0.999,
+ "n": 1000
+}

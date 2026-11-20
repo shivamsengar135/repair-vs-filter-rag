@@ -1,0 +1,3 @@
+{"config": "mmap+numpy", "load_s": 1.6, "search_s_per_query": 0.4715, "top5_identical_to_first": null}
+{"config": "ram+numpy", "load_s": 6.3, "search_s_per_query": 0.4937, "top5_identical_to_first": true}
+{"config": "ram+numba", "load_s": 6.7, "search_s_per_query": 0.1143, "top5_identical_to_first": true}

@@ -1,0 +1,149 @@
+{
+ "alpha": 0.05,
+ "correction": "Holm over {H1, H2}",
+ "bootstrap": "paired, 10,000 resamples, seed 0, partition 0",
+ "judge_tag": "phi-4-FP8-dynamic",
+ "git_commit": "4b94969+dirty",
+ "results": {
+  "H1": {
+   "dataset": "bio",
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "n_eval": 175,
+   "diff_supported_per_response": 0.03428571428571429,
+   "ci95": [
+    0.0,
+    0.08
+   ],
+   "p_value": 0.1002,
+   "precision_diff": 0.0019911504424778848,
+   "precision_lower_bound_95": -0.01479592462375815,
+   "guard_holds": true,
+   "A_at_0.90": {
+    "supported_claims_per_response": {
+     "mean": 0.7377142857142858,
+     "std": 0.23107503325904985
+    },
+    "claims_kept_per_response": {
+     "mean": 0.8594285714285713,
+     "std": 0.27169289173076905
+    },
+    "non_empty_rate": {
+     "mean": 0.4485714285714286,
+     "std": 0.08566039672027555
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9012000000000002,
+     "std": 0.03281396246654971
+    },
+    "factual_precision_micro": {
+     "mean": 0.8599871031413722,
+     "std": 0.018034183242909476
+    },
+    "factual_precision_macro": {
+     "mean": 0.8567047542627181,
+     "std": 0.023120450510564088
+    },
+    "n_partitions": 100
+   },
+   "CF_at_0.90": {
+    "supported_claims_per_response": {
+     "mean": 0.7384000000000001,
+     "std": 0.21899352616496337
+    },
+    "claims_kept_per_response": {
+     "mean": 0.8598857142857145,
+     "std": 0.25890813662708423
+    },
+    "non_empty_rate": {
+     "mean": 0.4496,
+     "std": 0.08391131166361437
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9014857142857143,
+     "std": 0.033370369035740824
+    },
+    "factual_precision_micro": {
+     "mean": 0.8605879368122206,
+     "std": 0.018593304828632102
+    },
+    "factual_precision_macro": {
+     "mean": 0.8526291455410372,
+     "std": 0.025493798123594844
+    },
+    "n_partitions": 100
+   },
+   "holm_reject": false,
+   "SUPPORTED": false
+  },
+  "H2": {
+   "dataset": "asqa",
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "n_eval": 374,
+   "diff_supported_per_response": -0.0106951871657754,
+   "ci95": [
+    -0.026737967914438502,
+    0.0053475935828877
+   ],
+   "p_value": 0.267,
+   "precision_diff": -0.00404339915088614,
+   "precision_lower_bound_95": -0.014485487713352225,
+   "guard_holds": true,
+   "A_at_0.90": {
+    "supported_claims_per_response": {
+     "mean": 0.5372192513368984,
+     "std": 0.07410883793633868
+    },
+    "claims_kept_per_response": {
+     "mean": 0.6672459893048128,
+     "std": 0.10142670490094899
+    },
+    "non_empty_rate": {
+     "mean": 0.32951871657754006,
+     "std": 0.0365924846662707
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9000802139037433,
+     "std": 0.022034457815510868
+    },
+    "factual_precision_micro": {
+     "mean": 0.8071701238446604,
+     "std": 0.02768809770562477
+    },
+    "factual_precision_macro": {
+     "mean": 0.7605959249191809,
+     "std": 0.02858628469364539
+    },
+    "n_partitions": 100
+   },
+   "CF_at_0.90": {
+    "supported_claims_per_response": {
+     "mean": 0.5335026737967915,
+     "std": 0.08073477780341662
+    },
+    "claims_kept_per_response": {
+     "mean": 0.6628342245989306,
+     "std": 0.10861911477308463
+    },
+    "non_empty_rate": {
+     "mean": 0.32363636363636367,
+     "std": 0.03750046036163556
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9010962566844921,
+     "std": 0.021760208942698065
+    },
+    "factual_precision_micro": {
+     "mean": 0.8068151625366906,
+     "std": 0.02647109306478337
+    },
+    "factual_precision_macro": {
+     "mean": 0.7596766229201145,
+     "std": 0.02730735493455785
+    },
+    "n_partitions": 100
+   },
+   "holm_reject": false,
+   "SUPPORTED": false
+  }
+ }
+}

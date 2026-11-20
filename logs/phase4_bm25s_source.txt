@@ -1,0 +1,241 @@
+bm25s 0.3.16
+    def build_index_from_ids(
+        self,
+        unique_token_ids: List[int],
+        corpus_token_ids: List[List[int]],
+        show_progress=True,
+        leave_progress=False,
+    ):
+        """
+        Low-level function to build the BM25 index from token IDs, used by the `index` method,
+        as well as the `build_index_from_tokens` method.
+        You can override this function if you want to build the index in a different way.
+
+        Parameters
+        ----------
+        unique_token_ids : List[int]
+            List of unique token IDs.
+
+        corpus_token_ids : List[List[int]]
+            List of list of token IDs for each document.
+
+        show_progress : bool
+            If True, a progress bar will be shown. If False, no progress bar will be shown.
+
+        leave_progress : bool
+            If True, the progress bars will remain after the function completes.
+        """
+        if self.csc_backend not in ["scipy", "numpy"]:
+            raise ValueError(
+                f"Invalid csc_backend value: {self.csc_backend}. Choose from 'scipy', 'numpy'."
+            )
+
+        avg_doc_len = np.array([len(doc_ids) for doc_ids in corpus_token_ids]).mean()
+        n_docs = len(corpus_token_ids)
+        n_vocab = len(unique_token_ids)
+
+        # Step 1: Calculate the number of documents containing each token
+        doc_frequencies = _calculate_doc_freqs(
+            corpus_tokens=corpus_token_ids,
+            unique_tokens=unique_token_ids,
+            show_progress=show_progress,
+            leave_progress=leave_progress,
+        )
+
+        # preliminary: if the method is one of BM25L or BM25+, we need to calculate the non-occurrence array
+        if self.method in self.methods_requiring_nonoccurrence:
+            self.nonoccurrence_array = _build_nonoccurrence_array(
+                doc_frequencies=doc_frequencies,
+                n_docs=n_docs,
+                compute_idf_fn=_select_idf_scorer(self.idf_method),
+                calculate_tfc_fn=_select_tfc_scorer(self.method),
+                l_d=avg_doc_len,
+                l_avg=avg_doc_len,
+                k1=self.k1,
+                b=self.b,
+                delta=self.delta,
+                dtype=self.dtype,
+            )
+        else:
+            self.nonoccurrence_array = None
+
+        # Step 2: Calculate the idf for each token using the document frequencies
+        idf_array = _build_idf_array(
+            doc_frequencies=doc_frequencies,
+            n_docs=n_docs,
+            compute_idf_fn=_select_idf_scorer(self.idf_method),
+            dtype=self.dtype,
+        )
+
+        # Step 3 Calculate the BM25 scores for each token in each document
+        scores_flat, doc_idx, vocab_idx = _build_scores_and_indices_for_matrix(
+            corpus_token_ids=corpus_token_ids,
+            idf_array=idf_array,
+            avg_doc_len=avg_doc_len,
+            doc_frequencies=doc_frequencies,
+            k1=self.k1,
+            b=self.b,
+            delta=self.delta,
+            show_progress=show_progress,
+            leave_progress=leave_progress,
+            dtype=self.dtype,
+            int_dtype=self.int_dtype,
+            method=self.method,
+            nonoccurrence_array=self.nonoccurrence_array,
+        )
+
+        # Now, we build the sparse matrix
+        if self.csc_backend == "scipy":
+            score_matrix = sp.csc_matrix(
+                (scores_flat, (doc_idx, vocab_idx)),
+                shape=(n_docs, n_vocab),
+                dtype=self.dtype,
+            )
+            data = score_matrix.data
+            indices = score_matrix.indices
+            indptr = score_matrix.indptr
+        elif self.csc_backend == "numpy":
+            data, indices, indptr = self._np_csc(
+                data=scores_flat,
+                rows=doc_idx,
+                cols=vocab_idx,
+                shape=(n_docs, n_vocab),
+            )
+            data = data.astype(self.dtype)
+        else:
+            raise ValueError(f"Invalid csc_backend value: {self.csc_backend}. Choose from 'scipy', 'numpy'.")
+
+        scores = {
+            "data": data,
+            "indices": indices,
+            "indptr": indptr,
+            "num_docs": n_docs,
+        }
+        return scores
+
+def _calculate_doc_freqs(
+    corpus_tokens, unique_tokens, show_progress=True, leave_progress=False
+) -> dict:
+    """
+    Document Frequency, aka DF, is the number of documents that contain a specific token.
+    This function return a dictionary with the document frequency of each token, which is
+    why it is called `doc_frequencies`.
+    """
+    unique_tokens = set(unique_tokens)
+
+    # Now that we have all the unique tokens, we can count the number of
+    # documents that contain each token
+    doc_frequencies = {token: 0 for token in unique_tokens}
+
+    for doc_tokens in tqdm(
+        corpus_tokens,
+        leave=leave_progress,
+        disable=not show_progress,
+        desc="BM25S Count Tokens",
+    ):
+
+        # get intersection of unique tokens and the tokens in the document
+        shared_tokens = unique_tokens.intersection(doc_tokens)
+
+        # for each token in the document, we increment the count of documents
+        # This is a simple way to count the number of documents that contain each token
+        for token in shared_tokens:
+            doc_frequencies[token] += 1
+
+    return doc_frequencies
+
+def _build_idf_array(
+    doc_frequencies: dict,
+    n_docs: int,
+    compute_idf_fn: callable = None,
+    dtype="float32",
+) -> np.ndarray:
+    n_vocab = len(doc_frequencies)
+    idf_array = np.zeros(n_vocab, dtype=dtype)
+
+    for token_id, df in doc_frequencies.items():
+        if df != 0:
+            idf_array[token_id] = compute_idf_fn(df, N=n_docs)
+
+    return idf_array
+
+def _build_nonoccurrence_array(
+    doc_frequencies: dict,
+    n_docs: int,
+    compute_idf_fn: callable,
+    calculate_tfc_fn: callable,
+    l_d,
+    l_avg,
+    k1,
+    b,
+    delta,
+    dtype="float32",
+) -> np.ndarray:
+    """
+    The non-occurrence array is used to store the idf score for tokens that do not occur in the
+    document. This is useful for BM25L and BM25+ variants, where we need to calculate the idf
+    score for tokens that do not occur in the document, which will be used to calculate the
+    final score.
+
+    The nonoccurence array has length |V|, where V is the set of unique tokens in the corpus.
+
+    The `compute_idf_fn` is the function to calculate the idf score for a token that does not occur
+    in the document. The `calculate_tfc_fn` is the function to calculate the term frequency component
+    of the BM25 score, which is used to calculate the final score for tokens that do not occur in the
+    document.
+    """
+    n_vocab = len(doc_frequencies)
+    nonoccurrence_array = np.zeros(n_vocab, dtype=dtype)
+
+    for token_id, df in doc_frequencies.items():
+        if df != 0:
+            idf = compute_idf_fn(df, N=n_docs)
+            tfc = calculate_tfc_fn(
+                tf_array=0, l_d=l_d, l_avg=l_avg, k1=k1, b=b, delta=delta
+            )
+            nonoccurrence_array[token_id] = idf * tfc
+
+    return nonoccurrence_array
+
+scoring functions: ['Counter', 'HAS_NUMBA', '_build_idf_array', '_build_nonoccurrence_array', '_build_scores_and_indices_for_matrix', '_calculate_doc_freqs', '_compute_relevance_from_scores_jit_ready', '_compute_relevance_from_scores_legacy', '_faketqdm', '_get_counts_from_token_ids', '_np_csc_jit_ready', '_np_csc_python', '_score_idf_atire', '_score_idf_bm25l', '_score_idf_bm25plus', '_score_idf_lucene', '_score_idf_robertson', '_score_tfc_atire', '_score_tfc_bm25l', '_score_tfc_bm25plus', '_score_tfc_lucene', '_score_tfc_robertson', '_select_idf_scorer', '_select_tfc_scorer', 'math', 'njit', 'np', 'os', 'tqdm']
+         vocab_dict = corpus.vocab
+            elif inferred_corpus_obj == "token_ids":
+                # we need to create a vocab_dict from the unique token IDs
+                logger.debug(msg="Building index from token IDs")
+                corpus_token_ids = corpus
+                unique_ids = set()
+                for doc_ids in corpus_token_ids:
+                    unique_ids.update(doc_ids)
+                # if there's allowed empty token, we need to add it to the vocab_dict to either 0 or max+1
+                if create_empty_token:
+                    if 0 not in unique_ids:
+                        unique_ids.add(0)
+                    else:
+                        unique_ids.add(max(unique_ids) + 1)
+                
+                # create the vocab_dict from the unique token IDs
+                vocab_dict = {token_id: i for i, token_id in enumerate(unique_ids)}
+                
+            else:
+                raise ValueError(
+                    "Internal error: Found an invalid corpus object, indicating `_inferred_corpus_object` is not working correctly."
+                )
+
+            unique_token_ids = list(vocab_dict.values())
+            scores = self.build_index_from_ids(
+                unique_token_ids=unique_token_ids,
+                corpus_token_ids=corpus_token_ids,
+                leave_progress=leave_progress,
+                show_progress=show_progress,
+            )
+
+        if create_empty_token:
+            if inferred_corpus_obj != "token_ids" and "" not in vocab_dict:
+                vocab_dict[""] = max(vocab_dict.values()) + 1
+
+        self.scores = scores
+        self.vocab_dict = vocab_dict
+
+        # we create unique token IDs from the vocab_dict for faster lookup
+        self.unique_token_ids_set = set(self.vocab_dict.values())
+

@@ -1,0 +1,1001 @@
+=== mistralai/Mistral-7B-Instruct-v0.3 @ main attempt 1 2026-11-13T07:43:46Z
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 14 files:   7%|▋         | 1/14 [01:30<19:35, 90.46s/it]Fetching 14 files:  36%|███▌      | 5/14 [01:30<02:01, 13.51s/it]Fetching 14 files:  57%|█████▋    | 8/14 [01:30<00:42,  7.10s/it]Fetching 14 files:  71%|███████▏  | 10/14 [01:30<00:19,  4.90s/it]Fetching 14 files:  79%|███████▊  | 11/14 [01:50<00:14,  4.90s/it]Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00003-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00001-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00002-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00001-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00003-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00002-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00001-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00003-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00002-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00003-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00001-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00002-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00003-of-00003.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00002-of-00003.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00001-of-00003.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Fetching 14 files:  86%|████████▌ | 12/14 [21:02<06:08, 184.17s/it]Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00001-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00002-of-00003.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00001-of-00003.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/resolve/c170c708c41dac9275d15a8fff4eca08d52bab71/model-00002-of-00003.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Fetching 14 files:  93%|█████████▎| 13/14 [24:13<03:05, 185.40s/it]Fetching 14 files: 100%|██████████| 14/14 [22:58<00:00, 98.43s/it] 
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--mistralai--Mistral-7B-Instruct-v0.3/snapshots/c170c708c41dac9275d15a8fff4eca08d52bab71
+DOWNLOAD_OK mistralai/Mistral-7B-Instruct-v0.3 c170c708c41dac9275d15a8fff4eca08d52bab71  14G
+=== ibm-granite/granite-4.2-8b @ main attempt 1 2026-11-13T08:06:46Z
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 17 files:   6%|▌         | 1/17 [00:00<00:04,  3.87it/s]Fetching 17 files:  47%|████▋     | 8/17 [00:00<00:00, 17.10it/s]Fetching 17 files:  65%|██████▍   | 11/17 [00:00<00:00, 17.96it/s]Fetching 17 files:  76%|███████▋  | 13/17 [00:00<00:00, 16.11it/s]Fetching 17 files:  76%|███████▋  | 13/17 [01:40<00:00, 16.11it/s]Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno 101] Network is unreachable
+Max retries exceeded.
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno 101] Network is unreachable
+Max retries exceeded.
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno 101] Network is unreachable
+Max retries exceeded.
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno 101] Network is unreachable
+Max retries exceeded.
+Fetching 17 files:  76%|███████▋  | 13/17 [10:21<03:11, 47.80s/it]
+Traceback (most recent call last):
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno 101] Network is unreachable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/diat/venvs/halluc/bin/hf", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/hf.py", line 167, in main
+    app(windows_expand_args=False)
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/click/core.py", line 1653, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/click/core.py", line 1560, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/_cli_utils.py", line 132, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/click/core.py", line 2054, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/click/core.py", line 1414, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/click/core.py", line 911, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/_framework.py", line 365, in handler
+    return func(**call_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 228, in download
+    _print_result(run_download())
+                  ^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 187, in run_download
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2033, in _download_to_tmp_and_move
+    http_get(
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 391, in http_get
+    response = stack.enter_context(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/contextlib.py", line 526, in enter_context
+    result = _enter(cm)
+             ^^^^^^^^^^
+  File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 719, in http_stream_backoff
+    yield from _http_backoff_base(
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 540, in _http_backoff_base
+    with client.stream(method=method, url=url, **kwargs) as response:
+  File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_client.py", line 839, in stream
+    response = self.send(
+               ^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_client.py", line 979, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_client.py", line 1007, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_client.py", line 1042, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_client.py", line 1075, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno 101] Network is unreachable
+=== ibm-granite/granite-4.2-8b @ main attempt 2 2026-11-13T08:17:24Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--ibm-granite--granite-4.2-8b/snapshots/a7042144125ce5ae64f89610e8289647fc000b9a[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== ibm-granite/granite-4.2-8b @ main attempt 3 2026-11-13T08:26:29Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--ibm-granite--granite-4.2-8b/snapshots/a7042144125ce5ae64f89610e8289647fc000b9a[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== ibm-granite/granite-4.2-8b @ main attempt 4 2026-11-13T08:35:37Z
+=== RedHatAI/phi-4-FP8-dynamic @ main attempt 1 2026-11-14T05:41:56Z
+[90mHint: The `hf-cli` skill is not installed. Run `hf skills add -g` to teach your AI agents how to use the `hf` CLI.[0m
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   7%|▋         | 1/15 [00:00<00:09,  1.51it/s]Fetching 15 files:  33%|███▎      | 5/15 [00:00<00:01,  7.90it/s]Fetching 15 files:  47%|████▋     | 7/15 [00:01<00:01,  5.40it/s]Fetching 15 files:  60%|██████    | 9/15 [00:01<00:01,  5.45it/s]Fetching 15 files:  67%|██████▋   | 10/15 [00:01<00:00,  5.29it/s]Fetching 15 files:  73%|███████▎  | 11/15 [00:02<00:00,  5.45it/s]Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00004-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Fetching 15 files:  80%|████████  | 12/15 [07:13<05:12, 104.24s/it]Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/RedHatAI/phi-4-FP8-dynamic/resolve/8f62f4b85ccc1c7fda9f178976c1162f37e43651/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Fetching 15 files:  87%|████████▋ | 13/15 [27:24<12:55, 387.87s/it]Fetching 15 files: 100%|██████████| 15/15 [27:05<00:00, 108.34s/it]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--RedHatAI--phi-4-FP8-dynamic/snapshots/8f62f4b85ccc1c7fda9f178976c1162f37e43651
+DOWNLOAD_OK RedHatAI/phi-4-FP8-dynamic 8f62f4b85ccc1c7fda9f178976c1162f37e43651  15G
+=== ibm-granite/granite-4.2-8b @ main attempt 1 2026-11-14T06:09:03Z
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00004-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Fetching 17 files:  82%|████████▏ | 14/17 [13:26<02:52, 57.60s/it]Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00003-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00001-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Error while downloading from https://huggingface.co/ibm-granite/granite-4.2-8b/resolve/a7042144125ce5ae64f89610e8289647fc000b9a/model-00002-of-00004.safetensors: [Errno -3] Temporary failure in name resolution
+Trying to resume download...
+Fetching 17 files:  88%|████████▊ | 15/17 [30:53<04:58, 149.23s/it]Fetching 17 files: 100%|██████████| 17/17 [29:39<00:00, 104.69s/it]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--ibm-granite--granite-4.2-8b/snapshots/a7042144125ce5ae64f89610e8289647fc000b9a
+DOWNLOAD_OK ibm-granite/granite-4.2-8b a7042144125ce5ae64f89610e8289647fc000b9a  17G
+DOWNLOADS_END
+=== potsawee/deberta-v3-large-mnli @ main attempt 1 2026-11-14T07:15:59Z
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 8 files:  12%|█▎        | 1/8 [00:00<00:01,  3.95it/s]Fetching 8 files:  62%|██████▎   | 5/8 [00:00<00:00, 15.29it/s]Fetching 8 files:  88%|████████▊ | 7/8 [00:01<00:00,  3.50it/s]Fetching 8 files:  88%|████████▊ | 7/8 [00:19<00:00,  3.50it/s]Fetching 8 files: 100%|██████████| 8/8 [02:54<00:00, 36.95s/it]Fetching 8 files: 100%|██████████| 8/8 [02:54<00:00, 21.80s/it]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--potsawee--deberta-v3-large-mnli/snapshots/83f4359862aba52c07506cd23d4454db77945b36
+DOWNLOAD_OK potsawee/deberta-v3-large-mnli 83f4359862aba52c07506cd23d4454db77945b36  1.7G
+=== selfrag/selfrag_llama2_7b @ main attempt 1 2026-11-14T07:18:54Z
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files:   9%|▉         | 1/11 [00:00<00:06,  1.44it/s]Fetching 11 files:  55%|█████▍    | 6/11 [00:00<00:00,  8.85it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:01<00:00,  5.66it/s]Fetching 11 files:  82%|████████▏ | 9/11 [00:19<00:00,  5.66it/s]Fetching 11 files:  91%|█████████ | 10/11 [11:33<01:51, 111.83s/it]Error while downloading from https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/pytorch_model-00001-of-00002.bin: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/pytorch_model-00001-of-00002.bin: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/pytorch_model-00001-of-00002.bin: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/pytorch_model-00001-of-00002.bin: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/pytorch_model-00001-of-00002.bin: [Errno 101] Network is unreachable
+Trying to resume download...
+Error while downloading from https://huggingface.co/selfrag/selfrag_llama2_7b/resolve/190261383b0779ff66d2f95a73c7ad267d94b820/pytorch_model-00001-of-00002.bin: [Errno 101] Network is unreachable
+Max retries exceeded.
+Fetching 11 files:  91%|█████████ | 10/11 [22:13<02:13, 133.38s/it]
+Traceback (most recent call last):
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_transports/default.py", line 98, in map_httpcore_exceptions
+    yield
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_transports/default.py", line 245, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 242, in handle_request
+    raise exc from None
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_sync/connection_pool.py", line 224, in handle_request
+    response = connection.handle_request(pool_request.request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 94, in handle_request
+    raise exc
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 74, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_sync/connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_backends/sync.py", line 203, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpcore2/_exceptions.py", line 17, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore2.ConnectError: [Errno 101] Network is unreachable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/diat/venvs/halluc/bin/hf", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/hf.py", line 167, in main
+    app(windows_expand_args=False)
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/click/core.py", line 1653, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/click/core.py", line 1560, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/_cli_utils.py", line 132, in invoke
+    return super().invoke(ctx)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/click/core.py", line 2054, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/click/core.py", line 1414, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/click/core.py", line 911, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/_framework.py", line 365, in handler
+    return func(**call_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 228, in download
+    _print_result(run_download())
+                  ^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/download.py", line 187, in run_download
+    return snapshot_download(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 541, in snapshot_download
+    hf_thread_map(
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 521, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 276, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1047, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1285, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2033, in _download_to_tmp_and_move
+    http_get(
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 475, in http_get
+    return http_get(
+           ^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 391, in http_get
+    response = stack.enter_context(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/contextlib.py", line 526, in enter_context
+    result = _enter(cm)
+             ^^^^^^^^^^
+  File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 719, in http_stream_backoff
+    yield from _http_backoff_base(
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 540, in _http_backoff_base
+    with client.stream(method=method, url=url, **kwargs) as response:
+  File "/usr/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_client.py", line 839, in stream
+    response = self.send(
+               ^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_client.py", line 979, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_client.py", line 1007, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_client.py", line 1042, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_client.py", line 1075, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_transports/default.py", line 244, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/httpx2/_transports/default.py", line 115, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx2.ConnectError: [Errno 101] Network is unreachable
+=== selfrag/selfrag_llama2_7b @ main attempt 2 2026-11-14T07:41:24Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 3 2026-11-14T07:50:32Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 4 2026-11-14T07:59:39Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 5 2026-11-14T08:08:47Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 6 2026-11-14T08:17:55Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 7 2026-11-14T08:27:03Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 8 2026-11-14T08:36:10Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 9 2026-11-14T08:45:18Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 10 2026-11-14T08:54:26Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 11 2026-11-14T09:03:34Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 12 2026-11-14T09:12:41Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 13 2026-11-14T09:21:49Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 14 2026-11-14T09:30:57Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 15 2026-11-14T09:40:05Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 16 2026-11-14T09:49:12Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 17 2026-11-14T09:58:20Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 18 2026-11-14T10:07:28Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 19 2026-11-14T10:16:36Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 20 2026-11-14T10:25:43Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 21 2026-11-14T10:34:51Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 22 2026-11-14T10:43:59Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 23 2026-11-14T10:53:07Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 24 2026-11-14T11:02:15Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 25 2026-11-14T11:11:22Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 26 2026-11-14T11:20:30Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 27 2026-11-14T11:29:38Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 28 2026-11-14T11:38:46Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 29 2026-11-14T11:47:53Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+=== selfrag/selfrag_llama2_7b @ main attempt 30 2026-11-14T11:57:01Z
+[1m[31mError: Local entry not found. [Errno 101] Network is unreachable
+Incomplete snapshot available at: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820[0m
+[90mHint: set HF_DEBUG=1 as environment variable for full traceback.[0m
+DOWNLOAD_FAILED selfrag/selfrag_llama2_7b
+DOWNLOADS_END
+=== selfrag/selfrag_llama2_7b @ main attempt 1 2026-11-16T05:17:19Z
+[90mHint: The `hf-cli` skill is not installed. Run `hf skills add -g` to teach your AI agents how to use the `hf` CLI.[0m
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 11 files: 100%|██████████| 11/11 [18:30<00:00, 100.97s/it]Fetching 11 files: 100%|██████████| 11/11 [18:30<00:00, 100.97s/it]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820
+DOWNLOAD_OK selfrag/selfrag_llama2_7b 190261383b0779ff66d2f95a73c7ad267d94b820  13G
+DOWNLOADS_END
+=== selfrag/selfrag_llama2_7b @ main attempt 1 2026-11-16T05:38:39Z
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 688.51it/s]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--selfrag--selfrag_llama2_7b/snapshots/190261383b0779ff66d2f95a73c7ad267d94b820
+DOWNLOAD_OK selfrag/selfrag_llama2_7b 190261383b0779ff66d2f95a73c7ad267d94b820  13G
+=== allenai/Olmo-3-7B-Instruct @ main attempt 1 2026-11-16T05:38:40Z
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:  87%|████████▋ | 13/15 [14:12<02:11, 65.60s/it]Fetching 15 files:  93%|█████████▎| 14/15 [20:02<01:33, 93.74s/it]Fetching 15 files: 100%|██████████| 15/15 [23:32<00:00, 108.19s/it]Fetching 15 files: 100%|██████████| 15/15 [23:33<00:00, 94.20s/it] 
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--allenai--Olmo-3-7B-Instruct/snapshots/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc
+DOWNLOAD_OK allenai/Olmo-3-7B-Instruct 6e5971d9eba42665f5bd5a0fcf047f299ce1dccc  14G
+=== tiiuae/Falcon3-7B-Instruct @ main attempt 1 2026-11-16T06:03:47Z
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 12 files:   8%|▊         | 1/12 [01:32<17:02, 92.97s/it]Fetching 12 files:  75%|███████▌  | 9/12 [04:33<01:24, 28.22s/it]Error while downloading from https://huggingface.co/tiiuae/Falcon3-7B-Instruct/resolve/1e57a0ecd176c7c139f289c60a74e57f887c3dfb/model-00003-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/tiiuae/Falcon3-7B-Instruct/resolve/1e57a0ecd176c7c139f289c60a74e57f887c3dfb/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Error while downloading from https://huggingface.co/tiiuae/Falcon3-7B-Instruct/resolve/1e57a0ecd176c7c139f289c60a74e57f887c3dfb/model-00002-of-00004.safetensors: The read operation timed out
+Trying to resume download...
+Fetching 12 files:  83%|████████▎ | 10/12 [17:24<04:25, 132.98s/it]Fetching 12 files:  92%|█████████▏| 11/12 [19:25<02:11, 131.04s/it]Fetching 12 files: 100%|██████████| 12/12 [23:24<00:00, 151.79s/it]Fetching 12 files: 100%|██████████| 12/12 [23:24<00:00, 117.01s/it]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--tiiuae--Falcon3-7B-Instruct/snapshots/1e57a0ecd176c7c139f289c60a74e57f887c3dfb
+DOWNLOAD_OK tiiuae/Falcon3-7B-Instruct 1e57a0ecd176c7c139f289c60a74e57f887c3dfb  14G
+DOWNLOADS_END
+=== BAAI/bge-small-en-v1.5 @ 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a attempt 1 2026-11-17T19:24:31Z
+/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/cli/download.py:160: UserWarning: Ignoring `--exclude` since filenames have been explicitly set.
+  warnings.warn("Ignoring `--exclude` since filenames have been explicitly set.")
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a/pytorch_model.bin
+DOWNLOAD_OK BAAI/bge-small-en-v1.5 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a  128M
+=== liuyanyi/AlignScore-large-hf @ cc13dc572fce8aa32778a437fb66a02d39a5b8e3 attempt 1 2026-11-17T19:24:45Z
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 12 files:   8%|▊         | 1/12 [00:00<00:07,  1.51it/s]Fetching 12 files:  67%|██████▋   | 8/12 [00:01<00:00,  6.69it/s]Fetching 12 files: 100%|██████████| 12/12 [02:10<00:00, 13.83s/it]Fetching 12 files: 100%|██████████| 12/12 [02:10<00:00, 10.87s/it]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--liuyanyi--AlignScore-large-hf/snapshots/cc13dc572fce8aa32778a437fb66a02d39a5b8e3
+DOWNLOAD_OK liuyanyi/AlignScore-large-hf cc13dc572fce8aa32778a437fb66a02d39a5b8e3  1.4G
+=== Qwen/Qwen2.5-3B-Instruct @ aa8e72537993ba99e69dfaafa59ed015b17504d1 attempt 1 2026-11-17T19:26:56Z
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 12 files:   8%|▊         | 1/12 [00:00<00:03,  3.55it/s]Fetching 12 files:  58%|█████▊    | 7/12 [00:00<00:00, 15.58it/s]Fetching 12 files:  75%|███████▌  | 9/12 [00:00<00:00, 12.21it/s]Fetching 12 files:  83%|████████▎ | 10/12 [00:19<00:00, 12.21it/s]Fetching 12 files:  92%|█████████▏| 11/12 [06:35<00:59, 59.13s/it]Fetching 12 files: 100%|██████████| 12/12 [09:12<00:00, 76.43s/it]Fetching 12 files: 100%|██████████| 12/12 [09:12<00:00, 46.08s/it]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1
+DOWNLOAD_OK Qwen/Qwen2.5-3B-Instruct aa8e72537993ba99e69dfaafa59ed015b17504d1  5.8G
+=== Qwen/Qwen2.5-14B-Instruct-AWQ @ 539535859b135b0244c91f3e59816150c8056698 attempt 1 2026-11-17T19:36:09Z
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 13 files:   8%|▊         | 1/13 [00:00<00:03,  3.65it/s]Fetching 13 files:  54%|█████▍    | 7/13 [00:00<00:00, 14.62it/s]Fetching 13 files:  69%|██████▉   | 9/13 [00:00<00:00, 12.16it/s]Fetching 13 files:  77%|███████▋  | 10/13 [00:20<00:00, 12.16it/s]Fetching 13 files:  85%|████████▍ | 11/13 [05:40<01:41, 50.87s/it]Fetching 13 files:  92%|█████████▏| 12/13 [14:18<02:13, 133.22s/it]Fetching 13 files: 100%|██████████| 13/13 [14:47<00:00, 112.15s/it]Fetching 13 files: 100%|██████████| 13/13 [14:47<00:00, 68.25s/it] 
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--Qwen--Qwen2.5-14B-Instruct-AWQ/snapshots/539535859b135b0244c91f3e59816150c8056698
+DOWNLOAD_OK Qwen/Qwen2.5-14B-Instruct-AWQ 539535859b135b0244c91f3e59816150c8056698  9.4G
+DOWNLOADS_END
+=== BAAI/bge-small-en-v1.5 @ 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a attempt 1 2026-11-17T19:56:57Z
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 13 files:  15%|█▌        | 2/13 [00:00<00:01,  7.49it/s]Fetching 13 files:  69%|██████▉   | 9/13 [00:00<00:00, 20.01it/s]Fetching 13 files: 100%|██████████| 13/13 [00:12<00:00,  1.29s/it]Fetching 13 files: 100%|██████████| 13/13 [00:12<00:00,  1.00it/s]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a
+DOWNLOAD_OK BAAI/bge-small-en-v1.5 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a  256M
+=== liuyanyi/AlignScore-large-hf @ cc13dc572fce8aa32778a437fb66a02d39a5b8e3 attempt 1 2026-11-17T19:57:11Z
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Fetching 12 files: 100%|██████████| 12/12 [00:00<00:00, 539.83it/s]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--liuyanyi--AlignScore-large-hf/snapshots/cc13dc572fce8aa32778a437fb66a02d39a5b8e3
+DOWNLOAD_OK liuyanyi/AlignScore-large-hf cc13dc572fce8aa32778a437fb66a02d39a5b8e3  1.4G
+=== Qwen/Qwen2.5-3B-Instruct @ aa8e72537993ba99e69dfaafa59ed015b17504d1 attempt 1 2026-11-17T19:57:11Z
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]Fetching 12 files: 100%|██████████| 12/12 [00:00<00:00, 905.38it/s]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1
+DOWNLOAD_OK Qwen/Qwen2.5-3B-Instruct aa8e72537993ba99e69dfaafa59ed015b17504d1  5.8G
+=== Qwen/Qwen2.5-14B-Instruct-AWQ @ 539535859b135b0244c91f3e59816150c8056698 attempt 1 2026-11-17T19:57:11Z
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files: 100%|██████████| 13/13 [00:00<00:00, 350.62it/s]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--Qwen--Qwen2.5-14B-Instruct-AWQ/snapshots/539535859b135b0244c91f3e59816150c8056698
+DOWNLOAD_OK Qwen/Qwen2.5-14B-Instruct-AWQ 539535859b135b0244c91f3e59816150c8056698  9.4G
+DOWNLOADS_END

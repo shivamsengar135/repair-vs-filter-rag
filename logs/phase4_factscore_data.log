@@ -1,0 +1,33 @@
+      2997  data/labeled/prompt_entities.txt
+    966123  data/labeled/InstructGPT.jsonl
+   1128530  data/labeled/ChatGPT.jsonl
+   1354199  data/labeled/PerplexityAI.jsonl
+    623207  data/unlabeled/Pythia-12B.jsonl
+      7835  data/unlabeled/prompt_entities.txt
+    406243  data/unlabeled/InstructGPT.jsonl
+    274646  data/unlabeled/Alpaca-65B.jsonl
+    611767  data/unlabeled/Vicuna-13B.jsonl
+    494523  data/unlabeled/ChatGPT.jsonl
+    375306  data/unlabeled/Dolly-12B.jsonl
+    546782  data/unlabeled/MPT-Chat-7B.jsonl
+    485955  data/unlabeled/Stablelm-alpha-7B.jsonl
+    658511  data/unlabeled/Vicuna-7B.jsonl
+    281654  data/unlabeled/Alpaca-7B.jsonl
+    272535  data/unlabeled/Alpaca-13B.jsonl
+    848143  data/unlabeled/GPT-4.jsonl
+
+labeled/prompt_entities.txt: 183 entities, 183 unique; first: ['Kang Ji-hwan', 'Kalki Koechlin', 'William Post']
+
+unlabeled/prompt_entities.txt: 500 entities, 500 unique; first: ['Suthida', 'Miguel Ángel Félix Gallardo', 'Iggy Azalea']
+
+ChatGPT.jsonl: 183 rows; keys: ['input', 'output', 'topic', 'cat', 'annotations']
+  rows with annotations: 157; atomic-fact labels: {'S': 3194, 'NS': 1692, 'IR': 540}
+  example: {"topic": "Lanny Flaherty", "input": "Question: Tell me a bio of Lanny Flaherty.", "output": "Lanny Flaherty is an American actor born on December 18, 1949, in Pensacola, Florida. He has appeared in numerous films,", "annotation[0] keys": ["text", "is-relevant", "model-atomic-facts", "human-atomic-facts"], "facts[0:2]": [{"text": "Lanny Flaherty is an American.", "label": "S"}, {"text": "Lanny Flaherty is an actor.", "label": "S"}]}
+
+InstructGPT.jsonl: 183 rows; keys: ['input', 'output', 'topic', 'cat', 'annotations']
+  rows with annotations: 182; atomic-fact labels: {'S': 2100, 'NS': 1971, 'IR': 655}
+  example: {"topic": "Doug Sheehan", "input": "Question: Tell me a bio of Doug Sheehan.", "output": "Doug Sheehan is an American actor best known for his role as Ben Galvin in the hit television drama series, Knots Landin", "annotation[0] keys": ["text", "is-relevant", "model-atomic-facts", "human-atomic-facts"], "facts[0:2]": [{"text": "Doug Sheehan is an American.", "label": "S"}, {"text": "Doug Sheehan is an actor.", "label": "S"}]}
+
+PerplexityAI.jsonl: 183 rows; keys: ['input', 'output', 'topic', 'cat', 'annotations']
+  rows with annotations: 166; atomic-fact labels: {'S': 4812, 'NS': 756, 'IR': 320}
+  example: {"topic": "Shahnaz Pahlavi", "input": "Question: Tell me a bio of Shahnaz Pahlavi.", "output": "Shahnaz Pahlavi was born in Tehran on October 27, 1940. She is the first child of Mohammad Reza Pahlavi, the Shah of Ira", "annotation[0] keys": ["text", "is-relevant", "model-atomic-facts", "human-atomic-facts"], "facts[0:2]": [{"text": "Shahnaz Pahlavi was born in Tehran.", "label": "S"}, {"text": "Shahnaz Pahlavi was born on October 27, 1940.", "label": "S"}]}

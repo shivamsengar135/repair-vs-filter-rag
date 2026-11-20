@@ -1,0 +1,77 @@
+##### QA table Qwen2.5-3B-Instruct
+| Set | closed-book match acc | closed-book EM | standard RAG match acc | RAG EM | RAG F1 | retrieval recall@5 | closed-book dir hash | RAG dir hash |
+|---|---|---|---|---|---|---|---|---|
+| PopQA | 0.150 | 0.122 | 0.303 | 0.244 | 0.286 | 0.416 | d2408af648e6 | b04802175bac |
+| NQ | 0.172 | 0.106 | 0.296 | 0.215 | 0.319 | 0.476 | 41163e8a4387 | b2bd49398fd9 |
+| TriviaQA | 0.427 | 0.369 | 0.626 | 0.534 | 0.614 | 0.753 | 667f663d0cfc | ae5a18bea26f |
+| HotpotQA | 0.172 | 0.148 | 0.316 | 0.284 | 0.380 | 0.482 | 73645231c88a | 699e67898cef |
+| 2Wiki | 0.238 | 0.234 | 0.272 | 0.253 | 0.303 | 0.335 | 83820efad60a | 0a2dd0d3c775 |
+##### analyze_shortform results/test/popqa/shortform__Qwen2.5-3B-Instruct__b3ee4906c897/
+run results/test/popqa/shortform__Qwen2.5-3B-Instruct__b3ee4906c897  n=1000  standard RAG accuracy 0.303
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.303  0.549   0.490   0.359  0.307 |          0.42/0.53          0.35/0.58          0.21/0.54          0.09/0.50
+C (two-signal)    0.303  0.511   0.502   0.361  0.333 |          0.43/0.54          0.33/0.55          0.22/0.56          0.12/0.60
+A (repair)        0.304  0.562   0.486   0.361  0.354 |          0.42/0.53          0.31/0.53          0.20/0.51          0.09/0.47
+##### analyze_shortform results/test/nq/shortform__Qwen2.5-3B-Instruct__b15ba6fb3638/
+run results/test/nq/shortform__Qwen2.5-3B-Instruct__b15ba6fb3638  n=1000  standard RAG accuracy 0.296
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.296  0.559   0.440   0.336  0.279 |          0.40/0.49          0.32/0.51          0.24/0.56          0.13/0.59
+C (two-signal)    0.296  0.555   0.456   0.345  0.335 |          0.39/0.48          0.31/0.50          0.19/0.47          0.11/0.55
+A (repair)        0.296  0.557   0.454   0.346  0.309 |          0.40/0.49          0.32/0.51          0.24/0.56          0.12/0.57
+##### analyze_shortform results/test/triviaqa/shortform__Qwen2.5-3B-Instruct__816b53b2ad17/
+run results/test/triviaqa/shortform__Qwen2.5-3B-Instruct__816b53b2ad17  n=1000  standard RAG accuracy 0.626
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.626  0.204   0.826   0.688  0.207 |          0.72/0.73          0.62/0.77          0.53/0.82          0.39/0.87
+C (two-signal)    0.626  0.198   0.848   0.719  0.188 |          0.75/0.74          0.67/0.78          0.57/0.83          0.34/0.85
+A (repair)        0.604  0.207   0.834   0.674  0.176 |          0.71/0.73          0.63/0.77          0.54/0.82          0.40/0.88
+##### analyze_shortform results/test/hotpotqa/shortform__Qwen2.5-3B-Instruct__1fa953454511/
+run results/test/hotpotqa/shortform__Qwen2.5-3B-Instruct__1fa953454511  n=1000  standard RAG accuracy 0.316
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.316  0.626   0.364   0.336  0.273 |          0.32/0.37          0.25/0.38          0.17/0.39          0.09/0.43
+C (two-signal)    0.316  0.590   0.394   0.341  0.275 |          0.35/0.43          0.27/0.45          0.19/0.48          0.10/0.53
+A (repair)        0.279  0.653   0.342   0.306  0.259 |          0.31/0.34          0.24/0.37          0.16/0.38          0.09/0.42
+##### analyze_shortform results/test/2wiki/shortform__Qwen2.5-3B-Instruct__f6abd13666e9/
+run results/test/2wiki/shortform__Qwen2.5-3B-Instruct__f6abd13666e9  n=1000  standard RAG accuracy 0.272
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.272  0.720   0.308   0.297  0.226 |          0.27/0.28          0.19/0.23          0.12/0.16          0.06/0.21
+C (two-signal)    0.272  0.711   0.308   0.301  0.237 |          0.28/0.28          0.20/0.27          0.13/0.23          0.07/0.31
+A (repair)        0.264  0.735   0.292   0.287  0.245 |          0.26/0.26          0.19/0.22          0.11/0.15          0.06/0.22
+##### QA table Qwen2.5-14B-Instruct-AWQ
+| Set | closed-book match acc | closed-book EM | standard RAG match acc | RAG EM | RAG F1 | retrieval recall@5 | closed-book dir hash | RAG dir hash |
+|---|---|---|---|---|---|---|---|---|
+| PopQA | 0.213 | 0.165 | 0.343 | 0.272 | 0.328 | 0.416 | ea5552a18684 | 029e212744e5 |
+| NQ | 0.265 | 0.159 | 0.378 | 0.267 | 0.391 | 0.476 | 1e3a12ed1ee7 | 6310ecd1e63a |
+| TriviaQA | 0.595 | 0.449 | 0.733 | 0.634 | 0.709 | 0.753 | cc279cbe6b53 | 7705efa2b577 |
+| HotpotQA | 0.225 | 0.140 | 0.405 | 0.342 | 0.472 | 0.482 | 4ee27113557e | 568679c10d5e |
+| 2Wiki | 0.238 | 0.198 | 0.320 | 0.288 | 0.351 | 0.335 | b169a4f04985 | bbeee17438e8 |
+##### analyze_shortform results/test/popqa/shortform__Qwen2.5-14B-Instruct-AWQ__08c823906ae2/
+run results/test/popqa/shortform__Qwen2.5-14B-Instruct-AWQ__08c823906ae2  n=1000  standard RAG accuracy 0.343
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.343  0.519   0.532   0.384  0.347 |          0.45/0.56          0.37/0.60          0.24/0.60          0.11/0.56
+C (two-signal)    0.343  0.438   0.568   0.406  0.369 |          0.47/0.58          0.38/0.61          0.27/0.64          0.17/0.71
+A (repair)        0.327  0.517   0.538   0.386  0.375 |          0.45/0.56          0.37/0.60          0.24/0.59          0.11/0.57
+##### analyze_shortform results/test/nq/shortform__Qwen2.5-14B-Instruct-AWQ__c2fd7f79df73/
+run results/test/nq/shortform__Qwen2.5-14B-Instruct-AWQ__c2fd7f79df73  n=1000  standard RAG accuracy 0.378
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.378  0.501   0.500   0.422  0.290 |          0.43/0.53          0.34/0.55          0.25/0.58          0.12/0.56
+C (two-signal)    0.378  0.505   0.518   0.422  0.351 |          0.43/0.52          0.32/0.52          0.22/0.54          0.12/0.57
+A (repair)        0.361  0.510   0.514   0.410  0.306 |          0.43/0.52          0.34/0.55          0.24/0.56          0.11/0.54
+##### analyze_shortform results/test/triviaqa/shortform__Qwen2.5-14B-Instruct-AWQ__2657c8d0feb4/
+run results/test/triviaqa/shortform__Qwen2.5-14B-Instruct-AWQ__2657c8d0feb4  n=1000  standard RAG accuracy 0.733
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.733  0.151   0.870   0.787  0.258 |          0.86/0.77          0.74/0.80          0.61/0.84          0.42/0.89
+C (two-signal)    0.733  0.139   0.864   0.805  0.209 |          0.88/0.78          0.78/0.81          0.66/0.85          0.40/0.88
+A (repair)        0.701  0.160   0.878   0.770  0.208 |          0.82/0.76          0.72/0.80          0.62/0.84          0.43/0.89
+##### analyze_shortform results/test/hotpotqa/shortform__Qwen2.5-14B-Instruct-AWQ__3eb4b1786be4/
+run results/test/hotpotqa/shortform__Qwen2.5-14B-Instruct-AWQ__3eb4b1786be4  n=1000  standard RAG accuracy 0.405
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.405  0.554   0.438   0.414  0.331 |          0.36/0.44          0.28/0.45          0.20/0.47          0.10/0.48
+C (two-signal)    0.405  0.493   0.468   0.422  0.339 |          0.39/0.49          0.31/0.51          0.23/0.56          0.14/0.65
+A (repair)        0.348  0.581   0.398   0.376  0.300 |          0.35/0.42          0.27/0.44          0.19/0.46          0.10/0.48
+##### analyze_shortform results/test/2wiki/shortform__Qwen2.5-14B-Instruct-AWQ__e8f6432639e8/
+run results/test/2wiki/shortform__Qwen2.5-14B-Instruct-AWQ__e8f6432639e8  n=1000  standard RAG accuracy 0.320
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.320  0.726   0.278   0.310  0.317 |          0.25/0.20          0.19/0.20          0.12/0.19          0.06/0.22
+C (two-signal)    0.320  0.671   0.298   0.318  0.318 |          0.27/0.26          0.21/0.29          0.15/0.34          0.09/0.45
+A (repair)        0.301  0.732   0.278   0.314  0.317 |          0.24/0.19          0.18/0.19          0.12/0.19          0.06/0.22
+SIZES_END

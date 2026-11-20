@@ -1,0 +1,23 @@
+ok   selfrag             234861 chars  tables~31  https://arxiv.org/html/2310.11511
+ok   crag                 63693 chars  tables~24  https://arxiv.org/html/2401.15884
+ok   flare                95211 chars  tables~20  https://arxiv.org/html/2305.06983
+ok   cove                 51358 chars  tables~14  https://arxiv.org/html/2309.11495
+ok   rarr                128124 chars  tables~20  https://arxiv.org/html/2210.08726
+ok   selfcheckgpt         57236 chars  tables~21  https://arxiv.org/html/2303.08896
+ok   factscore            99767 chars  tables~39  https://arxiv.org/html/2305.14251
+ok   semantic_entropy     69850 chars  tables~16  https://arxiv.org/html/2302.09664
+ok   alce                101066 chars  tables~53  https://arxiv.org/html/2305.14627
+ok   safe_longfact       220254 chars  tables~61  https://arxiv.org/html/2403.18802
+ok   ragtruth             57393 chars  tables~19  https://arxiv.org/html/2401.00396
+ok   adaptive_rag         74407 chars  tables~29  https://arxiv.org/html/2403.14403
+ok   minicheck           130454 chars  tables~73  https://arxiv.org/html/2404.10774
+ok   dragin               81487 chars  tables~18  https://arxiv.org/html/2403.10081
+ok   sure_rag             42037 chars  tables~11  https://arxiv.org/html/2605.03534
+ok   ar_uncertainty       99776 chars  tables~20  https://arxiv.org/html/2501.12835
+ok   grab_rag             79784 chars  tables~23  https://arxiv.org/html/2608.22228
+ok   franq                98524 chars  tables~45  https://arxiv.org/html/2505.21072
+ok   vericite             50777 chars  tables~8  https://arxiv.org/html/2510.11394
+  unicr: https://arxiv.org/html/2509.01455 error failed after 2 tries: https://arxiv.org/html/2509.01455: HTTP Error 404: Not Found
+ok   unicr                83238 chars  tables~0  https://ar5iv.labs.arxiv.org/html/2509.01455
+ok   declinecraft        155003 chars  tables~37  https://arxiv.org/html/2610.28340
+ok   rt4chart             64752 chars  tables~26  https://arxiv.org/html/2603.27752

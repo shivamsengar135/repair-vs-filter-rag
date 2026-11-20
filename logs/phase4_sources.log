@@ -1,0 +1,80 @@
+﻿--- DPR Wikipedia passages
+https://dl.fbaipublicfiles.com/dpr/wikipedia_split/psgs_w100.tsv.gz
+   HTTP/2 200  content-type: application/gzip content-length: 4694541059 etag: "7ccd39b61360f246b8258e0eb08f1376-299" 
+--- HF dataset file listings
+## facebook/wiki_dpr
+  352 files, 259.95 GB
+      37996.4 MB  index/psgs_w100.multiset.HNSW128_SQ8-IP-train.faiss
+      37996.4 MB  index/psgs_w100.nq.HNSW128_SQ8-IP-train.faiss
+       2872.6 MB  index/psgs_w100.multiset.IVF4096_HNSW128_PQ128-IP-train.faiss
+       2872.6 MB  index/psgs_w100.nq.IVF4096_HNSW128_PQ128-IP-train.faiss
+        545.8 MB  data/psgs_w100/multiset/train-00003-of-00157.parquet
+        545.8 MB  data/psgs_w100/nq/train-00003-of-00157.parquet
+        545.8 MB  data/psgs_w100/multiset/train-00002-of-00157.parquet
+        545.8 MB  data/psgs_w100/multiset/train-00004-of-00157.parquet
+## akariasai/PopQA
+  3 files, 0.01 GB
+          5.2 MB  test.tsv
+          0.0 MB  .gitattributes
+          0.0 MB  README.md
+## princeton-nlp/ALCE-data
+  2 files, 0.45 GB
+        451.3 MB  ALCE-data.tar
+          0.0 MB  .gitattributes
+## blue-guardrails/ragtruth-plus-plus
+  4 files, 0.00 GB
+          1.3 MB  messages.csv
+          0.1 MB  hallucination_spans.csv
+          0.0 MB  .gitattributes
+          0.0 MB  README.md
+## xanhho/2WikiMultihopQA
+  9 files, 0.40 GB
+        343.4 MB  train.parquet
+         30.1 MB  dev.parquet
+         28.5 MB  test.parquet
+          0.0 MB  2WikiMultihopQA.py
+          0.0 MB  .gitattributes
+          0.0 MB  convert_to_parquet.py
+          0.0 MB  convert_to_jsonl.py
+          0.0 MB  README.md
+## google-research-datasets/nq_open
+  4 files, 0.00 GB
+          4.5 MB  nq_open/train-00000-of-00001.parquet
+          0.2 MB  nq_open/validation-00000-of-00001.parquet
+          0.0 MB  README.md
+          0.0 MB  .gitattributes
+--- FActScore repo: data download instructions
+6:[![Downloads](https://pepy.tech/badge/factscore)](https://pepy.tech/project/factscore)
+22:* **11/04/2023**: The data we release includes human annotations of factual precision reported in Section 3 of [the paper](https://arxiv.org/abs/2305.14251). If you want to download these human annotated data *only*, 
+35:python -m spacy download en_core_web_sm
+38:## Download the data
+41:python -m factscore.download_data --llama_7B_HF_path "llama-7B"
+45:1. Download the knowledge source and example data.
+53:- If you get a `ERROR 429: Too Many Requests` error while downloading the DB file, please download the DB from [this Google Drive link](https://drive.google.com/drive/folders/1kFey69z8hGXScln01mVxrOhrqgM62X7I?usp=shar
+54:- If everything else fails, consider downloading the files manually from [this link](https://drive.google.com/drive/folders/1kFey69z8hGXScln01mVxrOhrqgM62X7I?usp=sharing) and placing them in `--data_dir` and `--model_
+65:- `--input_path` can be something like `data/unlabeled/InstructGPT.jsonl`. It should be a `.jsonl` format where each line contains `topic` (a topic entity that corresponds to the Wikipedia title) and `output` (a gener
+84:There're two sets of prompt entities, `data/labeled/prompt_entities.txt` (183 entities) and `data/unlabeled/prompt_entities.txt` (500 entities). Each line contains the name of the person (which is also a corresponding
+150:## FActScore results of the unlabeled data
+152:You can easily reproduce FActScore results of 12 different LMs reported in Section 4.3 of [the paper](https://arxiv.org/abs/2305.14251) using this code. However, if you would like to obtain their predictions without 
+164:dirname = "factscore-unlabeled-predictions"
+--- Self-RAG repo: eval data / retrieval files
+57:You can download Self-RAG from HuggingFace Hub. For inference, we recommend using [vllm](https://vllm.readthedocs.io/en/latest/) as it significantly speeds up inferences.
+62:model = LLM("selfrag/selfrag_llama2_7b", download_dir="/gscratch/h2lab/akari/model_cache", dtype="half")
+103:First, please download the corpus and embeddings (9GB in total).
+108:bash download_demo_corpus.sh
+110:If the script does not work, you can download the data from [google drive](https://drive.google.com/file/d/1IYNAkwawfCDiBL27BlBqGssxFQH9vOux/view?usp=share_link) or [HF dataset](https://huggingface.co/datasets/selfra
+133:**Note that this demo uses a smaller corpus and Self-RAG with the full inference algorithm. For a full evaluation, you either need to set up a retriever or download our retrieved results. Please follow instructions a
+138:### Download data
+139:Download preprocessed passage data used in DPR.
+142:wget https://dl.fbaipublicfiles.com/dpr/wikipedia_split/psgs_w100.tsv.gz
+145:Then, download the generated passages. We use [Contriever-MSMARCO](https://huggingface.co/facebook/contriever-msmarco)
+147:wget https://dl.fbaipublicfiles.com/contriever/embeddings/contriever-msmarco/wikipedia_embeddings.tar
+156:    --model_name_or_path facebook/contriever-msmarco --passages psgs_w100.tsv \
+157:    --passages_embeddings "wikipedia_embeddings/*" \
+185:Alternatively, you can download our training data consisting of 150K instances [here](https://drive.google.com/file/d/10G_FozUV4u27EX0NjwVe-3YMUMeTwuLk/view?usp=share_link).
+190:Alternatively, you can download our training data at [here](https://drive.google.com/file/d/1IN1XcIOYtRIGWITJ4LKRgfITT-uUwk_W/view?usp=share_link).
+193:Once you create or download training data, run the command below to fine-tune Llama2-7B on critic training.
+220:Alternatively, you can download our training data at [HuggingFace dataset](https://huggingface.co/datasets/selfrag/selfrag_train_data/tree/main) or [here](https://drive.google.com/file/d/10G_FozUV4u27EX0NjwVe-3YMUMeT
+233:For the task evaluation conducted in the paper, please download the data [here](https://drive.google.com/file/d/1TLKhWjez63H4uBtgCxyoyJsZi-IMgnDb/view?usp=share_link).
+241:### Short-form (PubHealth, ARC-Challenge, TriviaQA, PopQA)
+249:--input_file eval_data/popqa_longtail_w_gs.jsonl \

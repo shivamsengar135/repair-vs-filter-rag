@@ -1,0 +1,18 @@
+{
+ "run": "results/dev/asqa/flare__Qwen2.5-7B-Instruct__180338fd77ba",
+ "judge_model": "RedHatAI/phi-4-FP8-dynamic",
+ "judge_prompts": "judge_v1",
+ "n_claims": 456,
+ "n_supported": 288,
+ "supported_rate": 0.631578947368421,
+ "n_unreadable": 0,
+ "cost": {
+  "judge": {
+   "calls": 456,
+   "cache_hits": 106,
+   "prompt_tokens": 456862,
+   "completion_tokens": 456
+  }
+ },
+ "git_commit": "a63797d+dirty"
+}

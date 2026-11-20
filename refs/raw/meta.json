@@ -1,0 +1,1991 @@
+{
+ "fetched_utc": "2026-11-12T11:51:34Z",
+ "records": [
+  {
+   "arxiv_id": "2005.11401",
+   "key": "rag2020",
+   "expect": [
+    "retrieval-augmented generation",
+    "knowledge-intensive"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2005.11401v4",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "authors": [
+     "Patrick Lewis",
+     "Ethan Perez",
+     "Aleksandra Piktus",
+     "Fabio Petroni",
+     "Vladimir Karpukhin",
+     "Naman Goyal",
+     "Heinrich K\u00fcttler",
+     "Mike Lewis",
+     "Wen-tau Yih",
+     "Tim Rockt\u00e4schel",
+     "Sebastian Riedel",
+     "Douwe Kiela"
+    ],
+    "published": "2020-05-22T21:34:34Z",
+    "updated": "2021-04-12T15:42:18Z",
+    "abstract": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models with a differentiable access mechanism to explicit non-parametric memory can overcome this issue, but have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, the other can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledge-intensive NLP tasks and set the state-of-the-art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we find that RAG models generate more specific, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Accepted at NeurIPS 2020",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "659bf9ce7175e1ec266ff54359e2bd76e0b7ff31",
+    "externalIds": {
+     "MAG": "3027879771",
+     "DBLP": "conf/nips/LewisPPPKGKLYR020",
+     "ArXiv": "2005.11401",
+     "DOI": "10.48550/arXiv.2005.11401",
+     "CorpusId": 218869575
+    },
+    "publicationVenue": {
+     "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+     "name": "Neural Information Processing Systems",
+     "type": "conference",
+     "alternate_names": [
+      "Neural Inf Process Syst",
+      "NeurIPS",
+      "NIPS"
+     ],
+     "url": "http://neurips.cc/"
+    },
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "venue": "Neural Information Processing Systems",
+    "year": 2020,
+    "citationCount": 20995,
+    "publicationDate": "2020-05-22"
+   }
+  },
+  {
+   "arxiv_id": "2310.11511",
+   "key": "selfrag",
+   "expect": [
+    "self-rag"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2310.11511v1",
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "authors": [
+     "Akari Asai",
+     "Zeqiu Wu",
+     "Yizhong Wang",
+     "Avirup Sil",
+     "Hannaneh Hajishirzi"
+    ],
+    "published": "2023-10-17T18:18:32Z",
+    "updated": "2023-10-17T18:18:32Z",
+    "abstract": "Despite their remarkable capabilities, large language models (LLMs) often produce responses containing factual inaccuracies due to their sole reliance on the parametric knowledge they encapsulate. Retrieval-Augmented Generation (RAG), an ad hoc approach that augments LMs with retrieval of relevant knowledge, decreases such issues. However, indiscriminately retrieving and incorporating a fixed number of retrieved passages, regardless of whether retrieval is necessary, or passages are relevant, diminishes LM versatility or can lead to unhelpful response generation. We introduce a new framework called Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's quality and factuality through retrieval and self-reflection. Our framework trains a single arbitrary LM that adaptively retrieves passages on-demand, and generates and reflects on retrieved passages and its own generations using special tokens, called reflection tokens. Generating reflection tokens makes the LM controllable during the inference phase, enabling it to tailor its behavior to diverse task requirements. Experiments show that Self-RAG (7B and 13B parameters) significantly outperforms state-of-the-art LLMs and retrieval-augmented models on a diverse set of tasks. Specifically, Self-RAG outperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA, reasoning and fact verification tasks, and it shows significant gains in improving factuality and citation accuracy for long-form generations relative to these models.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "30 pages, 2 figures, 12 tables",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "ddbd8fe782ac98e9c64dd98710687a962195dd9b",
+    "externalIds": {
+     "DBLP": "conf/iclr/AsaiWWSH24",
+     "ArXiv": "2310.11511",
+     "CorpusId": 264288947
+    },
+    "publicationVenue": {
+     "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+     "name": "International Conference on Learning Representations",
+     "type": "conference",
+     "alternate_names": [
+      "Int Conf Learn Represent",
+      "ICLR"
+     ],
+     "url": "https://iclr.cc/"
+    },
+    "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 3108,
+    "publicationDate": "2023-10-17"
+   }
+  },
+  {
+   "arxiv_id": "2401.15884",
+   "key": "crag",
+   "expect": [
+    "corrective retrieval"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2401.15884v3",
+    "title": "Corrective Retrieval Augmented Generation",
+    "authors": [
+     "Shi-Qi Yan",
+     "Jia-Chen Gu",
+     "Yun Zhu",
+     "Zhen-Hua Ling"
+    ],
+    "published": "2024-01-29T04:36:39Z",
+    "updated": "2024-10-07T02:19:21Z",
+    "abstract": "Large language models (LLMs) inevitably exhibit hallucinations since the accuracy of generated texts cannot be secured solely by the parametric knowledge they encapsulate. Although retrieval-augmented generation (RAG) is a practicable complement to LLMs, it relies heavily on the relevance of retrieved documents, raising concerns about how the model behaves if retrieval goes wrong. To this end, we propose the Corrective Retrieval Augmented Generation (CRAG) to improve the robustness of generation. Specifically, a lightweight retrieval evaluator is designed to assess the overall quality of retrieved documents for a query, returning a confidence degree based on which different knowledge retrieval actions can be triggered. Since retrieval from static and limited corpora can only return sub-optimal documents, large-scale web searches are utilized as an extension for augmenting the retrieval results. Besides, a decompose-then-recompose algorithm is designed for retrieved documents to selectively focus on key information and filter out irrelevant information in them. CRAG is plug-and-play and can be seamlessly coupled with various RAG-based approaches. Experiments on four datasets covering short- and long-form generation tasks show that CRAG can significantly improve the performance of RAG-based approaches.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Update results, add more analysis, and fix typos",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "5bbc2b5aa6c63c6a2cfccf095d6020b063ad47ac",
+    "externalIds": {
+     "ArXiv": "2401.15884",
+     "DBLP": "journals/corr/abs-2401-15884",
+     "DOI": "10.48550/arXiv.2401.15884",
+     "CorpusId": 267312595
+    },
+    "publicationVenue": null,
+    "title": "Corrective Retrieval Augmented Generation",
+    "venue": "Findings of the Association for Computational Linguistics: IJCNLP-AACL 2026",
+    "year": 2024,
+    "citationCount": 358,
+    "publicationDate": "2024-01-29"
+   }
+  },
+  {
+   "arxiv_id": "2305.06983",
+   "key": "flare",
+   "expect": [
+    "active retrieval"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2305.06983v2",
+    "title": "Active Retrieval Augmented Generation",
+    "authors": [
+     "Zhengbao Jiang",
+     "Frank F. Xu",
+     "Luyu Gao",
+     "Zhiqing Sun",
+     "Qian Liu",
+     "Jane Dwivedi-Yu",
+     "Yiming Yang",
+     "Jamie Callan",
+     "Graham Neubig"
+    ],
+    "published": "2023-05-11T17:13:40Z",
+    "updated": "2023-10-22T00:11:13Z",
+    "abstract": "Despite the remarkable ability of large language models (LMs) to comprehend and generate language, they have a tendency to hallucinate and create factually inaccurate output. Augmenting LMs by retrieving information from external knowledge resources is one promising solution. Most existing retrieval augmented LMs employ a retrieve-and-generate setup that only retrieves information once based on the input. This is limiting, however, in more general scenarios involving generation of long texts, where continually gathering information throughout generation is essential. In this work, we provide a generalized view of active retrieval augmented generation, methods that actively decide when and what to retrieve across the course of the generation. We propose Forward-Looking Active REtrieval augmented generation (FLARE), a generic method which iteratively uses a prediction of the upcoming sentence to anticipate future content, which is then utilized as a query to retrieve relevant documents to regenerate the sentence if it contains low-confidence tokens. We test FLARE along with baselines comprehensively over 4 long-form knowledge-intensive generation tasks/datasets. FLARE achieves superior or competitive performance on all tasks, demonstrating the effectiveness of our method. Code and datasets are available at https://github.com/jzbjyb/FLARE.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "EMNLP 2023",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "88884b8806262a4095036041e3567d450dba39f7",
+    "externalIds": {
+     "ArXiv": "2305.06983",
+     "DBLP": "journals/corr/abs-2305-06983",
+     "DOI": "10.48550/arXiv.2305.06983",
+     "CorpusId": 258615731
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "Active Retrieval Augmented Generation",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "citationCount": 988,
+    "publicationDate": "2023-05-11"
+   }
+  },
+  {
+   "arxiv_id": "2309.11495",
+   "key": "cove",
+   "expect": [
+    "chain-of-verification"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2309.11495v2",
+    "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+    "authors": [
+     "Shehzaad Dhuliawala",
+     "Mojtaba Komeili",
+     "Jing Xu",
+     "Roberta Raileanu",
+     "Xian Li",
+     "Asli Celikyilmaz",
+     "Jason Weston"
+    ],
+    "published": "2023-09-20T17:50:55Z",
+    "updated": "2023-09-25T15:25:49Z",
+    "abstract": "Generation of plausible yet incorrect factual information, termed hallucination, is an unsolved issue in large language models. We study the ability of language models to deliberate on the responses they give in order to correct their mistakes. We develop the Chain-of-Verification (CoVe) method whereby the model first (i) drafts an initial response; then (ii) plans verification questions to fact-check its draft; (iii) answers those questions independently so the answers are not biased by other responses; and (iv) generates its final verified response. In experiments, we show CoVe decreases hallucinations across a variety of tasks, from list-based questions from Wikidata, closed book MultiSpanQA and longform text generation.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "4b0b56be0ae9479d2bd5c2f0943db1906343c10f",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2309-11495",
+     "ArXiv": "2309.11495",
+     "DOI": "10.48550/arXiv.2309.11495",
+     "CorpusId": 262062565
+    },
+    "publicationVenue": {
+     "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+     "name": "Annual Meeting of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Annu Meet Assoc Comput Linguistics",
+      "Meeting of the Association for Computational Linguistics",
+      "ACL",
+      "Meet Assoc Comput Linguistics"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/acl/"
+    },
+    "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2023,
+    "citationCount": 677,
+    "publicationDate": "2023-09-20"
+   }
+  },
+  {
+   "arxiv_id": "2210.08726",
+   "key": "rarr",
+   "expect": [
+    "rarr"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2210.08726v3",
+    "title": "RARR: Researching and Revising What Language Models Say, Using Language Models",
+    "authors": [
+     "Luyu Gao",
+     "Zhuyun Dai",
+     "Panupong Pasupat",
+     "Anthony Chen",
+     "Arun Tejasvi Chaganty",
+     "Yicheng Fan",
+     "Vincent Y. Zhao",
+     "Ni Lao",
+     "Hongrae Lee",
+     "Da-Cheng Juan",
+     "Kelvin Guu"
+    ],
+    "published": "2022-10-17T03:44:30Z",
+    "updated": "2023-05-31T17:55:02Z",
+    "abstract": "Language models (LMs) now excel at many tasks such as few-shot learning, question answering, reasoning, and dialog. However, they sometimes generate unsupported or misleading content. A user cannot easily determine whether their outputs are trustworthy or not, because most LMs do not have any built-in mechanism for attribution to external evidence. To enable attribution while still preserving all the powerful advantages of recent generation models, we propose RARR (Retrofit Attribution using Research and Revision), a system that 1) automatically finds attribution for the output of any text generation model and 2) post-edits the output to fix unsupported content while preserving the original output as much as possible. When applied to the output of several state-of-the-art LMs on a diverse set of generation tasks, we find that RARR significantly improves attribution while otherwise preserving the original input to a much greater degree than previously explored edit models. Furthermore, the implementation of RARR requires only a handful of training examples, a large language model, and standard web search.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "ACL 2023",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "66242baf48b0f6b828e7547ac39ffaa5e1b2cb3e",
+    "externalIds": {
+     "ArXiv": "2210.08726",
+     "DBLP": "conf/acl/GaoDPCCFZLLJG23",
+     "ACL": "2023.acl-long.910",
+     "DOI": "10.18653/v1/2023.acl-long.910",
+     "CorpusId": 254247260
+    },
+    "publicationVenue": {
+     "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+     "name": "Annual Meeting of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Annu Meet Assoc Comput Linguistics",
+      "Meeting of the Association for Computational Linguistics",
+      "ACL",
+      "Meet Assoc Comput Linguistics"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/acl/"
+    },
+    "title": "RARR: Researching and Revising What Language Models Say, Using Language Models",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2022,
+    "citationCount": 417,
+    "publicationDate": "2022-10-17"
+   }
+  },
+  {
+   "arxiv_id": "2303.08896",
+   "key": "selfcheckgpt",
+   "expect": [
+    "selfcheckgpt"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2303.08896v3",
+    "title": "SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models",
+    "authors": [
+     "Potsawee Manakul",
+     "Adian Liusie",
+     "Mark J. F. Gales"
+    ],
+    "published": "2023-03-15T19:31:21Z",
+    "updated": "2023-10-11T17:43:28Z",
+    "abstract": "Generative Large Language Models (LLMs) such as GPT-3 are capable of generating highly fluent responses to a wide variety of user prompts. However, LLMs are known to hallucinate facts and make non-factual statements which can undermine trust in their output. Existing fact-checking approaches either require access to the output probability distribution (which may not be available for systems such as ChatGPT) or external databases that are interfaced via separate, often complex, modules. In this work, we propose \"SelfCheckGPT\", a simple sampling-based approach that can be used to fact-check the responses of black-box models in a zero-resource fashion, i.e. without an external database. SelfCheckGPT leverages the simple idea that if an LLM has knowledge of a given concept, sampled responses are likely to be similar and contain consistent facts. However, for hallucinated facts, stochastically sampled responses are likely to diverge and contradict one another. We investigate this approach by using GPT-3 to generate passages about individuals from the WikiBio dataset, and manually annotate the factuality of the generated passages. We demonstrate that SelfCheckGPT can: i) detect non-factual and factual sentences; and ii) rank passages in terms of factuality. We compare our approach to several baselines and show that our approach has considerably higher AUC-PR scores in sentence-level hallucination detection and higher correlation scores in passage-level factuality assessment compared to grey-box methods.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "EMNLP 2023 (main conference)",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "7c1707db9aafd209aa93db3251e7ebd593d55876",
+    "externalIds": {
+     "DBLP": "conf/emnlp/ManakulLG23",
+     "ArXiv": "2303.08896",
+     "DOI": "10.48550/arXiv.2303.08896",
+     "CorpusId": 257557820
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "citationCount": 1427,
+    "publicationDate": "2023-03-16"
+   }
+  },
+  {
+   "arxiv_id": "2305.14251",
+   "key": "factscore",
+   "expect": [
+    "factscore"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2305.14251v2",
+    "title": "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation",
+    "authors": [
+     "Sewon Min",
+     "Kalpesh Krishna",
+     "Xinxi Lyu",
+     "Mike Lewis",
+     "Wen-tau Yih",
+     "Pang Wei Koh",
+     "Mohit Iyyer",
+     "Luke Zettlemoyer",
+     "Hannaneh Hajishirzi"
+    ],
+    "published": "2023-05-23T17:06:00Z",
+    "updated": "2023-10-11T05:27:50Z",
+    "abstract": "Evaluating the factuality of long-form text generated by large language models (LMs) is non-trivial because (1) generations often contain a mixture of supported and unsupported pieces of information, making binary judgments of quality inadequate, and (2) human evaluation is time-consuming and costly. In this paper, we introduce FACTSCORE, a new evaluation that breaks a generation into a series of atomic facts and computes the percentage of atomic facts supported by a reliable knowledge source. We conduct an extensive human evaluation to obtain FACTSCOREs of people biographies generated by several state-of-the-art commercial LMs -- InstructGPT, ChatGPT, and the retrieval-augmented PerplexityAI -- and report new analysis demonstrating the need for such a fine-grained score (e.g., ChatGPT only achieves 58%). Since human evaluation is costly, we also introduce an automated model that estimates FACTSCORE using retrieval and a strong language model, with less than a 2% error rate. Finally, we use this automated metric to evaluate 6,500 generations from a new set of 13 recent LMs that would have cost $26K if evaluated by humans, with various findings: GPT-4 and ChatGPT are more factual than public models, and Vicuna and Alpaca are some of the best public models. FACTSCORE is available for public use via `pip install factscore`.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "25 pages; 7 figures. Published as a main conference paper at EMNLP 2023. Code available at https://github.com/shmsw25/FActScore",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "bd5deadc58ee45b5e004378ba1d54a96bc947b4a",
+    "externalIds": {
+     "ArXiv": "2305.14251",
+     "DBLP": "journals/corr/abs-2305-14251",
+     "DOI": "10.48550/arXiv.2305.14251",
+     "CorpusId": 258841470
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "citationCount": 1986,
+    "publicationDate": "2023-05-23"
+   }
+  },
+  {
+   "arxiv_id": "2302.09664",
+   "key": "semantic_entropy",
+   "expect": [
+    "semantic uncertainty"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2302.09664v3",
+    "title": "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation",
+    "authors": [
+     "Lorenz Kuhn",
+     "Yarin Gal",
+     "Sebastian Farquhar"
+    ],
+    "published": "2023-02-19T20:10:07Z",
+    "updated": "2023-04-15T12:55:45Z",
+    "abstract": "We introduce a method to measure uncertainty in large language models. For tasks like question answering, it is essential to know when we can trust the natural language outputs of foundation models. We show that measuring uncertainty in natural language is challenging because of \"semantic equivalence\" -- different sentences can mean the same thing. To overcome these challenges we introduce semantic entropy -- an entropy which incorporates linguistic invariances created by shared meanings. Our method is unsupervised, uses only a single model, and requires no modifications to off-the-shelf language models. In comprehensive ablation studies we show that the semantic entropy is more predictive of model accuracy on question answering data sets than comparable baselines.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "International Conference on Learning Representations 2023 (Spotlight)",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "507465f8d46489a68a527cb5304d76bdb6c31ed9",
+    "externalIds": {
+     "ArXiv": "2302.09664",
+     "DBLP": "journals/corr/abs-2302-09664",
+     "DOI": "10.48550/arXiv.2302.09664",
+     "CorpusId": 257039062
+    },
+    "publicationVenue": {
+     "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+     "name": "International Conference on Learning Representations",
+     "type": "conference",
+     "alternate_names": [
+      "Int Conf Learn Represent",
+      "ICLR"
+     ],
+     "url": "https://iclr.cc/"
+    },
+    "title": "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 1072,
+    "publicationDate": "2023-02-19"
+   }
+  },
+  {
+   "arxiv_id": "2406.15927",
+   "key": "sep",
+   "expect": [
+    "semantic entropy probes"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2406.15927v1",
+    "title": "Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs",
+    "authors": [
+     "Jannik Kossen",
+     "Jiatong Han",
+     "Muhammed Razzak",
+     "Lisa Schut",
+     "Shreshth Malik",
+     "Yarin Gal"
+    ],
+    "published": "2024-06-22T19:46:06Z",
+    "updated": "2024-06-22T19:46:06Z",
+    "abstract": "We propose semantic entropy probes (SEPs), a cheap and reliable method for uncertainty quantification in Large Language Models (LLMs). Hallucinations, which are plausible-sounding but factually incorrect and arbitrary model generations, present a major challenge to the practical adoption of LLMs. Recent work by Farquhar et al. (2024) proposes semantic entropy (SE), which can detect hallucinations by estimating uncertainty in the space semantic meaning for a set of model generations. However, the 5-to-10-fold increase in computation cost associated with SE computation hinders practical adoption. To address this, we propose SEPs, which directly approximate SE from the hidden states of a single generation. SEPs are simple to train and do not require sampling multiple model generations at test time, reducing the overhead of semantic uncertainty quantification to almost zero. We show that SEPs retain high performance for hallucination detection and generalize better to out-of-distribution data than previous probing methods that directly predict model accuracy. Our results across models and tasks suggest that model hidden states capture SE, and our ablation studies give further insights into the token positions and model layers for which this is the case.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "First three authors contributed equally",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "648375ec8d90cb792de76030223539498612102e",
+    "externalIds": {
+     "ArXiv": "2406.15927",
+     "DBLP": "journals/corr/abs-2406-15927",
+     "DOI": "10.48550/arXiv.2406.15927",
+     "CorpusId": 270703114
+    },
+    "publicationVenue": {
+     "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+     "name": "arXiv.org",
+     "alternate_names": [
+      "ArXiv"
+     ],
+     "issn": "2331-8422",
+     "url": "https://arxiv.org"
+    },
+    "title": "Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 317,
+    "publicationDate": "2024-06-22"
+   }
+  },
+  {
+   "arxiv_id": "2305.14627",
+   "key": "alce",
+   "expect": [
+    "citations"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2305.14627v2",
+    "title": "Enabling Large Language Models to Generate Text with Citations",
+    "authors": [
+     "Tianyu Gao",
+     "Howard Yen",
+     "Jiatong Yu",
+     "Danqi Chen"
+    ],
+    "published": "2023-05-24T01:53:49Z",
+    "updated": "2023-10-31T15:04:35Z",
+    "abstract": "Large language models (LLMs) have emerged as a widely-used tool for information seeking, but their generated outputs are prone to hallucination. In this work, our aim is to allow LLMs to generate text with citations, improving their factual correctness and verifiability. Existing work mainly relies on commercial search engines and human evaluation, making it challenging to reproduce and compare different modeling approaches. We propose ALCE, the first benchmark for Automatic LLMs' Citation Evaluation. ALCE collects a diverse set of questions and retrieval corpora and requires building end-to-end systems to retrieve supporting evidence and generate answers with citations. We develop automatic metrics along three dimensions -- fluency, correctness, and citation quality -- and demonstrate their strong correlation with human judgements. Our experiments with state-of-the-art LLMs and novel prompting strategies show that current systems have considerable room for improvement -- For example, on the ELI5 dataset, even the best models lack complete citation support 50% of the time. Our analyses further highlight promising future directions, including developing better retrievers, advancing long-context LLMs, and improving the ability to synthesize information from multiple sources.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Accepted by EMNLP 2023. Code and data are available at https://github.com/princeton-nlp/ALCE",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "e7c97e953849f1a8e5d85ceb4cfcc0a5d54d2365",
+    "externalIds": {
+     "ArXiv": "2305.14627",
+     "DBLP": "conf/emnlp/GaoYYC23",
+     "DOI": "10.48550/arXiv.2305.14627",
+     "CorpusId": 258865710
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "Enabling Large Language Models to Generate Text with Citations",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "citationCount": 971,
+    "publicationDate": "2023-05-24"
+   }
+  },
+  {
+   "arxiv_id": "2112.12870",
+   "key": "ais",
+   "expect": [
+    "attribut"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2112.12870v2",
+    "title": "Measuring Attribution in Natural Language Generation Models",
+    "authors": [
+     "Hannah Rashkin",
+     "Vitaly Nikolaev",
+     "Matthew Lamm",
+     "Lora Aroyo",
+     "Michael Collins",
+     "Dipanjan Das",
+     "Slav Petrov",
+     "Gaurav Singh Tomar",
+     "Iulia Turc",
+     "David Reitter"
+    ],
+    "published": "2021-12-23T22:33:20Z",
+    "updated": "2022-08-02T20:40:20Z",
+    "abstract": "With recent improvements in natural language generation (NLG) models for various applications, it has become imperative to have the means to identify and evaluate whether NLG output is only sharing verifiable information about the external world. In this work, we present a new evaluation framework entitled Attributable to Identified Sources (AIS) for assessing the output of natural language generation models, when such output pertains to the external world. We first define AIS and introduce a two-stage annotation pipeline for allowing annotators to appropriately evaluate model output according to AIS guidelines. We empirically validate this approach on generation datasets spanning three tasks (two conversational QA datasets, a summarization dataset, and a table-to-text dataset) via human evaluation studies that suggest that AIS could serve as a common framework for measuring whether model-generated statements are supported by underlying sources. We release guidelines for the human evaluation studies.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "07283e1578a50e15ac66efcc35b4ae0cbf2159ef",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2112-12870",
+     "ArXiv": "2112.12870",
+     "DOI": "10.1162/coli_a_00486",
+     "CorpusId": 245502761
+    },
+    "publicationVenue": {
+     "id": "ee37a78c-f3d8-407a-bd24-bb97fe6dbab9",
+     "name": "Computational Linguistics",
+     "type": "journal",
+     "alternate_names": [
+      "Comput Linguistics"
+     ],
+     "issn": "0891-2017",
+     "alternate_issns": [
+      "1530-9312",
+      "0362-613x",
+      "0362-613X"
+     ],
+     "url": "http://aclanthology.info/venues/cl",
+     "alternate_urls": [
+      "http://mitpress.mit.edu/catalog/item/default.asp?ttype=4&tid=10",
+      "https://www.mitpressjournals.org/loi/coli"
+     ]
+    },
+    "title": "Measuring Attribution in Natural Language Generation Models",
+    "venue": "Computational Linguistics",
+    "year": 2021,
+    "citationCount": 370,
+    "publicationDate": "2021-12-23"
+   }
+  },
+  {
+   "arxiv_id": "2212.08037",
+   "key": "attributed_qa",
+   "expect": [
+    "attributed question answering"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2212.08037v2",
+    "title": "Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models",
+    "authors": [
+     "Bernd Bohnet",
+     "Vinh Q. Tran",
+     "Pat Verga",
+     "Roee Aharoni",
+     "Daniel Andor",
+     "Livio Baldini Soares",
+     "Massimiliano Ciaramita",
+     "Jacob Eisenstein",
+     "Kuzman Ganchev",
+     "Jonathan Herzig",
+     "Kai Hui",
+     "Tom Kwiatkowski",
+     "Ji Ma",
+     "Jianmo Ni",
+     "Lierni Sestorain Saralegui",
+     "Tal Schuster",
+     "William W. Cohen",
+     "Michael Collins",
+     "Dipanjan Das",
+     "Donald Metzler",
+     "Slav Petrov",
+     "Kellie Webster"
+    ],
+    "published": "2022-12-15T18:45:29Z",
+    "updated": "2023-02-10T20:04:05Z",
+    "abstract": "Large language models (LLMs) have shown impressive results while requiring little or no direct supervision. Further, there is mounting evidence that LLMs may have potential in information-seeking scenarios. We believe the ability of an LLM to attribute the text that it generates is likely to be crucial in this setting. We formulate and study Attributed QA as a key first step in the development of attributed LLMs. We propose a reproducible evaluation framework for the task and benchmark a broad set of architectures. We take human annotations as a gold standard and show that a correlated automatic metric is suitable for development. Our experimental work gives concrete answers to two key questions (How to measure attribution?, and How well do current state-of-the-art methods perform on attribution?), and give some hints as to how to address a third (How to build LLMs with attribution?).",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "05d77715d49714506a920f26c5432b92078cd37c",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2212-08037",
+     "ArXiv": "2212.08037",
+     "DOI": "10.48550/arXiv.2212.08037",
+     "CorpusId": 254685584
+    },
+    "publicationVenue": {
+     "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+     "name": "arXiv.org",
+     "alternate_names": [
+      "ArXiv"
+     ],
+     "issn": "2331-8422",
+     "url": "https://arxiv.org"
+    },
+    "title": "Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models",
+    "venue": "arXiv.org",
+    "year": 2022,
+    "citationCount": 166,
+    "publicationDate": "2022-12-15"
+   }
+  },
+  {
+   "arxiv_id": "2403.18802",
+   "key": "safe_longfact",
+   "expect": [
+    "long-form factuality"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2403.18802v4",
+    "title": "Long-form factuality in large language models",
+    "authors": [
+     "Jerry Wei",
+     "Chengrun Yang",
+     "Xinying Song",
+     "Yifeng Lu",
+     "Nathan Hu",
+     "Jie Huang",
+     "Dustin Tran",
+     "Daiyi Peng",
+     "Ruibo Liu",
+     "Da Huang",
+     "Cosmo Du",
+     "Quoc V. Le"
+    ],
+    "published": "2024-03-27T17:48:55Z",
+    "updated": "2024-11-07T03:14:38Z",
+    "abstract": "Large language models (LLMs) often generate content that contains factual errors when responding to fact-seeking prompts on open-ended topics. To benchmark a model's long-form factuality in open domains, we first use GPT-4 to generate LongFact, a prompt set comprising thousands of questions spanning 38 topics. We then propose that LLM agents can be used as automated evaluators for long-form factuality through a method which we call Search-Augmented Factuality Evaluator (SAFE). SAFE utilizes an LLM to break down a long-form response into a set of individual facts and to evaluate the accuracy of each fact using a multi-step reasoning process comprising sending search queries to Google Search and determining whether a fact is supported by the search results. Furthermore, we propose extending F1 score as an aggregated metric for long-form factuality. To do so, we balance the percentage of supported facts in a response (precision) with the percentage of provided facts relative to a hyperparameter representing a user's preferred response length (recall). Empirically, we demonstrate that LLM agents can outperform crowdsourced human annotators - on a set of ~16k individual facts, SAFE agrees with crowdsourced human annotators 72% of the time, and on a random subset of 100 disagreement cases, SAFE wins 76% of the time. At the same time, SAFE is more than 20 times cheaper than human annotators. We also benchmark thirteen language models on LongFact across four model families (Gemini, GPT, Claude, and PaLM-2), finding that larger language models generally achieve better long-form factuality. LongFact, SAFE, and all experimental code are available at https://github.com/google-deepmind/long-form-factuality.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "NeurIPS 2024; 72 pages, 18 figures, 30 tables. Code at https://github.com/google-deepmind/long-form-factuality",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "58e194695187fe4daeb04ea694e0f59af2441177",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2403-18802",
+     "ArXiv": "2403.18802",
+     "DOI": "10.48550/arXiv.2403.18802",
+     "CorpusId": 268724304
+    },
+    "publicationVenue": {
+     "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+     "name": "Neural Information Processing Systems",
+     "type": "conference",
+     "alternate_names": [
+      "Neural Inf Process Syst",
+      "NeurIPS",
+      "NIPS"
+     ],
+     "url": "http://neurips.cc/"
+    },
+    "title": "Long-form factuality in large language models",
+    "venue": "Neural Information Processing Systems",
+    "year": 2024,
+    "citationCount": 196,
+    "publicationDate": "2024-03-27"
+   }
+  },
+  {
+   "arxiv_id": "2406.19276",
+   "key": "veriscore",
+   "expect": [
+    "veriscore"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2406.19276v1",
+    "title": "VERISCORE: Evaluating the factuality of verifiable claims in long-form text generation",
+    "authors": [
+     "Yixiao Song",
+     "Yekyung Kim",
+     "Mohit Iyyer"
+    ],
+    "published": "2024-06-27T15:43:18Z",
+    "updated": "2024-06-27T15:43:18Z",
+    "abstract": "Existing metrics for evaluating the factuality of long-form text, such as FACTSCORE (Min et al., 2023) and SAFE (Wei et al., 2024), decompose an input text into \"atomic claims\" and verify each against a knowledge base like Wikipedia. These metrics are not suitable for most generation tasks because they assume that every claim is verifiable (i.e., can plausibly be proven true or false). We address this issue with VERISCORE, a metric for diverse long-form generation tasks that contain both verifiable and unverifiable content. VERISCORE can be effectively implemented with either closed or fine-tuned open-weight language models, and human evaluation confirms that VERISCORE's extracted claims are more sensible than those from competing methods across eight different long-form tasks. We use VERISCORE to evaluate generations from 16 different models across multiple long-form tasks and find that while GPT-4o is the best-performing model overall, open-weight models such as Mixtral-8x22 are closing the gap. We show that an LM's VERISCORE on one task (e.g., biography generation) does not necessarily correlate to its VERISCORE on a different task (e.g., long-form QA), highlighting the need for expanding factuality evaluation across tasks with varying fact density.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "32d8df3dddfeb5d04326a17c0d506b1304aa8dc1",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2406-19276",
+     "ArXiv": "2406.19276",
+     "DOI": "10.48550/arXiv.2406.19276",
+     "CorpusId": 270765002
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "VERISCORE: Evaluating the factuality of verifiable claims in long-form text generation",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "citationCount": 161,
+    "publicationDate": "2024-06-27"
+   }
+  },
+  {
+   "arxiv_id": "2401.00396",
+   "key": "ragtruth",
+   "expect": [
+    "ragtruth"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2401.00396v2",
+    "title": "RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models",
+    "authors": [
+     "Cheng Niu",
+     "Yuanhao Wu",
+     "Juno Zhu",
+     "Siliang Xu",
+     "Kashun Shum",
+     "Randy Zhong",
+     "Juntong Song",
+     "Tong Zhang"
+    ],
+    "published": "2023-12-31T04:43:45Z",
+    "updated": "2024-05-17T06:29:31Z",
+    "abstract": "Retrieval-augmented generation (RAG) has become a main technique for alleviating hallucinations in large language models (LLMs). Despite the integration of RAG, LLMs may still present unsupported or contradictory claims to the retrieved contents. In order to develop effective hallucination prevention strategies under RAG, it is important to create benchmark datasets that can measure the extent of hallucination. This paper presents RAGTruth, a corpus tailored for analyzing word-level hallucinations in various domains and tasks within the standard RAG frameworks for LLM applications. RAGTruth comprises nearly 18,000 naturally generated responses from diverse LLMs using RAG. These responses have undergone meticulous manual annotations at both the individual cases and word levels, incorporating evaluations of hallucination intensity. We not only benchmark hallucination frequencies across different LLMs, but also critically assess the effectiveness of several existing hallucination detection methodologies. Furthermore, we show that using a high-quality dataset such as RAGTruth, it is possible to finetune a relatively small LLM and achieve a competitive level of performance in hallucination detection when compared to the existing prompt-based approaches using state-of-the-art large language models such as GPT-4.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "cfce709a65f90312d2bdc1a6cf0380c19becf694",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2401-00396",
+     "ArXiv": "2401.00396",
+     "DOI": "10.48550/arXiv.2401.00396",
+     "CorpusId": 266693591
+    },
+    "publicationVenue": {
+     "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+     "name": "Annual Meeting of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Annu Meet Assoc Comput Linguistics",
+      "Meeting of the Association for Computational Linguistics",
+      "ACL",
+      "Meet Assoc Comput Linguistics"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/acl/"
+    },
+    "title": "RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2023,
+    "citationCount": 500,
+    "publicationDate": "2023-12-31"
+   }
+  },
+  {
+   "arxiv_id": "2305.11747",
+   "key": "halueval",
+   "expect": [
+    "halueval"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2305.11747v3",
+    "title": "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models",
+    "authors": [
+     "Junyi Li",
+     "Xiaoxue Cheng",
+     "Wayne Xin Zhao",
+     "Jian-Yun Nie",
+     "Ji-Rong Wen"
+    ],
+    "published": "2023-05-19T15:36:27Z",
+    "updated": "2023-10-23T01:49:32Z",
+    "abstract": "Large language models (LLMs), such as ChatGPT, are prone to generate hallucinations, i.e., content that conflicts with the source or cannot be verified by the factual knowledge. To understand what types of content and to which extent LLMs are apt to hallucinate, we introduce the Hallucination Evaluation benchmark for Large Language Models (HaluEval), a large collection of generated and human-annotated hallucinated samples for evaluating the performance of LLMs in recognizing hallucination. To generate these samples, we propose a ChatGPT-based two-step framework, i.e., sampling-then-filtering. Besides, we also hire some human labelers to annotate the hallucinations in ChatGPT responses. The empirical results suggest that ChatGPT is likely to generate hallucinated content in specific topics by fabricating unverifiable information (i.e., about $19.5\\%$ responses). Moreover, existing LLMs face great challenges in recognizing the hallucinations in texts. However, our experiments also prove that providing external knowledge or adding reasoning steps can help LLMs recognize hallucinations. Our benchmark can be accessed at https://github.com/RUCAIBox/HaluEval.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Accepted to EMNLP 2023 Main Conference (Long Paper)",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "e0384ba36555232c587d4a80d527895a095a9001",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2305-11747",
+     "ArXiv": "2305.11747",
+     "DOI": "10.48550/arXiv.2305.11747",
+     "CorpusId": 258832847
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "citationCount": 630,
+    "publicationDate": "2023-05-19"
+   }
+  },
+  {
+   "arxiv_id": "2403.14403",
+   "key": "adaptive_rag",
+   "expect": [
+    "adaptive-rag"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2403.14403v2",
+    "title": "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity",
+    "authors": [
+     "Soyeong Jeong",
+     "Jinheon Baek",
+     "Sukmin Cho",
+     "Sung Ju Hwang",
+     "Jong C. Park"
+    ],
+    "published": "2024-03-21T13:52:30Z",
+    "updated": "2024-03-28T06:45:11Z",
+    "abstract": "Retrieval-Augmented Large Language Models (LLMs), which incorporate the non-parametric knowledge from external knowledge bases into LLMs, have emerged as a promising approach to enhancing response accuracy in several tasks, such as Question-Answering (QA). However, even though there are various approaches dealing with queries of different complexities, they either handle simple queries with unnecessary computational overhead or fail to adequately address complex multi-step queries; yet, not all user requests fall into only one of the simple or complex categories. In this work, we propose a novel adaptive QA framework, that can dynamically select the most suitable strategy for (retrieval-augmented) LLMs from the simplest to the most sophisticated ones based on the query complexity. Also, this selection process is operationalized with a classifier, which is a smaller LM trained to predict the complexity level of incoming queries with automatically collected labels, obtained from actual predicted outcomes of models and inherent inductive biases in datasets. This approach offers a balanced strategy, seamlessly adapting between the iterative and single-step retrieval-augmented LLMs, as well as the no-retrieval methods, in response to a range of query complexities. We validate our model on a set of open-domain QA datasets, covering multiple query complexities, and show that ours enhances the overall efficiency and accuracy of QA systems, compared to relevant baselines including the adaptive retrieval approaches. Code is available at: https://github.com/starsuzi/Adaptive-RAG.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "NAACL 2024",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "e5e8c6ac537e0f5b5db14170bc232d6f9e641bbc",
+    "externalIds": {
+     "ACL": "2024.naacl-long.389",
+     "DBLP": "conf/naacl/JeongBCHP24",
+     "ArXiv": "2403.14403",
+     "DOI": "10.48550/arXiv.2403.14403",
+     "CorpusId": 268553748
+    },
+    "publicationVenue": {
+     "id": "01103732-3808-4930-b8e4-7e9e68d5c68d",
+     "name": "North American Chapter of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "North Am Chapter Assoc Comput Linguistics",
+      "NAACL"
+     ],
+     "url": "https://www.aclweb.org/portal/naacl"
+    },
+    "title": "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity",
+    "venue": "North American Chapter of the Association for Computational Linguistics",
+    "year": 2024,
+    "citationCount": 836,
+    "publicationDate": "2024-03-21"
+   }
+  },
+  {
+   "arxiv_id": "2403.10081",
+   "key": "dragin",
+   "expect": [
+    "dragin"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2403.10081v3",
+    "title": "DRAGIN: Dynamic Retrieval Augmented Generation based on the Information Needs of Large Language Models",
+    "authors": [
+     "Weihang Su",
+     "Yichen Tang",
+     "Qingyao Ai",
+     "Zhijing Wu",
+     "Yiqun Liu"
+    ],
+    "published": "2024-03-15T07:45:37Z",
+    "updated": "2024-09-21T08:27:16Z",
+    "abstract": "Dynamic retrieval augmented generation (RAG) paradigm actively decides when and what to retrieve during the text generation process of Large Language Models (LLMs). There are two key elements of this paradigm: identifying the optimal moment to activate the retrieval module (deciding when to retrieve) and crafting the appropriate query once retrieval is triggered (determining what to retrieve). However, current dynamic RAG methods fall short in both aspects. Firstly, the strategies for deciding when to retrieve often rely on static rules. Moreover, the strategies for deciding what to retrieve typically limit themselves to the LLM's most recent sentence or the last few tokens, while the LLM's real-time information needs may span across the entire context. To overcome these limitations, we introduce a new framework, DRAGIN, i.e., Dynamic Retrieval Augmented Generation based on the real-time Information Needs of LLMs. Our framework is specifically designed to make decisions on when and what to retrieve based on the LLM's real-time information needs during the text generation process. We evaluate DRAGIN along with existing methods comprehensively over 4 knowledge-intensive generation datasets. Experimental results show that DRAGIN achieves superior performance on all tasks, demonstrating the effectiveness of our method. We have open-sourced all the code, data, and models in GitHub: https://github.com/oneal2000/DRAGIN/tree/main",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "1cc6cc4960f7df59e7813d9a8e11098d0a0d0720",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2403-10081",
+     "ArXiv": "2403.10081",
+     "DOI": "10.48550/arXiv.2403.10081",
+     "CorpusId": 268509926
+    },
+    "publicationVenue": {
+     "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+     "name": "Annual Meeting of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Annu Meet Assoc Comput Linguistics",
+      "Meeting of the Association for Computational Linguistics",
+      "ACL",
+      "Meet Assoc Comput Linguistics"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/acl/"
+    },
+    "title": "DRAGIN: Dynamic Retrieval Augmented Generation based on the Real-time Information Needs of Large Language Models",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2024,
+    "citationCount": 114,
+    "publicationDate": "2024-03-15"
+   }
+  },
+  {
+   "arxiv_id": "2406.19215",
+   "key": "seakr",
+   "expect": [
+    "seakr"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2406.19215v1",
+    "title": "SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation",
+    "authors": [
+     "Zijun Yao",
+     "Weijian Qi",
+     "Liangming Pan",
+     "Shulin Cao",
+     "Linmei Hu",
+     "Weichuan Liu",
+     "Lei Hou",
+     "Juanzi Li"
+    ],
+    "published": "2024-06-27T14:38:33Z",
+    "updated": "2024-06-27T14:38:33Z",
+    "abstract": "This paper introduces Self-aware Knowledge Retrieval (SeaKR), a novel adaptive RAG model that extracts self-aware uncertainty of LLMs from their internal states. SeaKR activates retrieval when the LLMs present high self-aware uncertainty for generation. To effectively integrate retrieved knowledge snippets, SeaKR re-ranks them based on LLM's self-aware uncertainty to preserve the snippet that reduces their uncertainty to the utmost. To facilitate solving complex tasks that require multiple retrievals, SeaKR utilizes their self-aware uncertainty to choose among different reasoning strategies. Our experiments on both complex and simple Question Answering datasets show that SeaKR outperforms existing adaptive RAG methods. We release our code at https://github.com/THU-KEG/SeaKR.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "2a7720c878c20ed21608978e31507ca9d9936d1c",
+    "externalIds": {
+     "ArXiv": "2406.19215",
+     "DBLP": "conf/acl/0002QPCHL0L25",
+     "DOI": "10.48550/arXiv.2406.19215",
+     "CorpusId": 270764613
+    },
+    "publicationVenue": {
+     "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+     "name": "Annual Meeting of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Annu Meet Assoc Comput Linguistics",
+      "Meeting of the Association for Computational Linguistics",
+      "ACL",
+      "Meet Assoc Comput Linguistics"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/acl/"
+    },
+    "title": "SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2024,
+    "citationCount": 68,
+    "publicationDate": "2024-06-27"
+   }
+  },
+  {
+   "arxiv_id": "2111.09525",
+   "key": "summac",
+   "expect": [
+    "summac"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2111.09525v1",
+    "title": "SummaC: Re-Visiting NLI-based Models for Inconsistency Detection in Summarization",
+    "authors": [
+     "Philippe Laban",
+     "Tobias Schnabel",
+     "Paul N. Bennett",
+     "Marti A. Hearst"
+    ],
+    "published": "2021-11-18T05:02:31Z",
+    "updated": "2021-11-18T05:02:31Z",
+    "abstract": "In the summarization domain, a key requirement for summaries is to be factually consistent with the input document. Previous work has found that natural language inference (NLI) models do not perform competitively when applied to inconsistency detection. In this work, we revisit the use of NLI for inconsistency detection, finding that past work suffered from a mismatch in input granularity between NLI datasets (sentence-level), and inconsistency detection (document level). We provide a highly effective and light-weight method called SummaCConv that enables NLI models to be successfully used for this task by segmenting documents into sentence units and aggregating scores between pairs of sentences. On our newly introduced benchmark called SummaC (Summary Consistency) consisting of six large inconsistency detection datasets, SummaCConv obtains state-of-the-art results with a balanced accuracy of 74.4%, a 5% point improvement compared to prior work. We make the models and datasets available: https://github.com/tingofurro/summac",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "TACL pre-MIT Press publication version; 11 pages, 2 figures, 5 tables",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "ee1ef7b70dc34adcc90c42cc28168165ea56501f",
+    "externalIds": {
+     "ArXiv": "2111.09525",
+     "DBLP": "journals/tacl/LabanSBH22",
+     "ACL": "2022.tacl-1.10",
+     "DOI": "10.1162/tacl_a_00453",
+     "CorpusId": 244345901
+    },
+    "publicationVenue": {
+     "id": "e0dbf116-86aa-418d-859f-a49952d7e44a",
+     "name": "Transactions of the Association for Computational Linguistics",
+     "type": "journal",
+     "alternate_names": [
+      "Trans Assoc Comput Linguistics",
+      "TACL"
+     ],
+     "issn": "2307-387X",
+     "url": "https://www.mitpressjournals.org/loi/tacl",
+     "alternate_urls": [
+      "http://www.transacl.org/"
+     ]
+    },
+    "title": "SummaC: Re-Visiting NLI-based Models for Inconsistency Detection in Summarization",
+    "venue": "Transactions of the Association for Computational Linguistics",
+    "year": 2021,
+    "citationCount": 669,
+    "publicationDate": "2021-11-18"
+   }
+  },
+  {
+   "arxiv_id": "2305.16739",
+   "key": "alignscore",
+   "expect": [
+    "alignscore"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2305.16739v1",
+    "title": "AlignScore: Evaluating Factual Consistency with a Unified Alignment Function",
+    "authors": [
+     "Yuheng Zha",
+     "Yichi Yang",
+     "Ruichen Li",
+     "Zhiting Hu"
+    ],
+    "published": "2023-05-26T08:41:59Z",
+    "updated": "2023-05-26T08:41:59Z",
+    "abstract": "Many text generation applications require the generated text to be factually consistent with input information. Automatic evaluation of factual consistency is challenging. Previous work has developed various metrics that often depend on specific functions, such as natural language inference (NLI) or question answering (QA), trained on limited data. Those metrics thus can hardly assess diverse factual inconsistencies (e.g., contradictions, hallucinations) that occur in varying inputs/outputs (e.g., sentences, documents) from different tasks. In this paper, we propose AlignScore, a new holistic metric that applies to a variety of factual inconsistency scenarios as above. AlignScore is based on a general function of information alignment between two arbitrary text pieces. Crucially, we develop a unified training framework of the alignment function by integrating a large diversity of data sources, resulting in 4.7M training examples from 7 well-established tasks (NLI, QA, paraphrasing, fact verification, information retrieval, semantic similarity, and summarization). We conduct extensive experiments on large-scale benchmarks including 22 evaluation datasets, where 19 of the datasets were never seen in the alignment training. AlignScore achieves substantial improvement over a wide range of previous metrics. Moreover, AlignScore (355M parameters) matches or even outperforms metrics based on ChatGPT and GPT-4 that are orders of magnitude larger.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "19 pages, 5 figures, ACL2023",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "27cb586fcea5ec076b984750e9c77f0d7fc976e5",
+    "externalIds": {
+     "ArXiv": "2305.16739",
+     "ACL": "2023.acl-long.634",
+     "DBLP": "journals/corr/abs-2305-16739",
+     "DOI": "10.48550/arXiv.2305.16739",
+     "CorpusId": 258947273
+    },
+    "publicationVenue": {
+     "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+     "name": "Annual Meeting of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Annu Meet Assoc Comput Linguistics",
+      "Meeting of the Association for Computational Linguistics",
+      "ACL",
+      "Meet Assoc Comput Linguistics"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/acl/"
+    },
+    "title": "AlignScore: Evaluating Factual Consistency with A Unified Alignment Function",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2023,
+    "citationCount": 464,
+    "publicationDate": "2023-05-26"
+   }
+  },
+  {
+   "arxiv_id": "2404.10774",
+   "key": "minicheck",
+   "expect": [
+    "minicheck"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2404.10774v2",
+    "title": "MiniCheck: Efficient Fact-Checking of LLMs on Grounding Documents",
+    "authors": [
+     "Liyan Tang",
+     "Philippe Laban",
+     "Greg Durrett"
+    ],
+    "published": "2024-04-16T17:59:10Z",
+    "updated": "2024-10-01T15:39:48Z",
+    "abstract": "Recognizing if LLM output can be grounded in evidence is central to many tasks in NLP: retrieval-augmented generation, summarization, document-grounded dialogue, and more. Current approaches to this kind of fact-checking are based on verifying each piece of a model generation against potential evidence using an LLM. However, this process can be very computationally expensive, requiring many calls to a model to check a single response. In this work, we show how to build small fact-checking models that have GPT-4-level performance but for 400x lower cost. We do this by constructing synthetic training data with GPT-4, which involves creating realistic yet challenging instances of factual errors via a structured generation procedure. Training on this data teaches models to check each fact in the claim and recognize synthesis of information across sentences. For evaluation, we unify datasets from recent work on fact-checking and grounding LLM generations into a new benchmark, LLM-AggreFact. Our best system MiniCheck-FT5 (770M parameters) outperforms all systems of comparable size and reaches GPT-4 accuracy. We release LLM-AggreFact, code for data synthesis, and models.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "EMNLP 2024",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "d0489fd7c5ff833e08969341ae6e5fa1d0e6dd2a",
+    "externalIds": {
+     "DBLP": "conf/emnlp/TangLD24",
+     "ArXiv": "2404.10774",
+     "ACL": "2024.emnlp-main.499",
+     "DOI": "10.48550/arXiv.2404.10774",
+     "CorpusId": 269157443
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "MiniCheck: Efficient Fact-Checking of LLMs on Grounding Documents",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "citationCount": 357,
+    "publicationDate": "2024-04-16"
+   }
+  },
+  {
+   "arxiv_id": "2212.10511",
+   "key": "popqa",
+   "expect": [
+    "when not to trust language models"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2212.10511v4",
+    "title": "When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories",
+    "authors": [
+     "Alex Mallen",
+     "Akari Asai",
+     "Victor Zhong",
+     "Rajarshi Das",
+     "Daniel Khashabi",
+     "Hannaneh Hajishirzi"
+    ],
+    "published": "2022-12-20T18:30:15Z",
+    "updated": "2023-07-02T07:21:59Z",
+    "abstract": "Despite their impressive performance on diverse tasks, large language models (LMs) still struggle with tasks requiring rich world knowledge, implying the limitations of relying solely on their parameters to encode a wealth of world knowledge. This paper aims to understand LMs' strengths and limitations in memorizing factual knowledge, by conducting large-scale knowledge probing experiments of 10 models and 4 augmentation methods on PopQA, our new open-domain QA dataset with 14k questions. We find that LMs struggle with less popular factual knowledge, and that scaling fails to appreciably improve memorization of factual knowledge in the long tail. We then show that retrieval-augmented LMs largely outperform orders of magnitude larger LMs, while unassisted LMs remain competitive in questions about high-popularity entities. Based on those findings, we devise a simple, yet effective, method for powerful and efficient retrieval-augmented LMs, which retrieves non-parametric memories only when necessary. Experimental results show that this significantly improves models' performance while reducing the inference costs.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "ACL 2023; Code and data available at https://github.com/AlexTMallen/adaptive-retrieval",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "c6ee979c2da4b55a8486abae4cd720422ab09b26",
+    "externalIds": {
+     "ArXiv": "2212.10511",
+     "DBLP": "conf/acl/MallenAZDKH23",
+     "ACL": "2023.acl-long.546",
+     "DOI": "10.18653/v1/2023.acl-long.546",
+     "CorpusId": 254877603
+    },
+    "publicationVenue": {
+     "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+     "name": "Annual Meeting of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Annu Meet Assoc Comput Linguistics",
+      "Meeting of the Association for Computational Linguistics",
+      "ACL",
+      "Meet Assoc Comput Linguistics"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/acl/"
+    },
+    "title": "When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2022,
+    "citationCount": 1669,
+    "publicationDate": "2022-12-20"
+   }
+  },
+  {
+   "arxiv_id": "2410.07176",
+   "key": "astute_rag",
+   "expect": [
+    "astute rag"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2410.07176v2",
+    "title": "Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models",
+    "authors": [
+     "Fei Wang",
+     "Xingchen Wan",
+     "Ruoxi Sun",
+     "Jiefeng Chen",
+     "Sercan \u00d6. Ar\u0131k"
+    ],
+    "published": "2024-10-09T17:59:58Z",
+    "updated": "2025-05-31T04:07:21Z",
+    "abstract": "Retrieval augmented generation (RAG), while effectively integrating external knowledge to address the inherent limitations of large language models (LLMs), can be hindered by imperfect retrieval that contain irrelevant, misleading, or even malicious information. Previous studies have rarely connected the behavior of RAG through joint analysis, particularly regarding error propagation coming from imperfect retrieval and potential conflicts between LLMs' internal knowledge and external sources. Through comprehensive and controlled analyses under realistic conditions, we find that imperfect retrieval augmentation is inevitable, common, and harmful. We identify the knowledge conflicts between LLM-internal and external knowledge from retrieval as a bottleneck to overcome imperfect retrieval in the post-retrieval stage of RAG. To address this, we propose Astute RAG, a novel RAG approach designed to be resilient to imperfect retrieval augmentation. It adaptively elicits essential information from LLMs' internal knowledge, iteratively consolidates internal and external knowledge with source-awareness, and finalizes the answer according to information reliability. Our experiments with Gemini and Claude demonstrate the superior performance of Astute RAG compared to previous robustness-enhanced RAG approaches. Specifically, Astute RAG is the only RAG method that achieves performance comparable to or even surpassing conventional use of LLMs under the worst-case scenario. Further analysis reveals the effectiveness of Astute RAG in resolving knowledge conflicts, thereby improving the trustworthiness of RAG.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "ACL 2025 main conference",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "fe2dd4ac8bb14c622a890482384c9e1136479bf6",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2410-07176",
+     "ArXiv": "2410.07176",
+     "DOI": "10.48550/arXiv.2410.07176",
+     "CorpusId": 273233415
+    },
+    "publicationVenue": {
+     "id": "1e33b3be-b2ab-46e9-96e8-d4eb4bad6e44",
+     "name": "Annual Meeting of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Annu Meet Assoc Comput Linguistics",
+      "Meeting of the Association for Computational Linguistics",
+      "ACL",
+      "Meet Assoc Comput Linguistics"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/acl/"
+    },
+    "title": "Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2024,
+    "citationCount": 94,
+    "publicationDate": "2024-10-09"
+   }
+  },
+  {
+   "arxiv_id": "2406.13629",
+   "key": "instructrag",
+   "expect": [
+    "instructrag"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2406.13629v3",
+    "title": "InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales",
+    "authors": [
+     "Zhepei Wei",
+     "Wei-Lin Chen",
+     "Yu Meng"
+    ],
+    "published": "2024-06-19T15:25:29Z",
+    "updated": "2025-03-02T00:46:31Z",
+    "abstract": "Retrieval-augmented generation (RAG) has shown promising potential to enhance the accuracy and factuality of language models (LMs). However, imperfect retrievers or noisy corpora can introduce misleading or even erroneous information to the retrieved contents, posing a significant challenge to the generation quality. Existing RAG methods typically address this challenge by directly predicting final answers despite potentially noisy inputs, resulting in an implicit denoising process that is difficult to interpret and verify. On the other hand, the acquisition of explicit denoising supervision is often costly, involving significant human efforts. In this work, we propose InstructRAG, where LMs explicitly learn the denoising process through self-synthesized rationales -- First, we instruct the LM to explain how the ground-truth answer is derived from retrieved documents. Then, these rationales can be used either as demonstrations for in-context learning of explicit denoising or as supervised fine-tuning data to train the model. Compared to standard RAG approaches, InstructRAG requires no additional supervision, allows for easier verification of the predicted answers, and effectively improves generation accuracy. Experiments show InstructRAG consistently outperforms existing RAG methods in both training-free and trainable scenarios, achieving a relative improvement of 8.3% over the best baseline method on average across five knowledge-intensive benchmarks. Extensive analysis indicates that InstructRAG scales well with increased numbers of retrieved documents and consistently exhibits robust denoising ability even in out-of-domain datasets, demonstrating strong generalizability.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "ICLR 2025. Code: https://github.com/weizhepei/InstructRAG",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "e8a9b5a32836af499dcb9ccdee1008638309a6cc",
+    "externalIds": {
+     "DBLP": "conf/iclr/WeiC025",
+     "ArXiv": "2406.13629",
+     "CorpusId": 271909559
+    },
+    "publicationVenue": {
+     "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+     "name": "International Conference on Learning Representations",
+     "type": "conference",
+     "alternate_names": [
+      "Int Conf Learn Represent",
+      "ICLR"
+     ],
+     "url": "https://iclr.cc/"
+    },
+    "title": "InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales",
+    "venue": "International Conference on Learning Representations",
+    "year": 2024,
+    "citationCount": 145,
+    "publicationDate": "2024-06-19"
+   }
+  },
+  {
+   "arxiv_id": "2311.09210",
+   "key": "chain_of_note",
+   "expect": [
+    "chain-of-note"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2311.09210v2",
+    "title": "Chain-of-Note: Enhancing Robustness in Retrieval-Augmented Language Models",
+    "authors": [
+     "Wenhao Yu",
+     "Hongming Zhang",
+     "Xiaoman Pan",
+     "Kaixin Ma",
+     "Hongwei Wang",
+     "Dong Yu"
+    ],
+    "published": "2023-11-15T18:54:53Z",
+    "updated": "2024-10-03T04:35:39Z",
+    "abstract": "Retrieval-augmented language models (RALMs) represent a substantial advancement in the capabilities of large language models, notably in reducing factual hallucination by leveraging external knowledge sources. However, the reliability of the retrieved information is not always guaranteed. The retrieval of irrelevant data can lead to misguided responses, and potentially causing the model to overlook its inherent knowledge, even when it possesses adequate information to address the query. Moreover, standard RALMs often struggle to assess whether they possess adequate knowledge, both intrinsic and retrieved, to provide an accurate answer. In situations where knowledge is lacking, these systems should ideally respond with \"unknown\" when the answer is unattainable. In response to these challenges, we introduces Chain-of-Noting (CoN), a novel approach aimed at improving the robustness of RALMs in facing noisy, irrelevant documents and in handling unknown scenarios. The core idea of CoN is to generate sequential reading notes for retrieved documents, enabling a thorough evaluation of their relevance to the given question and integrating this information to formulate the final answer. We employed ChatGPT to create training data for CoN, which was subsequently trained on an LLaMa-2 7B model. Our experiments across four open-domain QA benchmarks show that RALMs equipped with CoN significantly outperform standard RALMs. Notably, CoN achieves an average improvement of +7.9 in EM score given entirely noisy retrieved documents and +10.5 in rejection rates for real-time questions that fall outside the pre-training knowledge scope.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "EMNLP 2024 (main conference)",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "6489640b1d30a8a3e7cb906bb6557f1ccd0d799d",
+    "externalIds": {
+     "ArXiv": "2311.09210",
+     "ACL": "2024.emnlp-main.813",
+     "DBLP": "journals/corr/abs-2311-09210",
+     "DOI": "10.48550/arXiv.2311.09210",
+     "CorpusId": 265212816
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "Chain-of-Note: Enhancing Robustness in Retrieval-Augmented Language Models",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "citationCount": 268,
+    "publicationDate": "2023-11-15"
+   }
+  },
+  {
+   "arxiv_id": "2311.09677",
+   "key": "r_tuning",
+   "expect": [
+    "r-tuning"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2311.09677v3",
+    "title": "R-Tuning: Instructing Large Language Models to Say `I Don't Know'",
+    "authors": [
+     "Hanning Zhang",
+     "Shizhe Diao",
+     "Yong Lin",
+     "Yi R. Fung",
+     "Qing Lian",
+     "Xingyao Wang",
+     "Yangyi Chen",
+     "Heng Ji",
+     "Tong Zhang"
+    ],
+    "published": "2023-11-16T08:45:44Z",
+    "updated": "2024-06-07T02:46:36Z",
+    "abstract": "Large language models (LLMs) have revolutionized numerous domains with their impressive performance but still face their challenges. A predominant issue is the propensity for these models to generate non-existent facts, a concern termed hallucination. Our research is motivated by the observation that previous instruction tuning methods force the model to complete a sentence no matter whether the model knows the knowledge or not. When the question is out of the parametric knowledge, it will try to make up something and fail to indicate when it lacks knowledge. In this paper, we present a new approach called Refusal-Aware Instruction Tuning (R-Tuning). This approach is formalized by first identifying the disparity in knowledge encompassed by pre-trained parameters compared to that of instruction tuning data. Then, we construct the refusal-aware data based on the knowledge intersection, to tune LLMs to refrain from responding to questions beyond its parametric knowledge. Experimental results demonstrate R-Tuning effectively improves a model's ability to answer known questions and refrain from answering unknown questions. Furthermore, when tested on out-of-domain datasets, the refusal ability was found to be a meta-skill that could be generalized to other tasks. Further analysis surprisingly finds that learning the uncertainty results in better calibration and an improved ability to estimate the uncertainty than uncertainty-based testing. Our code is available at https://github.com/shizhediao/R-Tuning.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "NAACL 2024",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "97d24f9f0d81007d57cc43e61bf2b0c9081fe184",
+    "externalIds": {
+     "ACL": "2024.naacl-long.394",
+     "ArXiv": "2311.09677",
+     "DBLP": "conf/naacl/ZhangDLFL0CJZ24",
+     "DOI": "10.18653/v1/2024.naacl-long.394",
+     "CorpusId": 265220839
+    },
+    "publicationVenue": {
+     "id": "01103732-3808-4930-b8e4-7e9e68d5c68d",
+     "name": "North American Chapter of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "North Am Chapter Assoc Comput Linguistics",
+      "NAACL"
+     ],
+     "url": "https://www.aclweb.org/portal/naacl"
+    },
+    "title": "R-Tuning: Instructing Large Language Models to Say \u2018I Don\u2019t Know\u2019",
+    "venue": "North American Chapter of the Association for Computational Linguistics",
+    "year": 2023,
+    "citationCount": 150,
+    "publicationDate": "2023-11-16"
+   }
+  },
+  {
+   "arxiv_id": "2401.06855",
+   "key": "fava",
+   "expect": [
+    "fine-grained hallucination"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2401.06855v4",
+    "title": "Fine-grained Hallucination Detection and Editing for Language Models",
+    "authors": [
+     "Abhika Mishra",
+     "Akari Asai",
+     "Vidhisha Balachandran",
+     "Yizhong Wang",
+     "Graham Neubig",
+     "Yulia Tsvetkov",
+     "Hannaneh Hajishirzi"
+    ],
+    "published": "2024-01-12T19:02:48Z",
+    "updated": "2024-08-12T21:40:04Z",
+    "abstract": "Large language models (LMs) are prone to generate factual errors, which are often called hallucinations. In this paper, we introduce a comprehensive taxonomy of hallucinations and argue that hallucinations manifest in diverse forms, each requiring varying degrees of careful assessments to verify factuality. We propose a novel task of automatic fine-grained hallucination detection and construct a new evaluation benchmark, FavaBench, that includes about one thousand fine-grained human judgments on three LM outputs across various domains. Our analysis reveals that ChatGPT and Llama2-Chat (70B, 7B) exhibit diverse types of hallucinations in the majority of their outputs in information-seeking scenarios. We train FAVA, a retrieval-augmented LM by carefully creating synthetic data to detect and correct fine-grained hallucinations. On our benchmark, our automatic and human evaluations show that FAVA significantly outperforms ChatGPT and GPT-4 on fine-grained hallucination detection, and edits suggested by FAVA improve the factuality of LM-generated text.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Our code, data, and demo are available at https://fine-grained-hallucination.github.io. Published as a conference paper at COLM 2024",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "028d75496e51943f52c7b2177344a3c089c18058",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2401-06855",
+     "ArXiv": "2401.06855",
+     "DOI": "10.48550/arXiv.2401.06855",
+     "CorpusId": 266999558
+    },
+    "publicationVenue": {
+     "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+     "name": "arXiv.org",
+     "alternate_names": [
+      "ArXiv"
+     ],
+     "issn": "2331-8422",
+     "url": "https://arxiv.org"
+    },
+    "title": "Fine-grained Hallucination Detection and Editing for Language Models",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 205,
+    "publicationDate": "2024-01-12"
+   }
+  },
+  {
+   "arxiv_id": "2309.15217",
+   "key": "ragas",
+   "expect": [
+    "ragas"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2309.15217v2",
+    "title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+    "authors": [
+     "Shahul Es",
+     "Jithin James",
+     "Luis Espinosa-Anke",
+     "Steven Schockaert"
+    ],
+    "published": "2023-09-26T19:23:54Z",
+    "updated": "2025-04-28T05:09:12Z",
+    "abstract": "We introduce Ragas (Retrieval Augmented Generation Assessment), a framework for reference-free evaluation of Retrieval Augmented Generation (RAG) pipelines. RAG systems are composed of a retrieval and an LLM based generation module, and provide LLMs with knowledge from a reference textual database, which enables them to act as a natural language layer between a user and textual databases, reducing the risk of hallucinations. Evaluating RAG architectures is, however, challenging because there are several dimensions to consider: the ability of the retrieval system to identify relevant and focused context passages, the ability of the LLM to exploit such passages in a faithful way, or the quality of the generation itself. With Ragas, we put forward a suite of metrics which can be used to evaluate these different dimensions \\textit{without having to rely on ground truth human annotations}. We posit that such a framework can crucially contribute to faster evaluation cycles of RAG architectures, which is especially important given the fast adoption of LLMs.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Reference-free (not tied to having ground truth available) evaluation framework for retrieval agumented generation",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "f5e9e5bbe22f0263be1f1ce88c66978a2b927772",
+    "externalIds": {
+     "ArXiv": "2309.15217",
+     "DBLP": "journals/corr/abs-2309-15217",
+     "ACL": "2024.eacl-demo.16",
+     "DOI": "10.48550/arXiv.2309.15217",
+     "CorpusId": 263152733
+    },
+    "publicationVenue": {
+     "id": "8de18c35-6785-4e54-99f2-21ee961302c6",
+     "name": "Conference of the European Chapter of the Association for Computational Linguistics",
+     "type": "conference",
+     "alternate_names": [
+      "Conf Eur Chapter Assoc Comput Linguistics",
+      "EACL"
+     ],
+     "url": "https://www.aclweb.org/anthology/venues/eacl/"
+    },
+    "title": "RAGAs: Automated Evaluation of Retrieval Augmented Generation",
+    "venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+    "year": 2023,
+    "citationCount": 1365,
+    "publicationDate": "2023-09-26"
+   }
+  },
+  {
+   "arxiv_id": "2311.05232",
+   "key": "survey_huang",
+   "expect": [
+    "survey",
+    "hallucination"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2311.05232v2",
+    "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+    "authors": [
+     "Lei Huang",
+     "Weijiang Yu",
+     "Weitao Ma",
+     "Weihong Zhong",
+     "Zhangyin Feng",
+     "Haotian Wang",
+     "Qianglong Chen",
+     "Weihua Peng",
+     "Xiaocheng Feng",
+     "Bing Qin",
+     "Ting Liu"
+    ],
+    "published": "2023-11-09T09:25:37Z",
+    "updated": "2024-11-19T12:42:45Z",
+    "abstract": "The emergence of large language models (LLMs) has marked a significant breakthrough in natural language processing (NLP), fueling a paradigm shift in information acquisition. Nevertheless, LLMs are prone to hallucination, generating plausible yet nonfactual content. This phenomenon raises significant concerns over the reliability of LLMs in real-world information retrieval (IR) systems and has attracted intensive research to detect and mitigate such hallucinations. Given the open-ended general-purpose attributes inherent to LLMs, LLM hallucinations present distinct challenges that diverge from prior task-specific models. This divergence highlights the urgency for a nuanced understanding and comprehensive overview of recent advances in LLM hallucinations. In this survey, we begin with an innovative taxonomy of hallucination in the era of LLM and then delve into the factors contributing to hallucinations. Subsequently, we present a thorough overview of hallucination detection methods and benchmarks. Our discussion then transfers to representative methodologies for mitigating LLM hallucinations. Additionally, we delve into the current limitations faced by retrieval-augmented LLMs in combating hallucinations, offering insights for developing more robust IR systems. Finally, we highlight the promising research directions on LLM hallucinations, including hallucination in large vision-language models and understanding of knowledge boundaries in LLM hallucinations.",
+    "journal_ref": null,
+    "doi": "10.1145/3703155",
+    "comment": "Accepted by ACM Transactions on Information Systems (TOIS)",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "1e909e2a8cdacdcdff125ebcc566f37cb869a1c8",
+    "externalIds": {
+     "DBLP": "journals/tois/HuangYMZFWCPFQL25",
+     "ArXiv": "2311.05232",
+     "DOI": "10.1145/3703155",
+     "CorpusId": 265067168
+    },
+    "publicationVenue": null,
+    "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+    "venue": "ACM Trans. Inf. Syst.",
+    "year": 2023,
+    "citationCount": 4275,
+    "publicationDate": "2023-11-09"
+   }
+  },
+  {
+   "arxiv_id": "2303.01432",
+   "key": "wice",
+   "expect": [
+    "wice"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2303.01432v2",
+    "title": "WiCE: Real-World Entailment for Claims in Wikipedia",
+    "authors": [
+     "Ryo Kamoi",
+     "Tanya Goyal",
+     "Juan Diego Rodriguez",
+     "Greg Durrett"
+    ],
+    "published": "2023-03-02T17:45:32Z",
+    "updated": "2023-10-22T18:11:08Z",
+    "abstract": "Textual entailment models are increasingly applied in settings like fact-checking, presupposition verification in question answering, or summary evaluation. However, these represent a significant domain shift from existing entailment datasets, and models underperform as a result. We propose WiCE, a new fine-grained textual entailment dataset built on natural claim and evidence pairs extracted from Wikipedia. In addition to standard claim-level entailment, WiCE provides entailment judgments over sub-sentence units of the claim, and a minimal subset of evidence sentences that support each subclaim. To support this, we propose an automatic claim decomposition strategy using GPT-3.5 which we show is also effective at improving entailment models' performance on multiple datasets at test time. Finally, we show that real claims in our dataset involve challenging verification and retrieval problems that existing models fail to address.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "EMNLP 2023",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "f7ec0e9237fbf960ffd20e2223e07287edb4f26a",
+    "externalIds": {
+     "ArXiv": "2303.01432",
+     "DBLP": "conf/emnlp/KamoiGRD23",
+     "DOI": "10.48550/arXiv.2303.01432",
+     "CorpusId": 257280052
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "WiCE: Real-World Entailment for Claims in Wikipedia",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "citationCount": 160,
+    "publicationDate": "2023-03-02"
+   }
+  },
+  {
+   "arxiv_id": "2406.20079",
+   "key": "molecular_facts",
+   "expect": [
+    "molecular facts"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2406.20079v1",
+    "title": "Molecular Facts: Desiderata for Decontextualization in LLM Fact Verification",
+    "authors": [
+     "Anisha Gunjal",
+     "Greg Durrett"
+    ],
+    "published": "2024-06-28T17:43:48Z",
+    "updated": "2024-06-28T17:43:48Z",
+    "abstract": "Automatic factuality verification of large language model (LLM) generations is becoming more and more widely used to combat hallucinations. A major point of tension in the literature is the granularity of this fact-checking: larger chunks of text are hard to fact-check, but more atomic facts like propositions may lack context to interpret correctly. In this work, we assess the role of context in these atomic facts. We argue that fully atomic facts are not the right representation, and define two criteria for molecular facts: decontextuality, or how well they can stand alone, and minimality, or how little extra information is added to achieve decontexuality. We quantify the impact of decontextualization on minimality, then present a baseline methodology for generating molecular facts automatically, aiming to add the right amount of information. We compare against various methods of decontextualization and find that molecular facts balance minimality with fact verification accuracy in ambiguous settings.",
+    "journal_ref": "Findings of the Association for Computational Linguistics: EMNLP 2024 (2024) 3751-3768",
+    "doi": "10.18653/v1/2024.findings-emnlp.215",
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "c80fb69f26fe186504a182c4b7f5ab186beeb019",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2406-20079",
+     "ArXiv": "2406.20079",
+     "DOI": "10.18653/v1/2024.findings-emnlp.215",
+     "CorpusId": 270845506
+    },
+    "publicationVenue": {
+     "id": "41bf9ed3-85b3-4c90-b015-150e31690253",
+     "name": "Conference on Empirical Methods in Natural Language Processing",
+     "type": "conference",
+     "alternate_names": [
+      "Empir Method Nat Lang Process",
+      "Empirical Methods in Natural Language Processing",
+      "Conf Empir Method Nat Lang Process",
+      "EMNLP"
+     ],
+     "url": "https://www.aclweb.org/portal/emnlp"
+    },
+    "title": "Molecular Facts: Desiderata for Decontextualization in LLM Fact Verification",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2024,
+    "citationCount": 57,
+    "publicationDate": "2024-06-28"
+   }
+  },
+  {
+   "arxiv_id": "2307.03987",
+   "key": "ever_or_low_conf",
+   "expect": [
+    "hallucination"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2307.03987v2",
+    "title": "A Stitch in Time Saves Nine: Detecting and Mitigating Hallucinations of LLMs by Validating Low-Confidence Generation",
+    "authors": [
+     "Neeraj Varshney",
+     "Wenlin Yao",
+     "Hongming Zhang",
+     "Jianshu Chen",
+     "Dong Yu"
+    ],
+    "published": "2023-07-08T14:25:57Z",
+    "updated": "2023-08-12T14:57:37Z",
+    "abstract": "Recently developed large language models have achieved remarkable success in generating fluent and coherent text. However, these models often tend to 'hallucinate' which critically hampers their reliability. In this work, we address this crucial problem and propose an approach that actively detects and mitigates hallucinations during the generation process. Specifically, we first identify the candidates of potential hallucination leveraging the model's logit output values, check their correctness through a validation procedure, mitigate the detected hallucinations, and then continue with the generation process. Through extensive experiments with GPT-3.5 (text-davinci-003) on the 'article generation task', we first demonstrate the individual efficacy of our detection and mitigation techniques. Specifically, the detection technique achieves a recall of ~88% and the mitigation technique successfully mitigates 57.6% of the correctly detected hallucinations. Importantly, our mitigation technique does not introduce new hallucinations even in the case of incorrectly detected hallucinations, i.e., false positives. Then, we show that the proposed active detection and mitigation approach successfully reduces the hallucinations of the GPT-3.5 model from 47.5% to 14.5% on average. We further demonstrate the effectiveness and wide applicability of our approach through additional studies including performance on different types of questions (multi-hop and false premise questions) and with another LLM from a different model family (Vicuna). In summary, our work contributes to improving the reliability and trustworthiness of large language models, a crucial step en route to enabling their widespread adoption in real-world applications.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "update to include additional experiments",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "1827dd28ef866eaeb929ddf4bcfa492880aba4c7",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2307-03987",
+     "ArXiv": "2307.03987",
+     "DOI": "10.48550/arXiv.2307.03987",
+     "CorpusId": 263699899
+    },
+    "publicationVenue": {
+     "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+     "name": "arXiv.org",
+     "alternate_names": [
+      "ArXiv"
+     ],
+     "issn": "2331-8422",
+     "url": "https://arxiv.org"
+    },
+    "title": "A Stitch in Time Saves Nine: Detecting and Mitigating Hallucinations of LLMs by Validating Low-Confidence Generation",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 286,
+    "publicationDate": "2023-07-08"
+   }
+  },
+  {
+   "arxiv_id": "2404.10198",
+   "key": "clasheval",
+   "expect": [
+    "clash"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2404.10198v3",
+    "title": "ClashEval: Quantifying the tug-of-war between an LLM's internal prior and external evidence",
+    "authors": [
+     "Kevin Wu",
+     "Eric Wu",
+     "James Zou"
+    ],
+    "published": "2024-04-16T00:43:03Z",
+    "updated": "2025-02-07T05:11:18Z",
+    "abstract": "Retrieval augmented generation (RAG) is frequently used to mitigate hallucinations and provide up-to-date knowledge for large language models (LLMs). However, given that document retrieval is an imprecise task and sometimes results in erroneous or even harmful content being presented in context, this raises the question of how LLMs handle retrieved information: If the provided content is incorrect, does the model know to ignore it, or does it recapitulate the error? Conversely, when the model's initial response is incorrect, does it always know to use the retrieved information to correct itself, or does it insist on its wrong prior response? To answer this, we curate a dataset of over 1200 questions across six domains (e.g., drug dosages, Olympic records, locations) along with content relevant to answering each question. We further apply precise perturbations to the answers in the content that range from subtle to blatant errors. We benchmark six top-performing LLMs, including GPT-4o, on this dataset and find that LLMs are susceptible to adopting incorrect retrieved content, overriding their own correct prior knowledge over 60% of the time. However, the more unrealistic the retrieved content is (i.e. more deviated from truth), the less likely the model is to adopt it. Also, the less confident a model is in its initial response (via measuring token probabilities), the more likely it is to adopt the information in the retrieved content. We exploit this finding and demonstrate simple methods for improving model accuracy where there is conflicting retrieved content. Our results highlight a difficult task and benchmark for LLMs -- namely, their ability to correctly discern when it is wrong in light of correct retrieved content and to reject cases when the provided content is incorrect.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Revised June 9 2024",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "0a962d107e8fee1cc97ecca2ae777b2bb48a031f",
+    "externalIds": {
+     "DBLP": "conf/nips/WuWZ24",
+     "ArXiv": "2404.10198",
+     "DOI": "10.52202/079017-1053",
+     "CorpusId": 269157310
+    },
+    "publicationVenue": {
+     "id": "d9720b90-d60b-48bc-9df8-87a30b9a60dd",
+     "name": "Neural Information Processing Systems",
+     "type": "conference",
+     "alternate_names": [
+      "Neural Inf Process Syst",
+      "NeurIPS",
+      "NIPS"
+     ],
+     "url": "http://neurips.cc/"
+    },
+    "title": "ClashEval: Quantifying the tug-of-war between an LLM's internal prior and external evidence",
+    "venue": "Neural Information Processing Systems",
+    "year": 2024,
+    "citationCount": 161,
+    "publicationDate": "2024-04-16"
+   }
+  },
+  {
+   "arxiv_id": "2312.10997",
+   "key": "rag_survey_gao",
+   "expect": [
+    "retrieval-augmented generation",
+    "survey"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2312.10997v5",
+    "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+    "authors": [
+     "Yunfan Gao",
+     "Yun Xiong",
+     "Xinyu Gao",
+     "Kangxiang Jia",
+     "Jinliu Pan",
+     "Yuxi Bi",
+     "Yi Dai",
+     "Jiawei Sun",
+     "Meng Wang",
+     "Haofen Wang"
+    ],
+    "published": "2023-12-18T07:47:33Z",
+    "updated": "2024-03-27T09:16:57Z",
+    "abstract": "Large Language Models (LLMs) showcase impressive capabilities but encounter challenges like hallucination, outdated knowledge, and non-transparent, untraceable reasoning processes. Retrieval-Augmented Generation (RAG) has emerged as a promising solution by incorporating knowledge from external databases. This enhances the accuracy and credibility of the generation, particularly for knowledge-intensive tasks, and allows for continuous knowledge updates and integration of domain-specific information. RAG synergistically merges LLMs' intrinsic knowledge with the vast, dynamic repositories of external databases. This comprehensive review paper offers a detailed examination of the progression of RAG paradigms, encompassing the Naive RAG, the Advanced RAG, and the Modular RAG. It meticulously scrutinizes the tripartite foundation of RAG frameworks, which includes the retrieval, the generation and the augmentation techniques. The paper highlights the state-of-the-art technologies embedded in each of these critical components, providing a profound understanding of the advancements in RAG systems. Furthermore, this paper introduces up-to-date evaluation framework and benchmark. At the end, this article delineates the challenges currently faced and points out prospective avenues for research and development.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": "Ongoing Work",
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "46f9f7b8f88f72e12cbdb21e3311f995eb6e65c5",
+    "externalIds": {
+     "ArXiv": "2312.10997",
+     "DBLP": "journals/corr/abs-2312-10997",
+     "CorpusId": 266359151
+    },
+    "publicationVenue": {
+     "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+     "name": "arXiv.org",
+     "alternate_names": [
+      "ArXiv"
+     ],
+     "issn": "2331-8422",
+     "url": "https://arxiv.org"
+    },
+    "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 4499,
+    "publicationDate": "2023-12-18"
+   }
+  },
+  {
+   "arxiv_id": "2310.01558",
+   "key": "ret_robust",
+   "expect": [
+    "robust",
+    "irrelevant"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2310.01558v2",
+    "title": "Making Retrieval-Augmented Language Models Robust to Irrelevant Context",
+    "authors": [
+     "Ori Yoran",
+     "Tomer Wolfson",
+     "Ori Ram",
+     "Jonathan Berant"
+    ],
+    "published": "2023-10-02T18:52:35Z",
+    "updated": "2024-05-05T15:58:24Z",
+    "abstract": "Retrieval-augmented language models (RALMs) hold promise to produce language understanding systems that are are factual, efficient, and up-to-date. An important desideratum of RALMs, is that retrieved information helps model performance when it is relevant, and does not harm performance when it is not. This is particularly important in multi-hop reasoning scenarios, where misuse of irrelevant evidence can lead to cascading errors. However, recent work has shown that retrieval augmentation can sometimes have a negative effect on performance. In this work, we present a thorough analysis on five open-domain question answering benchmarks, characterizing cases when retrieval reduces accuracy. We then propose two methods to mitigate this issue. First, a simple baseline that filters out retrieved passages that do not entail question-answer pairs according to a natural language inference (NLI) model. This is effective in preventing performance reduction, but at a cost of also discarding relevant passages. Thus, we propose a method for automatically generating data to fine-tune the language model to properly leverage retrieved passages, using a mix of relevant and irrelevant contexts at training time. We empirically show that even 1,000 examples suffice to train the model to be robust to irrelevant contexts while maintaining high performance on examples with relevant ones.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "3aee33831e0bdea1a1eaae21c7586e4f7c0396d6",
+    "externalIds": {
+     "ArXiv": "2310.01558",
+     "DBLP": "conf/iclr/YoranWRB24",
+     "DOI": "10.48550/arXiv.2310.01558",
+     "CorpusId": 263608822
+    },
+    "publicationVenue": {
+     "id": "939c6e1d-0d17-4d6e-8a82-66d960df0e40",
+     "name": "International Conference on Learning Representations",
+     "type": "conference",
+     "alternate_names": [
+      "Int Conf Learn Represent",
+      "ICLR"
+     ],
+     "url": "https://iclr.cc/"
+    },
+    "title": "Making Retrieval-Augmented Language Models Robust to Irrelevant Context",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 544,
+    "publicationDate": "2023-10-02"
+   }
+  },
+  {
+   "arxiv_id": "2407.21059",
+   "key": "modular_or_other",
+   "expect": [
+    "rag"
+   ],
+   "verified_title_match": true,
+   "arxiv": {
+    "arxiv_id_versioned": "2407.21059v1",
+    "title": "Modular RAG: Transforming RAG Systems into LEGO-like Reconfigurable Frameworks",
+    "authors": [
+     "Yunfan Gao",
+     "Yun Xiong",
+     "Meng Wang",
+     "Haofen Wang"
+    ],
+    "published": "2024-07-26T03:45:30Z",
+    "updated": "2024-07-26T03:45:30Z",
+    "abstract": "Retrieval-augmented Generation (RAG) has markedly enhanced the capabilities of Large Language Models (LLMs) in tackling knowledge-intensive tasks. The increasing demands of application scenarios have driven the evolution of RAG, leading to the integration of advanced retrievers, LLMs and other complementary technologies, which in turn has amplified the intricacy of RAG systems. However, the rapid advancements are outpacing the foundational RAG paradigm, with many methods struggling to be unified under the process of \"retrieve-then-generate\". In this context, this paper examines the limitations of the existing RAG paradigm and introduces the modular RAG framework. By decomposing complex RAG systems into independent modules and specialized operators, it facilitates a highly reconfigurable framework. Modular RAG transcends the traditional linear architecture, embracing a more advanced design that integrates routing, scheduling, and fusion mechanisms. Drawing on extensive research, this paper further identifies prevalent RAG patterns-linear, conditional, branching, and looping-and offers a comprehensive analysis of their respective implementation nuances. Modular RAG presents innovative opportunities for the conceptualization and deployment of RAG systems. Finally, the paper explores the potential emergence of new operators and paradigms, establishing a solid theoretical foundation and a practical roadmap for the continued evolution and practical deployment of RAG technologies.",
+    "journal_ref": null,
+    "doi": null,
+    "comment": null,
+    "primary_category": "cs.CL"
+   },
+   "s2": {
+    "paperId": "21620a67bbef3a4c607bf17be07d42514163dfaf",
+    "externalIds": {
+     "DBLP": "journals/corr/abs-2407-21059",
+     "ArXiv": "2407.21059",
+     "DOI": "10.48550/arXiv.2407.21059",
+     "CorpusId": 271571401
+    },
+    "publicationVenue": null,
+    "title": "Modular RAG: Transforming RAG Systems into LEGO-like Reconfigurable Frameworks",
+    "venue": "ACM Transactions on Information Systems",
+    "year": 2024,
+    "citationCount": 84,
+    "publicationDate": "2024-07-26"
+   }
+  }
+ ]
+}

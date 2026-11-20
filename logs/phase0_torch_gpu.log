@@ -1,0 +1,8 @@
+python 3.12.3
+torch 2.14.0+cu130 | built with CUDA 13.0
+cuda available: True
+device: NVIDIA RTX 4000 Ada Generation
+VRAM free/total: 18.79 / 19.99 GiB
+bf16 supported: True
+8192x8192 bf16 matmul on GPU ok (0.193s), mean|.|=72.212
+TORCH_GPU_OK

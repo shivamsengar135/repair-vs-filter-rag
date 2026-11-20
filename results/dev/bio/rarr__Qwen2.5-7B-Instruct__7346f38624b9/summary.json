@@ -1,0 +1,64 @@
+{
+ "config": {
+  "pipeline": "rarr-style-v1",
+  "dataset": "bio",
+  "split": "dev",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "prompts": "v1",
+  "baseline_prompts": "baselines_v1",
+  "max_tokens": 512,
+  "temperature": 0.0,
+  "seed": 0,
+  "max_questions": 8,
+  "retriever": "bm25",
+  "passages_per_question": 1
+ },
+ "config_hash": "7346f38624b9",
+ "git_commit": "41017f6+dirty",
+ "n": 150,
+ "questions_per_response": 7.38,
+ "agreement_checks": 1107,
+ "disagreements": 200,
+ "agreement_unparsed": 0,
+ "edits_applied": 170,
+ "responses_edited": 101,
+ "final_claims_per_response": 14.013333333333334,
+ "cost": {
+  "llm_by_stage": {
+   "1_draft": {
+    "calls": 150,
+    "cache_hits": 150,
+    "prompt_tokens": 6175,
+    "completion_tokens": 49497
+   },
+   "2_questions": {
+    "calls": 150,
+    "cache_hits": 8,
+    "prompt_tokens": 64680,
+    "completion_tokens": 26570
+   },
+   "3_agreement": {
+    "calls": 1107,
+    "cache_hits": 58,
+    "prompt_tokens": 638965,
+    "completion_tokens": 2214
+   },
+   "4_edit": {
+    "calls": 200,
+    "cache_hits": 6,
+    "prompt_tokens": 126477,
+    "completion_tokens": 74232
+   },
+   "5_decompose_final": {
+    "calls": 150,
+    "cache_hits": 8,
+    "prompt_tokens": 75630,
+    "completion_tokens": 37342
+   }
+  },
+  "retrieval_queries": 1107,
+  "seconds_total": 705.21,
+  "note": "seconds include cache hits"
+ },
+ "finished_utc": "2026-11-14T06:25:33Z"
+}

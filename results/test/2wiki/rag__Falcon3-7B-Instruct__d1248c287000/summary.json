@@ -1,0 +1,44 @@
+{
+ "config": {
+  "dataset": "2wiki",
+  "split": "test",
+  "method": "rag",
+  "model": "tiiuae/Falcon3-7B-Instruct",
+  "prompts": "v1",
+  "max_tokens": 64,
+  "temperature": 0.0,
+  "seed": 0,
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100"
+ },
+ "config_hash": "d1248c287000",
+ "git_commit": "4b94969+dirty",
+ "n": 1000,
+ "match_accuracy": 0.314,
+ "em": 0.298,
+ "f1": 0.3536905186029328,
+ "abstention_rate": 0.006,
+ "truncated_rate": 0.0,
+ "retrieval_recall_at_k": 0.335,
+ "cost": {
+  "llm": {
+   "answer": {
+    "calls": 1000,
+    "cache_hits": 1000,
+    "prompt_tokens": 888656,
+    "completion_tokens": 5677
+   }
+  },
+  "prompt_tokens_per_q": 888.656,
+  "completion_tokens_per_q": 5.677,
+  "retrieval_calls_per_q": 1.0,
+  "wall_seconds": {
+   "retrieval": 1.03,
+   "generation": 0.1,
+   "total": 3.44
+  },
+  "note": "wall-clock includes cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-17T13:20:55Z"
+}

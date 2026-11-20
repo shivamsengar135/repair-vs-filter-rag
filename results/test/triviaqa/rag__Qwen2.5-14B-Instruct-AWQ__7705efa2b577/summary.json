@@ -1,0 +1,44 @@
+{
+ "config": {
+  "dataset": "triviaqa",
+  "split": "test",
+  "method": "rag",
+  "model": "Qwen/Qwen2.5-14B-Instruct-AWQ",
+  "prompts": "v1",
+  "max_tokens": 64,
+  "temperature": 0.0,
+  "seed": 0,
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100"
+ },
+ "config_hash": "7705efa2b577",
+ "git_commit": "8123ab7+dirty",
+ "n": 1000,
+ "match_accuracy": 0.733,
+ "em": 0.634,
+ "f1": 0.7089150256978164,
+ "abstention_rate": 0.004,
+ "truncated_rate": 0.004,
+ "retrieval_recall_at_k": 0.753,
+ "cost": {
+  "llm": {
+   "answer": {
+    "calls": 1000,
+    "cache_hits": 0,
+    "prompt_tokens": 844234,
+    "completion_tokens": 5001
+   }
+  },
+  "prompt_tokens_per_q": 844.234,
+  "completion_tokens_per_q": 5.001,
+  "retrieval_calls_per_q": 1.0,
+  "wall_seconds": {
+   "retrieval": 0.92,
+   "generation": 342.39,
+   "total": 351.12
+  },
+  "note": "wall-clock includes cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-18T01:20:37Z"
+}

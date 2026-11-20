@@ -1,0 +1,19 @@
+{
+ "run": "results/dev/bio/cove-closed_book__Qwen2.5-7B-Instruct__0eeb0eb0edd8",
+ "judge_model": "RedHatAI/phi-4-FP8-dynamic",
+ "judge_prompts": "factscore-layout (hallu.factscore_kb)",
+ "claims_without_kb_page": 0,
+ "n_claims": 800,
+ "n_supported": 320,
+ "supported_rate": 0.4,
+ "n_unreadable": 0,
+ "cost": {
+  "judge": {
+   "calls": 800,
+   "cache_hits": 6,
+   "prompt_tokens": 960750,
+   "completion_tokens": 800
+  }
+ },
+ "git_commit": "6355802+dirty"
+}

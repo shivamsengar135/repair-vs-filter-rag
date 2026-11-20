@@ -1,0 +1,15 @@
+# Judge prompt v1 — written 2026-11-13 before any claim was judged (EXPERIMENT_PLAN.md §7).
+# The judge is an evaluation instrument, not a method: it sees reference evidence that no method sees.
+version: judge_v1
+
+judge_claim: |
+  You are checking whether a statement is supported by reference texts.
+
+  Reference texts:
+  {evidence}
+
+  Statement: {claim}
+
+  Is the statement true according to the reference texts? If the reference texts do not contain the information
+  needed to confirm it, answer False. Answer with exactly one word: True or False.
+  Answer:

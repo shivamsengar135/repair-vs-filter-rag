@@ -1,0 +1,82 @@
+{
+ "judge_model": "RedHatAI/phi-4-FP8-dynamic",
+ "evidence": "FActScore KB, BM25 top-5 within the topic page",
+ "git_commit": "5c25ec8+dirty",
+ "systems": {
+  "InstructGPT": {
+   "n_facts": 4071,
+   "n_unreadable": 0,
+   "cohen_kappa": 0.7347976507375592,
+   "kappa_95ci": [
+    0.7133189256569613,
+    0.7557503719402423
+   ],
+   "raw_agreement": 0.8678457381478752,
+   "confusion": {
+    "human_S_judge_S": 1907,
+    "human_S_judge_NS": 193,
+    "human_NS_judge_S": 345,
+    "human_NS_judge_NS": 1626
+   },
+   "factscore_human": 0.4739105037693224,
+   "factscore_judge": 0.5132733663572364,
+   "error_rate": 0.039362862587913994
+  },
+  "ChatGPT": {
+   "n_facts": 4886,
+   "n_unreadable": 0,
+   "cohen_kappa": 0.6233607849363643,
+   "kappa_95ci": [
+    0.5999455555061181,
+    0.6478339317429371
+   ],
+   "raw_agreement": 0.8354482194023741,
+   "confusion": {
+    "human_S_judge_S": 2918,
+    "human_S_judge_NS": 276,
+    "human_NS_judge_S": 528,
+    "human_NS_judge_NS": 1164
+   },
+   "factscore_human": 0.623312494599871,
+   "factscore_judge": 0.6787626590903612,
+   "error_rate": 0.05545016449049012
+  },
+  "PerplexityAI": {
+   "n_facts": 5568,
+   "n_unreadable": 0,
+   "cohen_kappa": 0.4700594727342662,
+   "kappa_95ci": [
+    0.4373858129315367,
+    0.5041081931945574
+   ],
+   "raw_agreement": 0.8613505747126436,
+   "confusion": {
+    "human_S_judge_S": 4323,
+    "human_S_judge_NS": 489,
+    "human_NS_judge_S": 283,
+    "human_NS_judge_NS": 473
+   },
+   "factscore_human": 0.8402076186969606,
+   "factscore_judge": 0.8109707401547749,
+   "error_rate": 0.029236878542185707
+  }
+ },
+ "pooled": {
+  "n_facts": 14525,
+  "cohen_kappa": 0.6518248014118297,
+  "kappa_95ci": [
+   0.6383264515049439,
+   0.664807930700403
+  ],
+  "raw_agreement": 0.8544578313253012
+ },
+ "seconds": 2310.1,
+ "cost": {
+  "validate_factscore": {
+   "calls": 14525,
+   "cache_hits": 770,
+   "prompt_tokens": 17012532,
+   "completion_tokens": 14525
+  }
+ }
+}

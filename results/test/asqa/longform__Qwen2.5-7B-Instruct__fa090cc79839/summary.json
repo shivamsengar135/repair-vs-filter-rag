@@ -1,0 +1,104 @@
+{
+ "config": {
+  "pipeline": "longform-v1",
+  "dataset": "asqa",
+  "split": "test",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "prompts": "v2",
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100",
+  "max_tokens": 512,
+  "temperature": 0.0,
+  "seed": 0,
+  "tau_s": 0.5,
+  "tau_c": 0.5,
+  "tau_con": 0.5,
+  "verifier": "generator P(True) | passage",
+  "nli": "DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "ablation_prompts": "ablation_v1"
+ },
+ "config_hash": "fa090cc79839",
+ "git_commit": "16dce0a+dirty",
+ "n": 748,
+ "claims_per_response_mean": 2.2620320855614975,
+ "responses_with_zero_claims": 229,
+ "answers_truncated": 0,
+ "decompositions_truncated": 0,
+ "actions": {
+  "keep": 1431,
+  "revise": 119,
+  "reretrieve": 63,
+  "low": 79
+ },
+ "closed_book_unreadable": 0,
+ "generator_verify_unreadable": 0,
+ "repair": {
+  "revise_attempted": 119,
+  "revise_deleted": 119,
+  "revise_now_supported": 0,
+  "reretrieve_attempted": 63,
+  "reretrieve_now_supported": 31
+ },
+ "mean_support_all_claims": 0.8466799284903566,
+ "cost": {
+  "llm_by_stage": {
+   "1_generate": {
+    "calls": 748,
+    "cache_hits": 748,
+    "prompt_tokens": 607032,
+    "completion_tokens": 74439
+   },
+   "2_decompose": {
+    "calls": 748,
+    "cache_hits": 748,
+    "prompt_tokens": 325230,
+    "completion_tokens": 32999
+   },
+   "3_closed_book_truth": {
+    "calls": 1692,
+    "cache_hits": 1692,
+    "prompt_tokens": 112781,
+    "completion_tokens": 1692
+   },
+   "3b_generator_verify": {
+    "calls": 8775,
+    "cache_hits": 97,
+    "prompt_tokens": 1957946,
+    "completion_tokens": 8775
+   },
+   "4_revise": {
+    "calls": 119,
+    "cache_hits": 102,
+    "prompt_tokens": 29498,
+    "completion_tokens": 238
+   }
+  },
+  "retrieval_queries": 811,
+  "verifier_pairs": {
+   "minicheck": 8775,
+   "nli": 8460
+  },
+  "verifier_cache": {
+   "minicheck_hits": 0,
+   "minicheck_misses": 0,
+   "nli_hits": 8460,
+   "nli_misses": 0
+  },
+  "seconds_by_stage": {
+   "retrieve": 0.0,
+   "generate": 0.09,
+   "decompose": 0.25,
+   "support_generator": 135.39,
+   "nli": 0.01,
+   "closed_book_truth": 0.37,
+   "revise": 0.81,
+   "rescore_revised": 0.0,
+   "reretrieve": 16.51,
+   "rescore_reretrieved": 7.31
+  },
+  "verifier_device": "cpu",
+  "note": "stage seconds include cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-18T05:08:44Z"
+}

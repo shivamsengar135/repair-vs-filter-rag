@@ -1,0 +1,675 @@
+{
+ "dataset": "asqa",
+ "split": "test",
+ "judge_tag": "phi-4-FP8-dynamic",
+ "prompts": "v2",
+ "rows": {
+  "standard RAG (all claims)": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 1.620106951871658,
+    "std": 0.0854658015596213
+   },
+   "claims_kept_per_response": {
+    "mean": 2.293663101604278,
+    "std": 0.09882791066898995
+   },
+   "non_empty_rate": {
+    "mean": 0.6973529411764706,
+    "std": 0.01788474535178235
+   },
+   "factual_precision_micro": {
+    "mean": 0.7062571949457397,
+    "std": 0.01867751526918019
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.6793048128342246,
+    "std": 0.018394808025445908
+   }
+  },
+  "CoVe factor+revise (closed-book)": {
+   "run": "results/test/asqa/cove-closed_book__Qwen2.5-7B-Instruct__cd920a30dc7b",
+   "supported_claims_per_response": {
+    "mean": 1.2305347593582887,
+    "std": 0.06146688177112372
+   },
+   "claims_kept_per_response": {
+    "mean": 2.294090909090909,
+    "std": 0.09039647463873722
+   },
+   "non_empty_rate": {
+    "mean": 0.687994652406417,
+    "std": 0.017722499644407714
+   },
+   "factual_precision_micro": {
+    "mean": 0.536363733169412,
+    "std": 0.016012016375635606
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.5337165775401069,
+    "std": 0.017468867712264146
+   }
+  },
+  "CoVe factor+revise (retrieval-verified)": {
+   "run": "results/test/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__d90c9ff5fd30",
+   "supported_claims_per_response": {
+    "mean": 1.1595454545454544,
+    "std": 0.0601588433144479
+   },
+   "claims_kept_per_response": {
+    "mean": 1.9514973262032083,
+    "std": 0.09470244200494302
+   },
+   "non_empty_rate": {
+    "mean": 0.5785026737967914,
+    "std": 0.01761552125287764
+   },
+   "factual_precision_micro": {
+    "mean": 0.5942838195308809,
+    "std": 0.015707023632219062
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.6359893048128341,
+    "std": 0.017861816453592798
+   }
+  },
+  "RARR-style revise-all": {
+   "run": "results/test/asqa/rarr__Qwen2.5-7B-Instruct__1198a177de8a",
+   "supported_claims_per_response": {
+    "mean": 1.9053743315508018,
+    "std": 0.07924466643157808
+   },
+   "claims_kept_per_response": {
+    "mean": 4.157994652406417,
+    "std": 0.1258622950562975
+   },
+   "non_empty_rate": {
+    "mean": 0.8586631016042782,
+    "std": 0.013181420724728506
+   },
+   "factual_precision_micro": {
+    "mean": 0.4582710498633072,
+    "std": 0.014065182020710816
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.27606951871657753,
+    "std": 0.016418189067125628
+   }
+  },
+  "FLARE-direct": {
+   "run": "results/test/asqa/flare__Qwen2.5-7B-Instruct__2dc14b1e5f08",
+   "supported_claims_per_response": {
+    "mean": 1.4473529411764705,
+    "std": 0.06433599227167432
+   },
+   "claims_kept_per_response": {
+    "mean": 2.0904278074866314,
+    "std": 0.08183279663320212
+   },
+   "non_empty_rate": {
+    "mean": 0.6472727272727272,
+    "std": 0.017083410227895696
+   },
+   "factual_precision_micro": {
+    "mean": 0.6923731813737145,
+    "std": 0.014638927137913472
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.6839304812834225,
+    "std": 0.017026735898202056
+   }
+  },
+  "CF (score s) @ target 0.8": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 1.1348663101604277,
+    "std": 0.10109433735192064
+   },
+   "claims_kept_per_response": {
+    "mean": 1.487192513368984,
+    "std": 0.15554066714640596
+   },
+   "non_empty_rate": {
+    "mean": 0.5519251336898395,
+    "std": 0.03550891459712618
+   },
+   "factual_precision_micro": {
+    "mean": 0.7646973882218056,
+    "std": 0.025947017125164493
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8027540106951873,
+    "std": 0.02842629221141129
+   }
+  },
+  "C (two-signal) @ target 0.8": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 1.1402673796791443,
+    "std": 0.11890930965513383
+   },
+   "claims_kept_per_response": {
+    "mean": 1.4911497326203207,
+    "std": 0.17722833563684592
+   },
+   "non_empty_rate": {
+    "mean": 0.5584224598930481,
+    "std": 0.040126527929245294
+   },
+   "factual_precision_micro": {
+    "mean": 0.766369672465446,
+    "std": 0.024938942162088626
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8008021390374331,
+    "std": 0.030060176260573522
+   }
+  },
+  "A (repair all) @ target 0.8": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 1.1347058823529412,
+    "std": 0.1070833065881463
+   },
+   "claims_kept_per_response": {
+    "mean": 1.4741443850267382,
+    "std": 0.16241279718264795
+   },
+   "non_empty_rate": {
+    "mean": 0.5572192513368985,
+    "std": 0.03772715989050207
+   },
+   "factual_precision_micro": {
+    "mean": 0.7713990278175673,
+    "std": 0.025424298274191053
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8037967914438502,
+    "std": 0.029210430355200344
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.8": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 1.112058823529412,
+    "std": 0.09941296415237197
+   },
+   "claims_kept_per_response": {
+    "mean": 1.4270053475935827,
+    "std": 0.14117003556943944
+   },
+   "non_empty_rate": {
+    "mean": 0.6207219251336897,
+    "std": 0.027730654256891443
+   },
+   "factual_precision_micro": {
+    "mean": 0.780185877638685,
+    "std": 0.020799788208969723
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.800855614973262,
+    "std": 0.0276579168522462
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 1) @ target 0.8": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 1.1299732620320855,
+    "std": 0.09193272768115514
+   },
+   "claims_kept_per_response": {
+    "mean": 1.4418983957219251,
+    "std": 0.13506014894053078
+   },
+   "non_empty_rate": {
+    "mean": 0.6162566844919786,
+    "std": 0.02577390157491609
+   },
+   "factual_precision_micro": {
+    "mean": 0.7847989559116144,
+    "std": 0.023608402842443383
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8012566844919786,
+    "std": 0.02845726816293903
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 2) @ target 0.8": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 1.14475935828877,
+    "std": 0.08916788865133923
+   },
+   "claims_kept_per_response": {
+    "mean": 1.4603743315508024,
+    "std": 0.1329539406915031
+   },
+   "non_empty_rate": {
+    "mean": 0.6187967914438502,
+    "std": 0.02464168054109464
+   },
+   "factual_precision_micro": {
+    "mean": 0.7850481674542543,
+    "std": 0.023767997822236785
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8031283422459894,
+    "std": 0.028941889310601952
+   }
+  },
+  "CF (score s) @ target 0.85": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.838903743315508,
+    "std": 0.09297351197348173
+   },
+   "claims_kept_per_response": {
+    "mean": 1.0638235294117648,
+    "std": 0.1374345396298064
+   },
+   "non_empty_rate": {
+    "mean": 0.44967914438502676,
+    "std": 0.0438006037327229
+   },
+   "factual_precision_micro": {
+    "mean": 0.7907852933455902,
+    "std": 0.028005920081565928
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8533689839572192,
+    "std": 0.02655291659736197
+   }
+  },
+  "C (two-signal) @ target 0.85": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.8232352941176473,
+    "std": 0.09094474645604314
+   },
+   "claims_kept_per_response": {
+    "mean": 1.0561229946524064,
+    "std": 0.129534344953615
+   },
+   "non_empty_rate": {
+    "mean": 0.4602941176470589,
+    "std": 0.03683884188592089
+   },
+   "factual_precision_micro": {
+    "mean": 0.7809201764003733,
+    "std": 0.025583349182746996
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8502941176470589,
+    "std": 0.02523598296514579
+   }
+  },
+  "A (repair all) @ target 0.85": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.8328342245989304,
+    "std": 0.09147882768739508
+   },
+   "claims_kept_per_response": {
+    "mean": 1.053342245989305,
+    "std": 0.13357493846991347
+   },
+   "non_empty_rate": {
+    "mean": 0.44997326203208554,
+    "std": 0.04263583291965903
+   },
+   "factual_precision_micro": {
+    "mean": 0.7926737903149177,
+    "std": 0.027424140877635617
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8523796791443848,
+    "std": 0.02640995529058299
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.85": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.9156951871657755,
+    "std": 0.07511807929594774
+   },
+   "claims_kept_per_response": {
+    "mean": 1.1462834224598932,
+    "std": 0.1140359648006744
+   },
+   "non_empty_rate": {
+    "mean": 0.5639839572192513,
+    "std": 0.031504706010092635
+   },
+   "factual_precision_micro": {
+    "mean": 0.8004423294143548,
+    "std": 0.025789389561268205
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8490909090909091,
+    "std": 0.026527339783763183
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 1) @ target 0.85": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.9360962566844918,
+    "std": 0.08241764738373464
+   },
+   "claims_kept_per_response": {
+    "mean": 1.1493048128342247,
+    "std": 0.11530393032075796
+   },
+   "non_empty_rate": {
+    "mean": 0.5553208556149732,
+    "std": 0.03591036275851148
+   },
+   "factual_precision_micro": {
+    "mean": 0.8156547252878719,
+    "std": 0.021749307783925646
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8536096256684493,
+    "std": 0.02644842690263679
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 2) @ target 0.85": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.9280213903743315,
+    "std": 0.08458420008138266
+   },
+   "claims_kept_per_response": {
+    "mean": 1.1488770053475934,
+    "std": 0.12315359188905202
+   },
+   "non_empty_rate": {
+    "mean": 0.571764705882353,
+    "std": 0.03215911912549991
+   },
+   "factual_precision_micro": {
+    "mean": 0.8093307721038233,
+    "std": 0.025199023092730265
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8528074866310159,
+    "std": 0.02761322006814261
+   }
+  },
+  "CF (score s) @ target 0.9": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.5335026737967915,
+    "std": 0.08073477780341662
+   },
+   "claims_kept_per_response": {
+    "mean": 0.6628342245989306,
+    "std": 0.10861911477308463
+   },
+   "non_empty_rate": {
+    "mean": 0.32363636363636367,
+    "std": 0.03750046036163556
+   },
+   "factual_precision_micro": {
+    "mean": 0.8068151625366906,
+    "std": 0.02647109306478337
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9010962566844921,
+    "std": 0.021760208942698065
+   }
+  },
+  "C (two-signal) @ target 0.9": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.661764705882353,
+    "std": 0.07038638891373068
+   },
+   "claims_kept_per_response": {
+    "mean": 0.8100802139037433,
+    "std": 0.09758772233520653
+   },
+   "non_empty_rate": {
+    "mean": 0.37443850267379675,
+    "std": 0.03686538416528351
+   },
+   "factual_precision_micro": {
+    "mean": 0.8187048748647157,
+    "std": 0.028269576764171134
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9007219251336899,
+    "std": 0.02081775202293958
+   }
+  },
+  "A (repair all) @ target 0.9": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.5372192513368984,
+    "std": 0.07410883793633868
+   },
+   "claims_kept_per_response": {
+    "mean": 0.6672459893048128,
+    "std": 0.10142670490094899
+   },
+   "non_empty_rate": {
+    "mean": 0.32951871657754006,
+    "std": 0.0365924846662707
+   },
+   "factual_precision_micro": {
+    "mean": 0.8071701238446604,
+    "std": 0.02768809770562477
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9000802139037433,
+    "std": 0.022034457815510868
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.9": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.603048128342246,
+    "std": 0.09692388665503102
+   },
+   "claims_kept_per_response": {
+    "mean": 0.7362032085561497,
+    "std": 0.12860262079153562
+   },
+   "non_empty_rate": {
+    "mean": 0.4246256684491978,
+    "std": 0.0527645314916957
+   },
+   "factual_precision_micro": {
+    "mean": 0.821001853177314,
+    "std": 0.02082035325868591
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9009893048128343,
+    "std": 0.02370119120672164
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 1) @ target 0.9": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.5925401069518716,
+    "std": 0.09831643824116415
+   },
+   "claims_kept_per_response": {
+    "mean": 0.7278877005347593,
+    "std": 0.12535335582035909
+   },
+   "non_empty_rate": {
+    "mean": 0.40393048128342235,
+    "std": 0.051013152497972544
+   },
+   "factual_precision_micro": {
+    "mean": 0.8149379429870703,
+    "std": 0.020102333867117936
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9043048128342247,
+    "std": 0.020740043098462897
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 2) @ target 0.9": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.6295454545454545,
+    "std": 0.10463885652531281
+   },
+   "claims_kept_per_response": {
+    "mean": 0.7687967914438503,
+    "std": 0.13638532316114313
+   },
+   "non_empty_rate": {
+    "mean": 0.43572192513368985,
+    "std": 0.05356757663958101
+   },
+   "factual_precision_micro": {
+    "mean": 0.8205686291329899,
+    "std": 0.021184756928307673
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9039572192513369,
+    "std": 0.023137601967344868
+   }
+  },
+  "CF (score s) @ target 0.95": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.264144385026738,
+    "std": 0.04019650959967751
+   },
+   "claims_kept_per_response": {
+    "mean": 0.3212566844919787,
+    "std": 0.05581289003913421
+   },
+   "non_empty_rate": {
+    "mean": 0.19211229946524067,
+    "std": 0.027226072004336584
+   },
+   "factual_precision_micro": {
+    "mean": 0.8256979757177108,
+    "std": 0.03492316084556879
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9515508021390374,
+    "std": 0.014286962502327178
+   }
+  },
+  "C (two-signal) @ target 0.95": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.4148930481283422,
+    "std": 0.06697503136798554
+   },
+   "claims_kept_per_response": {
+    "mean": 0.47834224598930475,
+    "std": 0.0881116251695321
+   },
+   "non_empty_rate": {
+    "mean": 0.243663101604278,
+    "std": 0.03352230535346361
+   },
+   "factual_precision_micro": {
+    "mean": 0.8712392240228898,
+    "std": 0.031047935075723676
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9520053475935829,
+    "std": 0.016241299504405872
+   }
+  },
+  "A (repair all) @ target 0.95": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.27489304812834225,
+    "std": 0.04181907942898045
+   },
+   "claims_kept_per_response": {
+    "mean": 0.3320855614973262,
+    "std": 0.05778561146942983
+   },
+   "non_empty_rate": {
+    "mean": 0.19751336898395724,
+    "std": 0.028603062212224806
+   },
+   "factual_precision_micro": {
+    "mean": 0.8312745917248996,
+    "std": 0.03392572955642082
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9514705882352942,
+    "std": 0.014528026892585396
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.95": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.3013368983957219,
+    "std": 0.05122821662653805
+   },
+   "claims_kept_per_response": {
+    "mean": 0.3586898395721924,
+    "std": 0.06828659245519858
+   },
+   "non_empty_rate": {
+    "mean": 0.23401069518716577,
+    "std": 0.04027222469610915
+   },
+   "factual_precision_micro": {
+    "mean": 0.8434499194130706,
+    "std": 0.02863326432812987
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9528877005347595,
+    "std": 0.015052437073538004
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 1) @ target 0.95": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.30438502673796797,
+    "std": 0.06900545562569191
+   },
+   "claims_kept_per_response": {
+    "mean": 0.3725133689839572,
+    "std": 0.09043911166874309
+   },
+   "non_empty_rate": {
+    "mean": 0.23443850267379682,
+    "std": 0.04607213864222616
+   },
+   "factual_precision_micro": {
+    "mean": 0.8207604638003498,
+    "std": 0.031242954708203787
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9539572192513368,
+    "std": 0.01507065653861065
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 2) @ target 0.95": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "supported_claims_per_response": {
+    "mean": 0.2585828877005347,
+    "std": 0.05380616317205356
+   },
+   "claims_kept_per_response": {
+    "mean": 0.3226470588235294,
+    "std": 0.07172541854329692
+   },
+   "non_empty_rate": {
+    "mean": 0.21657754010695185,
+    "std": 0.038443886412088464
+   },
+   "factual_precision_micro": {
+    "mean": 0.8046831959229724,
+    "std": 0.03155704694637573
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9525668449197862,
+    "std": 0.014313928301376747
+   }
+  }
+ }
+}

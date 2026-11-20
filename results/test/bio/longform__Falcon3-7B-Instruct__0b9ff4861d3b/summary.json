@@ -1,0 +1,97 @@
+{
+ "config": {
+  "pipeline": "longform-v1",
+  "dataset": "bio",
+  "split": "test",
+  "model": "tiiuae/Falcon3-7B-Instruct",
+  "prompts": "v2",
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100",
+  "max_tokens": 512,
+  "temperature": 0.0,
+  "seed": 0,
+  "tau_s": 0.5,
+  "tau_c": 0.5,
+  "tau_con": 0.5,
+  "verifier": "MiniCheck-Flan-T5-Large",
+  "nli": "DeBERTa-v3-large-mnli-fever-anli-ling-wanli"
+ },
+ "config_hash": "0b9ff4861d3b",
+ "git_commit": "4b94969+dirty",
+ "n": 350,
+ "claims_per_response_mean": 13.302857142857142,
+ "responses_with_zero_claims": 23,
+ "answers_truncated": 7,
+ "decompositions_truncated": 2,
+ "actions": {
+  "keep": 3978,
+  "revise": 271,
+  "reretrieve": 343,
+  "low": 64
+ },
+ "closed_book_unreadable": 0,
+ "repair": {
+  "revise_attempted": 271,
+  "revise_deleted": 207,
+  "revise_now_supported": 44,
+  "reretrieve_attempted": 343,
+  "reretrieve_now_supported": 102
+ },
+ "mean_support_all_claims": 0.8178499804871098,
+ "cost": {
+  "llm_by_stage": {
+   "1_generate": {
+    "calls": 350,
+    "cache_hits": 350,
+    "prompt_tokens": 300221,
+    "completion_tokens": 82913
+   },
+   "2_decompose": {
+    "calls": 350,
+    "cache_hits": 350,
+    "prompt_tokens": 199700,
+    "completion_tokens": 87692
+   },
+   "3_closed_book_truth": {
+    "calls": 4656,
+    "cache_hits": 0,
+    "prompt_tokens": 234857,
+    "completion_tokens": 4656
+   },
+   "4_revise": {
+    "calls": 271,
+    "cache_hits": 0,
+    "prompt_tokens": 66425,
+    "completion_tokens": 1634
+   }
+  },
+  "retrieval_queries": 693,
+  "verifier_pairs": {
+   "minicheck": 25297,
+   "nli": 23262
+  },
+  "verifier_cache": {
+   "minicheck_hits": 24171,
+   "minicheck_misses": 1126,
+   "nli_hits": 23262,
+   "nli_misses": 0
+  },
+  "seconds_by_stage": {
+   "retrieve": 0.0,
+   "generate": 0.02,
+   "decompose": 0.02,
+   "minicheck": 0.04,
+   "nli": 0.04,
+   "closed_book_truth": 36.63,
+   "revise": 9.32,
+   "load_verifier": 4.07,
+   "rescore_revised": 52.56,
+   "reretrieve": 65.85,
+   "rescore_reretrieved": 132.71
+  },
+  "verifier_device": "cpu",
+  "note": "stage seconds include cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-17T16:06:23Z"
+}

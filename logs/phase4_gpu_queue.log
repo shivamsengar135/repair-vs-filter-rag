@@ -1,0 +1,29 @@
+VLLM_READY
+(EngineCore pid=228) INFO 11-16 07:23:58 [model_runner.py:428] Model loading took 12.56 GiB memory and 21.283298 seconds
+(EngineCore pid=228) INFO 11-16 07:24:28 [kv_cache_utils.py:1147] GPU KV cache size: 9,472 tokens, Maximum concurrency for 4,096 tokens per request: 2.31x
+##### reproduction (official PopQA long-tail + Contriever passages)
+{"n": 1399, "dataset": "repro", "split": "official PopQA long-tail", "match_official": 0.5496783416726233, "match_ours_normalised": 0.5582558970693352, "retrieval_frequency": 1.0, "reported_in_paper": 0.549, "data_sha256": "3b9ae00ff8ad42995bf5b0f7c5b920e369c8be2c2f2772d3a8cf728d4795efc3", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 15389, "prompt_tokens": 2497607, "completion_tokens": 321225, "seconds": 803.8}, "git_commit": "a50e297+dirty"}
+##### baseline popqa dev
+{"n": 500, "dataset": "popqa", "split": "dev", "match_official": 0.35, "match_ours_normalised": 0.356, "retrieval_frequency": 1.0, "passages": "our BM25 top-10", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 5500, "prompt_tokens": 969197, "completion_tokens": 110359, "seconds": 289.9}, "git_commit": "a50e297+dirty"}
+##### baseline nq dev
+Traceback (most recent call last):
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+##### baseline triviaqa dev
+Traceback (most recent call last):
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+##### baseline hotpotqa dev
+{"n": 500, "dataset": "hotpotqa", "split": "dev", "match_official": 0.378, "match_ours_normalised": 0.412, "retrieval_frequency": 1.0, "passages": "our BM25 top-10", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 5500, "prompt_tokens": 1091848, "completion_tokens": 129185, "seconds": 348.8}, "git_commit": "76edcca+dirty"}
+##### baseline 2wiki dev
+{"n": 500, "dataset": "2wiki", "split": "dev", "match_official": 0.19, "match_ours_normalised": 0.312, "retrieval_frequency": 1.0, "passages": "our BM25 top-10", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 5500, "prompt_tokens": 1067458, "completion_tokens": 142781, "seconds": 373.3}, "git_commit": "76edcca+dirty"}
+SELFRAG_END
+##### fit test Olmo-3-7B-Instruct
+{"model": "allenai/Olmo-3-7B-Instruct", "revision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc", "extra_args": "", "status": "", "model_load_GiB": 13.59,
+ "kv_cache_tokens": null, "gpu_used_MiB_with_server": 691, "fits_rule_ge_16000_kv_tokens": false,
+ "bench": null, "server_log": "logs/vllm_docker_20261116_080225.log", "errors": "ValueError: To serve at least one request with the model's max seq len (8192), (4.01 GiB KV cache is needed, which is larger than the available KV cache memory (3.04 GiB). Based on the available memory, the estimated maximum model length is 6208. Try increasing `gpu_memory_utilization` (which also c     raise RuntimeError( RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+##### fit test Falcon3-7B-Instruct
+{"model": "tiiuae/Falcon3-7B-Instruct", "revision": "1e57a0ecd176", "extra_args": "", "status": "", "model_load_GiB": null,
+ "kv_cache_tokens": null, "gpu_used_MiB_with_server": 691, "fits_rule_ge_16000_kv_tokens": false,
+ "bench": null, "server_log": "logs/vllm_docker_20261116_080359.log", "errors": "    raise LocalEntryNotFoundError( huggingface_hub.errors.LocalEntryNotFoundError: Cannot find an appropriate cached snapshot folder for the specified revision on the local disk and outgoing traffic has been disabled. To enable repo look-ups and downloads online, pass 'local_files_only=False' as input. ", "date_utc": "2026-11-16T08:04:16Z", "git_commit": "76edcca"}
+GPU_QUEUE_END

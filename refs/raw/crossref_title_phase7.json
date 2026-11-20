@@ -1,0 +1,92 @@
+{
+ "Holm 1979 A simple sequentially rejective multiple test procedure Scandinavian Journal of Statistics": [
+  {
+   "doi": "10.2307/2532027",
+   "title": "Correction: An Improved Sequentially Rejective Bonferroni Test Procedure",
+   "authors": [],
+   "container": "Biometrics",
+   "issued": [
+    [
+     1987,
+     9
+    ]
+   ],
+   "volume": "43",
+   "page": "737"
+  },
+  {
+   "doi": "10.2307/2531823",
+   "title": "An Improved Sequentially Rejective Bonferroni Test Procedure",
+   "authors": [
+    "Burt S. Holland",
+    "Margaret DiPonzio Copenhaver"
+   ],
+   "container": "Biometrics",
+   "issued": [
+    [
+     1987,
+     6
+    ]
+   ],
+   "volume": "43",
+   "page": "417"
+  },
+  {
+   "doi": "10.1002/sim.3495",
+   "title": "A graphical approach to sequentially rejective multiple test procedures",
+   "authors": [
+    "Frank Bretz",
+    "Willi Maurer",
+    "Werner Brannath",
+    "Martin Posch"
+   ],
+   "container": "Statistics in Medicine",
+   "issued": [
+    [
+     2008,
+     12,
+     2
+    ]
+   ],
+   "volume": "28",
+   "page": "586-604"
+  },
+  {
+   "doi": "10.1002/sim.3988",
+   "title": "Test and power considerations for multiple endpoint analyses using sequentially rejective graphical procedures",
+   "authors": [
+    "Frank Bretz",
+    "Willi Maurer",
+    "Gerhard Hommel"
+   ],
+   "container": "Statistics in Medicine",
+   "issued": [
+    [
+     2011,
+     2,
+     3
+    ]
+   ],
+   "volume": "30",
+   "page": "1489-1501"
+  },
+  {
+   "doi": "10.1002/pst.2227",
+   "title": "Rationale for the update algorithm of the graphical approach to sequentially rejective multiple test procedures",
+   "authors": [
+    "Willi Maurer",
+    "Frank Bretz",
+    "Martin Posch"
+   ],
+   "container": "Pharmaceutical Statistics",
+   "issued": [
+    [
+     2022,
+     7
+    ]
+   ],
+   "volume": "21",
+   "page": "757-763"
+  }
+ ]
+}

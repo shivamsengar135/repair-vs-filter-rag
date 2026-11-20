@@ -1,0 +1,2 @@
+started container 'vllm' (vllm/vllm-openai:v0.33.0); log: logs/vllm_docker_20261117_204103.log
+VLLM_READY

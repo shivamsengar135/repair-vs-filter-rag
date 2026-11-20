@@ -1,0 +1,3 @@
+concurrency=  1 n=  8 wall=20.4s throughput=50.1 out tok/s per-request=50.1 tok/s lat_mean=2.56s
+concurrency= 32 n= 64 wall=5.6s throughput=1455.5 out tok/s per-request=45.8 tok/s lat_mean=2.79s
+wrote results/phase4/fit/Qwen_Qwen2.5-3B-Instruct_bench.json

@@ -1,0 +1,44 @@
+{
+ "config": {
+  "dataset": "hotpotqa",
+  "split": "test",
+  "method": "rag",
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "prompts": "v1",
+  "max_tokens": 64,
+  "temperature": 0.0,
+  "seed": 0,
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100"
+ },
+ "config_hash": "d0ccf00dfa57",
+ "git_commit": "4b94969+dirty",
+ "n": 1000,
+ "match_accuracy": 0.399,
+ "em": 0.157,
+ "f1": 0.33640592438557254,
+ "abstention_rate": 0.003,
+ "truncated_rate": 0.006,
+ "retrieval_recall_at_k": 0.482,
+ "cost": {
+  "llm": {
+   "answer": {
+    "calls": 1000,
+    "cache_hits": 1000,
+    "prompt_tokens": 930386,
+    "completion_tokens": 13311
+   }
+  },
+  "prompt_tokens_per_q": 930.386,
+  "completion_tokens_per_q": 13.311,
+  "retrieval_calls_per_q": 1.0,
+  "wall_seconds": {
+   "retrieval": 1.0,
+   "generation": 0.1,
+   "total": 2.94
+  },
+  "note": "wall-clock includes cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-17T13:18:36Z"
+}

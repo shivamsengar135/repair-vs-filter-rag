@@ -1,0 +1,55 @@
+{
+ "openalex": {
+  "title": "SeaRAG: Reducing Hallucination in Retrieval-Augmented Generation via Statement-Entity Adaptive Ranking",
+  "abstract": "Retrieval-augmented generation (RAG) has facilitated large language models (LLMs) by grounding facts in external knowledge. While prior RAG strategies can achieve dynamic control by detecting sentence-wise hallucination, thereby reducing unnecessary computation, they ignore the entity, statement, and their combinations. In this work, we analyze adaptive RAG methods through probing uncertainty to explore real-time entity- and statement-level verification, finding that such information can serve as training-free signals for hallucination detection, and the entropy probes can also guide principled document ranking. Inspired by these insights, we propose SeaRAG, a training-free, adaptive RAG framework that dynamically detects and mitigates hallucinations by probing LLMs at both entity and statement aspects, ranking retrieved passages via entropy-based uncertainty reduction, and regenerating evidence-grounded responses in real-time. Experiments across various Question-Answering benchmarks and multiple LLMs demonstrate consistent accuracy improvements and reduced retrieval rates. SeaRAG with self-correction outperforms Always Retrieve by up to 11.1% on TriviaQA while cutting retrieval frequency from 45.2%, offering an efficient and real-time hallucination control.",
+  "oa": {
+   "is_oa": true,
+   "oa_status": "hybrid",
+   "oa_url": "https://doi.org/10.1145/3774904.3792598",
+   "any_repository_has_fulltext": false
+  },
+  "locations": [
+   "https://doi.org/10.1145/3774904.3792598"
+  ]
+ },
+ "s2": {
+  "paperId": "7c887143f067108970f6882830c962f93e5e20a1",
+  "externalIds": {
+   "DBLP": "conf/www/YuanZZZW26",
+   "DOI": "10.1145/3774904.3792598",
+   "CorpusId": 287410386
+  },
+  "title": "SeaRAG: Reducing Hallucination in Retrieval-Augmented Generation via Statement-Entity Adaptive Ranking",
+  "openAccessPdf": {
+   "url": "https://doi.org/10.1145/3774904.3792598",
+   "status": "HYBRID",
+   "license": "CCBY",
+   "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3774904.3792598?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3774904.3792598, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+  },
+  "tldr": {
+   "model": "tldr@v2.0.0",
+   "text": "This work proposes SeaRAG, a training-free, adaptive RAG framework that dynamically detects and mitigates hallucinations by probing LLMs at both entity and statement aspects, ranking retrieved passages via entropy-based uncertainty reduction, and regenerating evidence-grounded responses in real-time."
+  },
+  "authors": [
+   {
+    "authorId": "2307558902",
+    "name": "Xiao-Song Yuan"
+   },
+   {
+    "authorId": "2320709003",
+    "name": "Xiaofeng Zhang"
+   },
+   {
+    "authorId": "2222777641",
+    "name": "Di Zhao"
+   },
+   {
+    "authorId": "2280504838",
+    "name": "Yi-Jia Zhang"
+   },
+   {
+    "authorId": "2266776574",
+    "name": "Ying Wang"
+   }
+  ],
+  "abstract": "Retrieval-augmented generation (RAG) has facilitated large language models (LLMs) by grounding facts in external knowledge. While prior RAG strategies can achieve dynamic control by detecting sentence-wise hallucination, thereby reducing unnecessary computation, they ignore the entity, statement, and their combinations. In this

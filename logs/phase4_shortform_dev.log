@@ -1,0 +1,41 @@
+##### popqa 2026-11-14T07:01:57Z
+{"n": 500, "rag_match": 0.312, "A_match_no_abstention": 0.308, "actions": {"keep": 328, "revise": 117, "reretrieve": 14, "low": 41}, "answers_changed_by_repair": 124, "repair_effect_on_match": {"fixed": 3, "broken": 5}, "mean_s": 0.6467837135698646, "closed_book_unreadable": 0}
+wrote results/dev/popqa/shortform__Qwen2.5-7B-Instruct__3e4402886b18/summary.json
+run results/dev/popqa/shortform__Qwen2.5-7B-Instruct__3e4402886b18  n=500  standard RAG accuracy 0.312
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.312  0.543   0.500   0.360  0.354 |          0.42/0.54          0.32/0.55          0.21/0.52          0.09/0.49
+C (two-signal)    0.312  0.471   0.492   0.370  0.393 |          0.41/0.52          0.34/0.55          0.26/0.61          0.17/0.72
+A (repair)        0.308  0.555   0.496   0.358  0.391 |          0.41/0.52          0.30/0.50          0.20/0.49          0.09/0.48
+##### nq 2026-11-14T07:16:45Z
+{"n": 500, "rag_match": 0.318, "A_match_no_abstention": 0.31, "actions": {"keep": 323, "revise": 90, "reretrieve": 35, "low": 52}, "answers_changed_by_repair": 108, "repair_effect_on_match": {"fixed": 3, "broken": 7}, "mean_s": 0.632497188593261, "closed_book_unreadable": 0}
+wrote results/dev/nq/shortform__Qwen2.5-7B-Instruct__930ec6943beb/summary.json
+run results/dev/nq/shortform__Qwen2.5-7B-Instruct__930ec6943beb  n=500  standard RAG accuracy 0.318
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.318  0.555   0.452   0.350  0.371 |          0.39/0.49          0.31/0.52          0.21/0.51          0.10/0.55
+C (two-signal)    0.318  0.561   0.456   0.373  0.446 |          0.36/0.47          0.28/0.49          0.20/0.50          0.10/0.53
+A (repair)        0.310  0.558   0.452   0.358  0.394 |          0.39/0.49          0.31/0.51          0.21/0.51          0.10/0.54
+##### triviaqa 2026-11-14T07:30:08Z
+{"n": 500, "rag_match": 0.652, "A_match_no_abstention": 0.642, "actions": {"keep": 319, "revise": 98, "reretrieve": 31, "low": 52}, "answers_changed_by_repair": 111, "repair_effect_on_match": {"fixed": 10, "broken": 15}, "mean_s": 0.6178895745109767, "closed_book_unreadable": 0}
+wrote results/dev/triviaqa/shortform__Qwen2.5-7B-Instruct__47c40550c092/summary.json
+run results/dev/triviaqa/shortform__Qwen2.5-7B-Instruct__47c40550c092  n=500  standard RAG accuracy 0.652
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.652  0.171   0.880   0.735  0.149 |          0.79/0.75          0.70/0.79          0.61/0.83          0.39/0.88
+C (two-signal)    0.652  0.172   0.856   0.770  0.141 |          0.82/0.75          0.75/0.80          0.63/0.84          0.34/0.86
+A (repair)        0.642  0.172   0.872   0.738  0.127 |          0.79/0.75          0.71/0.79          0.61/0.84          0.37/0.88
+##### hotpotqa 2026-11-14T07:48:15Z
+{"n": 500, "rag_match": 0.444, "A_match_no_abstention": 0.39, "actions": {"keep": 208, "revise": 168, "reretrieve": 40, "low": 84}, "answers_changed_by_repair": 182, "repair_effect_on_match": {"fixed": 8, "broken": 35}, "mean_s": 0.4287802524650469, "closed_book_unreadable": 0}
+wrote results/dev/hotpotqa/shortform__Qwen2.5-7B-Instruct__4f88f27e3c75/summary.json
+run results/dev/hotpotqa/shortform__Qwen2.5-7B-Instruct__4f88f27e3c75  n=500  standard RAG accuracy 0.444
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.444  0.432   0.536   0.450  0.290 |          0.45/0.56          0.36/0.60          0.28/0.66          0.16/0.71
+C (two-signal)    0.444  0.382   0.596   0.480  0.283 |          0.50/0.60          0.40/0.64          0.30/0.67          0.19/0.76
+A (repair)        0.390  0.453   0.512   0.415  0.256 |          0.44/0.55          0.36/0.59          0.28/0.65          0.16/0.71
+##### 2wiki 2026-11-14T11:44:58Z
+{"n": 500, "rag_match": 0.386, "A_match_no_abstention": 0.374, "actions": {"keep": 111, "revise": 235, "reretrieve": 43, "low": 111}, "answers_changed_by_repair": 242, "repair_effect_on_match": {"fixed": 6, "broken": 12}, "mean_s": 0.2900188521016389, "closed_book_unreadable": 0}
+wrote results/dev/2wiki/shortform__Qwen2.5-7B-Instruct__5c3f22c44c2d/summary.json
+run results/dev/2wiki/shortform__Qwen2.5-7B-Instruct__5c3f22c44c2d  n=500  standard RAG accuracy 0.386
+method              acc   AURC  sel@50  sel@80    ECE |        cov/acc@0.8       cov/acc@0.85        cov/acc@0.9       cov/acc@0.95
+CF (score s)      0.386  0.613   0.432   0.425  0.312 |          0.30/0.34          0.21/0.31          0.14/0.27          0.07/0.34
+C (two-signal)    0.386  0.571   0.424   0.420  0.309 |          0.37/0.45          0.29/0.50          0.21/0.53          0.08/0.42
+A (repair)        0.374  0.638   0.384   0.395  0.342 |          0.29/0.30          0.21/0.29          0.13/0.25          0.07/0.32
+SHORTFORM_DEV_END

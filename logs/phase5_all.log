@@ -1,0 +1,387 @@
+===== 2026-11-16T08:54:02Z serve Qwen/Qwen2.5-7B-Instruct
+VLLM_READY
+##### 2026-11-16T08:55:45Z QA closed-book + standard RAG (5 test sets)
+popqa     {"n": 1000, "match_accuracy": 0.176, "em": 0.145, "f1": 0.19211190476190476, "abstention_rate": 0.048, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+nq        {"n": 1000, "match_accuracy": 0.237, "em": 0.155, "f1": 0.26091221556221555, "abstention_rate": 0.001, "truncated_rate": 0.001, "retrieval_recall_at_k": null}
+triviaqa  {"n": 1000, "match_accuracy": 0.538, "em": 0.467, "f1": 0.5365119658119659, "abstention_rate": 0.0, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+hotpotqa  {"n": 1000, "match_accuracy": 0.21, "em": 0.18, "f1": 0.2732270709682474, "abstention_rate": 0.006, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+2wiki     {"n": 1000, "match_accuracy": 0.239, "em": 0.23, "f1": 0.27141341991341994, "abstention_rate": 0.028, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+popqa     {"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+nq        {"n": 1000, "match_accuracy": 0.341, "em": 0.25, "f1": 0.3570444888444888, "abstention_rate": 0.004, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.476}
+triviaqa  {"n": 1000, "match_accuracy": 0.678, "em": 0.575, "f1": 0.6603766178266179, "abstention_rate": 0.008, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.753}
+hotpotqa  {"n": 1000, "match_accuracy": 0.363, "em": 0.321, "f1": 0.4280591975276186, "abstention_rate": 0.009, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.482}
+2wiki     {"n": 1000, "match_accuracy": 0.266, "em": 0.255, "f1": 0.3077975791752107, "abstention_rate": 0.004, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.335}
+##### 2026-11-16T09:23:24Z serving non-determinism: PopQA test standard RAG x3 with fresh caches
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+##### 2026-11-16T09:33:37Z short-form pipeline popqa test
+{"n": 1000, "rag_match": 0.316, "A_match_no_abstention": 0.309, "actions": {"keep": 662, "revise": 245, "reretrieve": 14, "low": 79}, "answers_changed_by_repair": 256, "repair_effect_on_match": {"fixed": 11, "broken": 18}, "mean_s": 0.6437668463028967, "closed_book_unreadable": 0}
+wrote results/test/popqa/shortform__Qwen2.5-7B-Instruct__0bf7441a43c9/summary.json
+##### 2026-11-16T09:59:11Z short-form pipeline nq test
+{"n": 1000, "rag_match": 0.341, "A_match_no_abstention": 0.337, "actions": {"keep": 585, "revise": 210, "reretrieve": 66, "low": 139}, "answers_changed_by_repair": 257, "repair_effect_on_match": {"fixed": 16, "broken": 20}, "mean_s": 0.5875875603277236, "closed_book_unreadable": 0}
+wrote results/test/nq/shortform__Qwen2.5-7B-Instruct__692803c67973/summary.json
+##### 2026-11-16T10:24:17Z short-form pipeline triviaqa test
+{"n": 1000, "rag_match": 0.678, "A_match_no_abstention": 0.64, "actions": {"keep": 606, "revise": 214, "reretrieve": 83, "low": 97}, "answers_changed_by_repair": 257, "repair_effect_on_match": {"fixed": 16, "broken": 54}, "mean_s": 0.600366515989881, "closed_book_unreadable": 0}
+wrote results/test/triviaqa/shortform__Qwen2.5-7B-Instruct__1d8ae809d857/summary.json
+##### 2026-11-16T10:49:28Z short-form pipeline hotpotqa test
+{"n": 1000, "rag_match": 0.363, "A_match_no_abstention": 0.332, "actions": {"keep": 362, "revise": 335, "reretrieve": 81, "low": 222}, "answers_changed_by_repair": 363, "repair_effect_on_match": {"fixed": 23, "broken": 54}, "mean_s": 0.3908824650510214, "closed_book_unreadable": 0}
+wrote results/test/hotpotqa/shortform__Qwen2.5-7B-Instruct__f577d578edc2/summary.json
+##### 2026-11-16T11:17:03Z short-form pipeline 2wiki test
+{"n": 1000, "rag_match": 0.266, "A_match_no_abstention": 0.265, "actions": {"keep": 365, "revise": 318, "reretrieve": 56, "low": 261}, "answers_changed_by_repair": 334, "repair_effect_on_match": {"fixed": 27, "broken": 28}, "mean_s": 0.39405332805402576, "closed_book_unreadable": 0}
+wrote results/test/2wiki/shortform__Qwen2.5-7B-Instruct__9493b73e979c/summary.json
+##### 2026-11-16T11:47:04Z long-form pipeline asqa test: generate + decompose
+STOP_AFTER decompose: 748 items, 1692 claims cached
+##### 2026-11-16T11:54:07Z long-form pipeline bio test: generate + decompose
+STOP_AFTER decompose: 350 items, 6230 claims cached
+##### 2026-11-16T12:03:52Z CoVe-closed_book asqa test
+===== 2026-11-17T04:21:56Z RESTART phase5_all.sh (after WSL restart)
+===== 2026-11-17T04:21:56Z serve Qwen/Qwen2.5-7B-Instruct
+VLLM_READY
+##### 2026-11-17T04:23:50Z QA closed-book + standard RAG (5 test sets)
+popqa     {"n": 1000, "match_accuracy": 0.176, "em": 0.145, "f1": 0.19211190476190476, "abstention_rate": 0.048, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+nq        {"n": 1000, "match_accuracy": 0.237, "em": 0.155, "f1": 0.26091221556221555, "abstention_rate": 0.001, "truncated_rate": 0.001, "retrieval_recall_at_k": null}
+triviaqa  {"n": 1000, "match_accuracy": 0.538, "em": 0.467, "f1": 0.5365119658119659, "abstention_rate": 0.0, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+hotpotqa  {"n": 1000, "match_accuracy": 0.21, "em": 0.18, "f1": 0.2732270709682474, "abstention_rate": 0.006, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+2wiki     {"n": 1000, "match_accuracy": 0.239, "em": 0.23, "f1": 0.27141341991341994, "abstention_rate": 0.028, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+popqa     {"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+nq        {"n": 1000, "match_accuracy": 0.341, "em": 0.25, "f1": 0.3570444888444888, "abstention_rate": 0.004, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.476}
+triviaqa  {"n": 1000, "match_accuracy": 0.678, "em": 0.575, "f1": 0.6603766178266179, "abstention_rate": 0.008, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.753}
+hotpotqa  {"n": 1000, "match_accuracy": 0.363, "em": 0.321, "f1": 0.4280591975276186, "abstention_rate": 0.009, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.482}
+2wiki     {"n": 1000, "match_accuracy": 0.266, "em": 0.255, "f1": 0.3077975791752107, "abstention_rate": 0.004, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.335}
+##### 2026-11-17T04:24:12Z serving non-determinism: PopQA test standard RAG x3 with fresh caches
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+##### 2026-11-17T04:25:52Z short-form pipeline popqa test
+===== 2026-11-17T04:32:30Z RESTART phase5_all.sh (after WSL restart)
+===== 2026-11-17T04:32:31Z serve Qwen/Qwen2.5-7B-Instruct
+VLLM_READY
+##### 2026-11-17T04:34:15Z QA closed-book + standard RAG (5 test sets)
+popqa     {"n": 1000, "match_accuracy": 0.176, "em": 0.145, "f1": 0.19211190476190476, "abstention_rate": 0.048, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+nq        {"n": 1000, "match_accuracy": 0.237, "em": 0.155, "f1": 0.26091221556221555, "abstention_rate": 0.001, "truncated_rate": 0.001, "retrieval_recall_at_k": null}
+triviaqa  {"n": 1000, "match_accuracy": 0.538, "em": 0.467, "f1": 0.5365119658119659, "abstention_rate": 0.0, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+hotpotqa  {"n": 1000, "match_accuracy": 0.21, "em": 0.18, "f1": 0.2732270709682474, "abstention_rate": 0.006, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+2wiki     {"n": 1000, "match_accuracy": 0.239, "em": 0.23, "f1": 0.27141341991341994, "abstention_rate": 0.028, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+popqa     {"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+nq        {"n": 1000, "match_accuracy": 0.341, "em": 0.25, "f1": 0.3570444888444888, "abstention_rate": 0.004, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.476}
+triviaqa  {"n": 1000, "match_accuracy": 0.678, "em": 0.575, "f1": 0.6603766178266179, "abstention_rate": 0.008, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.753}
+hotpotqa  {"n": 1000, "match_accuracy": 0.363, "em": 0.321, "f1": 0.4280591975276186, "abstention_rate": 0.009, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.482}
+2wiki     {"n": 1000, "match_accuracy": 0.266, "em": 0.255, "f1": 0.3077975791752107, "abstention_rate": 0.004, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.335}
+##### 2026-11-17T04:34:36Z serving non-determinism: PopQA test standard RAG x3 with fresh caches
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+##### 2026-11-17T04:34:41Z short-form pipeline popqa test
+SKIP finished
+##### 2026-11-17T04:34:41Z short-form pipeline nq test
+SKIP finished
+##### 2026-11-17T04:34:41Z short-form pipeline triviaqa test
+SKIP finished
+##### 2026-11-17T04:34:41Z short-form pipeline hotpotqa test
+SKIP finished
+##### 2026-11-17T04:34:41Z short-form pipeline 2wiki test
+SKIP finished
+##### 2026-11-17T04:34:41Z long-form pipeline asqa test: generate + decompose
+STOP_AFTER decompose: 748 items, 1692 claims cached
+##### 2026-11-17T04:34:43Z long-form pipeline bio test: generate + decompose
+STOP_AFTER decompose: 350 items, 6230 claims cached
+##### 2026-11-17T04:34:45Z CoVe-closed_book asqa test
+{"n": 748, "planned_facts_per_response": 3.4184491978609626, "responses_with_no_parsable_plan": 1, "verdicts": {"CONSISTENT": 1402, "PARTIALLY CONSISTENT": 418, "INCONSISTENT": 737, "UNPARSED": 0}, "final_claims_per_response": 2.271390374331551, "empty_final_answers": 127}
+##### 2026-11-17T04:41:15Z CoVe-rag_verify asqa test
+{"n": 748, "planned_facts_per_response": 3.4184491978609626, "responses_with_no_parsable_plan": 1, "verdicts": {"CONSISTENT": 953, "PARTIALLY CONSISTENT": 685, "INCONSISTENT": 919, "UNPARSED": 0}, "final_claims_per_response": 1.9251336898395721, "empty_final_answers": 197}
+##### 2026-11-17T05:00:26Z run_rarr asqa test
+{"n": 748, "questions_per_response": 5.310160427807487, "agreement_checks": 3972, "disagreements": 702, "agreement_unparsed": 4, "edits_applied": 642, "responses_edited": 397, "final_claims_per_response": 4.127005347593583}
+##### 2026-11-17T05:25:15Z run_flare asqa test
+{"n": 748, "sentences_per_response": 3.9572192513368982, "retrievals_per_response": 3.927807486631016, "retrieval_rate_after_first": 0.9900542495479204, "hit_max_steps": 0, "final_claims_per_response": 2.0681818181818183}
+##### 2026-11-17T05:45:54Z CoVe-closed_book bio test
+{"n": 350, "planned_facts_per_response": 7.7457142857142856, "responses_with_no_parsable_plan": 0, "verdicts": {"CONSISTENT": 809, "PARTIALLY CONSISTENT": 607, "INCONSISTENT": 1295, "UNPARSED": 0}, "final_claims_per_response": 5.397142857142857, "empty_final_answers": 32}
+##### 2026-11-17T05:58:53Z CoVe-rag_verify bio test
+{"n": 350, "planned_facts_per_response": 7.7457142857142856, "responses_with_no_parsable_plan": 0, "verdicts": {"CONSISTENT": 514, "PARTIALLY CONSISTENT": 725, "INCONSISTENT": 1472, "UNPARSED": 0}, "final_claims_per_response": 4.942857142857143, "empty_final_answers": 51}
+##### 2026-11-17T06:18:01Z run_rarr bio test
+{"n": 350, "questions_per_response": 7.46, "agreement_checks": 2611, "disagreements": 420, "agreement_unparsed": 0, "edits_applied": 358, "responses_edited": 235, "final_claims_per_response": 12.88}
+##### 2026-11-17T06:40:00Z run_flare bio test
+{"n": 350, "sentences_per_response": 7.6571428571428575, "retrievals_per_response": 7.628571428571429, "retrieval_rate_after_first": 0.9957081545064378, "hit_max_steps": 0, "final_claims_per_response": 8.537142857142857}
+##### 2026-11-17T07:04:54Z GEN_STAGE_END Qwen/Qwen2.5-7B-Instruct
+===== 2026-11-17T07:04:56Z serve mistralai/Mistral-7B-Instruct-v0.3
+VLLM_READY
+##### 2026-11-17T07:06:34Z QA closed-book + standard RAG (5 test sets)
+popqa     {"n": 1000, "match_accuracy": 0.25, "em": 0.151, "f1": 0.23571713460868635, "abstention_rate": 0.01, "truncated_rate": 0.004, "retrieval_recall_at_k": null}
+nq        {"n": 1000, "match_accuracy": 0.338, "em": 0.094, "f1": 0.2734804494238624, "abstention_rate": 0.002, "truncated_rate": 0.006, "retrieval_recall_at_k": null}
+triviaqa  {"n": 1000, "match_accuracy": 0.687, "em": 0.422, "f1": 0.5960652809179126, "abstention_rate": 0.0, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+hotpotqa  {"n": 1000, "match_accuracy": 0.262, "em": 0.066, "f1": 0.2358448027737922, "abstention_rate": 0.007, "truncated_rate": 0.001, "retrieval_recall_at_k": null}
+2wiki     {"n": 1000, "match_accuracy": 0.282, "em": 0.011, "f1": 0.1737306472415179, "abstention_rate": 0.039, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+popqa     {"n": 1000, "match_accuracy": 0.342, "em": 0.196, "f1": 0.2759280253484987, "abstention_rate": 0.011, "truncated_rate": 0.036, "retrieval_recall_at_k": 0.416}
+nq        {"n": 1000, "match_accuracy": 0.366, "em": 0.14, "f1": 0.27988118286449154, "abstention_rate": 0.004, "truncated_rate": 0.021, "retrieval_recall_at_k": 0.476}
+triviaqa  {"n": 1000, "match_accuracy": 0.711, "em": 0.49, "f1": 0.6202421866559863, "abstention_rate": 0.001, "truncated_rate": 0.003, "retrieval_recall_at_k": 0.753}
+hotpotqa  {"n": 1000, "match_accuracy": 0.399, "em": 0.157, "f1": 0.33640592438557254, "abstention_rate": 0.003, "truncated_rate": 0.006, "retrieval_recall_at_k": 0.482}
+2wiki     {"n": 1000, "match_accuracy": 0.347, "em": 0.039, "f1": 0.21008292664275605, "abstention_rate": 0.024, "truncated_rate": 0.012, "retrieval_recall_at_k": 0.335}
+##### 2026-11-17T07:26:54Z short-form pipeline popqa test
+{"n": 1000, "rag_match": 0.342, "A_match_no_abstention": 0.317, "actions": {"keep": 638, "revise": 236, "reretrieve": 78, "low": 48}, "answers_changed_by_repair": 283, "repair_effect_on_match": {"fixed": 6, "broken": 31}, "mean_s": 0.6176448274068534, "closed_book_unreadable": 0}
+wrote results/test/popqa/shortform__Mistral-7B-Instruct-v0.3__1215765283f9/summary.json
+##### 2026-11-17T07:52:40Z short-form pipeline nq test
+{"n": 1000, "rag_match": 0.366, "A_match_no_abstention": 0.35, "actions": {"keep": 556, "revise": 213, "reretrieve": 154, "low": 77}, "answers_changed_by_repair": 321, "repair_effect_on_match": {"fixed": 18, "broken": 34}, "mean_s": 0.5500551406298764, "closed_book_unreadable": 0}
+wrote results/test/nq/shortform__Mistral-7B-Instruct-v0.3__f69bc12b29ca/summary.json
+##### 2026-11-17T08:21:44Z short-form pipeline triviaqa test
+{"n": 1000, "rag_match": 0.711, "A_match_no_abstention": 0.689, "actions": {"keep": 572, "revise": 210, "reretrieve": 151, "low": 67}, "answers_changed_by_repair": 294, "repair_effect_on_match": {"fixed": 22, "broken": 44}, "mean_s": 0.5695586147550493, "closed_book_unreadable": 0}
+wrote results/test/triviaqa/shortform__Mistral-7B-Instruct-v0.3__6d17dab1b4f1/summary.json
+##### 2026-11-17T08:47:39Z short-form pipeline hotpotqa test
+{"n": 1000, "rag_match": 0.399, "A_match_no_abstention": 0.358, "actions": {"keep": 334, "revise": 291, "reretrieve": 243, "low": 132}, "answers_changed_by_repair": 385, "repair_effect_on_match": {"fixed": 18, "broken": 59}, "mean_s": 0.36108656230475755, "closed_book_unreadable": 0}
+wrote results/test/hotpotqa/shortform__Mistral-7B-Instruct-v0.3__a198982046f2/summary.json
+##### 2026-11-17T09:17:48Z short-form pipeline 2wiki test
+{"n": 1000, "rag_match": 0.347, "A_match_no_abstention": 0.342, "actions": {"keep": 239, "revise": 308, "reretrieve": 257, "low": 196}, "answers_changed_by_repair": 400, "repair_effect_on_match": {"fixed": 35, "broken": 40}, "mean_s": 0.2988258129041642, "closed_book_unreadable": 0}
+wrote results/test/2wiki/shortform__Mistral-7B-Instruct-v0.3__3f94a1fe7a23/summary.json
+##### 2026-11-17T09:51:28Z long-form pipeline asqa test: generate + decompose
+STOP_AFTER decompose: 748 items, 3266 claims cached
+##### 2026-11-17T09:58:25Z long-form pipeline bio test: generate + decompose
+STOP_AFTER decompose: 350 items, 6200 claims cached
+##### 2026-11-17T10:09:38Z GEN_STAGE_END mistralai/Mistral-7B-Instruct-v0.3
+===== 2026-11-17T10:09:39Z serve tiiuae/Falcon3-7B-Instruct
+VLLM_READY
+##### 2026-11-17T10:11:21Z QA closed-book + standard RAG (5 test sets)
+popqa     {"n": 1000, "match_accuracy": 0.157, "em": 0.144, "f1": 0.18261926406926407, "abstention_rate": 0.003, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+nq        {"n": 1000, "match_accuracy": 0.217, "em": 0.155, "f1": 0.24348548559283853, "abstention_rate": 0.0, "truncated_rate": 0.002, "retrieval_recall_at_k": null}
+triviaqa  {"n": 1000, "match_accuracy": 0.511, "em": 0.474, "f1": 0.5247215562819276, "abstention_rate": 0.0, "truncated_rate": 0.001, "retrieval_recall_at_k": null}
+hotpotqa  {"n": 1000, "match_accuracy": 0.193, "em": 0.181, "f1": 0.2572497016725964, "abstention_rate": 0.001, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+2wiki     {"n": 1000, "match_accuracy": 0.251, "em": 0.244, "f1": 0.2788288079421812, "abstention_rate": 0.004, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+popqa     {"n": 1000, "match_accuracy": 0.335, "em": 0.26, "f1": 0.3153735657673525, "abstention_rate": 0.004, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.416}
+nq        {"n": 1000, "match_accuracy": 0.376, "em": 0.268, "f1": 0.38172493250405587, "abstention_rate": 0.001, "truncated_rate": 0.005, "retrieval_recall_at_k": 0.476}
+triviaqa  {"n": 1000, "match_accuracy": 0.701, "em": 0.617, "f1": 0.6900011968423733, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.753}
+hotpotqa  {"n": 1000, "match_accuracy": 0.37, "em": 0.313, "f1": 0.43480965069763694, "abstention_rate": 0.0, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.482}
+2wiki     {"n": 1000, "match_accuracy": 0.314, "em": 0.298, "f1": 0.3536905186029328, "abstention_rate": 0.006, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.335}
+##### 2026-11-17T10:28:01Z short-form pipeline popqa test
+{"n": 1000, "rag_match": 0.335, "A_match_no_abstention": 0.329, "actions": {"keep": 574, "revise": 280, "reretrieve": 70, "low": 76}, "answers_changed_by_repair": 321, "repair_effect_on_match": {"fixed": 12, "broken": 18}, "mean_s": 0.5683587787458673, "closed_book_unreadable": 0}
+wrote results/test/popqa/shortform__Falcon3-7B-Instruct__7e18b53550b2/summary.json
+##### 2026-11-17T10:56:25Z short-form pipeline nq test
+{"n": 1000, "rag_match": 0.376, "A_match_no_abstention": 0.364, "actions": {"keep": 517, "revise": 231, "reretrieve": 157, "low": 95}, "answers_changed_by_repair": 336, "repair_effect_on_match": {"fixed": 17, "broken": 29}, "mean_s": 0.5197918407386168, "closed_book_unreadable": 0}
+wrote results/test/nq/shortform__Falcon3-7B-Instruct__cdd27615513e/summary.json
+##### 2026-11-17T11:24:26Z short-form pipeline triviaqa test
+{"n": 1000, "rag_match": 0.701, "A_match_no_abstention": 0.659, "actions": {"keep": 526, "revise": 251, "reretrieve": 148, "low": 75}, "answers_changed_by_repair": 319, "repair_effect_on_match": {"fixed": 14, "broken": 56}, "mean_s": 0.527647667271085, "closed_book_unreadable": 0}
+wrote results/test/triviaqa/shortform__Falcon3-7B-Instruct__16eacb914e9b/summary.json
+##### 2026-11-17T11:52:24Z short-form pipeline hotpotqa test
+{"n": 1000, "rag_match": 0.37, "A_match_no_abstention": 0.325, "actions": {"keep": 268, "revise": 355, "reretrieve": 256, "low": 121}, "answers_changed_by_repair": 429, "repair_effect_on_match": {"fixed": 19, "broken": 64}, "mean_s": 0.2917019590996206, "closed_book_unreadable": 0}
+wrote results/test/hotpotqa/shortform__Falcon3-7B-Instruct__3ec386174c6f/summary.json
+##### 2026-11-17T12:24:46Z short-form pipeline 2wiki test
+{"n": 1000, "rag_match": 0.314, "A_match_no_abstention": 0.301, "actions": {"keep": 199, "revise": 350, "reretrieve": 269, "low": 182}, "answers_changed_by_repair": 420, "repair_effect_on_match": {"fixed": 37, "broken": 50}, "mean_s": 0.25560296650324016, "closed_book_unreadable": 0}
+wrote results/test/2wiki/shortform__Falcon3-7B-Instruct__6e8d88e7b597/summary.json
+##### 2026-11-17T12:56:28Z long-form pipeline asqa test: generate + decompose
+STOP_AFTER decompose: 748 items, 2015 claims cached
+##### 2026-11-17T13:00:37Z long-form pipeline bio test: generate + decompose
+STOP_AFTER decompose: 350 items, 4656 claims cached
+##### 2026-11-17T13:07:32Z GEN_STAGE_END tiiuae/Falcon3-7B-Instruct
+##### 2026-11-17T13:07:34Z verifier scores Qwen/Qwen2.5-7B-Instruct asqa test (GPU)
+Traceback (most recent call last):
+    raise RuntimeError(
+RuntimeError: Failed to find C compiler. Please specify via CC environment variable or set triton.knobs.build.impl.
+##### 2026-11-17T13:07:45Z verifier scores Qwen/Qwen2.5-7B-Instruct bio test (GPU)
+Traceback (most recent call last):
+    raise RuntimeError(
+RuntimeError: Failed to find C compiler. Please specify via CC environment variable or set triton.knobs.build.impl.
+##### 2026-11-17T13:07:55Z verifier scores mistralai/Mistral-7B-Instruct-v0.3 asqa test (GPU)
+===== 2026-11-17T13:13:03Z RESTART phase5_all.sh (after WSL restart)
+===== 2026-11-17T13:13:03Z serve Qwen/Qwen2.5-7B-Instruct
+VLLM_READY
+##### 2026-11-17T13:15:07Z QA closed-book + standard RAG (5 test sets)
+popqa     {"n": 1000, "match_accuracy": 0.176, "em": 0.145, "f1": 0.19211190476190476, "abstention_rate": 0.048, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+nq        {"n": 1000, "match_accuracy": 0.237, "em": 0.155, "f1": 0.26091221556221555, "abstention_rate": 0.001, "truncated_rate": 0.001, "retrieval_recall_at_k": null}
+triviaqa  {"n": 1000, "match_accuracy": 0.538, "em": 0.467, "f1": 0.5365119658119659, "abstention_rate": 0.0, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+hotpotqa  {"n": 1000, "match_accuracy": 0.21, "em": 0.18, "f1": 0.2732270709682474, "abstention_rate": 0.006, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+2wiki     {"n": 1000, "match_accuracy": 0.239, "em": 0.23, "f1": 0.27141341991341994, "abstention_rate": 0.028, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+popqa     {"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+nq        {"n": 1000, "match_accuracy": 0.341, "em": 0.25, "f1": 0.3570444888444888, "abstention_rate": 0.004, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.476}
+triviaqa  {"n": 1000, "match_accuracy": 0.678, "em": 0.575, "f1": 0.6603766178266179, "abstention_rate": 0.008, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.753}
+hotpotqa  {"n": 1000, "match_accuracy": 0.363, "em": 0.321, "f1": 0.4280591975276186, "abstention_rate": 0.009, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.482}
+2wiki     {"n": 1000, "match_accuracy": 0.266, "em": 0.255, "f1": 0.3077975791752107, "abstention_rate": 0.004, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.335}
+##### 2026-11-17T13:15:37Z serving non-determinism: PopQA test standard RAG x3 with fresh caches
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+{"n": 1000, "match_accuracy": 0.316, "em": 0.254, "f1": 0.29832622920938706, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.416}
+##### 2026-11-17T13:15:45Z short-form pipeline popqa test
+SKIP finished
+##### 2026-11-17T13:15:45Z short-form pipeline nq test
+SKIP finished
+##### 2026-11-17T13:15:45Z short-form pipeline triviaqa test
+SKIP finished
+##### 2026-11-17T13:15:45Z short-form pipeline hotpotqa test
+SKIP finished
+##### 2026-11-17T13:15:45Z short-form pipeline 2wiki test
+SKIP finished
+##### 2026-11-17T13:15:45Z long-form pipeline asqa test: generate + decompose
+STOP_AFTER decompose: 748 items, 1692 claims cached
+##### 2026-11-17T13:15:47Z long-form pipeline bio test: generate + decompose
+STOP_AFTER decompose: 350 items, 6230 claims cached
+##### 2026-11-17T13:15:49Z CoVe-closed_book asqa test
+{"n": 748, "planned_facts_per_response": 3.4184491978609626, "responses_with_no_parsable_plan": 1, "verdicts": {"CONSISTENT": 1402, "PARTIALLY CONSISTENT": 418, "INCONSISTENT": 737, "UNPARSED": 0}, "final_claims_per_response": 2.271390374331551, "empty_final_answers": 127}
+##### 2026-11-17T13:15:53Z CoVe-rag_verify asqa test
+{"n": 748, "planned_facts_per_response": 3.4184491978609626, "responses_with_no_parsable_plan": 1, "verdicts": {"CONSISTENT": 953, "PARTIALLY CONSISTENT": 686, "INCONSISTENT": 918, "UNPARSED": 0}, "final_claims_per_response": 1.9358288770053476, "empty_final_answers": 197}
+##### 2026-11-17T13:16:05Z run_rarr asqa test
+{"n": 748, "questions_per_response": 5.310160427807487, "agreement_checks": 3972, "disagreements": 702, "agreement_unparsed": 4, "edits_applied": 642, "responses_edited": 397, "final_claims_per_response": 4.127005347593583}
+##### 2026-11-17T13:16:08Z run_flare asqa test
+{"n": 748, "sentences_per_response": 3.9572192513368982, "retrievals_per_response": 3.927807486631016, "retrieval_rate_after_first": 0.9900542495479204, "hit_max_steps": 0, "final_claims_per_response": 2.0681818181818183}
+##### 2026-11-17T13:16:13Z CoVe-closed_book bio test
+{"n": 350, "planned_facts_per_response": 7.7457142857142856, "responses_with_no_parsable_plan": 0, "verdicts": {"CONSISTENT": 809, "PARTIALLY CONSISTENT": 607, "INCONSISTENT": 1295, "UNPARSED": 0}, "final_claims_per_response": 5.397142857142857, "empty_final_answers": 32}
+##### 2026-11-17T13:16:16Z CoVe-rag_verify bio test
+{"n": 350, "planned_facts_per_response": 7.7457142857142856, "responses_with_no_parsable_plan": 0, "verdicts": {"CONSISTENT": 514, "PARTIALLY CONSISTENT": 725, "INCONSISTENT": 1472, "UNPARSED": 0}, "final_claims_per_response": 4.942857142857143, "empty_final_answers": 51}
+##### 2026-11-17T13:16:19Z run_rarr bio test
+{"n": 350, "questions_per_response": 7.46, "agreement_checks": 2611, "disagreements": 420, "agreement_unparsed": 0, "edits_applied": 358, "responses_edited": 235, "final_claims_per_response": 12.88}
+##### 2026-11-17T13:16:23Z run_flare bio test
+{"n": 350, "sentences_per_response": 7.6571428571428575, "retrievals_per_response": 7.628571428571429, "retrieval_rate_after_first": 0.9957081545064378, "hit_max_steps": 0, "final_claims_per_response": 8.537142857142857}
+##### 2026-11-17T13:16:27Z GEN_STAGE_END Qwen/Qwen2.5-7B-Instruct
+===== 2026-11-17T13:16:28Z serve mistralai/Mistral-7B-Instruct-v0.3
+VLLM_READY
+##### 2026-11-17T13:18:06Z QA closed-book + standard RAG (5 test sets)
+popqa     {"n": 1000, "match_accuracy": 0.25, "em": 0.151, "f1": 0.23571713460868635, "abstention_rate": 0.01, "truncated_rate": 0.004, "retrieval_recall_at_k": null}
+nq        {"n": 1000, "match_accuracy": 0.338, "em": 0.094, "f1": 0.2734804494238624, "abstention_rate": 0.002, "truncated_rate": 0.006, "retrieval_recall_at_k": null}
+triviaqa  {"n": 1000, "match_accuracy": 0.687, "em": 0.422, "f1": 0.5960652809179126, "abstention_rate": 0.0, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+hotpotqa  {"n": 1000, "match_accuracy": 0.262, "em": 0.066, "f1": 0.2358448027737922, "abstention_rate": 0.007, "truncated_rate": 0.001, "retrieval_recall_at_k": null}
+2wiki     {"n": 1000, "match_accuracy": 0.282, "em": 0.011, "f1": 0.1737306472415179, "abstention_rate": 0.039, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+popqa     {"n": 1000, "match_accuracy": 0.342, "em": 0.196, "f1": 0.2759280253484987, "abstention_rate": 0.011, "truncated_rate": 0.036, "retrieval_recall_at_k": 0.416}
+nq        {"n": 1000, "match_accuracy": 0.366, "em": 0.14, "f1": 0.27988118286449154, "abstention_rate": 0.004, "truncated_rate": 0.021, "retrieval_recall_at_k": 0.476}
+triviaqa  {"n": 1000, "match_accuracy": 0.711, "em": 0.49, "f1": 0.6202421866559863, "abstention_rate": 0.001, "truncated_rate": 0.003, "retrieval_recall_at_k": 0.753}
+hotpotqa  {"n": 1000, "match_accuracy": 0.399, "em": 0.157, "f1": 0.33640592438557254, "abstention_rate": 0.003, "truncated_rate": 0.006, "retrieval_recall_at_k": 0.482}
+2wiki     {"n": 1000, "match_accuracy": 0.347, "em": 0.039, "f1": 0.21008292664275605, "abstention_rate": 0.024, "truncated_rate": 0.012, "retrieval_recall_at_k": 0.335}
+##### 2026-11-17T13:18:39Z short-form pipeline popqa test
+SKIP finished
+##### 2026-11-17T13:18:39Z short-form pipeline nq test
+SKIP finished
+##### 2026-11-17T13:18:39Z short-form pipeline triviaqa test
+SKIP finished
+##### 2026-11-17T13:18:39Z short-form pipeline hotpotqa test
+SKIP finished
+##### 2026-11-17T13:18:39Z short-form pipeline 2wiki test
+SKIP finished
+##### 2026-11-17T13:18:39Z long-form pipeline asqa test: generate + decompose
+STOP_AFTER decompose: 748 items, 3266 claims cached
+##### 2026-11-17T13:18:40Z long-form pipeline bio test: generate + decompose
+STOP_AFTER decompose: 350 items, 6200 claims cached
+##### 2026-11-17T13:18:41Z GEN_STAGE_END mistralai/Mistral-7B-Instruct-v0.3
+===== 2026-11-17T13:18:43Z serve tiiuae/Falcon3-7B-Instruct
+VLLM_READY
+##### 2026-11-17T13:20:21Z QA closed-book + standard RAG (5 test sets)
+popqa     {"n": 1000, "match_accuracy": 0.157, "em": 0.144, "f1": 0.18261926406926407, "abstention_rate": 0.003, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+nq        {"n": 1000, "match_accuracy": 0.217, "em": 0.155, "f1": 0.24348548559283853, "abstention_rate": 0.0, "truncated_rate": 0.002, "retrieval_recall_at_k": null}
+triviaqa  {"n": 1000, "match_accuracy": 0.511, "em": 0.474, "f1": 0.5247215562819276, "abstention_rate": 0.0, "truncated_rate": 0.001, "retrieval_recall_at_k": null}
+hotpotqa  {"n": 1000, "match_accuracy": 0.193, "em": 0.181, "f1": 0.2572497016725964, "abstention_rate": 0.001, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+2wiki     {"n": 1000, "match_accuracy": 0.251, "em": 0.244, "f1": 0.2788288079421812, "abstention_rate": 0.004, "truncated_rate": 0.0, "retrieval_recall_at_k": null}
+popqa     {"n": 1000, "match_accuracy": 0.335, "em": 0.26, "f1": 0.3153735657673525, "abstention_rate": 0.004, "truncated_rate": 0.001, "retrieval_recall_at_k": 0.416}
+nq        {"n": 1000, "match_accuracy": 0.376, "em": 0.268, "f1": 0.38172493250405587, "abstention_rate": 0.001, "truncated_rate": 0.005, "retrieval_recall_at_k": 0.476}
+triviaqa  {"n": 1000, "match_accuracy": 0.701, "em": 0.617, "f1": 0.6900011968423733, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.753}
+hotpotqa  {"n": 1000, "match_accuracy": 0.37, "em": 0.313, "f1": 0.43480965069763694, "abstention_rate": 0.0, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.482}
+2wiki     {"n": 1000, "match_accuracy": 0.314, "em": 0.298, "f1": 0.3536905186029328, "abstention_rate": 0.006, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.335}
+##### 2026-11-17T13:20:55Z short-form pipeline popqa test
+SKIP finished
+##### 2026-11-17T13:20:55Z short-form pipeline nq test
+SKIP finished
+##### 2026-11-17T13:20:56Z short-form pipeline triviaqa test
+SKIP finished
+##### 2026-11-17T13:20:56Z short-form pipeline hotpotqa test
+SKIP finished
+##### 2026-11-17T13:20:56Z short-form pipeline 2wiki test
+SKIP finished
+##### 2026-11-17T13:20:56Z long-form pipeline asqa test: generate + decompose
+STOP_AFTER decompose: 748 items, 2015 claims cached
+##### 2026-11-17T13:20:58Z long-form pipeline bio test: generate + decompose
+STOP_AFTER decompose: 350 items, 4656 claims cached
+##### 2026-11-17T13:20:59Z GEN_STAGE_END tiiuae/Falcon3-7B-Instruct
+##### 2026-11-17T13:21:01Z verifier scores Qwen/Qwen2.5-7B-Instruct asqa test (GPU)
+STOP_AFTER score: 8460 pairs scored (minicheck misses 0, nli misses 0)
+##### 2026-11-17T13:21:07Z verifier scores Qwen/Qwen2.5-7B-Instruct bio test (GPU)
+STOP_AFTER score: 31126 pairs scored (minicheck misses 31000, nli misses 31000)
+##### 2026-11-17T13:35:15Z verifier scores mistralai/Mistral-7B-Instruct-v0.3 asqa test (GPU)
+STOP_AFTER score: 16330 pairs scored (minicheck misses 15694, nli misses 15694)
+##### 2026-11-17T13:42:14Z verifier scores mistralai/Mistral-7B-Instruct-v0.3 bio test (GPU)
+STOP_AFTER score: 30968 pairs scored (minicheck misses 27678, nli misses 27678)
+##### 2026-11-17T13:55:16Z verifier scores tiiuae/Falcon3-7B-Instruct asqa test (GPU)
+STOP_AFTER score: 10075 pairs scored (minicheck misses 9075, nli misses 9075)
+##### 2026-11-17T13:59:19Z verifier scores tiiuae/Falcon3-7B-Instruct bio test (GPU)
+STOP_AFTER score: 23262 pairs scored (minicheck misses 17970, nli misses 17970)
+##### SCORE_STAGE_END
+===== 2026-11-17T14:07:42Z serve Qwen/Qwen2.5-7B-Instruct
+VLLM_READY
+##### 2026-11-17T14:09:00Z long-form pipeline asqa test: full run
+{"n": 748, "claims_per_response_mean": 2.2620320855614975, "responses_with_zero_claims": 229, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 1377, "revise": 123, "reretrieve": 114, "low": 78}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 123, "revise_deleted": 123, "revise_now_supported": 0, "reretrieve_attempted": 114, "reretrieve_now_supported": 58}, "mean_support_all_claims": 0.7871680197110026}
+wrote results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770/summary.json
+##### SelfCheckGPT samples asqa seed set 0
+samples: {"selfcheck_samples": {"calls": 3740, "cache_hits": 0, "prompt_tokens": 3035160, "completion_tokens": 379104}}
+##### SelfCheckGPT samples asqa seed set 1
+samples: {"selfcheck_samples": {"calls": 3740, "cache_hits": 0, "prompt_tokens": 3035160, "completion_tokens": 377545}}
+##### SelfCheckGPT samples asqa seed set 2
+samples: {"selfcheck_samples": {"calls": 3740, "cache_hits": 0, "prompt_tokens": 3035160, "completion_tokens": 379032}}
+##### 2026-11-17T14:47:17Z long-form pipeline bio test: full run
+{"n": 350, "claims_per_response_mean": 17.8, "responses_with_zero_claims": 39, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 5384, "revise": 361, "reretrieve": 277, "low": 208}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 361, "revise_deleted": 348, "revise_now_supported": 5, "reretrieve_attempted": 277, "reretrieve_now_supported": 85}, "mean_support_all_claims": 0.8246696688164545}
+wrote results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5/summary.json
+##### SelfCheckGPT samples bio seed set 0
+samples: {"selfcheck_samples": {"calls": 1750, "cache_hits": 0, "prompt_tokens": 1531980, "completion_tokens": 593288}}
+##### SelfCheckGPT samples bio seed set 1
+samples: {"selfcheck_samples": {"calls": 1750, "cache_hits": 0, "prompt_tokens": 1531980, "completion_tokens": 591824}}
+##### SelfCheckGPT samples bio seed set 2
+samples: {"selfcheck_samples": {"calls": 1750, "cache_hits": 0, "prompt_tokens": 1531980, "completion_tokens": 592095}}
+##### FINISH_STAGE_END Qwen/Qwen2.5-7B-Instruct
+===== 2026-11-17T15:40:21Z serve mistralai/Mistral-7B-Instruct-v0.3
+VLLM_READY
+##### 2026-11-17T15:41:59Z long-form pipeline asqa test: full run
+{"n": 748, "claims_per_response_mean": 4.366310160427807, "responses_with_zero_claims": 2, "answers_truncated": 1, "decompositions_truncated": 1, "actions": {"keep": 2218, "revise": 384, "reretrieve": 487, "low": 177}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 384, "revise_deleted": 329, "revise_now_supported": 25, "reretrieve_attempted": 487, "reretrieve_now_supported": 209}, "mean_support_all_claims": 0.6636193526190303}
+wrote results/test/asqa/longform__Mistral-7B-Instruct-v0.3__42d6faf1c66b/summary.json
+##### 2026-11-17T15:48:35Z long-form pipeline bio test: full run
+{"n": 350, "claims_per_response_mean": 17.714285714285715, "responses_with_zero_claims": 0, "answers_truncated": 39, "decompositions_truncated": 0, "actions": {"keep": 5131, "revise": 423, "reretrieve": 467, "low": 179}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 423, "revise_deleted": 360, "revise_now_supported": 35, "reretrieve_attempted": 467, "reretrieve_now_supported": 139}, "mean_support_all_claims": 0.7902659411444479}
+wrote results/test/bio/longform__Mistral-7B-Instruct-v0.3__3f20b417147d/summary.json
+##### FINISH_STAGE_END mistralai/Mistral-7B-Instruct-v0.3
+===== 2026-11-17T15:55:34Z serve tiiuae/Falcon3-7B-Instruct
+VLLM_READY
+##### 2026-11-17T15:57:02Z long-form pipeline asqa test: full run
+{"n": 748, "claims_per_response_mean": 2.693850267379679, "responses_with_zero_claims": 48, "answers_truncated": 0, "decompositions_truncated": 3, "actions": {"keep": 1400, "revise": 248, "reretrieve": 293, "low": 74}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 248, "revise_deleted": 191, "revise_now_supported": 27, "reretrieve_attempted": 293, "reretrieve_now_supported": 138}, "mean_support_all_claims": 0.6777757169805911}
+wrote results/test/asqa/longform__Falcon3-7B-Instruct__6394ad333550/summary.json
+##### 2026-11-17T16:01:18Z long-form pipeline bio test: full run
+{"n": 350, "claims_per_response_mean": 13.302857142857142, "responses_with_zero_claims": 23, "answers_truncated": 7, "decompositions_truncated": 2, "actions": {"keep": 3978, "revise": 271, "reretrieve": 343, "low": 64}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 271, "revise_deleted": 207, "revise_now_supported": 44, "reretrieve_attempted": 343, "reretrieve_now_supported": 102}, "mean_support_all_claims": 0.8178499804871098}
+wrote results/test/bio/longform__Falcon3-7B-Instruct__0b9ff4861d3b/summary.json
+##### FINISH_STAGE_END tiiuae/Falcon3-7B-Instruct
+===== 2026-11-17T16:06:26Z SelfCheckGPT scores (GPU), 3 seed sets
+{"n_claims": 1692, "mean_contradiction": 0.17530697998172876, "device": "cuda", "nli_pairs": 8460}
+{"n_claims": 1692, "mean_contradiction": 0.17521137319528293, "device": "cuda", "nli_pairs": 8460}
+{"n_claims": 1692, "mean_contradiction": 0.17666667616032483, "device": "cuda", "nli_pairs": 8460}
+{"n_claims": 6230, "mean_contradiction": 0.17520008739927015, "device": "cuda", "nli_pairs": 31150}
+{"n_claims": 6230, "mean_contradiction": 0.17405050260373606, "device": "cuda", "nli_pairs": 31150}
+{"n_claims": 6230, "mean_contradiction": 0.174086280544444, "device": "cuda", "nli_pairs": 31150}
+VLLM_READY
+##### 2026-11-17T17:29:40Z judge results/test/asqa/cove-closed_book__Qwen2.5-7B-Instruct__cd920a30dc7b/
+{"run": "results/test/asqa/cove-closed_book__Qwen2.5-7B-Instruct__cd920a30dc7b", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1699, "n_supported": 906, "supported_rate": 0.533254855797528, "n_unreadable": 0, "cost": {"judge": {"calls": 1699, "cache_hits": 0, "prompt_tokens": 1692282, "completion_tokens": 1699}}, "git_commit": "4
+##### 2026-11-17T17:32:22Z judge results/test/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__d90c9ff5fd30/
+{"run": "results/test/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__d90c9ff5fd30", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1440, "n_supported": 852, "supported_rate": 0.5916666666666667, "n_unreadable": 0, "cost": {"judge": {"calls": 1440, "cache_hits": 647, "prompt_tokens": 1433351, "completion_tokens": 1440}}, "git_commit": 
+##### 2026-11-17T17:33:50Z judge results/test/asqa/flare__Qwen2.5-7B-Instruct__2dc14b1e5f08/
+{"run": "results/test/asqa/flare__Qwen2.5-7B-Instruct__2dc14b1e5f08", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1547, "n_supported": 1067, "supported_rate": 0.6897220426632191, "n_unreadable": 0, "cost": {"judge": {"calls": 1547, "cache_hits": 28, "prompt_tokens": 1560174, "completion_tokens": 1547}}, "git_commit": "4b94969+d
+##### 2026-11-17T17:36:18Z judge results/test/asqa/longform__Falcon3-7B-Instruct__6394ad333550/
+{"run": "results/test/asqa/longform__Falcon3-7B-Instruct__6394ad333550", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 2071, "n_supported": 1188, "supported_rate": 0.5736359246740705, "n_unreadable": 0, "cost": {"judge": {"calls": 2071, "cache_hits": 85, "prompt_tokens": 2076554, "completion_tokens": 2071}}, "git_commit": "4b9496
+##### 2026-11-17T17:39:42Z judge results/test/asqa/longform__Mistral-7B-Instruct-v0.3__42d6faf1c66b/
+{"run": "results/test/asqa/longform__Mistral-7B-Instruct-v0.3__42d6faf1c66b", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 3321, "n_supported": 1844, "supported_rate": 0.5552544414333033, "n_unreadable": 0, "cost": {"judge": {"calls": 3321, "cache_hits": 195, "prompt_tokens": 3342424, "completion_tokens": 3321}}, "git_commit": "
+##### 2026-11-17T17:43:47Z judge results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770/
+{"run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 1692, "n_supported": 1185, "supported_rate": 0.700354609929078, "n_unreadable": 0, "cost": {"judge": {"calls": 1692, "cache_hits": 450, "prompt_tokens": 1703462, "completion_tokens": 1692}}, "git_commit": "4b9496
+##### 2026-11-17T17:45:52Z judge results/test/asqa/rarr__Qwen2.5-7B-Instruct__1198a177de8a/
+{"run": "results/test/asqa/rarr__Qwen2.5-7B-Instruct__1198a177de8a", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "claims_without_kb_page": 0, "n_claims": 3087, "n_supported": 1401, "supported_rate": 0.45383867832847424, "n_unreadable": 0, "cost": {"judge": {"calls": 3087, "cache_hits": 666, "prompt_tokens": 3103395, "completion_tokens": 3087}}, "git_commit": "4b94969+
+##### 2026-11-17T17:49:14Z judge results/test/bio/cove-closed_book__Qwen2.5-7B-Instruct__c7fd56e96a83/
+{"run": "results/test/bio/cove-closed_book__Qwen2.5-7B-Instruct__c7fd56e96a83", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 1889, "n_supported": 842, "supported_rate": 0.44573848597141347, "n_unreadable": 0, "cost": {"judge": {"calls": 1889, "cache_hits": 0, "prompt_tokens": 2238436, "completion_tok
+##### 2026-11-17T17:56:08Z judge results/test/bio/cove-rag_verify__Qwen2.5-7B-Instruct__0006f33b638c/
+{"run": "results/test/bio/cove-rag_verify__Qwen2.5-7B-Instruct__0006f33b638c", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 1730, "n_supported": 971, "supported_rate": 0.5612716763005781, "n_unreadable": 0, "cost": {"judge": {"calls": 1730, "cache_hits": 439, "prompt_tokens": 2154326, "completion_tok
+##### 2026-11-17T18:01:35Z judge results/test/bio/flare__Qwen2.5-7B-Instruct__28a6eee53ce5/
+{"run": "results/test/bio/flare__Qwen2.5-7B-Instruct__28a6eee53ce5", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 2988, "n_supported": 1979, "supported_rate": 0.6623159303882196, "n_unreadable": 0, "cost": {"judge": {"calls": 2988, "cache_hits": 60, "prompt_tokens": 3523554, "completion_tokens": 2988
+##### 2026-11-17T18:11:37Z judge results/test/bio/longform__Falcon3-7B-Instruct__0b9ff4861d3b/
+{"run": "results/test/bio/longform__Falcon3-7B-Instruct__0b9ff4861d3b", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 4718, "n_supported": 3866, "supported_rate": 0.8194150063586265, "n_unreadable": 0, "cost": {"judge": {"calls": 4718, "cache_hits": 282, "prompt_tokens": 5194224, "completion_tokens": 
+##### 2026-11-17T18:24:56Z judge results/test/bio/longform__Mistral-7B-Instruct-v0.3__3f20b417147d/
+{"run": "results/test/bio/longform__Mistral-7B-Instruct-v0.3__3f20b417147d", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 3, "n_claims": 6263, "n_supported": 4877, "supported_rate": 0.7787003033689925, "n_unreadable": 0, "cost": {"judge": {"calls": 6263, "cache_hits": 855, "prompt_tokens": 7013690, "completion_toke
+##### 2026-11-17T18:42:47Z judge results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5/
+{"run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 6240, "n_supported": 5182, "supported_rate": 0.830448717948718, "n_unreadable": 0, "cost": {"judge": {"calls": 6240, "cache_hits": 1296, "prompt_tokens": 7069009, "completion_tokens": 
+##### 2026-11-17T18:58:24Z judge results/test/bio/rarr__Qwen2.5-7B-Instruct__23a9fb6f10bd/
+{"run": "results/test/bio/rarr__Qwen2.5-7B-Instruct__23a9fb6f10bd", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 4508, "n_supported": 1911, "supported_rate": 0.42391304347826086, "n_unreadable": 0, "cost": {"judge": {"calls": 4508, "cache_hits": 879, "prompt_tokens": 5387709, "completion_tokens": 450
+##### JUDGE_STAGE_END
+===== 2026-11-17T19:11:39Z Self-RAG on the 5 short-form test sets
+VLLM_READY
+##### selfrag popqa test
+{"n": 1000, "dataset": "popqa", "split": "test", "match_official": 0.379, "match_ours_normalised": 0.389, "retrieval_frequency": 1.0, "passages": "our BM25 top-10", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 11000, "prompt_tokens": 1939245, "completion_toke
+##### selfrag nq test
+{"n": 1000, "dataset": "nq", "split": "test", "match_official": 0.288, "match_ours_normalised": 0.32, "retrieval_frequency": 1.0, "passages": "our BM25 top-10", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 11000, "prompt_tokens": 1933613, "completion_tokens":
+##### selfrag triviaqa test
+{"n": 1000, "dataset": "triviaqa", "split": "test", "match_official": 0.556, "match_ours_normalised": 0.71, "retrieval_frequency": 1.0, "passages": "our BM25 top-10", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 11000, "prompt_tokens": 2070568, "completion_to
+##### selfrag hotpotqa test
+{"n": 1000, "dataset": "hotpotqa", "split": "test", "match_official": 0.317, "match_ours_normalised": 0.362, "retrieval_frequency": 1.0, "passages": "our BM25 top-10", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 11000, "prompt_tokens": 2139685, "completion_t
+##### selfrag 2wiki test
+{"n": 1000, "dataset": "2wiki", "split": "test", "match_official": 0.217, "match_ours_normalised": 0.344, "retrieval_frequency": 1.0, "passages": "our BM25 top-10", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 11000, "prompt_tokens": 2142993, "completion_toke
+===== PHASE5_ALL_END 2026-11-17T20:20:52Z

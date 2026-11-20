@@ -1,0 +1,5 @@
+##### score results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7/
+{"n_claims": 443, "mean_contradiction": 0.1642500994525161, "device": "cuda", "nli_pairs": 2215}
+##### score results/dev/bio/longform__Qwen2.5-7B-Instruct__39454917f215/
+{"n_claims": 2814, "mean_contradiction": 0.1711092976116125, "device": "cuda", "nli_pairs": 14070}
+SELFCHECK_DEV_END

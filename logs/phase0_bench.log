@@ -1,0 +1,8 @@
+git commit: 1eab75a  date: 2026-11-12T11:43:34Z
+concurrency=  1 n=  8 wall=91.2s throughput=22.4 out tok/s per-request=22.4 tok/s lat_mean=11.41s
+concurrency=  8 n= 16 wall=23.4s throughput=174.9 out tok/s per-request=21.9 tok/s lat_mean=11.70s
+concurrency= 32 n= 64 wall=24.6s throughput=665.1 out tok/s per-request=20.9 tok/s lat_mean=12.27s
+concurrency= 64 n=128 wall=26.1s throughput=1256.1 out tok/s per-request=19.7 tok/s lat_mean=12.99s
+wrote results/phase0/vllm_bench_qwen2.5-7b-instruct_bf16.json
+finish reasons:     216 "finish_reason": "length" 
+BENCH_OK

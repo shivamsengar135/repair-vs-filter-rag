@@ -1,0 +1,19 @@
+{
+ "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__1b3f6f14a811",
+ "judge_model": "RedHatAI/phi-4-FP8-dynamic",
+ "judge_prompts": "judge_v1",
+ "claims_without_kb_page": 0,
+ "n_claims": 1899,
+ "n_supported": 1313,
+ "supported_rate": 0.6914165350184307,
+ "n_unreadable": 0,
+ "cost": {
+  "judge": {
+   "calls": 1899,
+   "cache_hits": 1899,
+   "prompt_tokens": 1920151,
+   "completion_tokens": 1899
+  }
+ },
+ "git_commit": "1da0a4c+dirty"
+}

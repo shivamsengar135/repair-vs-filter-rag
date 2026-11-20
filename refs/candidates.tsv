@@ -1,0 +1,41 @@
+# Candidate papers for Phase 1. IDs below were proposed from memory or search and are UNTRUSTED
+# until scripts/lit/fetch_meta.py confirms the arXiv record's title contains the expected keywords.
+# arxiv_id	key	expected title keywords (all must match)
+2005.11401	rag2020	retrieval-augmented generation|knowledge-intensive
+2310.11511	selfrag	self-rag
+2401.15884	crag	corrective retrieval
+2305.06983	flare	active retrieval
+2309.11495	cove	chain-of-verification
+2210.08726	rarr	rarr
+2303.08896	selfcheckgpt	selfcheckgpt
+2305.14251	factscore	factscore
+2302.09664	semantic_entropy	semantic uncertainty
+2406.15927	sep	semantic entropy probes
+2305.14627	alce	citations
+2112.12870	ais	attribut
+2212.08037	attributed_qa	attributed question answering
+2403.18802	safe_longfact	long-form factuality
+2406.19276	veriscore	veriscore
+2401.00396	ragtruth	ragtruth
+2305.11747	halueval	halueval
+2403.14403	adaptive_rag	adaptive-rag
+2403.10081	dragin	dragin
+2406.19215	seakr	seakr
+2111.09525	summac	summac
+2305.16739	alignscore	alignscore
+2404.10774	minicheck	minicheck
+2212.10511	popqa	when not to trust language models
+2410.07176	astute_rag	astute rag
+2406.13629	instructrag	instructrag
+2311.09210	chain_of_note	chain-of-note
+2311.09677	r_tuning	r-tuning
+2401.06855	fava	fine-grained hallucination
+2309.15217	ragas	ragas
+2311.05232	survey_huang	survey|hallucination
+2303.01432	wice	wice
+2406.20079	molecular_facts	molecular facts
+2307.03987	ever_or_low_conf	hallucination
+2404.10198	clasheval	clash
+2312.10997	rag_survey_gao	retrieval-augmented generation|survey
+2310.01558	ret_robust	robust|irrelevant
+2407.21059	modular_or_other	rag

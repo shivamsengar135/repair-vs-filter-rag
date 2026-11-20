@@ -1,0 +1,89 @@
+
+### abs:"retrieval-augmented" AND abs:"claim" AND abs:"unsupported" AND (abs:"re-retrieval" OR abs:"re-retrieve" OR abs:"targeted retrieval")  (0 hits
+
+### abs:"parametric knowledge" AND abs:"retrieved" AND abs:"claim-level" AND (abs:revise OR abs:revision OR abs:abstain OR abs:abstention)  (0 hits)
+
+### abs:faithfulness AND abs:factuality AND abs:"retrieval-augmented" AND (abs:mitigation OR abs:correction OR abs:revision)  (12 hits)
+* 2505.21072v5  2025-05-27 Ekaterina Fadeev Faithfulness-Aware Uncertainty Quantification for Fact-Checking the Output of Retrieval Augmented Generati
+* 2604.10189v1  2026-04-11 Xiaoning Dong    FAITH: Factuality Alignment through Integrating Trustworthiness and Honestness
+* 2608.16515v1  2026-08-17 Haolin Jin       When Context Misleads: Intent-Guided Decoding for Robust Retrieval-Augmented Generation
+* 2608.30996v1  2026-08-31 Atta Ul Asad     Faithfulness Is Not Free: Auditing Offline KV-Cache Quantization in Retrieval-Augmented Generation
+* 2503.23415v1  2025-03-30 Alexander Murphy An Analysis of Decoding Methods for LLM-based Agents for Faithful Multi-Hop Question Answering
+* 2609.15242v1  2026-09-14 Motaz Saad       Empirical Evaluation of Open-Source Large Language Models for Retrieval-Augmented Generation in ESG Domain
+* 2504.14429v1  2025-04-20 Ahmad Khalil     ResNetVLLM-2: Addressing ResNetVLLM's Multi-Modal Hallucinations
+* 2510.15418v2  2025-10-17 Lee Qi Zun       Fine-Tuning MedGemma for Clinical Captioning to Enhance Multimodal RAG over Malaysia CPGs
+* 2601.03052v1  2026-01-06 Jianpeng Hu      Detecting Hallucinations in Retrieval-Augmented Generation via Semantic-level Internal Reasoning Graph
+* 2607.06641v1  2026-07-07 Felix Feldman    Healthier LLMs: Retrieval-Augmented Generation for Public Health Question Answering
+* 2605.05244v1  2026-05-04 Florian Geissler Towards Dependable Retrieval-Augmented Generation Using Factual Confidence Prediction
+* 2605.22099v1  2026-05-21 Sereiwathna Ros  A Comparative Study of Language Models for Khmer Retrieval-Augmented Question Answering
+
+### abs:"atomic" AND abs:"claims" AND abs:"retrieval-augmented" AND (abs:"post-hoc" OR abs:"revision" OR abs:"correction") AND abs:hallucination  (3 h
+* 2604.08549v1  2026-01-16 Miloš Košprdić   VerifAI: A Verifiable Open-Source Search Engine for Biomedical Question Answering
+* 2509.25459v4  2025-09-29 Haozhou Xu       SimulRAG: Simulator-based RAG for Grounding LLMs in Long-form Scientific QA
+* 2603.16817v1  2026-03-17 Yi Chen          Is Conformal Factuality for RAG-based LLMs Robust? Novel Metrics and Systematic Insights
+
+### abs:"verification" AND abs:"budget" AND abs:"claims" AND (abs:hallucination OR abs:factuality)  (5 hits)
+* 2606.27409v2  2026-06-25 Igor Itkin       Delayed Verification Destabilizes Multi-Agent LLM Belief: Instability Thresholds and Optimal Corrector Pla
+* 2609.22223v1  2026-09-02 Kening Zheng     EAVer: Long-Form Factuality Verification as an End-to-End Agentic Policy
+* 2603.10143v1  2026-03-10 Eeham Khan       Reason and Verify: A Framework for Faithful Retrieval-Augmented Generation
+* 2608.26753v1  2026-08-27 Lezhi Yu         Beyond Execution: Auditing Experimental Fidelity in LLM-Driven Scientific Research
+* 2608.21503v1  2026-08-21 Alvin Spivey     BeTaL-GBI: Admission-Aware Benchmark Tuning and Full-Stack Verification of Geometric Belief Interfaces
+
+### abs:"selective verification" AND (abs:"language model" OR abs:"LLM")  (10 hits)
+* 2611.00386v1  2026-10-30 Yijia Li         Dependence-Aware Risk Assessment and Optimal Design of AI-Agent Safeguard Systems
+* 2505.20047v1  2025-05-26 Debargha Ganguly Grammars of Formal Uncertainty: When to Trust LLMs in Automated Reasoning Tasks
+* 2602.03975v1  2026-02-03 Shuhui Qu        Adaptive Test-Time Compute Allocation via Learned Heuristics over Categorical Structure
+* 2512.06716v3  2025-12-07 Zhibo Liang      SIEVE: Selective Integrity Verification and Escalation for Defending LLM Agents against Indirect Prompt In
+* 2605.31512v1  2026-05-29 Danish Ali       Reliable Multilingual Orthopedic Decision Support from Clinical Narratives: Language-Aware Adaptation and 
+* 2609.17004v1  2026-09-15 Zhouzhi Xiong    Symmetry-Aware Likelihood-Orbit Aggregation for Selective Left-Right Claim Verification
+* 2611.10418v1  2026-11-07 Shilong Pan      Beyond Query Similarity: Safety-Conditioned Cache Routing for LLM Response Reuse
+* 2602.03412v2  2026-02-03 Mukai Li         Verified Critical Step Optimization for LLM Agents
+* 2609.35909v4  2026-09-28 Kaikai Zhang     Cheap to Hypothesize, Costly to Verify: The Defense Surface of Agentic Vulnerability Discovery
+* 2609.11498v2  2026-09-10 Jacopo Dardini   ActMap: Single-Pass Uncertainty Quantification from Generation-Time Activation Maps
+
+### abs:"cascade" AND abs:"fact-checking" AND (abs:"cost" OR abs:"efficient") AND abs:"language model"  (0 hits)
+
+### abs:"cost-aware" AND abs:"retrieval-augmented" AND (abs:verification OR abs:hallucination)  (1 hits)
+* 2603.07379v2  2026-03-07 Saroj Mishra     SoK: Agentic Retrieval-Augmented Generation (RAG): Taxonomy, Architectures, Evaluation, and Research Direc
+
+### abs:"which claims" AND abs:"verify" AND abs:"language model"  (3 hits)
+* 2603.30025v3  2026-03-31 Yufeng Li        ContextClaim: A Context-Driven Paradigm for Verifiable Claim Detection
+* 2606.30686v1  2026-06-28 Taozhao Chen     Position: Vision-Language-Action Models Cannot Be Verified to Perform Physical Reasoning
+* 2609.16816v1  2026-09-15 Bowen Qin        ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals
+
+### abs:"conformal" AND abs:"factuality"  (12 hits)
+  2603.16817v1  2026-03-17 Yi Chen          Is Conformal Factuality for RAG-based LLMs Robust? Novel Metrics and Systematic Insights
+* 2505.17126v1  2025-05-21 Maxon Rubin-Tole Conformal Language Model Reasoning with Coherent Factuality
+* 2606.08831v2  2026-06-07 Ting Wang        Inference-Time Conformal Reasoning with Valid Factuality Control for Large Language Models
+* 2609.01375v1  2026-09-01 Md. Atabuzzaman  IntroConformal: Conformal Factuality Guarantees for Large Vision-Language Models via Introspective Signals
+* 2602.01285v1  2026-02-01 Kangjun Noh      Multi-LLM Adaptive Conformal Inference for Reliable LLM Responses
+* 2604.20098v1  2026-04-22 Nathan Hittesdor Differentiable Conformal Training for LLM Reasoning Factuality
+* 2402.10978v1  2024-02-15 Christopher Mohr Language Models with Conformal Factuality Guarantees
+* 2610.34872v2  2026-10-26 Muhammad Aimal R Adaptive Retrieval, Selective Answers: Evaluating Conformal Factuality in Agentic RAG
+* 2609.38222v1  2026-09-27 Muhammad Aimal R Conformal Factuality Control for Multi-Hop Retrieval-Augmented Generation
+* 2607.16704v1  2026-07-18 Mingqiao Mo      Though Language Models Err While They Strive: Conformal Prediction for Self-Correcting Scientific Generati
+* 2604.13991v1  2026-04-15 Aleksandr Rubash Adaptive Conformal Prediction for Improving Factuality of Generations by Large Language Models
+* 2511.17908v2  2025-11-22 Debashish Chakra Principled Context Engineering for RAG: Statistical Guarantees via Conformal Prediction
+
+### abs:"conformal" AND abs:"retrieval-augmented" AND (abs:"claims" OR abs:"abstention" OR abs:"risk control")  (10 hits)
+  2609.38222v1  2026-09-27 Muhammad Aimal R Conformal Factuality Control for Multi-Hop Retrieval-Augmented Generation
+* 2509.01455v4  2025-09-01 Markus Oehri     Trusted Uncertainty in Large Language Models: A Unified Framework for Confidence Calibration and Risk-Cont
+* 2607.24875v1  2026-07-27 Dorothy Torres   FinAbstain: Uncertainty-Calibrated Multimodal RAG for Selective Financial Forecasting
+* 2506.20978v1  2025-06-26 Naihe Feng       Response Quality Assessment for Retrieval-Augmented Generation via Conditional Conformal Factuality
+  2610.34872v2  2026-10-26 Muhammad Aimal R Adaptive Retrieval, Selective Answers: Evaluating Conformal Factuality in Agentic RAG
+* 2606.18467v1  2026-06-16 Jeffery Opoku    ToolChain-CRC: Conformal Risk Control for Agentic AI Under Retrieval and Tool-Use Drift
+* 2610.41012v1  2026-10-29 Mehrdad Ghassabi Language Models Show Conformity Bias in RAG: When the Majority Endorses a Poisoned Claim
+  2603.16817v1  2026-03-17 Yi Chen          Is Conformal Factuality for RAG-based LLMs Robust? Novel Metrics and Systematic Insights
+* 2608.19509v1  2026-08-19 Fariz Ikhwantri  An Agentic RAG and Evaluation Framework for Assurance Case Generation: Industrial Use Case for the EU Cybe
+* 2611.10335v1  2026-11-07 Ben Jenkins      Two-Sided Conformal Evidence Sets for Retrieval-Augmented Generation
+
+### abs:"selective" AND abs:"claim-level" AND abs:"abstention" AND abs:"long-form"  (0 hits)
+
+### abs:"risk-coverage" AND abs:"retrieval-augmented"  (5 hits)
+* 2609.16564v1  2026-09-15 Kainan Zhou      Query-Aware Source-Risk Triage for Retrieval-Augmented Generation
+  2509.01455v4  2025-09-01 Markus Oehri     Trusted Uncertainty in Large Language Models: A Unified Framework for Confidence Calibration and Risk-Cont
+* 2511.03138v4  2025-11-05 Qi Li            DeepKnown-Guard: A Proprietary Model-Based Safety Response Framework for AI Agents
+* 2605.18792v1  2026-05-11 Xi Zhu           Trust or Abstain? A Self-Aware RAG Approach
+  2607.24875v1  2026-07-27 Dorothy Torres   FinAbstain: Uncertainty-Calibrated Multimodal RAG for Selective Financial Forecasting
+
+55 unique papers; wrote refs/raw/arxiv_search_phase2.json  (* = first time seen)

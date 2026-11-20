@@ -1,0 +1,15 @@
+python 3.12.3
+torch 2.14.0+cu130 | built with CUDA 13.0
+cuda available: True
+device: NVIDIA RTX 4000 Ada Generation
+VRAM free/total: 18.79 / 19.99 GiB
+bf16 supported: True
+8192x8192 bf16 matmul on GPU ok (0.193s), mean|.|=72.212
+TORCH_GPU_OK
+vllm help lines: 2456
+--- downloading Qwen/Qwen2.5-7B-Instruct @ a09a35458c702b33eeacc393d103063234e8bc28
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 2017, in _download_to_tmp_and_move
+    xet_get(
+  File "/home/diat/venvs/halluc/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 589, in xet_get
+    with session.new_file_download_group(
+RuntimeError: Task error: File reconstruction error: CAS Client Error: Format error: I/O error: error decoding response body

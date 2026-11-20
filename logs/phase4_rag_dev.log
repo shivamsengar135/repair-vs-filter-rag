@@ -1,0 +1,6 @@
+popqa     {"n": 500, "match_accuracy": 0.312, "em": 0.256, "f1": 0.3052079809079809, "abstention_rate": 0.004, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.39}
+nq        {"n": 500, "match_accuracy": 0.318, "em": 0.26, "f1": 0.3561445773464955, "abstention_rate": 0.002, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.464}
+triviaqa  {"n": 500, "match_accuracy": 0.652, "em": 0.542, "f1": 0.6325425313248841, "abstention_rate": 0.008, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.728}
+hotpotqa  {"n": 500, "match_accuracy": 0.444, "em": 0.392, "f1": 0.48300259740259743, "abstention_rate": 0.018, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.544}
+2wiki     {"n": 500, "match_accuracy": 0.386, "em": 0.372, "f1": 0.39393044733044735, "abstention_rate": 0.008, "truncated_rate": 0.0, "retrieval_recall_at_k": 0.428}
+RAGDEV_END

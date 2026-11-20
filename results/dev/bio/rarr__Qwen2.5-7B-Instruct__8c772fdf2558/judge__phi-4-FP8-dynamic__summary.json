@@ -1,0 +1,19 @@
+{
+ "run": "results/dev/bio/rarr__Qwen2.5-7B-Instruct__8c772fdf2558",
+ "judge_model": "RedHatAI/phi-4-FP8-dynamic",
+ "judge_prompts": "factscore-layout (hallu.factscore_kb)",
+ "claims_without_kb_page": 0,
+ "n_claims": 2081,
+ "n_supported": 877,
+ "supported_rate": 0.4214320038443056,
+ "n_unreadable": 0,
+ "cost": {
+  "judge": {
+   "calls": 2081,
+   "cache_hits": 342,
+   "prompt_tokens": 2527953,
+   "completion_tokens": 2081
+  }
+ },
+ "git_commit": "6355802+dirty"
+}

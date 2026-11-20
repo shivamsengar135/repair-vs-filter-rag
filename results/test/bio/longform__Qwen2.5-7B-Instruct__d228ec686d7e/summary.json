@@ -1,0 +1,92 @@
+{
+ "config": {
+  "pipeline": "longform-v1",
+  "dataset": "bio",
+  "split": "test",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "prompts": "v2",
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100",
+  "max_tokens": 512,
+  "temperature": 0.0,
+  "seed": 0,
+  "tau_s": 0.5,
+  "tau_c": 0.5,
+  "tau_con": 0.5,
+  "verifier": "MiniCheck-Flan-T5-Large",
+  "nli": "DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "decompose": "sentences"
+ },
+ "config_hash": "d228ec686d7e",
+ "git_commit": "16dce0a+dirty",
+ "n": 350,
+ "claims_per_response_mean": 11.22,
+ "responses_with_zero_claims": 0,
+ "answers_truncated": 8,
+ "decompositions_truncated": 0,
+ "actions": {
+  "keep": 2749,
+  "revise": 365,
+  "reretrieve": 488,
+  "low": 325
+ },
+ "closed_book_unreadable": 0,
+ "repair": {
+  "revise_attempted": 365,
+  "revise_deleted": 362,
+  "revise_now_supported": 2,
+  "reretrieve_attempted": 488,
+  "reretrieve_now_supported": 62
+ },
+ "mean_support_all_claims": 0.6777369271294336,
+ "cost": {
+  "llm_by_stage": {
+   "1_generate": {
+    "calls": 350,
+    "cache_hits": 350,
+    "prompt_tokens": 306396,
+    "completion_tokens": 117654
+   },
+   "3_closed_book_truth": {
+    "calls": 3927,
+    "cache_hits": 35,
+    "prompt_tokens": 309454,
+    "completion_tokens": 3927
+   },
+   "4_revise": {
+    "calls": 365,
+    "cache_hits": 0,
+    "prompt_tokens": 99656,
+    "completion_tokens": 853
+   }
+  },
+  "retrieval_queries": 838,
+  "verifier_pairs": {
+   "minicheck": 22066,
+   "nli": 19611
+  },
+  "verifier_cache": {
+   "minicheck_hits": 20762,
+   "minicheck_misses": 1304,
+   "nli_hits": 19611,
+   "nli_misses": 0
+  },
+  "seconds_by_stage": {
+   "retrieve": 0.0,
+   "generate": 0.03,
+   "decompose": 0.98,
+   "support_minicheck": 0.04,
+   "nli": 0.04,
+   "closed_book_truth": 41.92,
+   "revise": 13.26,
+   "load_verifier": 4.38,
+   "rescore_revised": 7.81,
+   "reretrieve": 66.25,
+   "rescore_reretrieved": 198.34
+  },
+  "verifier_device": "cpu",
+  "note": "stage seconds include cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-18T04:41:59Z"
+}

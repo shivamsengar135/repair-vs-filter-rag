@@ -1,0 +1,27 @@
+{
+ "n": 1399,
+ "dataset": "repro",
+ "split": "official PopQA long-tail",
+ "match_official": 0.5496783416726233,
+ "match_ours_normalised": 0.5582558970693352,
+ "retrieval_frequency": 1.0,
+ "reported_in_paper": 0.549,
+ "data_sha256": "3b9ae00ff8ad42995bf5b0f7c5b920e369c8be2c2f2772d3a8cf728d4795efc3",
+ "model": "selfrag/selfrag_llama2_7b",
+ "settings": {
+  "threshold": 0.2,
+  "ndocs": 10,
+  "max_new_tokens": 100,
+  "w_rel": 1.0,
+  "w_sup": 1.0,
+  "w_use": 1.0,
+  "dtype": "float16"
+ },
+ "cost": {
+  "calls": 15389,
+  "prompt_tokens": 2497607,
+  "completion_tokens": 321225,
+  "seconds": 803.8
+ },
+ "git_commit": "a50e297+dirty"
+}

@@ -1,0 +1,12 @@
+##### fit test Falcon3-7B-Instruct
+{"model": "tiiuae/Falcon3-7B-Instruct", "revision": "1e57a0ecd176c7c139f289c60a74e57f887c3dfb", "extra_args": "", "status": "VLLM_READY", "model_load_GiB": 13.93,
+ "kv_cache_tokens": 25344, "gpu_used_MiB_with_server": 18614, "fits_rule_ge_16000_kv_tokens": true,
+ "bench": "results/phase4/fit/tiiuae_Falcon3-7B-Instruct_bench.json", "server_log": "logs/vllm_docker_20261116_080623.log", "errors": "", "date_utc": "2026-11-16T08:07:18Z", "git_commit": "f7fa182"}
+concurrency=  1 n=  8 wall=44.5s throughput=23.0 out tok/s per-request=23.0 tok/s lat_mean=5.57s
+concurrency= 32 n= 64 wall=12.4s throughput=660.9 out tok/s per-request=20.8 tok/s lat_mean=6.16s
+VLLM_READY
+##### selfrag baseline nq dev
+{"n": 500, "dataset": "nq", "split": "dev", "match_official": 0.274, "match_ours_normalised": 0.318, "retrieval_frequency": 1.0, "passages": "our BM25 top-10", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 5500, "prompt_tokens": 975311, "completion_tokens": 50781, "seconds": 221.1}, "git_commit": "ca06d0f+dirty"}
+##### selfrag baseline triviaqa dev
+{"n": 500, "dataset": "triviaqa", "split": "dev", "match_official": 0.558, "match_ours_normalised": 0.704, "retrieval_frequency": 1.0, "passages": "our BM25 top-10", "model": "selfrag/selfrag_llama2_7b", "settings": {"threshold": 0.2, "ndocs": 10, "max_new_tokens": 100, "w_rel": 1.0, "w_sup": 1.0, "w_use": 1.0, "dtype": "float16"}, "cost": {"calls": 5500, "prompt_tokens": 1036854, "completion_tokens": 137944, "seconds": 329.4}, "git_commit": "ca06d0f+dirty"}
+GPU_QUEUE_B_END

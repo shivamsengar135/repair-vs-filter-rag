@@ -1,0 +1,92 @@
+{
+ "config": {
+  "pipeline": "longform-v1",
+  "dataset": "asqa",
+  "split": "test",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "prompts": "v2",
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100",
+  "max_tokens": 512,
+  "temperature": 0.0,
+  "seed": 0,
+  "tau_s": 0.5,
+  "tau_c": 0.5,
+  "tau_con": 0.5,
+  "verifier": "MiniCheck-Flan-T5-Large",
+  "nli": "DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "decompose": "sentences"
+ },
+ "config_hash": "198a5eaf25ba",
+ "git_commit": "16dce0a+dirty",
+ "n": 748,
+ "claims_per_response_mean": 3.482620320855615,
+ "responses_with_zero_claims": 0,
+ "answers_truncated": 0,
+ "decompositions_truncated": 0,
+ "actions": {
+  "keep": 1809,
+  "revise": 267,
+  "reretrieve": 289,
+  "low": 240
+ },
+ "closed_book_unreadable": 0,
+ "repair": {
+  "revise_attempted": 267,
+  "revise_deleted": 266,
+  "revise_now_supported": 1,
+  "reretrieve_attempted": 289,
+  "reretrieve_now_supported": 96
+ },
+ "mean_support_all_claims": 0.6675992209492912,
+ "cost": {
+  "llm_by_stage": {
+   "1_generate": {
+    "calls": 748,
+    "cache_hits": 748,
+    "prompt_tokens": 607032,
+    "completion_tokens": 74439
+   },
+   "3_closed_book_truth": {
+    "calls": 2605,
+    "cache_hits": 221,
+    "prompt_tokens": 201358,
+    "completion_tokens": 2605
+   },
+   "4_revise": {
+    "calls": 267,
+    "cache_hits": 8,
+    "prompt_tokens": 68832,
+    "completion_tokens": 562
+   }
+  },
+  "retrieval_queries": 1037,
+  "verifier_pairs": {
+   "minicheck": 14475,
+   "nli": 13025
+  },
+  "verifier_cache": {
+   "minicheck_hits": 13503,
+   "minicheck_misses": 972,
+   "nli_hits": 13025,
+   "nli_misses": 0
+  },
+  "seconds_by_stage": {
+   "retrieve": 0.0,
+   "generate": 0.05,
+   "decompose": 1.03,
+   "support_minicheck": 0.02,
+   "nli": 0.02,
+   "closed_book_truth": 25.01,
+   "revise": 9.44,
+   "load_verifier": 4.56,
+   "rescore_revised": 6.12,
+   "reretrieve": 47.26,
+   "rescore_reretrieved": 155.55
+  },
+  "verifier_device": "cpu",
+  "note": "stage seconds include cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-18T05:03:09Z"
+}

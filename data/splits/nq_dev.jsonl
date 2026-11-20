@@ -1,0 +1,500 @@
+{"answers": ["Bill Danoff", "Taffy Danoff"], "dataset": "nq", "id": "nq-train-1004", "meta": {}, "question": "who wrote please daddy don't get drunk this christmas"}
+{"answers": ["Fort Lewis"], "dataset": "nq", "id": "nq-train-10494", "meta": {}, "question": "where was the us pacific fleet based in 1941"}
+{"answers": ["2"], "dataset": "nq", "id": "nq-train-10589", "meta": {}, "question": "how many wild card teams make the nfl playoffs"}
+{"answers": ["DeLonge"], "dataset": "nq", "id": "nq-train-10599", "meta": {}, "question": "who sings the parts in i miss you blink 182"}
+{"answers": ["five"], "dataset": "nq", "id": "nq-train-10828", "meta": {}, "question": "how many local government area are there in abuja"}
+{"answers": ["double entendre"], "dataset": "nq", "id": "nq-train-11216", "meta": {}, "question": "what is it called when a saying has two meanings"}
+{"answers": ["Lesley Ann Warren"], "dataset": "nq", "id": "nq-train-1136", "meta": {}, "question": "who plays abby's mother on girlfriends guide to divorce"}
+{"answers": ["Glorification of the Chosen One"], "dataset": "nq", "id": "nq-train-11552", "meta": {}, "question": "what is the violent moment at the end of rite of spring"}
+{"answers": ["English language nursery rhyme"], "dataset": "nq", "id": "nq-train-11865", "meta": {}, "question": "where did rub a dub dub come from"}
+{"answers": ["William Lee Scott"], "dataset": "nq", "id": "nq-train-11923", "meta": {}, "question": "who played bullethead on the steve harvey show"}
+{"answers": ["United States Senate"], "dataset": "nq", "id": "nq-train-11940", "meta": {}, "question": "who are we voting for in 2018 in texas"}
+{"answers": ["The Senate"], "dataset": "nq", "id": "nq-train-12113", "meta": {}, "question": "the upper house of the georgia general assembly it consists of 56 elected officials"}
+{"answers": ["gives him to Bree"], "dataset": "nq", "id": "nq-train-12363", "meta": {}, "question": "what happens to danielle's baby on desperate housewives"}
+{"answers": ["the peasantry", "the nobility", "the clergy"], "dataset": "nq", "id": "nq-train-12442", "meta": {}, "question": "what were the social classes in feudal europe"}
+{"answers": ["10"], "dataset": "nq", "id": "nq-train-12463", "meta": {}, "question": "what was the last episode of henry danger"}
+{"answers": ["Power 105.1"], "dataset": "nq", "id": "nq-train-12589", "meta": {}, "question": "what station is the breakfast club on iheartradio"}
+{"answers": ["nose"], "dataset": "nq", "id": "nq-train-12764", "meta": {}, "question": "the maxillary sinus is located in which bone"}
+{"answers": ["chloroplast membranes"], "dataset": "nq", "id": "nq-train-13013", "meta": {}, "question": "where is the electron transport chain found in plant cells"}
+{"answers": ["Daimler-Benz"], "dataset": "nq", "id": "nq-train-13089", "meta": {}, "question": "who was bmw nearly sold to in 1959"}
+{"answers": ["Gladys Knight & the Pips"], "dataset": "nq", "id": "nq-train-13150", "meta": {}, "question": "who did the original version of i heard it through the grapevine"}
+{"answers": ["Denis Leary"], "dataset": "nq", "id": "nq-train-13432", "meta": {}, "question": "who plays the ladybug in bug's life"}
+{"answers": ["Saturday, 22 May 2010"], "dataset": "nq", "id": "nq-train-14095", "meta": {}, "question": "when did the champions league final move to saturday"}
+{"answers": ["Australia"], "dataset": "nq", "id": "nq-train-14233", "meta": {}, "question": "who is the winner of cricket world cup 2015"}
+{"answers": ["The bald eagle"], "dataset": "nq", "id": "nq-train-14361", "meta": {}, "question": "what is the national bird of the united states"}
+{"answers": ["Nordic Games"], "dataset": "nq", "id": "nq-train-14673", "meta": {}, "question": "who owns the rights to destroy all humans"}
+{"answers": ["November 6, 2017"], "dataset": "nq", "id": "nq-train-14983", "meta": {}, "question": "when does star vs the forces of evil come back season 3"}
+{"answers": ["Wilt Chamberlain"], "dataset": "nq", "id": "nq-train-1510", "meta": {}, "question": "who has the most points in nba game"}
+{"answers": ["Chromolaena odorata"], "dataset": "nq", "id": "nq-train-15704", "meta": {}, "question": "what is the botanical name of siam weed"}
+{"answers": ["Rory McCann"], "dataset": "nq", "id": "nq-train-15781", "meta": {}, "question": "who is the actor that plays the hound on game of thrones"}
+{"answers": ["Bandura's Box experiment"], "dataset": "nq", "id": "nq-train-15921", "meta": {}, "question": "the role of reciprocal determinism was highlighted by the"}
+{"answers": ["pineal gland"], "dataset": "nq", "id": "nq-train-15938", "meta": {}, "question": "the can be found as part of the epithalamus near the superior colliculi of the midbrain"}
+{"answers": ["1967"], "dataset": "nq", "id": "nq-train-15952", "meta": {}, "question": "when did the toronto maple leafs last win the stanley cup"}
+{"answers": ["March 30, 2018"], "dataset": "nq", "id": "nq-train-1598", "meta": {}, "question": "when does season 2 a series of unfortunate events come out"}
+{"answers": ["cancelled after its first season"], "dataset": "nq", "id": "nq-train-16171", "meta": {}, "question": "when does season 2 of the gates come out"}
+{"answers": ["Aztec Empire"], "dataset": "nq", "id": "nq-train-16299", "meta": {}, "question": "before the spanish took over who owned the land that is now mexico"}
+{"answers": ["Nelson Mandela Muntz"], "dataset": "nq", "id": "nq-train-16674", "meta": {}, "question": "what is the bullys name on the simpsons"}
+{"answers": ["Lukasz Gottwald", "Jessica Cornish", "Claude Kelly"], "dataset": "nq", "id": "nq-train-16814", "meta": {}, "question": "who wrote the song price tag by jessie j"}
+{"answers": ["Alabama Crimson Tide"], "dataset": "nq", "id": "nq-train-17019", "meta": {}, "question": "who won the national championship in football in 2016"}
+{"answers": ["2018"], "dataset": "nq", "id": "nq-train-17194", "meta": {}, "question": "when did big air become an olympic sport"}
+{"answers": ["Dheeraj Sarna", "Manish Goplani", "Mushtaq Khan", "Sikandar Kharbanda", "Parijat Atreja", "Shraddha Jaiswal", "Bhavana Balsavar", "Krystle D'Souza", "Sunayana Fozdar", "Sudhir Pandey"], "dataset": "nq", "id": "nq-train-1730", "meta": {}, "question": "real name of all characters in belan wali bahu"}
+{"answers": ["calzone"], "dataset": "nq", "id": "nq-train-17327", "meta": {}, "question": "italian dish of pizza dough folded over a savoury filling"}
+{"answers": ["ileocecal valve"], "dataset": "nq", "id": "nq-train-17393", "meta": {}, "question": "where does the small intestine connected to the large intestine"}
+{"answers": ["A-ha"], "dataset": "nq", "id": "nq-train-17570", "meta": {}, "question": "who sang the theme tune to the living daylights"}
+{"answers": ["Cynthia Bailey", "Shereé Whitfield", "NeNe Leakes", "Kenya Moore", "Porsha Williams", "Kandi Burruss"], "dataset": "nq", "id": "nq-train-1768", "meta": {}, "question": "the real housewives of atlanta season 10 cast"}
+{"answers": ["Jordan Romero"], "dataset": "nq", "id": "nq-train-17728", "meta": {}, "question": "who hold the world record as the youngest person to climb mount everest"}
+{"answers": ["Dr. John"], "dataset": "nq", "id": "nq-train-17733", "meta": {}, "question": "who sings the theme song to curious george"}
+{"answers": ["mafia"], "dataset": "nq", "id": "nq-train-17763", "meta": {}, "question": "what word was dropped from the film the godfather"}
+{"answers": ["Michael Moscovitz"], "dataset": "nq", "id": "nq-train-18342", "meta": {}, "question": "who does princess mia end up marrying in the books"}
+{"answers": ["Since 1940"], "dataset": "nq", "id": "nq-train-18578", "meta": {}, "question": "when did the us and england become allies"}
+{"answers": ["January 2, 2014"], "dataset": "nq", "id": "nq-train-18852", "meta": {}, "question": "when did flatline by justin bieber come out"}
+{"answers": ["Burbank, Washington"], "dataset": "nq", "id": "nq-train-19031", "meta": {}, "question": "where does the columbia river meet the snake river"}
+{"answers": ["Ray Charles"], "dataset": "nq", "id": "nq-train-19109", "meta": {}, "question": "this artist was signed in 1952 by atlantic and brought a string of hits"}
+{"answers": ["1998"], "dataset": "nq", "id": "nq-train-19471", "meta": {}, "question": "when did the first push to start car come out"}
+{"answers": ["the lost city of Atlantis"], "dataset": "nq", "id": "nq-train-19580", "meta": {}, "question": "where does the drac pack visit on summer vacation in hotel transylvania 3"}
+{"answers": ["The Beat"], "dataset": "nq", "id": "nq-train-19602", "meta": {}, "question": "who sings the song mirror in the bathroom"}
+{"answers": ["Leslie Wilson"], "dataset": "nq", "id": "nq-train-19696", "meta": {}, "question": "who was the lead singer of new birth"}
+{"answers": ["ten"], "dataset": "nq", "id": "nq-train-20048", "meta": {}, "question": "number of typhoons in the philippines per year"}
+{"answers": ["1987", "1972", "1991", "1982", "1983"], "dataset": "nq", "id": "nq-train-20091", "meta": {}, "question": "when did the redskins go to the superbowl"}
+{"answers": ["Billy Burke", "Gabrielle Union"], "dataset": "nq", "id": "nq-train-20135", "meta": {}, "question": "who stars in the new movie breaking in"}
+{"answers": ["7 teams"], "dataset": "nq", "id": "nq-train-20296", "meta": {}, "question": "how many teams in the nhl are canadian"}
+{"answers": ["La Toya Jackson"], "dataset": "nq", "id": "nq-train-20547", "meta": {}, "question": "who won season 13 of worst cooks in america"}
+{"answers": ["15"], "dataset": "nq", "id": "nq-train-20638", "meta": {}, "question": "how many songs are in la la land"}
+{"answers": ["Mr. K.V. Chowdary"], "dataset": "nq", "id": "nq-train-20907", "meta": {}, "question": "who is the current chief vigilance commissioner of india"}
+{"answers": ["Tommy Doyle"], "dataset": "nq", "id": "nq-train-21110", "meta": {}, "question": "halloween the curse of michael myers paul rudd"}
+{"answers": ["Brooks & Dunn"], "dataset": "nq", "id": "nq-train-21233", "meta": {}, "question": "who sings rock my world little country girl"}
+{"answers": ["Parliamentarians"], "dataset": "nq", "id": "nq-train-21322", "meta": {}, "question": "who won the english civil war in the end"}
+{"answers": ["fronting Marina Bay in Singapore"], "dataset": "nq", "id": "nq-train-21510", "meta": {}, "question": "where is marina bay sands located in singapore"}
+{"answers": ["July 11, 2017"], "dataset": "nq", "id": "nq-train-21988", "meta": {}, "question": "when was season 2 of this is us filmed"}
+{"answers": ["two"], "dataset": "nq", "id": "nq-train-22042", "meta": {}, "question": "how many seasons of natsume yuujinchou are there"}
+{"answers": ["1,500"], "dataset": "nq", "id": "nq-train-22057", "meta": {}, "question": "how many five guys are in the us"}
+{"answers": ["AL"], "dataset": "nq", "id": "nq-train-22558", "meta": {}, "question": "most world series wins american or national league"}
+{"answers": ["October 1, 1949"], "dataset": "nq", "id": "nq-train-22588", "meta": {}, "question": "when was the people's republic of china founded"}
+{"answers": ["May 23, 1980", "October 2, 1980"], "dataset": "nq", "id": "nq-train-22593", "meta": {}, "question": "when did the movie the shining come out"}
+{"answers": ["Nate Ruess", "Jeff Bhasker", "Pink"], "dataset": "nq", "id": "nq-train-22789", "meta": {}, "question": "who wrote the song just give me a reason"}
+{"answers": ["David Cecil MacAlister Tomlinson"], "dataset": "nq", "id": "nq-train-2288", "meta": {}, "question": "who played mr banks in mary poppins movie"}
+{"answers": ["the cage in the garden"], "dataset": "nq", "id": "nq-train-22914", "meta": {}, "question": "where did the witch put hansel and gretel"}
+{"answers": ["February 18, 2018"], "dataset": "nq", "id": "nq-train-23004", "meta": {}, "question": "when does episode 826 of one piece come out"}
+{"answers": ["Yellow cutting boards: poultry"], "dataset": "nq", "id": "nq-train-23075", "meta": {}, "question": "different colors of cutting boards and their uses"}
+{"answers": ["Tiffani Amber Thiessen"], "dataset": "nq", "id": "nq-train-23239", "meta": {}, "question": "who plays kelly in saved by the bell"}
+{"answers": ["Raoul Duke", "Dr. Gonzo"], "dataset": "nq", "id": "nq-train-23368", "meta": {}, "question": "who was the movie fear and loathing in las vegas about"}
+{"answers": ["15th, 111 points"], "dataset": "nq", "id": "nq-train-23370", "meta": {}, "question": "where did england come in the eurovision song contest"}
+{"answers": ["Julius Caesar"], "dataset": "nq", "id": "nq-train-2342", "meta": {}, "question": "who said he came he saw he conquered"}
+{"answers": ["1831"], "dataset": "nq", "id": "nq-train-23447", "meta": {}, "question": "when was the song my country tis of thee written"}
+{"answers": ["in 1599"], "dataset": "nq", "id": "nq-train-23573", "meta": {}, "question": "when did they find the ruins of pompeii"}
+{"answers": ["Alam Ara"], "dataset": "nq", "id": "nq-train-23611", "meta": {}, "question": "the first indian 'talkie' film - a film with dialogues - released in 1931 was _"}
+{"answers": ["Ian McDiarmid"], "dataset": "nq", "id": "nq-train-23707", "meta": {}, "question": "who played the emperor in revenge of the sith"}
+{"answers": ["Twin Cities"], "dataset": "nq", "id": "nq-train-23742", "meta": {}, "question": "what does tc on the minnesota twins hats stand for"}
+{"answers": ["The Grasshopper Lies Heavy"], "dataset": "nq", "id": "nq-train-2413", "meta": {}, "question": "what is the film in man in the high castle"}
+{"answers": ["Trevor Rabin"], "dataset": "nq", "id": "nq-train-24359", "meta": {}, "question": "who sings the last song in the movie rockstar"}
+{"answers": ["Pisa, Italy"], "dataset": "nq", "id": "nq-train-24372", "meta": {}, "question": "in which city is the leaning tower of pisa located"}
+{"answers": ["Tony Blackburn"], "dataset": "nq", "id": "nq-train-24382", "meta": {}, "question": "who won the first series of i'm a celeb"}
+{"answers": ["Wood River, Illinois"], "dataset": "nq", "id": "nq-train-24401", "meta": {}, "question": "where does the lewis and clark trail start"}
+{"answers": ["Melissa Peterman"], "dataset": "nq", "id": "nq-train-24801", "meta": {}, "question": "who plays ben's mom on baby daddy"}
+{"answers": ["2015"], "dataset": "nq", "id": "nq-train-24845", "meta": {}, "question": "what year did the acura rdx body style change"}
+{"answers": ["mean solar time"], "dataset": "nq", "id": "nq-train-24872", "meta": {}, "question": "what is the line in the middle of a time zone that in theory determines the time of that zone"}
+{"answers": ["Allen Covert"], "dataset": "nq", "id": "nq-train-24973", "meta": {}, "question": "who plays adam sandler's caddy in happy gilmore"}
+{"answers": ["Sarah Gilman"], "dataset": "nq", "id": "nq-train-2510", "meta": {}, "question": "who plays cami harris on last man standing"}
+{"answers": ["1882"], "dataset": "nq", "id": "nq-train-25168", "meta": {}, "question": "when did they start to build the sagrada familia"}
+{"answers": ["25"], "dataset": "nq", "id": "nq-train-25365", "meta": {}, "question": "how many times has georgia beat alabama in football"}
+{"answers": ["1992"], "dataset": "nq", "id": "nq-train-25525", "meta": {}, "question": "when did lead stop being used in paint uk"}
+{"answers": ["1828"], "dataset": "nq", "id": "nq-train-25640", "meta": {}, "question": "when were the republican and democratic parties formed"}
+{"answers": ["Sienna Miller"], "dataset": "nq", "id": "nq-train-25706", "meta": {}, "question": "who plays anna in gi joe rise of cobra"}
+{"answers": ["March 1, 2018"], "dataset": "nq", "id": "nq-train-2586", "meta": {}, "question": "when does season 13 episode 14 of supernatural come out"}
+{"answers": ["January 3, 2018"], "dataset": "nq", "id": "nq-train-25877", "meta": {}, "question": "when does the new senator from alabama take office"}
+{"answers": ["Congress of the United States"], "dataset": "nq", "id": "nq-train-26266", "meta": {}, "question": "who controls debate in the house of representatives"}
+{"answers": ["1985"], "dataset": "nq", "id": "nq-train-2631", "meta": {}, "question": "when did atwood wrote the handmaid's tale"}
+{"answers": ["Abraham Lincoln"], "dataset": "nq", "id": "nq-train-26314", "meta": {}, "question": "who was the first us president that was assassinated"}
+{"answers": ["the United States"], "dataset": "nq", "id": "nq-train-2636", "meta": {}, "question": "what was america called after the revolutionary war"}
+{"answers": ["St. Louis Rams"], "dataset": "nq", "id": "nq-train-26407", "meta": {}, "question": "what team was case keenum on before the vikings"}
+{"answers": ["Patrick Hunter"], "dataset": "nq", "id": "nq-train-27016", "meta": {}, "question": "who was the winner of i love new york 1"}
+{"answers": ["Gaborone, Botswana"], "dataset": "nq", "id": "nq-train-27132", "meta": {}, "question": "where is the world's strongest man 2017 being held"}
+{"answers": ["Colin \"Trigger\" Ball"], "dataset": "nq", "id": "nq-train-27433", "meta": {}, "question": "what was trigger's real name in only fools and horses"}
+{"answers": ["eight"], "dataset": "nq", "id": "nq-train-27672", "meta": {}, "question": "how many world series wins does boston have"}
+{"answers": ["Betelgeuse", "Alnilam", "Saiph", "Rigel", "Mintaka", "Alnitak", "Bellatrix"], "dataset": "nq", "id": "nq-train-2794", "meta": {}, "question": "what are the names of the stars in orion"}
+{"answers": ["Michael Wray"], "dataset": "nq", "id": "nq-train-28060", "meta": {}, "question": "who wins season 1 of hell's kitchen"}
+{"answers": ["Marcus Thames"], "dataset": "nq", "id": "nq-train-2816", "meta": {}, "question": "who is the new york yankees hitting coach"}
+{"answers": ["the engine's cylinder head"], "dataset": "nq", "id": "nq-train-28281", "meta": {}, "question": "where are spark plugs located in a car"}
+{"answers": ["Japan"], "dataset": "nq", "id": "nq-train-2845", "meta": {}, "question": "who invaded china in 1937 and occupied the best farmland by 1938"}
+{"answers": ["Jackie Coogan"], "dataset": "nq", "id": "nq-train-28548", "meta": {}, "question": "who was the kid in charlie chaplin movie"}
+{"answers": ["The Atlantic standard time zone", "The Alaska standard time zone", "The Central standard time zone", "The Pacific standard time zone", "The Eastern standard time zone", "The Samoa standard time zone", "The Chamorro standard time zone", "The Mountain standard time zone"], "dataset": "nq", "id": "nq-train-28995", "meta": {}, "question": "what is the time zone for the us"}
+{"answers": ["Enrique Peña Nieto"], "dataset": "nq", "id": "nq-train-29250", "meta": {}, "question": "mexico is led by a chief of state who is"}
+{"answers": ["iron", "titanium", "potassium", "aluminum", "magnesium", "sodium", "oxygen", "silicon", "calcium"], "dataset": "nq", "id": "nq-train-29287", "meta": {}, "question": "common elements that can be found on the surface of the earth"}
+{"answers": ["honour people of national significance"], "dataset": "nq", "id": "nq-train-2994", "meta": {}, "question": "when does the state pay for a funeral"}
+{"answers": ["Steve Mazzaro", "Hans Zimmer", "Missi Hale"], "dataset": "nq", "id": "nq-train-29982", "meta": {}, "question": "who sings love sweet love in boss baby"}
+{"answers": ["Leander"], "dataset": "nq", "id": "nq-train-30181", "meta": {}, "question": "in greek mythology the lover of hero who drowned while trying to swim across hellespont"}
+{"answers": ["Albert Henry Woolson"], "dataset": "nq", "id": "nq-train-30320", "meta": {}, "question": "when did the last soldier of the civil war die"}
+{"answers": ["the Monarch", "Governor-General"], "dataset": "nq", "id": "nq-train-30555", "meta": {}, "question": "who did the president replace after trinidad and tobago became a republic"}
+{"answers": ["1968"], "dataset": "nq", "id": "nq-train-30636", "meta": {}, "question": "when did the jets last play in the super bowl"}
+{"answers": ["Ken Kaneki"], "dataset": "nq", "id": "nq-train-30684", "meta": {}, "question": "what is the main characters name in tokyo ghoul"}
+{"answers": ["1966"], "dataset": "nq", "id": "nq-train-30935", "meta": {}, "question": "when did england get to the final of world cup"}
+{"answers": ["German Lutherans"], "dataset": "nq", "id": "nq-train-31167", "meta": {}, "question": "where does the legend of the easter bunny come from"}
+{"answers": ["Grantly Adams International Airport"], "dataset": "nq", "id": "nq-train-31249", "meta": {}, "question": "what is the name of the main airport in barbados"}
+{"answers": ["15 August 1947"], "dataset": "nq", "id": "nq-train-31444", "meta": {}, "question": "which year delhi became the capital of india"}
+{"answers": ["Bradley Cooper"], "dataset": "nq", "id": "nq-train-3145", "meta": {}, "question": "who was the voice of rocket on guardians of the galaxy"}
+{"answers": ["heroin addiction"], "dataset": "nq", "id": "nq-train-31648", "meta": {}, "question": "what is the song bad about by u2"}
+{"answers": ["1939"], "dataset": "nq", "id": "nq-train-31662", "meta": {}, "question": "when did the movie the wizard of oz come out"}
+{"answers": ["tabby cat Chloe", "dachshund Buddy", "Sphynx cat Ozone", "budgerigar Sweet Pea", "pug Mel", "Jack Russell Terrier named Max"], "dataset": "nq", "id": "nq-train-31804", "meta": {}, "question": "name of the dogs in secret life of pets"}
+{"answers": ["Metaphase"], "dataset": "nq", "id": "nq-train-3202", "meta": {}, "question": "part of mitosis wherein the chromosomes align at the equator"}
+{"answers": ["United States"], "dataset": "nq", "id": "nq-train-32149", "meta": {}, "question": "which country has the most gold medals in the 2012 olympics"}
+{"answers": ["American singer Jaron Lowenstein"], "dataset": "nq", "id": "nq-train-32202", "meta": {}, "question": "who sings the song i pray for you"}
+{"answers": ["Roger Federer"], "dataset": "nq", "id": "nq-train-32295", "meta": {}, "question": "who won the 2017 australian men's singles title"}
+{"answers": ["pitcher Greg Maddux"], "dataset": "nq", "id": "nq-train-32436", "meta": {}, "question": "who has the most gold gloves in baseball history"}
+{"answers": ["Adnan Khan"], "dataset": "nq", "id": "nq-train-3245", "meta": {}, "question": "real name of kabeer of ishq subhan allah"}
+{"answers": ["Bob Dylan"], "dataset": "nq", "id": "nq-train-32531", "meta": {}, "question": "who sang the original song knocking on heavens door"}
+{"answers": ["the Bulls"], "dataset": "nq", "id": "nq-train-32618", "meta": {}, "question": "what team did michael jordan play for when he came back"}
+{"answers": ["baritone"], "dataset": "nq", "id": "nq-train-32744", "meta": {}, "question": "a male voice type between tenor and bass"}
+{"answers": ["Guaranteed Rate Field"], "dataset": "nq", "id": "nq-train-3283", "meta": {}, "question": "where do the chicago white sox play ball"}
+{"answers": ["134.1 °F"], "dataset": "nq", "id": "nq-train-32860", "meta": {}, "question": "what has the hottest temperature been on earth"}
+{"answers": ["Lisa Marie"], "dataset": "nq", "id": "nq-train-33058", "meta": {}, "question": "who plays ichabod crane's mom in sleepy hollow"}
+{"answers": ["on the continent of Tamriel"], "dataset": "nq", "id": "nq-train-33391", "meta": {}, "question": "where do all the elder scrolls games take place"}
+{"answers": ["Gondwana"], "dataset": "nq", "id": "nq-train-33552", "meta": {}, "question": "what is the name for the supercontinent in the continental drift hypothesis"}
+{"answers": ["16"], "dataset": "nq", "id": "nq-train-33921", "meta": {}, "question": "the bride of the water god how many ep"}
+{"answers": ["India's Republic Day"], "dataset": "nq", "id": "nq-train-33926", "meta": {}, "question": "on which national holiday are the padma awards given"}
+{"answers": ["Australia"], "dataset": "nq", "id": "nq-train-34151", "meta": {}, "question": "where does the term budgie smuggler come from"}
+{"answers": ["Jerry Samuels"], "dataset": "nq", "id": "nq-train-34180", "meta": {}, "question": "who did the song they're coming to take me away"}
+{"answers": ["Billy Preston", "Syreeta Wright"], "dataset": "nq", "id": "nq-train-34252", "meta": {}, "question": "who sings with you i'm born again"}
+{"answers": ["Afro-Eurasia"], "dataset": "nq", "id": "nq-train-34308", "meta": {}, "question": "where are most of the worlds landmasses located"}
+{"answers": ["South Africa"], "dataset": "nq", "id": "nq-train-34320", "meta": {}, "question": "where was the world cup held in 2010"}
+{"answers": ["Thomas Alva Edison"], "dataset": "nq", "id": "nq-train-34620", "meta": {}, "question": "who was the first person who invented the light bulb"}
+{"answers": ["Tertullian"], "dataset": "nq", "id": "nq-train-35124", "meta": {}, "question": "who came up with the doctrine of the trinity"}
+{"answers": ["310.29 metric tonnes"], "dataset": "nq", "id": "nq-train-35832", "meta": {}, "question": "how many tons of gold does the uk have"}
+{"answers": ["JP Karliak"], "dataset": "nq", "id": "nq-train-3605", "meta": {}, "question": "who plays boss baby in the tv show"}
+{"answers": ["Drew Barrymore", "Dee Wallace", "Erika Eleniak"], "dataset": "nq", "id": "nq-train-36064", "meta": {}, "question": "actress in the movie e.t. the extra-terrestrial"}
+{"answers": ["The 2012 Summer Olympics"], "dataset": "nq", "id": "nq-train-36295", "meta": {}, "question": "in which olympic games did india win the most medals"}
+{"answers": ["10"], "dataset": "nq", "id": "nq-train-36394", "meta": {}, "question": "how many episodes of season 5 of vikings"}
+{"answers": ["maintain world peace"], "dataset": "nq", "id": "nq-train-36541", "meta": {}, "question": "what is the main purpose of the league of nations"}
+{"answers": ["31 May 2009"], "dataset": "nq", "id": "nq-train-36558", "meta": {}, "question": "when did the last living survivor of the titanic die"}
+{"answers": ["Paul Simon"], "dataset": "nq", "id": "nq-train-3701", "meta": {}, "question": "who wrote the song the sounds of silence"}
+{"answers": ["Ohio River"], "dataset": "nq", "id": "nq-train-37155", "meta": {}, "question": "where does the cumberland river begin and end"}
+{"answers": ["Quarterfinal"], "dataset": "nq", "id": "nq-train-37194", "meta": {}, "question": "what is the furthest mexico has ever gone in the world cup"}
+{"answers": ["on September 9, 1850"], "dataset": "nq", "id": "nq-train-37265", "meta": {}, "question": "when did california become part of the us"}
+{"answers": ["Fiona O'Loughlin"], "dataset": "nq", "id": "nq-train-37399", "meta": {}, "question": "who won iam a celebrity get me out of here 2018"}
+{"answers": ["Jon Heder"], "dataset": "nq", "id": "nq-train-37522", "meta": {}, "question": "who played roy disney in walt before mickey"}
+{"answers": ["Pushyavarman"], "dataset": "nq", "id": "nq-train-37836", "meta": {}, "question": "who was the founder of the varmana dynasty"}
+{"answers": ["Greenland"], "dataset": "nq", "id": "nq-train-37840", "meta": {}, "question": "who is the largest island in the world"}
+{"answers": ["the Sikh princes"], "dataset": "nq", "id": "nq-train-37849", "meta": {}, "question": "what helped the british to suppress the first war of independence"}
+{"answers": ["in their lysosomes"], "dataset": "nq", "id": "nq-train-37994", "meta": {}, "question": "where are the digestive enzymes found in a cell"}
+{"answers": ["Nigel Hawthorne"], "dataset": "nq", "id": "nq-train-37995", "meta": {}, "question": "who played george in the madness of king george"}
+{"answers": ["Alice Coachman Davis"], "dataset": "nq", "id": "nq-train-38043", "meta": {}, "question": "first black woman to win a gold medal in the olympics"}
+{"answers": ["1914"], "dataset": "nq", "id": "nq-train-38119", "meta": {}, "question": "when was the first residential air conditioning system invented"}
+{"answers": ["070 Shake", "Kid Cudi", "PartyNextDoor"], "dataset": "nq", "id": "nq-train-38514", "meta": {}, "question": "who sings in ghost town with kanye west"}
+{"answers": ["The Pittsburgh Steelers"], "dataset": "nq", "id": "nq-train-3860", "meta": {}, "question": "who has won the most super bowl wins"}
+{"answers": ["August 27, 1927", "April 24, 1928"], "dataset": "nq", "id": "nq-train-39090", "meta": {}, "question": "when did the persons case start and end"}
+{"answers": ["Olympia"], "dataset": "nq", "id": "nq-train-39168", "meta": {}, "question": "where were the ancient olympics held in greece"}
+{"answers": ["2020"], "dataset": "nq", "id": "nq-train-39212", "meta": {}, "question": "when do the chargers move to new stadium"}
+{"answers": ["approximately 4.2"], "dataset": "nq", "id": "nq-train-39257", "meta": {}, "question": "how many joules is equal to one calorie"}
+{"answers": ["approximately 180"], "dataset": "nq", "id": "nq-train-39279", "meta": {}, "question": "how many songs did lennon and mccartney write"}
+{"answers": ["The Twins"], "dataset": "nq", "id": "nq-train-39448", "meta": {}, "question": "who are the white guys in matrix reloaded"}
+{"answers": ["Waihau Bay"], "dataset": "nq", "id": "nq-train-3969", "meta": {}, "question": "where was the movie boy filmed in new zealand"}
+{"answers": ["1990"], "dataset": "nq", "id": "nq-train-39757", "meta": {}, "question": "when did american schools become gun free zones"}
+{"answers": ["1995–2002"], "dataset": "nq", "id": "nq-train-40551", "meta": {}, "question": "when did tom coughlin coach the jacksonville jaguars"}
+{"answers": ["August 3, 2018"], "dataset": "nq", "id": "nq-train-4125", "meta": {}, "question": "when is the release date of the spy who dumped me"}
+{"answers": ["on Independence Day"], "dataset": "nq", "id": "nq-train-41981", "meta": {}, "question": "when is the nathan's hotdog eating contest at coney island"}
+{"answers": ["eight million casualties"], "dataset": "nq", "id": "nq-train-42161", "meta": {}, "question": "which describes a result of the 30 years war"}
+{"answers": ["madreporite"], "dataset": "nq", "id": "nq-train-42266", "meta": {}, "question": "where does water enter the vascular system of a starfish"}
+{"answers": ["1914"], "dataset": "nq", "id": "nq-train-42283", "meta": {}, "question": "when was mother's day made a national holiday"}
+{"answers": ["1981"], "dataset": "nq", "id": "nq-train-42304", "meta": {}, "question": "when did the us space shuttle program began"}
+{"answers": ["Katharine Graham"], "dataset": "nq", "id": "nq-train-42350", "meta": {}, "question": "who did meryl streep play in the post"}
+{"answers": ["Dana Ivey"], "dataset": "nq", "id": "nq-train-42381", "meta": {}, "question": "who played the nun in rush hour 3"}
+{"answers": ["19 minutes"], "dataset": "nq", "id": "nq-train-42462", "meta": {}, "question": "time taken from delhi airport to delhi railway station"}
+{"answers": ["Raja Harishchandra"], "dataset": "nq", "id": "nq-train-42948", "meta": {}, "question": "which was the first silent film of india"}
+{"answers": ["enacted in 1973"], "dataset": "nq", "id": "nq-train-4307", "meta": {}, "question": "when was the code of criminal procedure introduced in india"}
+{"answers": ["23"], "dataset": "nq", "id": "nq-train-43182", "meta": {}, "question": "how many episodes of arrow in season 1"}
+{"answers": ["Harvey Korman"], "dataset": "nq", "id": "nq-train-43734", "meta": {}, "question": "who was the voice of the great gazoo on the flintstones"}
+{"answers": ["1837-1838"], "dataset": "nq", "id": "nq-train-43741", "meta": {}, "question": "when did the voortrekkers arrive in south africa"}
+{"answers": ["September 10"], "dataset": "nq", "id": "nq-train-43924", "meta": {}, "question": "when was the last time florida was hit by a hurricane"}
+{"answers": ["307"], "dataset": "nq", "id": "nq-train-44013", "meta": {}, "question": "how many major cities are in the usa"}
+{"answers": ["Lil Jon"], "dataset": "nq", "id": "nq-train-44212", "meta": {}, "question": "who sings the song turn down for what"}
+{"answers": ["Jeri Lynn Ryan"], "dataset": "nq", "id": "nq-train-44349", "meta": {}, "question": "who played 7 of 9 in star trek"}
+{"answers": ["1993"], "dataset": "nq", "id": "nq-train-44364", "meta": {}, "question": "when was the family and medical leave act passed"}
+{"answers": ["Constantine the Great"], "dataset": "nq", "id": "nq-train-4459", "meta": {}, "question": "who constructed the massive defensive wall around constantinople in the early 5th century ce"}
+{"answers": ["8"], "dataset": "nq", "id": "nq-train-44969", "meta": {}, "question": "how many episodes sex and the city season 5"}
+{"answers": ["Charlie Hunnam"], "dataset": "nq", "id": "nq-train-45012", "meta": {}, "question": "who played arthur in legend of the sword"}
+{"answers": ["himself"], "dataset": "nq", "id": "nq-train-45359", "meta": {}, "question": "who does the voice of ryan reynolds on family guy"}
+{"answers": ["a waterspout"], "dataset": "nq", "id": "nq-train-45418", "meta": {}, "question": "where do the sharks come from in sharknado"}
+{"answers": ["19 October 2017"], "dataset": "nq", "id": "nq-train-45493", "meta": {}, "question": "when is episode 2 of life is strange before the storm out"}
+{"answers": ["August 23, 2017"], "dataset": "nq", "id": "nq-train-45595", "meta": {}, "question": "when does the next season of homicide hunter start"}
+{"answers": ["radiant (light) energy"], "dataset": "nq", "id": "nq-train-45636", "meta": {}, "question": "what is the term given to the energy released into space"}
+{"answers": ["Fern Green"], "dataset": "nq", "id": "nq-train-45675", "meta": {}, "question": "what shade of green is in the italian flag"}
+{"answers": ["Human–animal marriage"], "dataset": "nq", "id": "nq-train-45817", "meta": {}, "question": "what is it called when you marry an animal"}
+{"answers": ["the Mississippi River"], "dataset": "nq", "id": "nq-train-45974", "meta": {}, "question": "what river is the western border of the state illinois"}
+{"answers": ["Leslie Caron"], "dataset": "nq", "id": "nq-train-46146", "meta": {}, "question": "who played lisa in an american in paris"}
+{"answers": ["Synthesis"], "dataset": "nq", "id": "nq-train-46310", "meta": {}, "question": "at what point in the cell cycle does dna replication occur"}
+{"answers": ["1966–67", "1968–69", "1967–68"], "dataset": "nq", "id": "nq-train-46430", "meta": {}, "question": "which period of the five year plan is called plan holiday"}
+{"answers": ["Case Keenum"], "dataset": "nq", "id": "nq-train-46513", "meta": {}, "question": "who has the most td in college football"}
+{"answers": ["2011"], "dataset": "nq", "id": "nq-train-47134", "meta": {}, "question": "when did the last harry potter movie come out in theaters"}
+{"answers": ["ion"], "dataset": "nq", "id": "nq-train-47445", "meta": {}, "question": "what is an atom that has a charge called"}
+{"answers": ["1996"], "dataset": "nq", "id": "nq-train-47868", "meta": {}, "question": "when did the 1st ship in the aida fleet today's aidacara take to the sea for the first time"}
+{"answers": ["3"], "dataset": "nq", "id": "nq-train-47954", "meta": {}, "question": "how many times did the broncos win the superbowl"}
+{"answers": ["Johnny Logan"], "dataset": "nq", "id": "nq-train-48013", "meta": {}, "question": "who's won the eurovision the most times"}
+{"answers": ["November 3, 2017"], "dataset": "nq", "id": "nq-train-48320", "meta": {}, "question": "when did call of duty ww 2 come out"}
+{"answers": ["1928"], "dataset": "nq", "id": "nq-train-48451", "meta": {}, "question": "when did the skeleton become an olympic sport"}
+{"answers": ["Genevieve Goings"], "dataset": "nq", "id": "nq-train-48660", "meta": {}, "question": "who plays the girl on choo choo soul"}
+{"answers": ["November 3, 1956"], "dataset": "nq", "id": "nq-train-48848", "meta": {}, "question": "when was the wizard of oz first shown on tv"}
+{"answers": ["21"], "dataset": "nq", "id": "nq-train-48938", "meta": {}, "question": "how old do you have to be to buy alcohol in kentucky"}
+{"answers": ["Aristotle"], "dataset": "nq", "id": "nq-train-49061", "meta": {}, "question": "who is called the ' father of modern biology '"}
+{"answers": ["Dan Stevens"], "dataset": "nq", "id": "nq-train-49123", "meta": {}, "question": "who plays the beast in the beauty and the beast"}
+{"answers": ["They Might Be Giants"], "dataset": "nq", "id": "nq-train-49155", "meta": {}, "question": "who sings malcom in the middle theme song"}
+{"answers": ["November 3, 2020"], "dataset": "nq", "id": "nq-train-49319", "meta": {}, "question": "when is the next time we vote for president"}
+{"answers": ["Chakravarthi Rajagopalachari"], "dataset": "nq", "id": "nq-train-49608", "meta": {}, "question": "who was the last governor general of india"}
+{"answers": ["Alan Shearer"], "dataset": "nq", "id": "nq-train-49709", "meta": {}, "question": "who holds the record for the most premier league goals"}
+{"answers": ["Bob Pettit"], "dataset": "nq", "id": "nq-train-49916", "meta": {}, "question": "who won the first mvp award in basketball"}
+{"answers": ["Valentin Pavlov"], "dataset": "nq", "id": "nq-train-50320", "meta": {}, "question": "who was the soviet premier when the soviet union collapsed in 1991 formally ending the cold war"}
+{"answers": ["August 2016"], "dataset": "nq", "id": "nq-train-50363", "meta": {}, "question": "the witcher 3 game of the year edition release date"}
+{"answers": ["3"], "dataset": "nq", "id": "nq-train-50568", "meta": {}, "question": "how many times did man u win champions league"}
+{"answers": ["1928"], "dataset": "nq", "id": "nq-train-50753", "meta": {}, "question": "when was the first reese's peanut butter cup made"}
+{"answers": ["May 8, 1812"], "dataset": "nq", "id": "nq-train-50772", "meta": {}, "question": "when was hail to the chief first played"}
+{"answers": ["Chad Hurley", "Jawed Karim", "Steve Chen"], "dataset": "nq", "id": "nq-train-51152", "meta": {}, "question": "who came up with the idea of youtube"}
+{"answers": ["beginning of 1969"], "dataset": "nq", "id": "nq-train-5121", "meta": {}, "question": "when did the mamas & papas break up"}
+{"answers": ["James Denton"], "dataset": "nq", "id": "nq-train-51388", "meta": {}, "question": "who plays the doctor in the good witch"}
+{"answers": ["eighteen tankōbon volumes"], "dataset": "nq", "id": "nq-train-51414", "meta": {}, "question": "how many ouran high school books are there"}
+{"answers": ["percussive"], "dataset": "nq", "id": "nq-train-51504", "meta": {}, "question": "in javanese gamelan music typical elaborating instruments are"}
+{"answers": ["slur"], "dataset": "nq", "id": "nq-train-51511", "meta": {}, "question": "curved line connecting 2 more notes different pitches"}
+{"answers": ["Bernard Hinault", "Jacques Anquetil", "Eddy Merckx", "Miguel Indurain"], "dataset": "nq", "id": "nq-train-51546", "meta": {}, "question": "who has the most wins in tour de france"}
+{"answers": ["2 December 1972"], "dataset": "nq", "id": "nq-train-51642", "meta": {}, "question": "when did the vietnam war end for australia"}
+{"answers": ["Colorado Springs, Colorado", "Colorado"], "dataset": "nq", "id": "nq-train-5188", "meta": {}, "question": "our souls at night where is it filmed"}
+{"answers": ["Adam Sandler"], "dataset": "nq", "id": "nq-train-51930", "meta": {}, "question": "who's the voice of dracula in hotel transylvania"}
+{"answers": ["Pepper X"], "dataset": "nq", "id": "nq-train-52281", "meta": {}, "question": "hottest pepper in the world on scoville scale"}
+{"answers": ["Gerry & The Pacemakers", "Andy Williams", "Engelbert Humperdinck", "Tony Martin", "Ronnie Carroll"], "dataset": "nq", "id": "nq-train-52805", "meta": {}, "question": "who sang walk hand in hand with me"}
+{"answers": ["Mahakali River", "Mechi River"], "dataset": "nq", "id": "nq-train-53006", "meta": {}, "question": "the river which marks the international border between india and nepal"}
+{"answers": ["Kamal Haasan"], "dataset": "nq", "id": "nq-train-53102", "meta": {}, "question": "who is giving bigg boss voice in tamil"}
+{"answers": ["Gabriella Linton"], "dataset": "nq", "id": "nq-train-53135", "meta": {}, "question": "who plays the role of karmen in 7de laan"}
+{"answers": ["DMX"], "dataset": "nq", "id": "nq-train-53367", "meta": {}, "question": "who sings x gonna give it to you"}
+{"answers": ["332"], "dataset": "nq", "id": "nq-train-53541", "meta": {}, "question": "what is the postal code for warri nigeria"}
+{"answers": ["January 6, 2017"], "dataset": "nq", "id": "nq-train-53610", "meta": {}, "question": "marriage boot camp reality stars season 9 release date"}
+{"answers": ["Bryn McAuley"], "dataset": "nq", "id": "nq-train-53657", "meta": {}, "question": "who is the voice of mavis in hotel transylvania the series"}
+{"answers": ["12 May 1968"], "dataset": "nq", "id": "nq-train-53719", "meta": {}, "question": "when did trolley buses stop running in belfast"}
+{"answers": ["Carthage"], "dataset": "nq", "id": "nq-train-53774", "meta": {}, "question": "rome's adversary in the punic wars was"}
+{"answers": ["Karen Shenaz David"], "dataset": "nq", "id": "nq-train-53844", "meta": {}, "question": "who plays princess jasmine on once upon a time"}
+{"answers": ["2018"], "dataset": "nq", "id": "nq-train-53949", "meta": {}, "question": "when is season 3 of daredevil being released"}
+{"answers": ["AbdulAziz Nyako", "Tony Nwulu"], "dataset": "nq", "id": "nq-train-54288", "meta": {}, "question": "who sponsored not too young to run bill"}
+{"answers": ["traditional limeade or lemonade"], "dataset": "nq", "id": "nq-train-54326", "meta": {}, "question": "what is the meaning of shikanji in english"}
+{"answers": ["John Ducey"], "dataset": "nq", "id": "nq-train-54550", "meta": {}, "question": "who plays leonard on sabrina the teenage witch"}
+{"answers": ["Neil Gorsuch"], "dataset": "nq", "id": "nq-train-54604", "meta": {}, "question": "who is the youngest supreme court justice currently serving"}
+{"answers": ["in early 2019"], "dataset": "nq", "id": "nq-train-54767", "meta": {}, "question": "when does the second half of season 3 of shadowhunters come out"}
+{"answers": ["Gal Gadot"], "dataset": "nq", "id": "nq-train-54861", "meta": {}, "question": "who played wonder woman in the last movie"}
+{"answers": ["adrenal glands", "certain neurons"], "dataset": "nq", "id": "nq-train-55182", "meta": {}, "question": "epinephrine is a member of which group of hormones"}
+{"answers": ["Democratic"], "dataset": "nq", "id": "nq-train-55450", "meta": {}, "question": "who controlled the house and senate in 1994"}
+{"answers": ["e-Visa"], "dataset": "nq", "id": "nq-train-55799", "meta": {}, "question": "visa requirements for south african citizens visiting india"}
+{"answers": ["around 4,000 years ago"], "dataset": "nq", "id": "nq-train-55874", "meta": {}, "question": "when did beauty and the beast take place"}
+{"answers": ["Logging"], "dataset": "nq", "id": "nq-train-55914", "meta": {}, "question": "the process of cutting down trees is called"}
+{"answers": ["oxygen"], "dataset": "nq", "id": "nq-train-55945", "meta": {}, "question": "the most abundant element on the earth's crust"}
+{"answers": ["over 450 varieties"], "dataset": "nq", "id": "nq-train-56029", "meta": {}, "question": "how many types of cheese are there in italy"}
+{"answers": ["Tracy Chapman"], "dataset": "nq", "id": "nq-train-56042", "meta": {}, "question": "who wrote baby can i hold you tonight"}
+{"answers": ["November 3, 2017"], "dataset": "nq", "id": "nq-train-56085", "meta": {}, "question": "when does thor ragnarok come out in cinema"}
+{"answers": ["1981"], "dataset": "nq", "id": "nq-train-56177", "meta": {}, "question": "when was the last year the yankees and the dodgers played in the world series"}
+{"answers": ["North Carolina"], "dataset": "nq", "id": "nq-train-56249", "meta": {}, "question": "who won men's college basketball last year"}
+{"answers": ["Harold House Moore"], "dataset": "nq", "id": "nq-train-56300", "meta": {}, "question": "who played dr dre in all eyes on me"}
+{"answers": ["1988"], "dataset": "nq", "id": "nq-train-56625", "meta": {}, "question": "when did stephen hawking wrote a brief history of time"}
+{"answers": ["the South western coast"], "dataset": "nq", "id": "nq-train-56745", "meta": {}, "question": "konkani language belongs to which part of india"}
+{"answers": ["seven"], "dataset": "nq", "id": "nq-train-56884", "meta": {}, "question": "how many marvel civil war comics are there"}
+{"answers": ["De Smet, South Dakota"], "dataset": "nq", "id": "nq-train-56964", "meta": {}, "question": "where does by the shores of silver lake take place"}
+{"answers": ["Alan Shearer"], "dataset": "nq", "id": "nq-train-57033", "meta": {}, "question": "player with most own goals in premier league"}
+{"answers": ["the twentieth century"], "dataset": "nq", "id": "nq-train-5706", "meta": {}, "question": "when is my mother said i never should set"}
+{"answers": ["five"], "dataset": "nq", "id": "nq-train-5730", "meta": {}, "question": "how many international airports do we have in nigeria"}
+{"answers": ["into the early 20th century"], "dataset": "nq", "id": "nq-train-57459", "meta": {}, "question": "when did indentured servitude end in the colonies"}
+{"answers": ["1990"], "dataset": "nq", "id": "nq-train-57651", "meta": {}, "question": "when was marjory stoneman douglas high school built"}
+{"answers": ["2019"], "dataset": "nq", "id": "nq-train-58075", "meta": {}, "question": "when do the oakland raiders move to las vegas nevada"}
+{"answers": ["Arabic"], "dataset": "nq", "id": "nq-train-58306", "meta": {}, "question": "what is the national language of saudi arabia"}
+{"answers": ["Gingerbread Man Records"], "dataset": "nq", "id": "nq-train-58367", "meta": {}, "question": "what is ed sheeran's record label called"}
+{"answers": ["1965"], "dataset": "nq", "id": "nq-train-58466", "meta": {}, "question": "when did the 70 mph limit come in"}
+{"answers": ["Stealers Wheel"], "dataset": "nq", "id": "nq-train-5862", "meta": {}, "question": "who sings the song for stuck in the middle"}
+{"answers": ["1901"], "dataset": "nq", "id": "nq-train-58735", "meta": {}, "question": "when did states start issuing driver's licenses"}
+{"answers": ["Howard Ellsworth Rollins Jr."], "dataset": "nq", "id": "nq-train-58869", "meta": {}, "question": "who played virgil tibbs on heat of the night"}
+{"answers": ["November 24, 1998"], "dataset": "nq", "id": "nq-train-59185", "meta": {}, "question": "when did the song angel first come out"}
+{"answers": ["Gerry Goffin", "Michael Masser"], "dataset": "nq", "id": "nq-train-59187", "meta": {}, "question": "who wrote saving all my love for you"}
+{"answers": ["Peter Claver Cullen"], "dataset": "nq", "id": "nq-train-59211", "meta": {}, "question": "who does the voice of optimus prime in the transformers movies"}
+{"answers": ["5 October 1962"], "dataset": "nq", "id": "nq-train-59217", "meta": {}, "question": "when did the beatles release their first song"}
+{"answers": ["due to its popularity"], "dataset": "nq", "id": "nq-train-59301", "meta": {}, "question": "why was greenwich chosen as the location for the prime meridian"}
+{"answers": ["three"], "dataset": "nq", "id": "nq-train-59374", "meta": {}, "question": "how many beverly hills cops movies are there"}
+{"answers": ["April 6, 1917"], "dataset": "nq", "id": "nq-train-5945", "meta": {}, "question": "when did the united states enter the war in europe"}
+{"answers": ["\"42\""], "dataset": "nq", "id": "nq-train-59820", "meta": {}, "question": "what is the meaning of life hitchhikers guide"}
+{"answers": ["Bill Russell"], "dataset": "nq", "id": "nq-train-59913", "meta": {}, "question": "who has won the nba finals the most"}
+{"answers": ["William Garson Paszamant"], "dataset": "nq", "id": "nq-train-60026", "meta": {}, "question": "who plays stanford in sex and the city"}
+{"answers": ["Audra McDonald", "Emma Watson", "Adam Mitchell", "Stanley Tucci", "Emma Thompson", "Ian McKellen", "Ewan McGregor", "Clive Rowe", "Gugu Mbatha-Raw"], "dataset": "nq", "id": "nq-train-60062", "meta": {}, "question": "who sings days in the sun in beauty and the beast"}
+{"answers": ["Boston Celtics"], "dataset": "nq", "id": "nq-train-60164", "meta": {}, "question": "who has the most nba championships in the nba"}
+{"answers": ["Pentatonix"], "dataset": "nq", "id": "nq-train-60590", "meta": {}, "question": "who sings the nfl thursday night song 2017"}
+{"answers": ["ten times"], "dataset": "nq", "id": "nq-train-60614", "meta": {}, "question": "how many times was the new england patriots in the super bowl"}
+{"answers": ["The IW engine"], "dataset": "nq", "id": "nq-train-60694", "meta": {}, "question": "what engine does call of duty run on"}
+{"answers": ["Bill Withers"], "dataset": "nq", "id": "nq-train-60717", "meta": {}, "question": "there ain't no sunshine when she's gone original artist"}
+{"answers": ["September 2017"], "dataset": "nq", "id": "nq-train-60780", "meta": {}, "question": "when did they finish making the last jedi"}
+{"answers": ["DJ Kool Herc"], "dataset": "nq", "id": "nq-train-60936", "meta": {}, "question": "who was the jamaican born dj who is credited as being one of the founders of hip hop"}
+{"answers": ["Salt Lake Stadium in Kolkata"], "dataset": "nq", "id": "nq-train-61305", "meta": {}, "question": "where was the opening ceremony of ipl (2013) held on 2 april 2013"}
+{"answers": ["The New Zealand dollar"], "dataset": "nq", "id": "nq-train-61451", "meta": {}, "question": "what is the name of the currency used in new zealand"}
+{"answers": ["5,000"], "dataset": "nq", "id": "nq-train-61917", "meta": {}, "question": "how many ships were sunk by german u boats in ww1"}
+{"answers": ["five"], "dataset": "nq", "id": "nq-train-62428", "meta": {}, "question": "how many seasons are there on the fosters"}
+{"answers": ["John Anthony Aniston"], "dataset": "nq", "id": "nq-train-62694", "meta": {}, "question": "who plays victor in days of our lives"}
+{"answers": ["1981"], "dataset": "nq", "id": "nq-train-63034", "meta": {}, "question": "when was the last episode of the waltons made"}
+{"answers": ["1987 Pontiac Trans Am"], "dataset": "nq", "id": "nq-train-63238", "meta": {}, "question": "what type of car does dwight schrute drive"}
+{"answers": ["Corbin City"], "dataset": "nq", "id": "nq-train-63325", "meta": {}, "question": "what is the smallest city in new jersey"}
+{"answers": ["1993"], "dataset": "nq", "id": "nq-train-63485", "meta": {}, "question": "when was the first jurassic park movie released"}
+{"answers": ["May 5, 1976"], "dataset": "nq", "id": "nq-train-63528", "meta": {}, "question": "when was interview with a vampire first published"}
+{"answers": ["Flower 4"], "dataset": "nq", "id": "nq-train-63558", "meta": {}, "question": "what is the meaning of f in f4 in meteor garden"}
+{"answers": ["Polygonaceae"], "dataset": "nq", "id": "nq-train-63570", "meta": {}, "question": "what family is the rhubarb a part of"}
+{"answers": ["1994"], "dataset": "nq", "id": "nq-train-63676", "meta": {}, "question": "when did the song candy rain come out"}
+{"answers": ["Frank Loesser"], "dataset": "nq", "id": "nq-train-63827", "meta": {}, "question": "who wrote the song luck be a lady"}
+{"answers": ["the Church in Colossae"], "dataset": "nq", "id": "nq-train-63938", "meta": {}, "question": "who was the book of colossians written to"}
+{"answers": ["1979", "2000"], "dataset": "nq", "id": "nq-train-64173", "meta": {}, "question": "when did michigan state basketball win a national championship"}
+{"answers": ["in China"], "dataset": "nq", "id": "nq-train-64371", "meta": {}, "question": "where was the first car invented in the world"}
+{"answers": ["crisis manager"], "dataset": "nq", "id": "nq-train-64638", "meta": {}, "question": "what does olivia pope do for a living"}
+{"answers": ["Michigan"], "dataset": "nq", "id": "nq-train-64702", "meta": {}, "question": "who has the most wins in college history"}
+{"answers": ["the 7th century BCE"], "dataset": "nq", "id": "nq-train-64880", "meta": {}, "question": "when did the practice of book burning start"}
+{"answers": ["fifth season"], "dataset": "nq", "id": "nq-train-64889", "meta": {}, "question": "what season did george die on grey's anatomy"}
+{"answers": ["Muttiah Muralitharan"], "dataset": "nq", "id": "nq-train-64903", "meta": {}, "question": "highest wicket taker for india in test matches"}
+{"answers": ["23"], "dataset": "nq", "id": "nq-train-64967", "meta": {}, "question": "how many high schools in pg county md"}
+{"answers": ["pylon"], "dataset": "nq", "id": "nq-train-65027", "meta": {}, "question": "what is the gateway of an egyptian temple that leads to a series of pillared halls or courts called"}
+{"answers": ["Trace Adkins"], "dataset": "nq", "id": "nq-train-65091", "meta": {}, "question": "who played the bands manager in i can only imagine"}
+{"answers": ["Uma Thurman"], "dataset": "nq", "id": "nq-train-65319", "meta": {}, "question": "who plays medusa in percy jackson and the lightning thief"}
+{"answers": ["1707"], "dataset": "nq", "id": "nq-train-65386", "meta": {}, "question": "when did the united kingdom became a country"}
+{"answers": ["Missouri"], "dataset": "nq", "id": "nq-train-65553", "meta": {}, "question": "are the kansas city chiefs in missouri or kansas"}
+{"answers": ["Dr. Charles Percy", "Dr. Reed Adamson"], "dataset": "nq", "id": "nq-train-65858", "meta": {}, "question": "who died in the grey's anatomy shooting"}
+{"answers": ["Harry Igor Ansoff"], "dataset": "nq", "id": "nq-train-65912", "meta": {}, "question": "who is known as the father of strategy management"}
+{"answers": ["641 runs"], "dataset": "nq", "id": "nq-train-66001", "meta": {}, "question": "total score of david warner in ipl 2017"}
+{"answers": ["10"], "dataset": "nq", "id": "nq-train-66307", "meta": {}, "question": "how many inmates are on death row in kansas"}
+{"answers": ["1997"], "dataset": "nq", "id": "nq-train-66369", "meta": {}, "question": "when did star wars special edition come out"}
+{"answers": ["Elizabeth Berkley Lauren"], "dataset": "nq", "id": "nq-train-66584", "meta": {}, "question": "who played jessie spano in saved by the bell"}
+{"answers": ["April 25, 2018"], "dataset": "nq", "id": "nq-train-66694", "meta": {}, "question": "when does the handmaids tale season 2 start"}
+{"answers": ["David Cronenberg as Gynecologist", "Joy Boushel as Tawny", "John Getz as Stathis Borans", "Michael Copeman as Roy", "George Chuvalo as Marky"], "dataset": "nq", "id": "nq-train-66848", "meta": {}, "question": "who played in the original movie the fly"}
+{"answers": ["1989"], "dataset": "nq", "id": "nq-train-67276", "meta": {}, "question": "when did the first batman movie come out"}
+{"answers": ["seven"], "dataset": "nq", "id": "nq-train-67314", "meta": {}, "question": "hbo game of thrones season 7 how many episodes"}
+{"answers": ["shipper"], "dataset": "nq", "id": "nq-train-67393", "meta": {}, "question": "who is responsible for filling out a bill of lading"}
+{"answers": ["Charles Dance", "Lisa Hammond", "Emma Willis", "Adil Ray", "Noel Clarke", "Craig Revel Horwood", "Fearne Cotton", "Ruby Wax", "Clare Balding", "Lulu"], "dataset": "nq", "id": "nq-train-67482", "meta": {}, "question": "who is in the current series of who do you think you are"}
+{"answers": ["axioms"], "dataset": "nq", "id": "nq-train-67681", "meta": {}, "question": "what do we call statements that we assume to be true without proofs"}
+{"answers": ["100"], "dataset": "nq", "id": "nq-train-67862", "meta": {}, "question": "most points in a single game in nba history"}
+{"answers": ["Earth"], "dataset": "nq", "id": "nq-train-68202", "meta": {}, "question": "where does planet of the apes take place"}
+{"answers": ["rendez-vous"], "dataset": "nq", "id": "nq-train-68556", "meta": {}, "question": "from two french words that mean present yourself"}
+{"answers": ["Mājuli or Majoli"], "dataset": "nq", "id": "nq-train-6873", "meta": {}, "question": "name the world's largest riverine island formed by the brahmaputra"}
+{"answers": ["Ella Fitzgerald", "Lee Wiley", "Whispering Jack Smith", "Sarah Vaughan", "Fred Astaire with Adele Astaire"], "dataset": "nq", "id": "nq-train-68971", "meta": {}, "question": "who sang you are my one and only"}
+{"answers": ["the addition of cream"], "dataset": "nq", "id": "nq-train-68980", "meta": {}, "question": "what's the difference between a black russian and a white russian"}
+{"answers": ["2006"], "dataset": "nq", "id": "nq-train-6903", "meta": {}, "question": "when was the last world cup held in germany"}
+{"answers": ["Tokyo"], "dataset": "nq", "id": "nq-train-69144", "meta": {}, "question": "where is the 2020 summer olympics going to be held"}
+{"answers": ["Pflugerville, Texas", "Austin, Texas"], "dataset": "nq", "id": "nq-train-69209", "meta": {}, "question": "where was friday night lights tv series filmed"}
+{"answers": ["April 17, 2011"], "dataset": "nq", "id": "nq-train-69276", "meta": {}, "question": "when did the series game of thrones start"}
+{"answers": ["35"], "dataset": "nq", "id": "nq-train-69277", "meta": {}, "question": "how many seats imran khan won in election 2013"}
+{"answers": ["Colombia"], "dataset": "nq", "id": "nq-train-69346", "meta": {}, "question": "where was the 1986 world cup supposed to be held"}
+{"answers": ["April 1938"], "dataset": "nq", "id": "nq-train-69596", "meta": {}, "question": "when did the buffalo nickel stop being made"}
+{"answers": ["adult, male citizen"], "dataset": "nq", "id": "nq-train-69667", "meta": {}, "question": "who had the right to vote in athens"}
+{"answers": ["Walt Disney"], "dataset": "nq", "id": "nq-train-69973", "meta": {}, "question": "who holds the record for the most oscars won at 22"}
+{"answers": ["801", "385"], "dataset": "nq", "id": "nq-train-70096", "meta": {}, "question": "what is the area code for salt lake city utah"}
+{"answers": ["needed and inspired each other"], "dataset": "nq", "id": "nq-train-7020", "meta": {}, "question": "who is the song i need a doctor about"}
+{"answers": ["William Shakespeare", "Agatha Christie"], "dataset": "nq", "id": "nq-train-70227", "meta": {}, "question": "who is the most read author in the world"}
+{"answers": ["actor Owen Wilson"], "dataset": "nq", "id": "nq-train-70402", "meta": {}, "question": "who does the voice of lightning mcqueen in cars 3"}
+{"answers": ["197"], "dataset": "nq", "id": "nq-train-70461", "meta": {}, "question": "how many field goals has dan bailey made in his career"}
+{"answers": ["September 30, 2017"], "dataset": "nq", "id": "nq-train-70728", "meta": {}, "question": "when does saturday night live return in 2017"}
+{"answers": ["October 26, 2018."], "dataset": "nq", "id": "nq-train-70848", "meta": {}, "question": "when is red dead redemption 2 coming out"}
+{"answers": ["Aryabhata"], "dataset": "nq", "id": "nq-train-70995", "meta": {}, "question": "i am the india's first artificial satellite"}
+{"answers": ["29 August 2017"], "dataset": "nq", "id": "nq-train-71040", "meta": {}, "question": "when is season 15 geordie shore coming out"}
+{"answers": ["1982"], "dataset": "nq", "id": "nq-train-7108", "meta": {}, "question": "when did the song jack and diane come out"}
+{"answers": ["Rio de Janeiro"], "dataset": "nq", "id": "nq-train-71307", "meta": {}, "question": "where was the cable car scene in moonraker filmed"}
+{"answers": ["Dubai"], "dataset": "nq", "id": "nq-train-71476", "meta": {}, "question": "when completed in 2009 in which city would you find the world's tallest hotel"}
+{"answers": ["Slimey the Worm"], "dataset": "nq", "id": "nq-train-71492", "meta": {}, "question": "what is oscar the grouch's worms name"}
+{"answers": ["Jeff Sessions"], "dataset": "nq", "id": "nq-train-71620", "meta": {}, "question": "who is the secretary of department of justice"}
+{"answers": ["Megan Fox", "Dominic Monaghan"], "dataset": "nq", "id": "nq-train-71859", "meta": {}, "question": "who in love the way you lie video"}
+{"answers": ["decades"], "dataset": "nq", "id": "nq-train-71876", "meta": {}, "question": "how many years until a sea turtle comes back to lay eggs"}
+{"answers": ["Han"], "dataset": "nq", "id": "nq-train-72217", "meta": {}, "question": "who dies in the beginning of fast and furious 7"}
+{"answers": ["20/20"], "dataset": "nq", "id": "nq-train-7247", "meta": {}, "question": "what is the normal vision of human eye"}
+{"answers": ["Artax"], "dataset": "nq", "id": "nq-train-72470", "meta": {}, "question": "what is the horses name in never-ending story"}
+{"answers": ["India"], "dataset": "nq", "id": "nq-train-72506", "meta": {}, "question": "who won the 2017 womens hockey asia cup held in the month of october november 2017 in japan"}
+{"answers": ["First Lady Nancy Reagan"], "dataset": "nq", "id": "nq-train-72522", "meta": {}, "question": "who started the just say no to drugs campaign"}
+{"answers": ["backed away from armed conflict"], "dataset": "nq", "id": "nq-train-72528", "meta": {}, "question": "when the british fired on chesapeake in june 1807 congress"}
+{"answers": ["November 16, 1907"], "dataset": "nq", "id": "nq-train-72610", "meta": {}, "question": "when did oklahoma become part of the united states"}
+{"answers": ["60"], "dataset": "nq", "id": "nq-train-7276", "meta": {}, "question": "most goals in a season in english football"}
+{"answers": ["October 11, 1975"], "dataset": "nq", "id": "nq-train-7299", "meta": {}, "question": "when did the first episode of snl air"}
+{"answers": ["the director"], "dataset": "nq", "id": "nq-train-7307", "meta": {}, "question": "who makes the final decision on the blocking of the actors"}
+{"answers": ["Salton Sea, California"], "dataset": "nq", "id": "nq-train-73159", "meta": {}, "question": "where was keep it in the closet filmed"}
+{"answers": ["Ho Chi Minh"], "dataset": "nq", "id": "nq-train-73197", "meta": {}, "question": "leader of north vietnam during the late 1950s"}
+{"answers": ["October 28, 1948"], "dataset": "nq", "id": "nq-train-73410", "meta": {}, "question": "when did israel start using the star of david"}
+{"answers": ["Kan'ami Kiyotsugu"], "dataset": "nq", "id": "nq-train-73461", "meta": {}, "question": "the most important figure in the history of japanese nō theatre is"}
+{"answers": ["200 minutes"], "dataset": "nq", "id": "nq-train-74081", "meta": {}, "question": "how long is the lord of the rings return of the king"}
+{"answers": ["Cincinnati", "Roger Bacon High School", "The Christ Hospital"], "dataset": "nq", "id": "nq-train-74510", "meta": {}, "question": "where was to kill a sacred deer filmed"}
+{"answers": ["www.hhs.gov"], "dataset": "nq", "id": "nq-train-74521", "meta": {}, "question": "us department of health and human services website"}
+{"answers": ["the United States"], "dataset": "nq", "id": "nq-train-74755", "meta": {}, "question": "where did hip hop dance originally come from"}
+{"answers": ["Tang dynasty"], "dataset": "nq", "id": "nq-train-74798", "meta": {}, "question": "during what dynasty did the chinese make explosives"}
+{"answers": ["the east"], "dataset": "nq", "id": "nq-train-74885", "meta": {}, "question": "where does the sun rise in the northern hemisphere"}
+{"answers": ["1969"], "dataset": "nq", "id": "nq-train-75038", "meta": {}, "question": "when was i know why the caged bird sings written"}
+{"answers": ["Did not qualify"], "dataset": "nq", "id": "nq-train-75189", "meta": {}, "question": "when does ghana play in world cup 2018"}
+{"answers": ["Astoria, Queens", "Brooklyn, New York City"], "dataset": "nq", "id": "nq-train-75205", "meta": {}, "question": "where was the movie going in style filmed"}
+{"answers": ["the battle rounds"], "dataset": "nq", "id": "nq-train-75227", "meta": {}, "question": "what happens after blind auditions on the voice"}
+{"answers": ["2013"], "dataset": "nq", "id": "nq-train-75483", "meta": {}, "question": "when was the last time south carolina football was ranked"}
+{"answers": ["Chicago Bears"], "dataset": "nq", "id": "nq-train-75924", "meta": {}, "question": "who does chris long's brother play for"}
+{"answers": ["Jim Varney"], "dataset": "nq", "id": "nq-train-76156", "meta": {}, "question": "who plays the voice of slinky in toy story"}
+{"answers": ["Kerry Condon"], "dataset": "nq", "id": "nq-train-7622", "meta": {}, "question": "who voices friday in captain america civil war"}
+{"answers": ["Gareth Keenan"], "dataset": "nq", "id": "nq-train-76278", "meta": {}, "question": "the office uk assistant to the regional manager"}
+{"answers": ["What turns you on?", "What turns you off?"], "dataset": "nq", "id": "nq-train-76445", "meta": {}, "question": "questions at the end of inside the actors studio"}
+{"answers": ["1831–1850"], "dataset": "nq", "id": "nq-train-76540", "meta": {}, "question": "when did the trail of tears start and end"}
+{"answers": ["Jud"], "dataset": "nq", "id": "nq-train-76598", "meta": {}, "question": "who shows up drunk to the wedding party in oklahoma"}
+{"answers": ["July 25, 2013"], "dataset": "nq", "id": "nq-train-76615", "meta": {}, "question": "when did the show big time rush end"}
+{"answers": ["eight"], "dataset": "nq", "id": "nq-train-76804", "meta": {}, "question": "how many lines of symmetry in an octogon"}
+{"answers": ["J. Michael Finley"], "dataset": "nq", "id": "nq-train-77109", "meta": {}, "question": "who played the part of bart in the movie i can only imagine"}
+{"answers": ["Zendaya"], "dataset": "nq", "id": "nq-train-77583", "meta": {}, "question": "who plays the girl in spider man homecoming"}
+{"answers": ["The Cubs"], "dataset": "nq", "id": "nq-train-77856", "meta": {}, "question": "who had the best record in mlb 2016"}
+{"answers": ["Secret Service"], "dataset": "nq", "id": "nq-train-78033", "meta": {}, "question": "who guards former president of the united states"}
+{"answers": ["English", "Dominican Creole French"], "dataset": "nq", "id": "nq-train-78038", "meta": {}, "question": "what language do they speak in the island of dominica"}
+{"answers": ["Blair Redford", "Daniel Hall"], "dataset": "nq", "id": "nq-train-78126", "meta": {}, "question": "who plays scott granger on young and restless"}
+{"answers": ["Peter Sallis, OBE"], "dataset": "nq", "id": "nq-train-78195", "meta": {}, "question": "who did the voice of wallace in wallace and gromit"}
+{"answers": ["December 31, 1907"], "dataset": "nq", "id": "nq-train-78282", "meta": {}, "question": "when did the ball drop in new york start"}
+{"answers": ["January 19, 2005"], "dataset": "nq", "id": "nq-train-78317", "meta": {}, "question": "when did lebron get his first triple double"}
+{"answers": ["Arsène Wenger"], "dataset": "nq", "id": "nq-train-78448", "meta": {}, "question": "who is the longest serving football manager ever"}
+{"answers": ["Tania Raymonde"], "dataset": "nq", "id": "nq-train-78480", "meta": {}, "question": "won't go home without you girl in video"}
+{"answers": ["Sweden"], "dataset": "nq", "id": "nq-train-78943", "meta": {}, "question": "in which country was a little night music set"}
+{"answers": ["27"], "dataset": "nq", "id": "nq-train-78996", "meta": {}, "question": "how many times have the spurs made the playoffs"}
+{"answers": ["6"], "dataset": "nq", "id": "nq-train-79173", "meta": {}, "question": "how many world heritage sites are there in maharashtra"}
+{"answers": ["November 6, 2017"], "dataset": "nq", "id": "nq-train-79379", "meta": {}, "question": "when does the 2017 holiday baking championship start"}
+{"answers": ["September 26, 2017"], "dataset": "nq", "id": "nq-train-79693", "meta": {}, "question": "when does the menendez brothers tv show come on"}
+{"answers": ["6"], "dataset": "nq", "id": "nq-train-79758", "meta": {}, "question": "how many episodes of jack irish season 2"}
+{"answers": ["Blondie Boopadoop"], "dataset": "nq", "id": "nq-train-79885", "meta": {}, "question": "what was blondies name before she married dagwood"}
+{"answers": ["1970"], "dataset": "nq", "id": "nq-train-79908", "meta": {}, "question": "when was the poem then and now written"}
+{"answers": ["the early modern period"], "dataset": "nq", "id": "nq-train-7998", "meta": {}, "question": "when did arabic overtake coptic as the language most used in egypt"}
+{"answers": ["Martyn Garrett"], "dataset": "nq", "id": "nq-train-80130", "meta": {}, "question": "who played the baby in the baby and the battleship"}
+{"answers": ["CBS"], "dataset": "nq", "id": "nq-train-80579", "meta": {}, "question": "what channel is the late late show with stephen colbert"}
+{"answers": ["Cleveland Cavaliers", "San Antonio Spurs", "Golden State Warriors"], "dataset": "nq", "id": "nq-train-81335", "meta": {}, "question": "who is won the nba finals the last 5 years"}
+{"answers": ["Ray Bourque"], "dataset": "nq", "id": "nq-train-81448", "meta": {}, "question": "who has the most shots on goal in nhl"}
+{"answers": ["Josh Groban"], "dataset": "nq", "id": "nq-train-81591", "meta": {}, "question": "who was the one that got away written about"}
+{"answers": ["September 13, 2005"], "dataset": "nq", "id": "nq-train-81643", "meta": {}, "question": "when was the first episode of supernatural aired"}
+{"answers": ["1923"], "dataset": "nq", "id": "nq-train-81770", "meta": {}, "question": "when was the first diesel engine put in a truck"}
+{"answers": ["Dennis Franz"], "dataset": "nq", "id": "nq-train-8185", "meta": {}, "question": "who played andy sipowicz son on nypd blue"}
+{"answers": ["Russell Watson"], "dataset": "nq", "id": "nq-train-82012", "meta": {}, "question": "who sings the song for star trek enterprise"}
+{"answers": ["Axl Rose"], "dataset": "nq", "id": "nq-train-82384", "meta": {}, "question": "who wrote the guitar solo in november rain"}
+{"answers": ["Christopher Clavius"], "dataset": "nq", "id": "nq-train-82686", "meta": {}, "question": "who is the mathematician who first use brackets to indicate grouping"}
+{"answers": ["Frank Stephenson Dillane"], "dataset": "nq", "id": "nq-train-82849", "meta": {}, "question": "who plays nick in fear the walking dead"}
+{"answers": ["Tommy James and the Shondells"], "dataset": "nq", "id": "nq-train-83037", "meta": {}, "question": "who sang i think i'm alone now"}
+{"answers": ["1,506,000 US gal"], "dataset": "nq", "id": "nq-train-83276", "meta": {}, "question": "how many gallons of water make up ripley's aquarium of the smokies"}
+{"answers": ["bone marrow"], "dataset": "nq", "id": "nq-train-83289", "meta": {}, "question": "what bones produce red blood cells in adults"}
+{"answers": ["Northern California town of Ferndale", "Burbank studios"], "dataset": "nq", "id": "nq-train-83470", "meta": {}, "question": "where was the movie salem's lot filmed"}
+{"answers": ["April 25, 2018"], "dataset": "nq", "id": "nq-train-83515", "meta": {}, "question": "when did the handmaid's tale season 2 start"}
+{"answers": ["Barbara Feldon"], "dataset": "nq", "id": "nq-train-83710", "meta": {}, "question": "who played 99 in get smart the movie"}
+{"answers": ["Lenore"], "dataset": "nq", "id": "nq-train-83869", "meta": {}, "question": "in the raven what is the name of the narrator's lost love"}
+{"answers": ["California"], "dataset": "nq", "id": "nq-train-83990", "meta": {}, "question": "who has the most seats in house of representative"}
+{"answers": ["March through June"], "dataset": "nq", "id": "nq-train-84", "meta": {}, "question": "when is tornado season in the united states"}
+{"answers": ["May 30, 2017"], "dataset": "nq", "id": "nq-train-84016", "meta": {}, "question": "when does season 2 of f is for family come out"}
+{"answers": ["the island of Mauritius"], "dataset": "nq", "id": "nq-train-84075", "meta": {}, "question": "where did they vacation in me before you"}
+{"answers": ["stapes"], "dataset": "nq", "id": "nq-train-84205", "meta": {}, "question": "where is the smallest bone in the human body found"}
+{"answers": ["552"], "dataset": "nq", "id": "nq-train-84242", "meta": {}, "question": "how many lok sabha seats in india state wise"}
+{"answers": ["From 1840"], "dataset": "nq", "id": "nq-train-84525", "meta": {}, "question": "when did the european settlers come to new zealand"}
+{"answers": ["Shanghai"], "dataset": "nq", "id": "nq-train-84537", "meta": {}, "question": "what's the most populated city on earth"}
+{"answers": ["Arabia", "Persia", "India"], "dataset": "nq", "id": "nq-train-84689", "meta": {}, "question": "where in the east did the magi come from"}
+{"answers": ["CBS"], "dataset": "nq", "id": "nq-train-84710", "meta": {}, "question": "who owns the rights to amos and andy"}
+{"answers": ["the 1928 Summer Olympics"], "dataset": "nq", "id": "nq-train-84841", "meta": {}, "question": "when did the olympic flame was lighted first time"}
+{"answers": ["discovery of gold in California"], "dataset": "nq", "id": "nq-train-85016", "meta": {}, "question": "where did the name golden gate bridge come from"}
+{"answers": ["John Adams"], "dataset": "nq", "id": "nq-train-85076", "meta": {}, "question": "who was the first president to live in the white house"}
+{"answers": ["Twelfth Amendment"], "dataset": "nq", "id": "nq-train-85226", "meta": {}, "question": "what part of the constitution talks about the electoral college"}
+{"answers": ["Jared Goff"], "dataset": "nq", "id": "nq-train-85346", "meta": {}, "question": "who's the starting quarterback for the la rams"}
+{"answers": ["August 28, 2018"], "dataset": "nq", "id": "nq-train-85367", "meta": {}, "question": "when does the next season of ink master come out"}
+{"answers": ["Charles Joel Nordström Kinnaman"], "dataset": "nq", "id": "nq-train-85723", "meta": {}, "question": "who plays will conway on house of cards"}
+{"answers": ["Ron Silver"], "dataset": "nq", "id": "nq-train-85881", "meta": {}, "question": "who played alan dershowitz in reversal of fortune"}
+{"answers": ["September 11, 2002"], "dataset": "nq", "id": "nq-train-86047", "meta": {}, "question": "when did 9/11 start being called patriot day"}
+{"answers": ["Jonny"], "dataset": "nq", "id": "nq-train-86085", "meta": {}, "question": "who had plank in ed edd and eddy"}
+{"answers": ["hypothalamus"], "dataset": "nq", "id": "nq-train-86232", "meta": {}, "question": "area of the brain that regulates sleep-wake cycles"}
+{"answers": ["Guayaquil"], "dataset": "nq", "id": "nq-train-86998", "meta": {}, "question": "what is the name of the largest city in ecuador"}
+{"answers": ["Springfield, Massachusetts"], "dataset": "nq", "id": "nq-train-87504", "meta": {}, "question": "where was the first game of basketball played"}
+{"answers": ["Headline News"], "dataset": "nq", "id": "nq-train-8755", "meta": {}, "question": "what does the tv station hln stand for"}
+{"answers": ["Fantasia Barrino"], "dataset": "nq", "id": "nq-train-87713", "meta": {}, "question": "who won american idol when jennifer hudson competed"}
+{"answers": ["Ed King"], "dataset": "nq", "id": "nq-train-87720", "meta": {}, "question": "who played the guitar solo on sweet home alabama"}
+{"answers": ["thirteen"], "dataset": "nq", "id": "nq-train-87807", "meta": {}, "question": "how many hawaiian letters are in the alphabet"}
+{"answers": ["Paul of Tarsus"], "dataset": "nq", "id": "nq-train-8877", "meta": {}, "question": "who wrote 13 books in the new testament"}
+{"answers": ["the West Indies"], "dataset": "nq", "id": "nq-train-9178", "meta": {}, "question": "who won women's title of 2016 icc world t20"}
+{"answers": ["1973"], "dataset": "nq", "id": "nq-train-9325", "meta": {}, "question": "when was the ombudsman’s office in england set up"}
+{"answers": ["Purandara Dāsa"], "dataset": "nq", "id": "nq-train-936", "meta": {}, "question": "who is known as father of karnataka music"}
+{"answers": ["Grand Haven, Michigan"], "dataset": "nq", "id": "nq-train-9624", "meta": {}, "question": "where is american pie 2 supposed to take place"}
+{"answers": ["1776"], "dataset": "nq", "id": "nq-train-9960", "meta": {}, "question": "when did the colonies officially become the united states"}

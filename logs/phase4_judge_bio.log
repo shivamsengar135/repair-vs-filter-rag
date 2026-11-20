@@ -1,0 +1,70 @@
+VLLM_READY
+##### judge validation on FActScore human labels
+InstructGPT {"n_facts": 4071, "n_unreadable": 0, "cohen_kappa": 0.7347976507375592, "kappa_95ci": [0.7133189256569613, 0.7557503719402423], "raw_agreement": 0.8678457381478752, "confusion": {"human_S_judge_S": 1907, "human_S_judge_NS": 193, "human_NS_judge_S": 345, "human_NS_judge_NS": 1626}, "factscore_human": 0.4739105037693224, "factscore_judge": 0.5132733663572364, "error_rate": 0.039362862587913994}
+ChatGPT {"n_facts": 4886, "n_unreadable": 0, "cohen_kappa": 0.6233607849363643, "kappa_95ci": [0.5999455555061181, 0.6478339317429371], "raw_agreement": 0.8354482194023741, "confusion": {"human_S_judge_S": 2918, "human_S_judge_NS": 276, "human_NS_judge_S": 528, "human_NS_judge_NS": 1164}, "factscore_human": 0.623312494599871, "factscore_judge": 0.6787626590903612, "error_rate": 0.05545016449049012}
+PerplexityAI {"n_facts": 5568, "n_unreadable": 0, "cohen_kappa": 0.4700594727342662, "kappa_95ci": [0.4373858129315367, 0.5041081931945574], "raw_agreement": 0.8613505747126436, "confusion": {"human_S_judge_S": 4323, "human_S_judge_NS": 489, "human_NS_judge_S": 283, "human_NS_judge_NS": 473}, "factscore_human": 0.8402076186969606, "factscore_judge": 0.8109707401547749, "error_rate": 0.029236878542185707}
+pooled {"n_facts": 14525, "cohen_kappa": 0.6518248014118297, "kappa_95ci": [0.6383264515049439, 0.664807930700403], "raw_agreement": 0.8544578313253012}
+wrote results/phase4/judge_validation_factscore.json
+##### judge longform -> results/dev/bio/longform__Qwen2.5-7B-Instruct__39454917f215/
+{"run": "results/dev/bio/longform__Qwen2.5-7B-Instruct__39454917f215", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 2818, "n_supported": 2323, "supported_rate": 0.8243435060326473, "n_unreadable": 0, "cost": {"judge": {"calls": 2818, "cache_hits": 0, "prompt_tokens": 3171565, "completion_tokens": 2818}}, "git_commit": "6355802+dirty"}
+##### judge cove-closed_book -> results/dev/bio/cove-closed_book__Qwen2.5-7B-Instruct__0eeb0eb0edd8/
+{"run": "results/dev/bio/cove-closed_book__Qwen2.5-7B-Instruct__0eeb0eb0edd8", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 800, "n_supported": 320, "supported_rate": 0.4, "n_unreadable": 0, "cost": {"judge": {"calls": 800, "cache_hits": 6, "prompt_tokens": 960750, "completion_tokens": 800}}, "git_commit": "6355802+dirty"}
+##### judge cove-rag_verify -> results/dev/bio/cove-rag_verify__Qwen2.5-7B-Instruct__8addd1f8f25e/
+{"run": "results/dev/bio/cove-rag_verify__Qwen2.5-7B-Instruct__8addd1f8f25e", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 750, "n_supported": 368, "supported_rate": 0.49066666666666664, "n_unreadable": 0, "cost": {"judge": {"calls": 750, "cache_hits": 190, "prompt_tokens": 949250, "completion_tokens": 750}}, "git_commit": "6355802+dirty"}
+##### judge rarr -> results/dev/bio/rarr__Qwen2.5-7B-Instruct__8c772fdf2558/
+{"run": "results/dev/bio/rarr__Qwen2.5-7B-Instruct__8c772fdf2558", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 2081, "n_supported": 877, "supported_rate": 0.4214320038443056, "n_unreadable": 0, "cost": {"judge": {"calls": 2081, "cache_hits": 342, "prompt_tokens": 2527953, "completion_tokens": 2081}}, "git_commit": "6355802+dirty"}
+##### judge flare -> results/dev/bio/flare__Qwen2.5-7B-Instruct__e7c9cf098b08/
+{"run": "results/dev/bio/flare__Qwen2.5-7B-Instruct__e7c9cf098b08", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "factscore-layout (hallu.factscore_kb)", "claims_without_kb_page": 0, "n_claims": 1513, "n_supported": 978, "supported_rate": 0.6463978849966953, "n_unreadable": 0, "cost": {"judge": {"calls": 1513, "cache_hits": 307, "prompt_tokens": 1776350, "completion_tokens": 1513}}, "git_commit": "6355802+dirty"}
+##### analysis results/dev/bio/longform__Qwen2.5-7B-Instruct__39454917f215/
+A vs CF @0.90, partition 0: {"supported_per_response": {"diff": 0.0, "ci_low": 0.0, "ci_high": 0.0, "p_value": 1.0, "n": 75, "n_resamples": 10000, "seed": 0}, "precision_micro_diff": {"diff": 0.0, "one_sided_95_lower": 0.0, "n_valid_resamples": 10000}, "non_inferiority_margin": -0.02, "guard_holds": true}
+pilot: {"q_cf_full_dev_at_0.90": 0.9804443120956421, "claims_dropped_by_CF": 2708, "of_which_judge_supported_originally": 2232, "repair_attempted": 258, "repair_output_judge_supported": 78, "R": 0.02880354505169867, "R_net": 0.0, "R_kept": 0.00036927621861152144, "note": "R = preregistered definition (repair output judge-supported); R_net = original was unsupported; R_kept = also passes the CF threshold after repair"}
+method                                       supported_claims_per_r   claims_kept_per_respon           non_empty_rate   factual_precision_micr   all_retained_correct_r
+standard RAG (all claims)                             15.503±0.642            18.806±0.603             0.941±0.019             0.824±0.019             0.213±0.031
+CoVe factor+revise (closed-book)                       2.174±0.238             5.398±0.369             0.634±0.036             0.402±0.030             0.380±0.036
+CoVe factor+revise (retrieval-verified)                2.501±0.274             5.065±0.371             0.666±0.036             0.493±0.033             0.375±0.037
+RARR-style revise-all                                  5.909±0.527            13.950±0.737             0.753±0.034             0.423±0.027             0.299±0.035
+FLARE-direct                                           6.618±0.445            10.229±0.556             0.718±0.033             0.647±0.024             0.354±0.036
+CF (score s) @0.8                                      2.309±0.527             2.667±0.643             0.762±0.072             0.869±0.025             0.796±0.061
+C (two-signal) @0.8                                    3.258±0.583             3.608±0.691             0.702±0.066             0.905±0.024             0.795±0.063
+A (repair all) @0.8                                    2.342±0.535             2.700±0.651             0.769±0.071             0.871±0.025             0.796±0.061
+SelfCheckGPT-NLI @0.8                                  3.041±0.672             3.298±0.769             0.764±0.082             0.925±0.017             0.799±0.065
+CF (score s) @0.85                                     1.439±0.527             1.687±0.625             0.625±0.110             0.855±0.027             0.845±0.055
+C (two-signal) @0.85                                   2.336±0.707             2.567±0.801             0.581±0.099             0.913±0.022             0.851±0.056
+A (repair all) @0.85                                   1.458±0.533             1.706±0.631             0.630±0.111             0.857±0.027             0.845±0.055
+SelfCheckGPT-NLI @0.85                                 2.339±0.451             2.516±0.522             0.669±0.078             0.932±0.020             0.848±0.060
+CF (score s) @0.9                                      0.641±0.276             0.768±0.350             0.409±0.099             0.843±0.049             0.904±0.049
+C (two-signal) @0.9                                    1.403±0.385             1.523±0.446             0.422±0.074             0.926±0.030             0.909±0.045
+A (repair all) @0.9                                    0.643±0.278             0.771±0.352             0.410±0.099             0.844±0.048             0.904±0.049
+SelfCheckGPT-NLI @0.9                                  1.858±0.329             1.971±0.371             0.579±0.070             0.945±0.021             0.899±0.050
+CF (score s) @0.95                                     0.374±0.088             0.430±0.112             0.270±0.059             0.880±0.064             0.958±0.029
+C (two-signal) @0.95                                   1.109±0.158             1.159±0.178             0.371±0.038             0.959±0.030             0.958±0.034
+A (repair all) @0.95                                   0.374±0.088             0.430±0.112             0.270±0.059             0.880±0.064             0.958±0.029
+SelfCheckGPT-NLI @0.95                                 0.873±0.428             0.920±0.470             0.408±0.090             0.958±0.022             0.958±0.038
+wrote results/dev/bio/comparison__v2__phi-4-FP8-dynamic.json
+##### ASQA re-analysis (adds SelfCheckGPT)
+A vs CF @0.90, partition 0: {"supported_per_response": {"diff": 0.02, "ci_low": 0.0, "ci_high": 0.06, "p_value": 0.7452, "n": 100, "n_resamples": 10000, "seed": 0}, "precision_micro_diff": {"diff": -0.011122345803842304, "one_sided_95_lower": -0.049632352941176516, "n_valid_resamples": 10000}, "non_inferiority_margin": -0.02, "guard_holds": false}
+pilot: {"q_cf_full_dev_at_0.90": 0.9750639796257019, "claims_dropped_by_CF": 319, "of_which_judge_supported_originally": 198, "repair_attempted": 53, "repair_output_judge_supported": 15, "R": 0.047021943573667714, "R_net": 0.0, "R_kept": 0.009404388714733543, "note": "R = preregistered definition (repair output judge-supported); R_net = original was unsupported; R_kept = also passes the CF threshold after repair"}
+method                                       supported_claims_per_r   claims_kept_per_respon           non_empty_rate   factual_precision_micr   all_retained_correct_r
+standard RAG (all claims)                              1.436±0.139             2.219±0.190             0.675±0.034             0.648±0.043             0.693±0.033
+CoVe factor+revise (closed-book)                       1.067±0.105             2.280±0.188             0.730±0.032             0.469±0.034             0.528±0.033
+CoVe factor+revise (retrieval-verified)                1.085±0.106             2.086±0.209             0.629±0.033             0.522±0.037             0.617±0.033
+RARR-style revise-all                                  2.016±0.184             4.530±0.294             0.863±0.023             0.445±0.028             0.251±0.032
+FLARE-direct                                           1.436±0.127             2.281±0.221             0.687±0.038             0.632±0.038             0.667±0.037
+CF (score s) @0.8                                      0.962±0.217             1.416±0.380             0.525±0.089             0.689±0.056             0.796±0.060
+C (two-signal) @0.8                                    0.857±0.217             1.262±0.373             0.481±0.082             0.688±0.056             0.794±0.062
+A (repair all) @0.8                                    0.933±0.212             1.367±0.374             0.512±0.093             0.692±0.057             0.798±0.060
+SelfCheckGPT-NLI @0.8                                  0.911±0.250             1.295±0.398             0.569±0.092             0.712±0.051             0.794±0.065
+CF (score s) @0.85                                     0.655±0.181             0.944±0.309             0.396±0.092             0.705±0.061             0.848±0.055
+C (two-signal) @0.85                                   0.649±0.149             0.917±0.248             0.383±0.079             0.717±0.065             0.847±0.054
+A (repair all) @0.85                                   0.659±0.168             0.946±0.283             0.396±0.088             0.707±0.059             0.849±0.054
+SelfCheckGPT-NLI @0.85                                 0.576±0.177             0.833±0.287             0.442±0.100             0.700±0.059             0.846±0.060
+CF (score s) @0.9                                      0.454±0.116             0.640±0.190             0.299±0.070             0.720±0.072             0.894±0.047
+C (two-signal) @0.9                                    0.468±0.149             0.626±0.232             0.268±0.080             0.764±0.068             0.896±0.048
+A (repair all) @0.9                                    0.459±0.121             0.648±0.197             0.302±0.071             0.719±0.068             0.893±0.046
+SelfCheckGPT-NLI @0.9                                  0.349±0.103             0.505±0.175             0.309±0.081             0.706±0.085             0.899±0.049
+CF (score s) @0.95                                     0.246±0.089             0.346±0.142             0.176±0.064             0.735±0.097             0.948±0.035
+C (two-signal) @0.95                                   0.273±0.092             0.333±0.129             0.161±0.047             0.835±0.075             0.953±0.030
+A (repair all) @0.95                                   0.241±0.088             0.338±0.142             0.175±0.064             0.735±0.099             0.948±0.035
+SelfCheckGPT-NLI @0.95                                 0.220±0.062             0.296±0.101             0.197±0.059             0.765±0.097             0.947±0.034
+wrote results/dev/asqa/comparison__v2__phi-4-FP8-dynamic.json
+JUDGE_BIO_END

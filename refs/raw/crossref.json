@@ -1,0 +1,45 @@
+{
+ "10.1038/s41586-024-07421-0": {
+  "title": "Detecting hallucinations in large language models using semantic entropy",
+  "authors": [
+   "Sebastian Farquhar",
+   "Jannik Kossen",
+   "Lorenz Kuhn",
+   "Yarin Gal"
+  ],
+  "container": "Nature",
+  "issued": [
+   [
+    2024,
+    6,
+    19
+   ]
+  ],
+  "volume": "630",
+  "page": "625-630",
+  "type": "journal-article",
+  "publisher": "Springer Science and Business Media LLC"
+ },
+ "10.1145/3774904.3792598": {
+  "title": "SeaRAG: Reducing Hallucination in Retrieval-Augmented Generation via Statement-Entity Adaptive Ranking",
+  "authors": [
+   "Xiaosong Yuan",
+   "Xiaofeng Zhang",
+   "Di Zhao",
+   "Yijia Zhang",
+   "Ying Wang"
+  ],
+  "container": "Proceedings of the ACM Web Conference 2026",
+  "issued": [
+   [
+    2026,
+    4,
+    12
+   ]
+  ],
+  "volume": null,
+  "page": "2339-2348",
+  "type": "proceedings-article",
+  "publisher": "ACM"
+ }
+}

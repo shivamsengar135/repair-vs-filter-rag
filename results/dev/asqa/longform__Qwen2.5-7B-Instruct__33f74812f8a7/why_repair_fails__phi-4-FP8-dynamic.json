@@ -1,0 +1,42 @@
+{
+ "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+ "n_claims": 443,
+ "judge_supported_rate": 0.6523702031602708,
+ "auroc_vs_judge": {
+  "s (CF score: MiniCheck support)": 0.5876960409832382,
+  "score_c (C: two-signal)": 0.592257223745113,
+  "c (closed-book confidence alone)": 0.5702489551970521,
+  "1 - SelfCheckGPT contradiction": 0.6158720172561003
+ },
+ "cf_threshold_at_0.90": 0.9750639796257019,
+ "claims_above_cf_threshold": 124,
+ "support_score_quantiles": {
+  "0.1": 0.1952250689268112,
+  "0.25": 0.8915121555328369,
+  "0.5": 0.961250901222229,
+  "0.75": 0.9761814177036285,
+  "0.9": 0.9831721901893615
+ },
+ "revise": {
+  "n": 27,
+  "original_judge_supported": 13,
+  "returned_DELETE": 27,
+  "revised_text_judge_supported": 0
+ },
+ "reretrieve": {
+  "n": 26,
+  "original_judge_supported": 15,
+  "support_increased": 16,
+  "crossed_cf_threshold": 4,
+  "median_s_before": 0.13981931656599045,
+  "median_s_after": 0.2635101303458214
+ },
+ "low": {
+  "n": 17,
+  "judge_supported": 7
+ },
+ "keep": {
+  "n": 373,
+  "judge_supported": 254
+ }
+}

@@ -1,0 +1,3 @@
+{"model": "mistralai/Mistral-7B-Instruct-v0.3", "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71", "extra_args": "", "status": "VLLM_READY", "model_load_GiB": 13.51,
+ "kv_cache_tokens": 30352, "gpu_used_MiB_with_server": 19077, "fits_rule_ge_16000_kv_tokens": true,
+ "bench": "results/phase4/fit/mistralai_Mistral-7B-Instruct-v0.3_bench.json", "server_log": "logs/vllm_docker_20261116_053339.log", "errors": "", "date_utc": "2026-11-16T05:36:17Z", "git_commit": "5691914"}

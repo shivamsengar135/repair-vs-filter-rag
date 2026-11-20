@@ -1,0 +1,57 @@
+##### asqa longform 2026-11-14T07:17:08Z
+[07:17:10] stage retrieve done in 0s
+[07:17:10] stage generate done in 0s
+[07:17:10] stage decompose done in 0s
+[07:15:48] stage load_verifier done in 6s
+[07:21:58] stage minicheck done in 377s
+[07:22:00] stage load_verifier done in 2s
+[07:26:58] stage nli done in 300s
+[07:27:01] stage closed_book_truth done in 3s
+[07:27:13] stage revise done in 12s
+[07:27:13] stage rescore_revised done in 0s
+[07:29:07] stage reretrieve done in 23s
+[07:29:19] stage rescore_reretrieved done in 12s
+{"n": 200, "claims_per_response_mean": 2.215, "responses_with_zero_claims": 65, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 373, "revise": 27, "reretrieve": 26, "low": 17}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 27, "revise_deleted": 27, "revise_now_supported": 0, "reretrieve_attempted": 26, "reretrieve_now_supported": 9}, "mean_support_all_claims": 0.8224275407547438}
+seconds: {'retrieve': 0.0, 'generate': 0.01, 'decompose': 0.01, 'load_verifier': 8.81, 'minicheck': 377.06, 'nli': 300.21, 'closed_book_truth': 2.89, 'revise': 12.34, 'rescore_revised': 0.0, 'reretrieve': 23.26, 'rescore_reretrieved': 12.18}
+wrote results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7/summary.json
+##### asqa cove-closed_book
+{"n": 200, "planned_facts_per_response": 3.665, "responses_with_no_parsable_plan": 2, "verdicts": {"CONSISTENT": 402, "PARTIALLY CONSISTENT": 112, "INCONSISTENT": 219, "UNPARSED": 0}, "final_claims_per_response": 2.255, "empty_final_answers": 28}
+wrote results/dev/asqa/cove-closed_book__Qwen2.5-7B-Instruct__515f55fc1215/summary.json
+##### asqa cove-rag_verify
+{"n": 200, "planned_facts_per_response": 3.665, "responses_with_no_parsable_plan": 2, "verdicts": {"CONSISTENT": 251, "PARTIALLY CONSISTENT": 228, "INCONSISTENT": 254, "UNPARSED": 0}, "final_claims_per_response": 2.085, "empty_final_answers": 39}
+wrote results/dev/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__375c900c29f7/summary.json
+##### asqa run_rarr
+{"n": 200, "questions_per_response": 5.635, "agreement_checks": 1127, "disagreements": 192, "agreement_unparsed": 1, "edits_applied": 174, "responses_edited": 103, "final_claims_per_response": 4.52}
+wrote results/dev/asqa/rarr__Qwen2.5-7B-Instruct__253ebf694f1d/summary.json
+##### asqa run_flare
+{"n": 200, "sentences_per_response": 4.17, "retrievals_per_response": 4.14, "retrieval_rate_after_first": 0.9905362776025236, "hit_max_steps": 0, "final_claims_per_response": 2.28}
+wrote results/dev/asqa/flare__Qwen2.5-7B-Instruct__180338fd77ba/summary.json
+##### bio longform 2026-11-14T07:31:55Z
+[07:31:56] stage retrieve done in 0s
+[07:31:56] stage generate done in 0s
+[07:31:56] stage decompose done in 0s
+[07:32:02] stage load_verifier done in 5s
+[08:06:15] stage minicheck done in 2057s
+[10:02:06] stage load_verifier done in 6952s
+[10:29:03] stage nli done in 8569s
+[10:29:09] stage closed_book_truth done in 7s
+[10:29:12] stage revise done in 2s
+[10:29:15] stage rescore_revised done in 3s
+[10:29:33] stage reretrieve done in 18s
+[10:29:59] stage rescore_reretrieved done in 26s
+{"n": 150, "claims_per_response_mean": 18.76, "responses_with_zero_claims": 9, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 2454, "revise": 162, "reretrieve": 96, "low": 102}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 162, "revise_deleted": 157, "revise_now_supported": 2, "reretrieve_attempted": 96, "reretrieve_now_supported": 27}, "mean_support_all_claims": 0.8331096461919807}
+seconds: {'retrieve': 0.0, 'generate': 0.01, 'decompose': 0.01, 'load_verifier': 6956.94, 'minicheck': 2057.11, 'nli': 8569.36, 'closed_book_truth': 6.67, 'revise': 2.35, 'rescore_revised': 3.11, 'reretrieve': 18.1, 'rescore_reretrieved': 25.58}
+wrote results/dev/bio/longform__Qwen2.5-7B-Instruct__39454917f215/summary.json
+##### bio cove-closed_book
+{"n": 150, "planned_facts_per_response": 7.873333333333333, "responses_with_no_parsable_plan": 0, "verdicts": {"CONSISTENT": 363, "PARTIALLY CONSISTENT": 263, "INCONSISTENT": 555, "UNPARSED": 0}, "final_claims_per_response": 5.333333333333333, "empty_final_answers": 9}
+wrote results/dev/bio/cove-closed_book__Qwen2.5-7B-Instruct__0eeb0eb0edd8/summary.json
+##### bio cove-rag_verify
+{"n": 150, "planned_facts_per_response": 7.873333333333333, "responses_with_no_parsable_plan": 0, "verdicts": {"CONSISTENT": 226, "PARTIALLY CONSISTENT": 301, "INCONSISTENT": 654, "UNPARSED": 0}, "final_claims_per_response": 5.0, "empty_final_answers": 17}
+wrote results/dev/bio/cove-rag_verify__Qwen2.5-7B-Instruct__8addd1f8f25e/summary.json
+##### bio run_rarr
+{"n": 150, "questions_per_response": 7.38, "agreement_checks": 1107, "disagreements": 200, "agreement_unparsed": 0, "edits_applied": 170, "responses_edited": 101, "final_claims_per_response": 13.873333333333333}
+wrote results/dev/bio/rarr__Qwen2.5-7B-Instruct__8c772fdf2558/summary.json
+##### bio run_flare
+{"n": 150, "sentences_per_response": 8.046666666666667, "retrievals_per_response": 8.013333333333334, "retrieval_rate_after_first": 0.9952696310312205, "hit_max_steps": 0, "final_claims_per_response": 10.086666666666666}
+wrote results/dev/bio/flare__Qwen2.5-7B-Instruct__e7c9cf098b08/summary.json
+LONGFORM_V2_END

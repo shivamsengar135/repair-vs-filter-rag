@@ -1,0 +1,11 @@
+  warnings.warn(
+MiniCheck loaded on cpu in 4.6s; label token ids decode to: ['', '1']
+NLI loaded on cpu in 1.1s; label index: {'entailment': 0, 'neutral': 1, 'contradiction': 2}
+ok  minicheck=0.928 nli(e/n/c)=1.00/0.00/0.00 expect sup=True con=False | Marie Curie was born in Warsaw.
+ok  minicheck=0.945 nli(e/n/c)=1.00/0.00/0.00 expect sup=True con=False | Marie Curie won the Nobel Prize in Chemistry in 1911.
+ok  minicheck=0.031 nli(e/n/c)=0.00/0.00/1.00 expect sup=False con=True | Marie Curie was born in Paris.
+ok  minicheck=0.042 nli(e/n/c)=0.00/0.00/0.99 expect sup=False con=True | Marie Curie won the Nobel Prize in Physics in 1921.
+ok  minicheck=0.013 nli(e/n/c)=0.00/1.00/0.00 expect sup=False con=False | Marie Curie had two daughters.
+ok  minicheck=0.012 nli(e/n/c)=0.00/0.01/0.99 expect sup=False con=None | The Eiffel Tower is in Berlin.
+timing for 6 pairs: minicheck 0.66s, nli 0.43s
+VERIFIER_SANITY_OK

@@ -1,0 +1,38 @@
+{
+ "annotator": "assistant (Claude), 2026-11-17 \u2014 NOT a human annotation; categories from EXPERIMENT_PLAN.md \u00a78 plus 'unclear'; based only on the claim, the best retrieved passage (first 380 chars) and the judge label shown by scripts/show_failure_sample.py; must be checked by a human before any number from it is reported as a hand categorisation",
+ "codes": {
+  "JE": "judge error \u2014 claim is supported by the retrieved Wikipedia text (often a different page than the judge's evidence: FActScore uses only the topic's page, ASQA uses the oracle documents), judge says unsupported",
+  "RM": "retrieval miss \u2014 wrong entity retrieved (name collision), evidence not retrieved, or misleading/imprecise source passage",
+  "VFP": "verifier false positive \u2014 passage does not support the claim but s is high",
+  "VFN": "verifier false negative \u2014 passage supports the claim but s is below the conformal threshold (0.98 bio / 0.974 ASQA)",
+  "DE": "decomposition error \u2014 claim is a hedge, fragment or truncated list item",
+  "RE": "revision error",
+  "UNC": "unclear from the shown evidence"
+ },
+ "n": 96,
+ "counts": {
+  "bio/wrong_but_kept": {
+   "JE": 12,
+   "RM": 6,
+   "UNC": 2,
+   "VFP": 1
+  },
+  "bio/correct_but_dropped": {
+   "VFN": 21,
+   "RM": 1,
+   "UNC": 3
+  },
+  "asqa/wrong_but_kept": {
+   "JE": 18,
+   "VFP": 4,
+   "RM": 1,
+   "UNC": 2
+  },
+  "asqa/correct_but_dropped": {
+   "VFN": 16,
+   "RM": 3,
+   "DE": 2,
+   "UNC": 4
+  }
+ }
+}

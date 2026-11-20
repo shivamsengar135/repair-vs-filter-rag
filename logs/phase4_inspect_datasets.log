@@ -1,0 +1,25 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Repo card metadata block was not found. Setting CardData to empty.
+##### akariasai/PopQA [None]
+  split test: 14267 rows; features: ['id', 'subj', 'prop', 'obj', 'subj_id', 'prop_id', 'obj_id', 's_aliases', 'o_aliases', 's_uri', 'o_uri', 's_wiki_title', 'o_wiki_title', 's_pop', 'o_pop', 'question', 'possible_answers']
+  example: {"id": 4222362, "subj": "George Rankin", "prop": "occupation", "obj": "politician", "subj_id": 1850297, "prop_id": 22, "obj_id": 2834605, "s_aliases": "[\"George James Rankin\"]", "o_aliases": "[\"political leader\",\"political figure\",\"polit.\",\"pol\"]", "s_uri": "http://www.wikidata.org/entity/Q5543720", "o_uri": "http://www.wikidata.org/entity/Q82955", "s_wiki_title": "George Rankin", "o_wiki_title": "Politician", "s_pop": 142, "o_pop": 25692, "question": "What is George Rankin's occupation?", "possible_answers": "[\"politician\", \"political leader\", \"political figure\", \"polit.\", \"pol\"]"}
+##### google-research-datasets/nq_open [nq_open]
+Ignoring part of dataset_info from the dataset card: The `splits` field in YAML is malformed or missing the name/num_examples/num_bytes fields
+Ignoring part of dataset_info from the dataset card: The `splits` field in YAML is malformed or missing the name/num_examples/num_bytes fields
+Ignoring part of dataset_info from the dataset card: The `splits` field in YAML is malformed or missing the name/num_examples/num_bytes fields
+Ignoring part of dataset_info from the dataset card: The `splits` field in YAML is malformed or missing the name/num_examples/num_bytes fields
+  split train: 87925 rows; features: ['question', 'answer']
+  split validation: 3610 rows; features: ['question', 'answer']
+  example: {"question": "where did they film hot tub time machine", "answer": ["Fernie Alpine Resort"]}
+##### mandarjoshi/trivia_qa [rc.nocontext]
+  split train: 138384 rows; features: ['question', 'question_id', 'question_source', 'entity_pages', 'search_results', 'answer']
+  split validation: 17944 rows; features: ['question', 'question_id', 'question_source', 'entity_pages', 'search_results', 'answer']
+  split test: 17210 rows; features: ['question', 'question_id', 'question_source', 'entity_pages', 'search_results', 'answer']
+  example: {"question": "Which American-born Sinclair won the Nobel Prize for Literature in 1930?", "question_id": "tc_1", "question_source": "http://www.triviacountry.com/", "entity_pages": {"doc_source": [], "filename": [], "title": [], "wiki_context": []}, "search_results": {"description": [], "filename": [], "rank": [], "title": [], "url": [], "search_context": []}, "answer": "{'aliases': ['(Harry) Sinclair Lewis', 'Harry Sinclair Lewis', 'Lewis, (Harry) Sinclair', 'Grace Hegger', 'Sinclair Lewis'], 'normalized_aliases': ['grace hegger', 'lewis harry sinclair', 'harry sinclair lewis', 'sinclair lewis'], 'matched_wiki_entity_name': '\u2026"}
+##### hotpotqa/hotpot_qa [fullwiki]
+  split train: 90447 rows; features: ['id', 'question', 'answer', 'type', 'level', 'supporting_facts', 'context']
+  split validation: 7405 rows; features: ['id', 'question', 'answer', 'type', 'level', 'supporting_facts', 'context']
+  split test: 7405 rows; features: ['id', 'question', 'answer', 'type', 'level', 'supporting_facts', 'context']
+  example: {"id": "5a7a06935542990198eaf050", "question": "Which magazine was started first Arthur's Magazine or First for Women?", "answer": "Arthur's Magazine", "type": "comparison", "level": "medium", "supporting_facts": {"title": ["Arthur's Magazine", "First for Women"], "sent_id": [0, 0]}, "context": "{'title': ['Radio City (Indian radio station)', 'History of Albanian football', 'Echosmith', \"Women's colleges in the Southern United States\", 'First Arthur County Courthouse and Jail', \"Arthur's Magazine\", '2014\u201315 Ukrainian Hockey Championship', 'First for W\u2026"}
+##### xanhho/2WikiMultihopQA [None]
+  LOAD FAILED: RuntimeError Dataset scripts are no longer supported, but found 2WikiMultihopQA.py

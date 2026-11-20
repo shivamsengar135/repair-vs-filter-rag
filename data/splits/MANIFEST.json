@@ -1,0 +1,102 @@
+{
+ "2wiki_dev": {
+  "n": 500,
+  "requested": 500,
+  "seed": "20261113-2wiki-dev",
+  "sha256": "026052cb8eed2b60c8ea7faede927ff97e5e42cdeb4bd075dee312309a8e87d6",
+  "source_rows": 167454,
+  "source_split": "train"
+ },
+ "2wiki_test": {
+  "n": 1000,
+  "requested": 1000,
+  "seed": "20261113-2wiki-test",
+  "sha256": "5a0582f520eb3883afade49e13cb278e7c5e916d9c7b8c375fa8e2951165c45f",
+  "source_rows": 12576,
+  "source_split": "dev"
+ },
+ "asqa_dev": {
+  "n": 200,
+  "seed": "20261113-asqa",
+  "sha256": "79f8426f1ad62d67e96ca45d04dcf1d659382375c3eaf3a0e23cc69ca502417e"
+ },
+ "asqa_test": {
+  "n": 748,
+  "seed": "20261113-asqa",
+  "sha256": "f70f34e34870814785fa4f07a68d73e7f8e1d0df02e94b50b57c02814e5bc3c2"
+ },
+ "bio_dev": {
+  "n": 150,
+  "seed": "20261113-bio",
+  "sha256": "8050a6a627e1dd35feae7b3ee995910cc2da6b77ecd1e6315cdac1216bd59f60"
+ },
+ "bio_test": {
+  "n": 350,
+  "seed": "20261113-bio",
+  "sha256": "04132abe61c474b8137d71c8c908f6584c7bed5874791003166572ecc9050d7c"
+ },
+ "hotpotqa_dev": {
+  "n": 500,
+  "requested": 500,
+  "seed": "20261113-hotpotqa-dev",
+  "sha256": "7500504edbd36a531e81deaa9def2d737e2f4d74bb41d6d7ba4744f3d28ca52d",
+  "source_rows": 90447,
+  "source_split": "train"
+ },
+ "hotpotqa_test": {
+  "n": 1000,
+  "requested": 1000,
+  "seed": "20261113-hotpotqa-test",
+  "sha256": "0089f77a7843336981e1ca146ab22b899a0d50e2e7e970c851f51b8279ee3797",
+  "source_rows": 7405,
+  "source_split": "validation"
+ },
+ "nq_dev": {
+  "n": 500,
+  "requested": 500,
+  "seed": "20261113-nq-dev",
+  "sha256": "5a50e0257680200937375336df3638fd8e775350f64ef77c458f381f9a8de4fb",
+  "source_rows": 87925,
+  "source_split": "train"
+ },
+ "nq_test": {
+  "n": 1000,
+  "requested": 1000,
+  "seed": "20261113-nq-test",
+  "sha256": "841e9d191dc6fd50371a5560b19ae4a96edbf4118def144a98aa6f63c5795376",
+  "source_rows": 3610,
+  "source_split": "validation"
+ },
+ "popqa_dev": {
+  "n": 500,
+  "requested": 500,
+  "seed": "20261113-popqa-dev",
+  "sha256": "b8c61d3267f193c67f3fa1c2803723382382b77087f90f7e2aa2aefbcd9a50d6",
+  "source_rows": 14267,
+  "source_split": "test"
+ },
+ "popqa_test": {
+  "n": 1000,
+  "requested": 1000,
+  "seed": "20261113-popqa-test",
+  "sha256": "c460bd269b613522a8f5aa718ba27cef2316c0ba79309a6ce065f07fb8134d24",
+  "source_rows": 14267,
+  "source_split": "test"
+ },
+ "triviaqa_dev": {
+  "n": 500,
+  "requested": 500,
+  "seed": "20261113-triviaqa-dev",
+  "sha256": "edd5df00e005d6a3b0c8ca6b51f2af127f6b9a033d4ab924820f3ed0fc34dabe",
+  "source_rows": 138384,
+  "source_split": "train"
+ },
+ "triviaqa_test": {
+  "n": 1000,
+  "requested": 1000,
+  "seed": "20261113-triviaqa-test",
+  "sha256": "332949bf443218f7a62ef1a9df82a4d92a479398a8780348d1e41f7c57230251",
+  "source_rows": 17944,
+  "source_split": "validation"
+ }
+}

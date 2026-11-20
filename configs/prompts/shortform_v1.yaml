@@ -1,0 +1,19 @@
+# Short-form additions to prompt set v1 — written 2026-11-14 before any short-form run of A / C / CF.
+version: shortform_v1
+
+qa_to_claim: |
+  Rewrite the question and its answer as one short declarative sentence that states the answer. Do not add
+  anything else.
+
+  Question: {question}
+  Answer: {answer}
+  Sentence:
+
+short_rag_with_passage: |
+  Answer the question with a short phrase of a few words, using the passage below. Do not explain.
+
+  Passage:
+  {passages}
+
+  Question: {question}
+  Answer:

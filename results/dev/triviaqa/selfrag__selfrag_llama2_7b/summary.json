@@ -1,0 +1,26 @@
+{
+ "n": 500,
+ "dataset": "triviaqa",
+ "split": "dev",
+ "match_official": 0.558,
+ "match_ours_normalised": 0.704,
+ "retrieval_frequency": 1.0,
+ "passages": "our BM25 top-10",
+ "model": "selfrag/selfrag_llama2_7b",
+ "settings": {
+  "threshold": 0.2,
+  "ndocs": 10,
+  "max_new_tokens": 100,
+  "w_rel": 1.0,
+  "w_sup": 1.0,
+  "w_use": 1.0,
+  "dtype": "float16"
+ },
+ "cost": {
+  "calls": 5500,
+  "prompt_tokens": 1036854,
+  "completion_tokens": 137944,
+  "seconds": 329.4
+ },
+ "git_commit": "ca06d0f+dirty"
+}

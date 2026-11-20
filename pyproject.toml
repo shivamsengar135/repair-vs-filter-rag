@@ -1,0 +1,23 @@
+[project]
+name = "halluc-rag-verify"
+version = "0.0.1"
+description = "Hallucination mitigation in LLMs with retrieval-augmented and verification-based frameworks (research code)"
+requires-python = ">=3.12,<3.13"
+# Phase 0 only pins what the environment check needs. Further deps are added per phase;
+# exact resolved versions live in uv.lock (committed).
+dependencies = [
+    "bm25s>=0.3.16",
+    "datasets>=5.2.0",
+    "matplotlib>=3.11.2",
+    "nltk>=3.10.4",
+    "pystemmer>=3.1.0",
+    "pyyaml>=6.0.3",
+    "rank-bm25>=0.2.2",
+    "scipy>=1.18.1",
+    "vllm==0.33.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+]

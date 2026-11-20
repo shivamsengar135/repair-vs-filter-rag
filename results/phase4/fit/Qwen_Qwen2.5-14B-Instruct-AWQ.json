@@ -1,0 +1,3 @@
+{"model": "Qwen/Qwen2.5-14B-Instruct-AWQ", "revision": "539535859b135b0244c91f3e59816150c8056698", "extra_args": "", "status": "VLLM_READY", "model_load_GiB": 9.38,
+ "kv_cache_tokens": 34688, "gpu_used_MiB_with_server": 18384, "fits_rule_ge_16000_kv_tokens": true,
+ "bench": "results/phase4/fit/Qwen_Qwen2.5-14B-Instruct-AWQ_bench.json", "server_log": "logs/vllm_docker_20261117_204316.log", "errors": "", "date_utc": "2026-11-17T20:45:38Z", "git_commit": "c2816f5"}

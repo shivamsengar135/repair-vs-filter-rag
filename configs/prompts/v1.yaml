@@ -1,0 +1,77 @@
+# Prompt set v1 — written 2026-11-13 before any tuning or test run (EXPERIMENT_PLAN.md §5, §9).
+# Editing a prompt counts as one of a method's 20 dev configurations and needs a new version file.
+version: v1
+
+short_closed_book: |
+  Answer the question with a short phrase of a few words. Do not explain.
+
+  Question: {question}
+  Answer:
+
+short_rag: |
+  Answer the question with a short phrase of a few words, using the passages below when they are relevant. Do not explain.
+
+  Passages:
+  {passages}
+
+  Question: {question}
+  Answer:
+
+long_closed_book: |
+  {question}
+
+long_rag: |
+  Use the passages below when they are relevant to write an accurate answer.
+
+  Passages:
+  {passages}
+
+  {question}
+
+decompose: |
+  Break the following text into independent atomic facts. Each fact must be a single short sentence that can be
+  checked on its own, with pronouns replaced by the names they refer to. Do not add facts that are not in the text.
+  Output one fact per line, each line starting with "- ". If the text contains no factual statements, output "No claims.".
+
+  Example text: Marie Curie was a physicist born in Warsaw in 1867. She won two Nobel Prizes.
+  Example output:
+  - Marie Curie was a physicist.
+  - Marie Curie was born in Warsaw.
+  - Marie Curie was born in 1867.
+  - Marie Curie won two Nobel Prizes.
+
+  Topic or question: {question}
+  Text: {text}
+  Output:
+
+closed_book_truth: |
+  Is the following statement true? Answer with exactly one word: True or False.
+
+  Statement: {claim}
+  Answer:
+
+revise_claim: |
+  The statement below is contradicted by the passage. Rewrite the statement as one short sentence that keeps the
+  same subject and is fully supported by the passage. If the passage does not allow this, output exactly "DELETE".
+
+  Passage: {passage}
+  Statement: {claim}
+  Rewritten statement:
+
+recompose: |
+  Write a fluent answer to the request using only the facts listed below. Do not add any information that is not
+  in the list. Do not mention the list.
+
+  Request: {question}
+  Facts:
+  {facts}
+
+  Answer:
+
+verify_yes_no: |
+  Passage: {passage}
+
+  Statement: {claim}
+
+  Is the statement fully supported by the passage? Answer with exactly one word: Yes or No.
+  Answer:

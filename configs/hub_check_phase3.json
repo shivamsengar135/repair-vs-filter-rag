@@ -1,0 +1,30 @@
+{
+  "models": [
+    "Qwen/Qwen2.5-7B-Instruct", "Qwen/Qwen2.5-7B-Instruct-AWQ", "Qwen/Qwen3-8B", "Qwen/Qwen3-8B-AWQ",
+    "meta-llama/Llama-3.1-8B-Instruct", "meta-llama/Meta-Llama-3-8B-Instruct",
+    "mistralai/Mistral-7B-Instruct-v0.3", "mistralai/Ministral-8B-Instruct-2410",
+    "google/gemma-2-9b-it", "google/gemma-3-12b-it", "google/gemma-3-4b-it",
+    "ibm-granite/granite-3.3-8b-instruct", "tiiuae/Falcon3-7B-Instruct", "microsoft/Phi-4-mini-instruct",
+    "selfrag/selfrag_llama2_7b", "selfrag/selfrag_llama2_13b",
+    "lytang/MiniCheck-Flan-T5-Large", "lytang/MiniCheck-RoBERTa-Large", "lytang/MiniCheck-DeBERTa-v3-Large",
+    "bespokelabs/Bespoke-MiniCheck-7B", "google/t5_xxl_true_nli_mixture", "yzha/AlignScore",
+    "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli", "cross-encoder/nli-deberta-v3-base",
+    "facebook/contriever-msmarco", "BAAI/bge-base-en-v1.5", "BAAI/bge-small-en-v1.5", "intfloat/e5-base-v2",
+    "BAAI/bge-reranker-base", "KRLabsOrg/lettucedect-base-modernbert-en-v1"
+  ],
+  "datasets": [
+    "akariasai/PopQA", "hotpotqa/hotpot_qa", "mandarjoshi/trivia_qa", "google-research-datasets/nq_open",
+    "google-research-datasets/natural_questions", "princeton-nlp/ALCE-data", "din0s/asqa", "wandb/RAGTruth-processed",
+    "pminervini/HaluEval", "wiki_dpr", "facebook/wiki_dpr", "scholarly-shadows-syndicate/hotpotqa_with_qa_gpt35",
+    "BeIR/hotpotqa", "framolfese/2WikiMultihopQA", "xanhho/2WikiMultihopQA", "lytang/LLM-AggreFact",
+    "castorini/wiki-all-6-3-tamber", "facebook/kilt_wikipedia", "kilt_tasks"
+  ],
+  "model_searches": ["Qwen3", "Qwen4", "Llama-4", "Llama-3.3", "gemma-3", "gemma-4", "granite-4", "Mistral-Small", "Ministral", "Phi-4", "Phi-5", "!MiniCheck", "!AlignScore", "!selfrag"],
+  "dataset_searches": ["RAGTruth", "FActScore", "2WikiMultihopQA", "wikipedia dpr", "PopQA", "ASQA", "MuSiQue"],
+  "github": [
+    "AkariAsai/self-rag", "HuskyInSalt/CRAG", "jzbjyb/FLARE", "anthonywchen/RARR", "potsawee/selfcheckgpt",
+    "shmsw25/FActScore", "princeton-nlp/ALCE", "ParticleMedia/RAGTruth", "Liyan06/MiniCheck", "yuh-zha/AlignScore",
+    "castorini/pyserini", "xhluca/bm25s", "facebookresearch/contriever", "facebookresearch/DPR", "tatsu-lab/conformal-factual-lm",
+    "oneal2000/DRAGIN", "s-nlp/AdaRAGUE", "QianHaosheng/VeriCite", "stat-ml/rag_uncertainty", "RUC-NLPIR/FlashRAG"
+  ]
+}

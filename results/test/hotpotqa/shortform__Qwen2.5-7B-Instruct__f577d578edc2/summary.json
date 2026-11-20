@@ -1,0 +1,90 @@
+{
+ "config": {
+  "pipeline": "shortform-v1",
+  "dataset": "hotpotqa",
+  "split": "test",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "prompts": [
+   "v1",
+   "shortform_v1"
+  ],
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100",
+  "max_tokens": 64,
+  "temperature": 0.0,
+  "seed": 0,
+  "tau_s": 0.5,
+  "tau_c": 0.5,
+  "tau_con": 0.5,
+  "verifier": "MiniCheck-Flan-T5-Large",
+  "nli": "DeBERTa-v3-large-mnli-fever-anli-ling-wanli"
+ },
+ "config_hash": "f577d578edc2",
+ "git_commit": "e3bf728+dirty",
+ "n": 1000,
+ "rag_match": 0.363,
+ "A_match_no_abstention": 0.332,
+ "actions": {
+  "keep": 362,
+  "revise": 335,
+  "reretrieve": 81,
+  "low": 222
+ },
+ "answers_changed_by_repair": 363,
+ "repair_effect_on_match": {
+  "fixed": 23,
+  "broken": 54
+ },
+ "mean_s": 0.3908824650510214,
+ "closed_book_unreadable": 0,
+ "auroc_note": "selective metrics computed by scripts/analyze_shortform.py",
+ "cost": {
+  "llm_by_stage": {
+   "1_answer": {
+    "calls": 1000,
+    "cache_hits": 1000,
+    "prompt_tokens": 872476,
+    "completion_tokens": 5274
+   },
+   "2_qa_to_claim": {
+    "calls": 1000,
+    "cache_hits": 0,
+    "prompt_tokens": 86138,
+    "completion_tokens": 19053
+   },
+   "3_closed_book_truth": {
+    "calls": 1000,
+    "cache_hits": 6,
+    "prompt_tokens": 66880,
+    "completion_tokens": 1000
+   },
+   "4_reanswer_reretrieve": {
+    "calls": 81,
+    "cache_hits": 20,
+    "prompt_tokens": 70099,
+    "completion_tokens": 363
+   },
+   "4_reanswer_revise": {
+    "calls": 335,
+    "cache_hits": 0,
+    "prompt_tokens": 79990,
+    "completion_tokens": 1652
+   },
+   "5_qa_to_claim_repaired": {
+    "calls": 416,
+    "cache_hits": 154,
+    "prompt_tokens": 35662,
+    "completion_tokens": 8166
+   }
+  },
+  "retrieval_queries": 1081,
+  "verifier_pairs": {
+   "minicheck": 5740,
+   "nli": 5000
+  },
+  "seconds_total": 1652.47,
+  "verifier_device": "cpu"
+ },
+ "finished_utc": "2026-11-16T11:17:01Z"
+}

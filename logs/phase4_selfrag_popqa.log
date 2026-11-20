@@ -1,0 +1,9 @@
+  path: /home/diat/halluc_data/selfrag_eval/a/eval_data/popqa_longtail_w_gs.jsonl
+  path: /home/diat/halluc_data/selfrag_eval/b/popqa_longtail_w_gs.jsonl
+3b9ae00ff8ad42995bf5b0f7c5b920e369c8be2c2f2772d3a8cf728d4795efc3  /home/diat/halluc_data/selfrag_eval/a/eval_data/popqa_longtail_w_gs.jsonl
+3b9ae00ff8ad42995bf5b0f7c5b920e369c8be2c2f2772d3a8cf728d4795efc3  /home/diat/halluc_data/selfrag_eval/b/popqa_longtail_w_gs.jsonl
+IDENTICAL
+lines: 1399
+keys: ['question', 'answers', 'prop', 's_wiki_title', 'id', 'pop', 'ctxs']
+ctxs per item: [25] | first ctx keys: ['id', 'title', 'text', 'score']
+example: {"question": "What is Henry Feilden's occupation?", "answers": ["politician", "political leader", "political figure", "polit.", "pol"], "prop": "occupation", "s_wiki_title": "Henry Feilden (Conservative politician)", "id": 4382392, "pop": 58, "ctxs": [{"id": "11341299", "title": "Henry Feilden (Conservative politician)", "text": " Henry Master Feilden (21 February 1818 \u2013 5 September 1875) was an English Conservative Party politician.", "score": "1.6985543"}]}

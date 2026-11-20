@@ -1,0 +1,33 @@
+[06:55:41] stage retrieve ...
+[06:55:41] stage retrieve done in 0s
+[06:55:41] stage generate ...
+[06:58:32] stage generate done in 81s
+[06:58:32] stage decompose ...
+[06:57:34] stage decompose done in 32s
+[06:57:37] stage load_verifiers ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/560 [00:00<?, ?it/s]Loading weights: 100%|██████████| 560/560 [00:00<00:00, 10402.22it/s]
+[transformers] The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints with different values, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning.
+/home/diat/venvs/halluc/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  67%|██████▋   | 265/394 [00:00<00:00, 2637.92it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 3549.58it/s]
+[06:57:44] stage load_verifiers done in 8s
+[06:57:44] stage minicheck ...
+[07:01:43] stage minicheck done in 239s
+[07:01:43] stage nli ...
+[07:07:46] stage nli done in 273s
+[07:07:46] stage closed_book_truth ...
+[07:07:50] stage closed_book_truth done in 3s
+[07:07:50] stage revise ...
+[07:07:56] stage revise done in 6s
+[07:07:56] stage rescore_revised ...
+[07:07:56] stage rescore_revised done in 0s
+[07:07:56] stage reretrieve ...
+[07:08:20] stage reretrieve done in 24s
+[07:08:20] stage rescore_reretrieved ...
+[07:07:04] stage rescore_reretrieved done in 14s
+{"n": 200, "claims_per_response_mean": 1.645, "responses_with_zero_claims": 90, "answers_truncated": 0, "decompositions_truncated": 0, "actions": {"keep": 275, "revise": 25, "reretrieve": 15, "low": 14}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 25, "revise_deleted": 25, "revise_now_supported": 0, "reretrieve_attempted": 15, "reretrieve_now_supported": 9}, "mean_support_all_claims": 0.818330695294976}
+seconds: {'retrieve': 0.0, 'generate': 81.06, 'decompose': 31.76, 'load_verifiers': 7.72, 'minicheck': 239.01, 'nli': 272.62, 'closed_book_truth': 3.27, 'revise': 6.45, 'rescore_revised': 0.0, 'reretrieve': 24.17, 'rescore_reretrieved': 14.15}
+llm: {"1_generate": {"calls": 200, "cache_hits": 0, "prompt_tokens": 161344, "completion_tokens": 20371}, "2_decompose": {"calls": 200, "cache_hits": 7, "prompt_tokens": 58427, "completion_tokens": 6338}, "3_closed_book_truth": {"calls": 329, "cache_hits": 0, "prompt_tokens": 21661, "completion_tokens": 329}, "4_revise": {"calls": 25, "cache_hits": 0, "prompt_tokens": 6093, "completion_tokens": 50}}
+wrote results/dev/asqa/longform__Qwen2.5-7B-Instruct__5cdadc19a73e/summary.json
+LF_ASQA_END

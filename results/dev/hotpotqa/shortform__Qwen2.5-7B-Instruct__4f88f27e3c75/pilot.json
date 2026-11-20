@@ -1,0 +1,11 @@
+{
+ "run": "results/dev/hotpotqa/shortform__Qwen2.5-7B-Instruct__4f88f27e3c75",
+ "q_cf_full_dev_at_0.90": 0.8932592272758484,
+ "answers_dropped_by_CF": 358,
+ "of_which_correct_originally": 129,
+ "repair_attempted": 208,
+ "repair_output_correct": 50,
+ "R": 0.13966480446927373,
+ "R_net": 0.0223463687150838,
+ "R_kept": 0.00558659217877095
+}

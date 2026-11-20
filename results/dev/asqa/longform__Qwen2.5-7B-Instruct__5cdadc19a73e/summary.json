@@ -1,0 +1,91 @@
+{
+ "config": {
+  "pipeline": "longform-v1",
+  "dataset": "asqa",
+  "split": "dev",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "prompts": "v1",
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100",
+  "max_tokens": 512,
+  "temperature": 0.0,
+  "seed": 0,
+  "tau_s": 0.5,
+  "tau_c": 0.5,
+  "tau_con": 0.5,
+  "verifier": "MiniCheck-Flan-T5-Large",
+  "nli": "DeBERTa-v3-large-mnli-fever-anli-ling-wanli"
+ },
+ "config_hash": "5cdadc19a73e",
+ "git_commit": "cf035c9+dirty",
+ "n": 200,
+ "claims_per_response_mean": 1.645,
+ "responses_with_zero_claims": 90,
+ "answers_truncated": 0,
+ "decompositions_truncated": 0,
+ "actions": {
+  "keep": 275,
+  "revise": 25,
+  "reretrieve": 15,
+  "low": 14
+ },
+ "closed_book_unreadable": 0,
+ "repair": {
+  "revise_attempted": 25,
+  "revise_deleted": 25,
+  "revise_now_supported": 0,
+  "reretrieve_attempted": 15,
+  "reretrieve_now_supported": 9
+ },
+ "mean_support_all_claims": 0.818330695294976,
+ "cost": {
+  "llm_by_stage": {
+   "1_generate": {
+    "calls": 200,
+    "cache_hits": 0,
+    "prompt_tokens": 161344,
+    "completion_tokens": 20371
+   },
+   "2_decompose": {
+    "calls": 200,
+    "cache_hits": 7,
+    "prompt_tokens": 58427,
+    "completion_tokens": 6338
+   },
+   "3_closed_book_truth": {
+    "calls": 329,
+    "cache_hits": 0,
+    "prompt_tokens": 21661,
+    "completion_tokens": 329
+   },
+   "4_revise": {
+    "calls": 25,
+    "cache_hits": 0,
+    "prompt_tokens": 6093,
+    "completion_tokens": 50
+   }
+  },
+  "retrieval_queries": 215,
+  "verifier_pairs": {
+   "minicheck": 1720,
+   "nli": 1645
+  },
+  "seconds_by_stage": {
+   "retrieve": 0.0,
+   "generate": 81.06,
+   "decompose": 31.76,
+   "load_verifiers": 7.72,
+   "minicheck": 239.01,
+   "nli": 272.62,
+   "closed_book_truth": 3.27,
+   "revise": 6.45,
+   "rescore_revised": 0.0,
+   "reretrieve": 24.17,
+   "rescore_reretrieved": 14.15
+  },
+  "verifier_device": "cpu",
+  "note": "stage seconds include cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-14T07:08:38Z"
+}

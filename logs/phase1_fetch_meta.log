@@ -1,0 +1,40 @@
+OK   2005.11401  rag2020            2020-05-22 Patrick Lewis      n_auth=12  S2[2020 | Neural Information Processing Systems | cites=20995] Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
+OK   2310.11511  selfrag            2023-10-17 Akari Asai         n_auth=5   S2[2023 | International Conference on Learning R | cites=3108] Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection
+OK   2401.15884  crag               2024-01-29 Shi-Qi Yan         n_auth=4   S2[2024 | Findings of the Association for Comput | cites=358] Corrective Retrieval Augmented Generation
+OK   2305.06983  flare              2023-05-11 Zhengbao Jiang     n_auth=9   S2[2023 | Conference on Empirical Methods in Nat | cites=988] Active Retrieval Augmented Generation
+OK   2309.11495  cove               2023-09-20 Shehzaad Dhuliawal n_auth=7   S2[2023 | Annual Meeting of the Association for  | cites=677] Chain-of-Verification Reduces Hallucination in Large Language Models
+OK   2210.08726  rarr               2022-10-17 Luyu Gao           n_auth=11  S2[2022 | Annual Meeting of the Association for  | cites=417] RARR: Researching and Revising What Language Models Say, Using Language Models
+OK   2303.08896  selfcheckgpt       2023-03-15 Potsawee Manakul   n_auth=3   S2[2023 | Conference on Empirical Methods in Nat | cites=1427] SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Languag
+OK   2305.14251  factscore          2023-05-23 Sewon Min          n_auth=9   S2[2023 | Conference on Empirical Methods in Nat | cites=1986] FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generatio
+OK   2302.09664  semantic_entropy   2023-02-19 Lorenz Kuhn        n_auth=3   S2[2023 | International Conference on Learning R | cites=1072] Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Languag
+OK   2406.15927  sep                2024-06-22 Jannik Kossen      n_auth=6   S2[2024 | arXiv.org | cites=317] Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs
+OK   2305.14627  alce               2023-05-24 Tianyu Gao         n_auth=4   S2[2023 | Conference on Empirical Methods in Nat | cites=971] Enabling Large Language Models to Generate Text with Citations
+OK   2112.12870  ais                2021-12-23 Hannah Rashkin     n_auth=10  S2[2021 | Computational Linguistics | cites=370] Measuring Attribution in Natural Language Generation Models
+OK   2212.08037  attributed_qa      2022-12-15 Bernd Bohnet       n_auth=22  S2[2022 | arXiv.org | cites=166] Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Model
+OK   2403.18802  safe_longfact      2024-03-27 Jerry Wei          n_auth=12  S2[2024 | Neural Information Processing Systems | cites=196] Long-form factuality in large language models
+OK   2406.19276  veriscore          2024-06-27 Yixiao Song        n_auth=3   S2[2024 | Conference on Empirical Methods in Nat | cites=161] VERISCORE: Evaluating the factuality of verifiable claims in long-form text generation
+OK   2401.00396  ragtruth           2023-12-31 Cheng Niu          n_auth=8   S2[2023 | Annual Meeting of the Association for  | cites=500] RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language M
+OK   2305.11747  halueval           2023-05-19 Junyi Li           n_auth=5   S2[2023 | Conference on Empirical Methods in Nat | cites=630] HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models
+OK   2403.14403  adaptive_rag       2024-03-21 Soyeong Jeong      n_auth=5   S2[2024 | North American Chapter of the Associat | cites=836] Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question
+OK   2403.10081  dragin             2024-03-15 Weihang Su         n_auth=5   S2[2024 | Annual Meeting of the Association for  | cites=114] DRAGIN: Dynamic Retrieval Augmented Generation based on the Information Needs of Large Lan
+OK   2406.19215  seakr              2024-06-27 Zijun Yao          n_auth=8   S2[2024 | Annual Meeting of the Association for  | cites=68] SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation
+OK   2111.09525  summac             2021-11-18 Philippe Laban     n_auth=4   S2[2021 | Transactions of the Association for Co | cites=669] SummaC: Re-Visiting NLI-based Models for Inconsistency Detection in Summarization
+OK   2305.16739  alignscore         2023-05-26 Yuheng Zha         n_auth=4   S2[2023 | Annual Meeting of the Association for  | cites=464] AlignScore: Evaluating Factual Consistency with a Unified Alignment Function
+OK   2404.10774  minicheck          2024-04-16 Liyan Tang         n_auth=3   S2[2024 | Conference on Empirical Methods in Nat | cites=357] MiniCheck: Efficient Fact-Checking of LLMs on Grounding Documents
+OK   2212.10511  popqa              2022-12-20 Alex Mallen        n_auth=6   S2[2022 | Annual Meeting of the Association for  | cites=1669] When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Param
+OK   2410.07176  astute_rag         2024-10-09 Fei Wang           n_auth=5   S2[2024 | Annual Meeting of the Association for  | cites=94] Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large 
+OK   2406.13629  instructrag        2024-06-19 Zhepei Wei         n_auth=3   S2[2024 | International Conference on Learning R | cites=145] InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales
+OK   2311.09210  chain_of_note      2023-11-15 Wenhao Yu          n_auth=6   S2[2023 | Conference on Empirical Methods in Nat | cites=268] Chain-of-Note: Enhancing Robustness in Retrieval-Augmented Language Models
+OK   2311.09677  r_tuning           2023-11-16 Hanning Zhang      n_auth=9   S2[2023 | North American Chapter of the Associat | cites=150] R-Tuning: Instructing Large Language Models to Say `I Don't Know'
+OK   2401.06855  fava               2024-01-12 Abhika Mishra      n_auth=7   S2[2024 | arXiv.org | cites=205] Fine-grained Hallucination Detection and Editing for Language Models
+OK   2309.15217  ragas              2023-09-26 Shahul Es          n_auth=4   S2[2023 | Conference of the European Chapter of  | cites=1365] Ragas: Automated Evaluation of Retrieval Augmented Generation
+OK   2311.05232  survey_huang       2023-11-09 Lei Huang          n_auth=11  S2[2023 | ACM Trans. Inf. Syst. | cites=4275] A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and 
+OK   2303.01432  wice               2023-03-02 Ryo Kamoi          n_auth=4   S2[2023 | Conference on Empirical Methods in Nat | cites=160] WiCE: Real-World Entailment for Claims in Wikipedia
+OK   2406.20079  molecular_facts    2024-06-28 Anisha Gunjal      n_auth=2   S2[2024 | Conference on Empirical Methods in Nat | cites=57] Molecular Facts: Desiderata for Decontextualization in LLM Fact Verification
+OK   2307.03987  ever_or_low_conf   2023-07-08 Neeraj Varshney    n_auth=5   S2[2023 | arXiv.org | cites=286] A Stitch in Time Saves Nine: Detecting and Mitigating Hallucinations of LLMs by Validating
+OK   2404.10198  clasheval          2024-04-16 Kevin Wu           n_auth=3   S2[2024 | Neural Information Processing Systems | cites=161] ClashEval: Quantifying the tug-of-war between an LLM's internal prior and external evidenc
+OK   2312.10997  rag_survey_gao     2023-12-18 Yunfan Gao         n_auth=10  S2[2023 | arXiv.org | cites=4499] Retrieval-Augmented Generation for Large Language Models: A Survey
+OK   2310.01558  ret_robust         2023-10-02 Ori Yoran          n_auth=4   S2[2023 | International Conference on Learning R | cites=544] Making Retrieval-Augmented Language Models Robust to Irrelevant Context
+OK   2407.21059  modular_or_other   2024-07-26 Yunfan Gao         n_auth=4   S2[2024 | ACM Transactions on Information System | cites=84] Modular RAG: Transforming RAG Systems into LEGO-like Reconfigurable Frameworks
+
+38/38 title-verified; wrote refs/raw/meta.json

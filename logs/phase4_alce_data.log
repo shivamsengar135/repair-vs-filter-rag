@@ -1,0 +1,28 @@
+    83.6 MB  asqa_eval_dpr_top100.json
+    84.8 MB  asqa_eval_gtr_top100.json
+    10.4 MB  asqa_eval_gtr_top100_reranked_oracle.json
+    83.5 MB  eli5_eval_bm25_top100.json
+     7.6 MB  eli5_eval_bm25_top100_reranked_oracle.json
+    85.8 MB  qampari_eval_dpr_top100.json
+    87.2 MB  qampari_eval_gtr_top100.json
+     8.4 MB  qampari_eval_gtr_top100_reranked_oracle.json
+
+## asqa_eval_gtr_top100.json: 948 items; keys: ['qa_pairs', 'wikipages', 'annotations', 'sample_id', 'question', 'docs', 'answer']
+  qa_pairs: list[3] of dict; first: {"context": "No context provided", "question": "Who has the highest goals in men's world international football?", "short_answers": ["Daei", "Ali Daei"], "wikipage": null}
+  wikipages: list[5] of dict; first: {"title": "International Federation of Football History & Statistics", "url": "https://en.wikipedia.org/wiki/International%20Federation%20of%20Football%20History%20%26%20Statistics"}
+  annotations: list[2] of dict; first: {"knowledge": [], "long_answer": "Ali Dael has the highest goals in men's world international football with 109 goals. Josef Bican has the highest goals all-time in men's football and Christine Sinclair has the highest goals in women's world international football."}
+  sample_id: "-7013890438520559398"
+  question: "Who has the highest goals in world football?"
+  docs: list[100] of dict; first: {"id": "6669150", "title": "Argentina\u2013Brazil football rivalry", "text": "\"Football Player of the Century\", by IFFHS International Federation of Football History and Statistics, 1999, \"South America Football Player of the Century\", by IFFHS International Federation of Football History and Statistics. Pel\u00e9's 1281 goa
+  answer: "The players with the highest all-time goals and highest men's and women's international football goals differ. The player with the highest all-time men's football goals is Josef Bican, who in 2020 was recognized by FIFA, the international governing body of football, as the record scorer with an est
+  unique ids: 948 | docs per item: [100] | qa_pairs per item (min/mean/max): 2 3.36 6
+
+## asqa_eval_gtr_top100_reranked_oracle.json: 948 items; keys: ['qa_pairs', 'wikipages', 'annotations', 'sample_id', 'question', 'docs', 'answer']
+  qa_pairs: list[3] of dict; first: {"context": "No context provided", "question": "Who has the highest goals in men's world international football?", "short_answers": ["Daei", "Ali Daei"], "wikipage": null}
+  wikipages: list[5] of dict; first: {"title": "International Federation of Football History & Statistics", "url": "https://en.wikipedia.org/wiki/International%20Federation%20of%20Football%20History%20%26%20Statistics"}
+  annotations: list[2] of dict; first: {"knowledge": [], "long_answer": "Ali Dael has the highest goals in men's world international football with 109 goals. Josef Bican has the highest goals all-time in men's football and Christine Sinclair has the highest goals in women's world international football."}
+  sample_id: "-7013890438520559398"
+  question: "Who has the highest goals in world football?"
+  docs: list[5] of dict; first: {"id": "6669150", "title": "Argentina\u2013Brazil football rivalry", "text": "\"Football Player of the Century\", by IFFHS International Federation of Football History and Statistics, 1999, \"South America Football Player of the Century\", by IFFHS International Federation of Football History and Statistics. Pel\u00e9's 1281 goa
+  answer: "The players with the highest all-time goals and highest men's and women's international football goals differ. The player with the highest all-time men's football goals is Josef Bican, who in 2020 was recognized by FIFA, the international governing body of football, as the record scorer with an est
+  unique ids: 948 | docs per item: [5] | qa_pairs per item (min/mean/max): 2 3.36 6

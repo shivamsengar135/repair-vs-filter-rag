@@ -1,0 +1,20 @@
+##### bio 2026-11-14T05:45:16Z
+{"n": 150, "claims_per_response_mean": 19.093333333333334, "responses_with_zero_claims": 10, "answers_truncated": 8, "decompositions_truncated": 0, "actions": {"keep": 2506, "revise": 174, "reretrieve": 88, "low": 96}, "closed_book_unreadable": 0, "repair": {"revise_attempted": 174, "revise_deleted": 169, "revise_now_supported": 2, "reretrieve_attempted": 88, "reretrieve_now_supported": 26}, "mean_support_all_claims": 0.836163686102584}
+seconds: {'retrieve': 0.0, 'generate': 0.01, 'decompose': 0.0, 'load_verifiers': 10.84, 'minicheck': 1862.63, 'nli': 1787.17, 'closed_book_truth': 28.99, 'revise': 6.54, 'rescore_revised': 3.88, 'reretrieve': 30.85, 'rescore_reretrieved': 59.98}
+llm: {"1_generate": {"calls": 150, "cache_hits": 150, "prompt_tokens": 132010, "completion_tokens": 52561}, "2_decompose": {"calls": 150, "cache_hits": 150, "prompt_tokens": 81206, "completion_tokens": 54638}, "3_closed_book_truth": {"calls": 2864, "cache_hits": 139, "prompt_tokens": 191926, "completion_tokens": 2864}, "4_revise": {"calls": 174, "cache_hits": 5, "prompt_tokens": 45082, "completion_tokens": 432}}
+wrote results/dev/bio/longform__Qwen2.5-7B-Instruct__6a6082d9435e/summary.json
+##### asqa 2026-11-14T06:48:38Z
+[06:48:39] stage retrieve ...
+[06:48:00] stage retrieve done in 51s
+Traceback (most recent call last):
+  File "/mnt/c/Users/DIAT/Documents/shivam/trial_1_Q1/scripts/run_longform.py", line 210, in <module>
+    main()
+  File "/mnt/c/Users/DIAT/Documents/shivam/trial_1_Q1/scripts/run_longform.py", line 84, in main
+    hits_all = bm25.search([retrieval_query(it) for it in items], a.k)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DIAT/Documents/shivam/trial_1_Q1/src/hallu/runutil.py", line 47, in search
+    self.cache.append(rec)
+  File "/mnt/c/Users/DIAT/Documents/shivam/trial_1_Q1/src/hallu/store.py", line 55, in append
+    raise ValueError(f"duplicate id {rec['id']!r} in {self.path}")
+ValueError: duplicate id '9a6ba8e2f958de0012a34407504b3602dfa0839336b0464d7531bda1e8063ff7' in /home/diat/halluc_data/cache/retrieval__bm25_psgs_w100.jsonl
+scripts/run_longform_dev.sh: line 11: unexpected EOF while looking for matching `''

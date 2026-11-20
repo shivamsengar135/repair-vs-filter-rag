@@ -1,0 +1,19 @@
+{
+ "run": "results/test/asqa/longform__Falcon3-7B-Instruct__6394ad333550",
+ "judge_model": "RedHatAI/phi-4-FP8-dynamic",
+ "judge_prompts": "judge_v1",
+ "claims_without_kb_page": 0,
+ "n_claims": 2071,
+ "n_supported": 1188,
+ "supported_rate": 0.5736359246740705,
+ "n_unreadable": 0,
+ "cost": {
+  "judge": {
+   "calls": 2071,
+   "cache_hits": 2071,
+   "prompt_tokens": 2076554,
+   "completion_tokens": 2071
+  }
+ },
+ "git_commit": "1da0a4c+dirty"
+}

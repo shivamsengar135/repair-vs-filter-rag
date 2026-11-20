@@ -1,0 +1,764 @@
+{
+ "rag2020": {
+  "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+  "s2_venue": "Neural Information Processing Systems",
+  "s2_year": 2020,
+  "status": "CONFIRMED",
+  "venue": "Advances in Neural Information Processing Systems 2020",
+  "year": 2020,
+  "source": "https://papers.nips.cc/paper_files/paper/2020",
+  "checked": "2026-11-18"
+ },
+ "selfrag": {
+  "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+  "s2_venue": "International Conference on Learning Representations",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "ICLR 2024 oral",
+  "workshop": false,
+  "source": "https://openreview.net/forum?id=hSyW5go0v8",
+  "checked": "2026-11-18"
+ },
+ "crag": {
+  "title": "Corrective Retrieval Augmented Generation",
+  "s2_venue": "Findings of the Association for Computational Linguistics: IJCNLP-AACL 2026",
+  "s2_year": 2024,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "ACL ARR 2026 May Submission",
+   "ICLR 2025 Conference Withdrawn Submission",
+   "CoRR 2024",
+   "AAMAS 2025",
+   "Inf. Process. Manag. 2026"
+  ],
+  "checked": "2026-11-18"
+ },
+ "flare": {
+  "title": "Active Retrieval Augmented Generation",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  "workshop": false,
+  "source": "https://aclanthology.org/2023.emnlp-main.495",
+  "checked": "2026-11-18",
+  "year": "2023",
+  "bibtex": "@inproceedings{jiang-etal-2023-active,\n    title = \"Active Retrieval Augmented Generation\",\n    author = \"Jiang, Zhengbao  and\n      Xu, Frank  and\n      Gao, Luyu  and\n      Sun, Zhiqing  and\n      Liu, Qian  and\n      Dwivedi-Yu, Jane  and\n      Yang, Yiming  and\n      Callan, Jamie  and\n      Neubig, Graham\",\n    editor = \"Bouamor, Houda  and\n      Pino, Juan  and\n      Bali, Kalika\",\n    booktitle = \"Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing\",\n    month = dec,\n    year = \"2023\",\n    address = \"Singapore\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.emnlp-main.495/\",\n    doi = \"10.18653/v1/2023.emnlp-main.495\",\n    pages = \"7969--7992\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "cove": {
+  "title": "Chain-of-Verification Reduces Hallucination in Large Language Models",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2024",
+  "workshop": true,
+  "source": "https://aclanthology.org/2024.findings-acl.212",
+  "checked": "2026-11-18",
+  "year": "2024",
+  "bibtex": "@inproceedings{dhuliawala-etal-2024-chain,\n    title = \"Chain-of-Verification Reduces Hallucination in Large Language Models\",\n    author = \"Dhuliawala, Shehzaad  and\n      Komeili, Mojtaba  and\n      Xu, Jing  and\n      Raileanu, Roberta  and\n      Li, Xian  and\n      Celikyilmaz, Asli  and\n      Weston, Jason\",\n    editor = \"Ku, Lun-Wei  and\n      Martins, Andre  and\n      Srikumar, Vivek\",\n    booktitle = \"Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2024\",\n    month = aug,\n    year = \"2024\",\n    address = \"Bangkok, Thailand\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.findings-acl.212/\",\n    doi = \"10.18653/v1/2024.findings-acl.212\",\n    pages = \"3563--3578\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "rarr": {
+  "title": "RARR: Researching and Revising What Language Models Say, Using Language Models",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2022,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 61st Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+  "year": "2023",
+  "source": "https://aclanthology.org/2023.acl-long.910",
+  "bibtex": "@inproceedings{gao-etal-2023-rarr,\n    title = \"{RARR}: Researching and Revising What Language Models Say, Using Language Models\",\n    author = \"Gao, Luyu  and\n      Dai, Zhuyun  and\n      Pasupat, Panupong  and\n      Chen, Anthony  and\n      Chaganty, Arun Tejasvi  and\n      Fan, Yicheng  and\n      Zhao, Vincent  and\n      Lao, Ni  and\n      Lee, Hongrae  and\n      Juan, Da-Cheng  and\n      Guu, Kelvin\",\n    editor = \"Rogers, Anna  and\n      Boyd-Graber, Jordan  and\n      Okazaki, Naoaki\",\n    booktitle = \"Proceedings of the 61st Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)\",\n    month = jul,\n    year = \"2023\",\n    address = \"Toronto, Canada\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.acl-long.910/\",\n    doi = \"10.18653/v1/2023.acl-long.910\",\n    pages = \"16477--16508\"\n}",
+  "checked": "2026-11-18"
+ },
+ "selfcheckgpt": {
+  "title": "SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  "workshop": false,
+  "source": "https://aclanthology.org/2023.emnlp-main.557",
+  "checked": "2026-11-18",
+  "year": "2023",
+  "bibtex": "@inproceedings{manakul-etal-2023-selfcheckgpt,\n    title = \"{S}elf{C}heck{GPT}: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models\",\n    author = \"Manakul, Potsawee  and\n      Liusie, Adian  and\n      Gales, Mark\",\n    editor = \"Bouamor, Houda  and\n      Pino, Juan  and\n      Bali, Kalika\",\n    booktitle = \"Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing\",\n    month = dec,\n    year = \"2023\",\n    address = \"Singapore\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.emnlp-main.557/\",\n    doi = \"10.18653/v1/2023.emnlp-main.557\",\n    pages = \"9004--9017\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "factscore": {
+  "title": "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  "workshop": false,
+  "source": "https://aclanthology.org/2023.emnlp-main.741",
+  "checked": "2026-11-18",
+  "year": "2023",
+  "bibtex": "@inproceedings{min-etal-2023-factscore,\n    title = \"{FA}ct{S}core: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation\",\n    author = \"Min, Sewon  and\n      Krishna, Kalpesh  and\n      Lyu, Xinxi  and\n      Lewis, Mike  and\n      Yih, Wen-tau  and\n      Koh, Pang  and\n      Iyyer, Mohit  and\n      Zettlemoyer, Luke  and\n      Hajishirzi, Hannaneh\",\n    editor = \"Bouamor, Houda  and\n      Pino, Juan  and\n      Bali, Kalika\",\n    booktitle = \"Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing\",\n    month = dec,\n    year = \"2023\",\n    address = \"Singapore\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.emnlp-main.741/\",\n    doi = \"10.18653/v1/2023.emnlp-main.741\",\n    pages = \"12076--12100\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "semantic_entropy": {
+  "title": "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation",
+  "s2_venue": "International Conference on Learning Representations",
+  "s2_year": 2023,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "QUESTION Poster",
+   "Submitted to ICLR 2025",
+   "ACL ARR 2025 February Submission",
+   "CoRR 2024",
+   "ICLR 2026 Poster"
+  ],
+  "checked": "2026-11-18"
+ },
+ "sep": {
+  "title": "Semantic Entropy Probes: Robust and Cheap Hallucination Detection in LLMs",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "venue": "ICML 2024 FM-Wild Workshop Poster",
+  "workshop": true,
+  "source": "https://openreview.net/forum?id=Zd0XLr6JKn",
+  "checked": "2026-11-18"
+ },
+ "alce": {
+  "title": "Enabling Large Language Models to Generate Text with Citations",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  "workshop": false,
+  "source": "https://aclanthology.org/2023.emnlp-main.398",
+  "checked": "2026-11-18",
+  "year": "2023",
+  "bibtex": "@inproceedings{gao-etal-2023-enabling,\n    title = \"Enabling Large Language Models to Generate Text with Citations\",\n    author = \"Gao, Tianyu  and\n      Yen, Howard  and\n      Yu, Jiatong  and\n      Chen, Danqi\",\n    editor = \"Bouamor, Houda  and\n      Pino, Juan  and\n      Bali, Kalika\",\n    booktitle = \"Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing\",\n    month = dec,\n    year = \"2023\",\n    address = \"Singapore\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.emnlp-main.398/\",\n    doi = \"10.18653/v1/2023.emnlp-main.398\",\n    pages = \"6465--6488\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "ais": {
+  "title": "Measuring Attribution in Natural Language Generation Models",
+  "s2_venue": "Computational Linguistics",
+  "s2_year": 2021,
+  "status": "CONFIRMED",
+  "venue": "Computational Linguistics",
+  "year": 2023,
+  "volume": "49",
+  "pages": "777-840",
+  "doi": "10.1162/coli_a_00486",
+  "source": "https://doi.org/10.1162/coli_a_00486",
+  "checked": "2026-11-18"
+ },
+ "attributed_qa": {
+  "title": "Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2022,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "IEEE Transactions on Knowledge and Data Engineering",
+   "IEEE Trans. Knowl. Data Eng. 2025",
+   "CoRR 2024",
+   "CoRR 2024",
+   "CIKM 2024"
+  ],
+  "checked": "2026-11-18"
+ },
+ "safe_longfact": {
+  "title": "Long-form factuality in large language models",
+  "s2_venue": "Neural Information Processing Systems",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "venue": "Advances in Neural Information Processing Systems 2024",
+  "year": 2024,
+  "source": "https://papers.nips.cc/paper_files/paper/2024",
+  "checked": "2026-11-18"
+ },
+ "veriscore": {
+  "title": "VERISCORE: Evaluating the factuality of verifiable claims in long-form text generation",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "openreview_rejected_venues": [
+   "CoRR 2024",
+   "ACL ARR 2025 February Submission",
+   "CoRR 2024",
+   "Submitted to ICLR 2025",
+   "EMNLP 2025"
+  ],
+  "checked": "2026-11-18",
+  "venue": "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2024",
+  "year": "2024",
+  "source": "https://aclanthology.org/2024.findings-emnlp.552",
+  "bibtex": "@inproceedings{song-etal-2024-veriscore,\n    title = \"{V}eri{S}core: Evaluating the factuality of verifiable claims in long-form text generation\",\n    author = \"Song, Yixiao  and\n      Kim, Yekyung  and\n      Iyyer, Mohit\",\n    editor = \"Al-Onaizan, Yaser  and\n      Bansal, Mohit  and\n      Chen, Yun-Nung\",\n    booktitle = \"Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2024\",\n    month = nov,\n    year = \"2024\",\n    address = \"Miami, Florida, USA\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.findings-emnlp.552/\",\n    doi = \"10.18653/v1/2024.findings-emnlp.552\",\n    pages = \"9447--9474\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "ragtruth": {
+  "title": "RAGTruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 62nd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+  "workshop": false,
+  "source": "https://aclanthology.org/2024.acl-long.585",
+  "checked": "2026-11-18",
+  "year": "2024",
+  "bibtex": "@inproceedings{niu-etal-2024-ragtruth,\n    title = \"{RAGT}ruth: A Hallucination Corpus for Developing Trustworthy Retrieval-Augmented Language Models\",\n    author = \"Niu, Cheng  and\n      Wu, Yuanhao  and\n      Zhu, Juno  and\n      Xu, Siliang  and\n      Shum, KaShun  and\n      Zhong, Randy  and\n      Song, Juntong  and\n      Zhang, Tong\",\n    editor = \"Ku, Lun-Wei  and\n      Martins, Andre  and\n      Srikumar, Vivek\",\n    booktitle = \"Proceedings of the 62nd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)\",\n    month = aug,\n    year = \"2024\",\n    address = \"Bangkok, Thailand\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.acl-long.585/\",\n    doi = \"10.18653/v1/2024.acl-long.585\",\n    pages = \"10862--10878\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "halueval": {
+  "title": "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  "workshop": false,
+  "source": "https://aclanthology.org/2023.emnlp-main.397",
+  "checked": "2026-11-18",
+  "year": "2023",
+  "bibtex": "@inproceedings{li-etal-2023-halueval,\n    title = \"{H}alu{E}val: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models\",\n    author = \"Li, Junyi  and\n      Cheng, Xiaoxue  and\n      Zhao, Wayne Xin  and\n      Nie, Jian-Yun  and\n      Wen, Ji-Rong\",\n    editor = \"Bouamor, Houda  and\n      Pino, Juan  and\n      Bali, Kalika\",\n    booktitle = \"Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing\",\n    month = dec,\n    year = \"2023\",\n    address = \"Singapore\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.emnlp-main.397/\",\n    doi = \"10.18653/v1/2023.emnlp-main.397\",\n    pages = \"6449--6464\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "adaptive_rag": {
+  "title": "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity",
+  "s2_venue": "North American Chapter of the Association for Computational Linguistics",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2024 Conference of the {N}orth {A}merican Chapter of the {A}ssociation for {C}omputational {L}inguistics: Human Language Technologies (Volume 1: Long Papers)",
+  "year": "2024",
+  "source": "https://aclanthology.org/2024.naacl-long.389",
+  "bibtex": "@inproceedings{jeong-etal-2024-adaptive,\n    title = \"Adaptive-{RAG}: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity\",\n    author = \"Jeong, Soyeong  and\n      Baek, Jinheon  and\n      Cho, Sukmin  and\n      Hwang, Sung Ju  and\n      Park, Jong\",\n    editor = \"Duh, Kevin  and\n      Gomez, Helena  and\n      Bethard, Steven\",\n    booktitle = \"Proceedings of the 2024 Conference of the {N}orth {A}merican Chapter of the {A}ssociation for {C}omputational {L}inguistics: Human Language Technologies (Volume 1: Long Papers)\",\n    month = jun,\n    year = \"2024\",\n    address = \"Mexico City, Mexico\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.naacl-long.389/\",\n    doi = \"10.18653/v1/2024.naacl-long.389\",\n    pages = \"7036--7050\"\n}",
+  "checked": "2026-11-18"
+ },
+ "dragin": {
+  "title": "DRAGIN: Dynamic Retrieval Augmented Generation based on the Information Needs of Large Language Models",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "openreview_rejected_venues": [
+   "ACL (1) 2024",
+   "CoRR 2024",
+   "CoRR 2024",
+   "ACL (1) 2024",
+   "CoRR 2023"
+  ],
+  "checked": "2026-11-18",
+  "venue": "Proceedings of the 62nd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+  "year": "2024",
+  "source": "https://aclanthology.org/2024.acl-long.702",
+  "bibtex": "@inproceedings{su-etal-2024-dragin,\n    title = \"{DRAGIN}: Dynamic Retrieval Augmented Generation based on the Real-time Information Needs of Large Language Models\",\n    author = \"Su, Weihang  and\n      Tang, Yichen  and\n      Ai, Qingyao  and\n      Wu, Zhijing  and\n      Liu, Yiqun\",\n    editor = \"Ku, Lun-Wei  and\n      Martins, Andre  and\n      Srikumar, Vivek\",\n    booktitle = \"Proceedings of the 62nd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)\",\n    month = aug,\n    year = \"2024\",\n    address = \"Bangkok, Thailand\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.acl-long.702/\",\n    doi = \"10.18653/v1/2024.acl-long.702\",\n    pages = \"12991--13013\"\n}",
+  "how": "published title differs from arXiv title; identical ordered author surname list; official .bib fetched"
+ },
+ "seakr": {
+  "title": "SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 63rd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+  "workshop": false,
+  "source": "https://aclanthology.org/2025.acl-long.1312",
+  "checked": "2026-11-18",
+  "year": "2025",
+  "bibtex": "@inproceedings{yao-etal-2025-seakr,\n    title = \"{S}ea{KR}: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation\",\n    author = \"Yao, Zijun  and\n      Qi, Weijian  and\n      Pan, Liangming  and\n      Cao, Shulin  and\n      Hu, Linmei  and\n      Weichuan, Liu  and\n      Hou, Lei  and\n      Li, Juanzi\",\n    editor = \"Che, Wanxiang  and\n      Nabende, Joyce  and\n      Shutova, Ekaterina  and\n      Pilehvar, Mohammad Taher\",\n    booktitle = \"Proceedings of the 63rd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)\",\n    month = jul,\n    year = \"2025\",\n    address = \"Vienna, Austria\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2025.acl-long.1312/\",\n    doi = \"10.18653/v1/2025.acl-long.1312\",\n    pages = \"27022--27043\",\n    ISBN = \"979-8-89176-251-0\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "summac": {
+  "title": "SummaC: Re-Visiting NLI-based Models for Inconsistency Detection in Summarization",
+  "s2_venue": "Transactions of the Association for Computational Linguistics",
+  "s2_year": 2021,
+  "status": "CONFIRMED",
+  "note": "DOI 10.1162/tacl_a_00453 title mismatch",
+  "openreview_rejected_venues": [
+   "ACL (Findings) 2023",
+   "ISMIR 2017",
+   "ACL ARR 2025 October Submission",
+   "CoRR 2025",
+   "IC-AI 1999"
+  ],
+  "checked": "2026-11-18",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "year": "2022",
+  "source": "https://aclanthology.org/2022.tacl-1.10",
+  "bibtex": "@article{laban-etal-2022-summac,\n    title = \"{S}umma{C}: Re-Visiting {NLI}-based Models for Inconsistency Detection in Summarization\",\n    author = \"Laban, Philippe  and\n      Schnabel, Tobias  and\n      Bennett, Paul N.  and\n      Hearst, Marti A.\",\n    editor = \"Roark, Brian  and\n      Nenkova, Ani\",\n    journal = \"Transactions of the Association for Computational Linguistics\",\n    volume = \"10\",\n    year = \"2022\",\n    address = \"Cambridge, MA\",\n    publisher = \"MIT Press\",\n    url = \"https://aclanthology.org/2022.tacl-1.10/\",\n    doi = \"10.1162/tacl_a_00453\",\n    pages = \"163--177\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "alignscore": {
+  "title": "AlignScore: Evaluating Factual Consistency with a Unified Alignment Function",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "note": "ACL id 2023.acl-long.634 title mismatch",
+  "venue": "Proceedings of the 61st Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+  "workshop": false,
+  "source": "https://aclanthology.org/2023.acl-long.634",
+  "checked": "2026-11-18",
+  "year": "2023",
+  "bibtex": "@inproceedings{zha-etal-2023-alignscore,\n    title = \"{A}lign{S}core: Evaluating Factual Consistency with A Unified Alignment Function\",\n    author = \"Zha, Yuheng  and\n      Yang, Yichi  and\n      Li, Ruichen  and\n      Hu, Zhiting\",\n    editor = \"Rogers, Anna  and\n      Boyd-Graber, Jordan  and\n      Okazaki, Naoaki\",\n    booktitle = \"Proceedings of the 61st Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)\",\n    month = jul,\n    year = \"2023\",\n    address = \"Toronto, Canada\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.acl-long.634/\",\n    doi = \"10.18653/v1/2023.acl-long.634\",\n    pages = \"11328--11348\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "minicheck": {
+  "title": "MiniCheck: Efficient Fact-Checking of LLMs on Grounding Documents",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "note": "ACL id 2024.emnlp-main.499 title mismatch",
+  "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+  "workshop": false,
+  "source": "https://aclanthology.org/2024.emnlp-main.499",
+  "checked": "2026-11-18",
+  "year": "2024",
+  "bibtex": "@inproceedings{tang-etal-2024-minicheck,\n    title = \"{M}ini{C}heck: Efficient Fact-Checking of {LLM}s on Grounding Documents\",\n    author = \"Tang, Liyan  and\n      Laban, Philippe  and\n      Durrett, Greg\",\n    editor = \"Al-Onaizan, Yaser  and\n      Bansal, Mohit  and\n      Chen, Yun-Nung\",\n    booktitle = \"Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing\",\n    month = nov,\n    year = \"2024\",\n    address = \"Miami, Florida, USA\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.emnlp-main.499/\",\n    doi = \"10.18653/v1/2024.emnlp-main.499\",\n    pages = \"8818--8847\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "popqa": {
+  "title": "When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2022,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 61st Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+  "year": "2023",
+  "source": "https://aclanthology.org/2023.acl-long.546",
+  "bibtex": "@inproceedings{mallen-etal-2023-trust,\n    title = \"When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories\",\n    author = \"Mallen, Alex  and\n      Asai, Akari  and\n      Zhong, Victor  and\n      Das, Rajarshi  and\n      Khashabi, Daniel  and\n      Hajishirzi, Hannaneh\",\n    editor = \"Rogers, Anna  and\n      Boyd-Graber, Jordan  and\n      Okazaki, Naoaki\",\n    booktitle = \"Proceedings of the 61st Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)\",\n    month = jul,\n    year = \"2023\",\n    address = \"Toronto, Canada\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.acl-long.546/\",\n    doi = \"10.18653/v1/2023.acl-long.546\",\n    pages = \"9802--9822\"\n}",
+  "checked": "2026-11-18"
+ },
+ "astute_rag": {
+  "title": "Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 63rd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+  "workshop": false,
+  "source": "https://aclanthology.org/2025.acl-long.1476",
+  "checked": "2026-11-18",
+  "year": "2025",
+  "bibtex": "@inproceedings{wang-etal-2025-astute,\n    title = \"Astute {RAG}: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models\",\n    author = \"Wang, Fei  and\n      Wan, Xingchen  and\n      Sun, Ruoxi  and\n      Chen, Jiefeng  and\n      Arik, Sercan O\",\n    editor = \"Che, Wanxiang  and\n      Nabende, Joyce  and\n      Shutova, Ekaterina  and\n      Pilehvar, Mohammad Taher\",\n    booktitle = \"Proceedings of the 63rd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)\",\n    month = jul,\n    year = \"2025\",\n    address = \"Vienna, Austria\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2025.acl-long.1476/\",\n    doi = \"10.18653/v1/2025.acl-long.1476\",\n    pages = \"30553--30571\",\n    ISBN = \"979-8-89176-251-0\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "instructrag": {
+  "title": "InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales",
+  "s2_venue": "International Conference on Learning Representations",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "venue": "AFM 2024 Poster",
+  "workshop": false,
+  "source": "https://openreview.net/forum?id=EY45IFgVC5",
+  "checked": "2026-11-18"
+ },
+ "chain_of_note": {
+  "title": "Chain-of-Note: Enhancing Robustness in Retrieval-Augmented Language Models",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+  "year": "2024",
+  "source": "https://aclanthology.org/2024.emnlp-main.813",
+  "bibtex": "@inproceedings{yu-etal-2024-chain,\n    title = \"Chain-of-Note: Enhancing Robustness in Retrieval-Augmented Language Models\",\n    author = \"Yu, Wenhao  and\n      Zhang, Hongming  and\n      Pan, Xiaoman  and\n      Cao, Peixin  and\n      Ma, Kaixin  and\n      Li, Jian  and\n      Wang, Hongwei  and\n      Yu, Dong\",\n    editor = \"Al-Onaizan, Yaser  and\n      Bansal, Mohit  and\n      Chen, Yun-Nung\",\n    booktitle = \"Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing\",\n    month = nov,\n    year = \"2024\",\n    address = \"Miami, Florida, USA\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.emnlp-main.813/\",\n    doi = \"10.18653/v1/2024.emnlp-main.813\",\n    pages = \"14672--14685\"\n}",
+  "checked": "2026-11-18"
+ },
+ "r_tuning": {
+  "title": "R-Tuning: Instructing Large Language Models to Say `I Don't Know'",
+  "s2_venue": "North American Chapter of the Association for Computational Linguistics",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2024 Conference of the {N}orth {A}merican Chapter of the {A}ssociation for {C}omputational {L}inguistics: Human Language Technologies (Volume 1: Long Papers)",
+  "year": "2024",
+  "source": "https://aclanthology.org/2024.naacl-long.394",
+  "bibtex": "@inproceedings{zhang-etal-2024-r,\n    title = \"{R}-Tuning: Instructing Large Language Models to Say `{I} Don{'}t Know'\",\n    author = \"Zhang, Hanning  and\n      Diao, Shizhe  and\n      Lin, Yong  and\n      Fung, Yi  and\n      Lian, Qing  and\n      Wang, Xingyao  and\n      Chen, Yangyi  and\n      Ji, Heng  and\n      Zhang, Tong\",\n    editor = \"Duh, Kevin  and\n      Gomez, Helena  and\n      Bethard, Steven\",\n    booktitle = \"Proceedings of the 2024 Conference of the {N}orth {A}merican Chapter of the {A}ssociation for {C}omputational {L}inguistics: Human Language Technologies (Volume 1: Long Papers)\",\n    month = jun,\n    year = \"2024\",\n    address = \"Mexico City, Mexico\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.naacl-long.394/\",\n    doi = \"10.18653/v1/2024.naacl-long.394\",\n    pages = \"7113--7139\"\n}",
+  "checked": "2026-11-18"
+ },
+ "fava": {
+  "title": "Fine-grained Hallucination Detection and Editing for Language Models",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "venue": "COLM",
+  "workshop": false,
+  "source": "https://openreview.net/forum?id=dJMTn3QOWO",
+  "checked": "2026-11-18"
+ },
+ "ragas": {
+  "title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+  "s2_venue": "Conference of the European Chapter of the Association for Computational Linguistics",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "note": "ACL id 2024.eacl-demo.16 title mismatch",
+  "venue": "Proceedings of the 18th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics: System Demonstrations",
+  "workshop": false,
+  "source": "https://aclanthology.org/2024.eacl-demo.16",
+  "checked": "2026-11-18",
+  "year": "2024",
+  "bibtex": "@inproceedings{es-etal-2024-ragas,\n    title = \"{RAGA}s: Automated Evaluation of Retrieval Augmented Generation\",\n    author = \"Es, Shahul  and\n      James, Jithin  and\n      Espinosa Anke, Luis  and\n      Schockaert, Steven\",\n    editor = \"Aletras, Nikolaos  and\n      De Clercq, Orphee\",\n    booktitle = \"Proceedings of the 18th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics: System Demonstrations\",\n    month = mar,\n    year = \"2024\",\n    address = \"St. Julians, Malta\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2024.eacl-demo.16/\",\n    doi = \"10.18653/v1/2024.eacl-demo.16\",\n    pages = \"150--158\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "survey_huang": {
+  "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+  "s2_venue": "ACM Trans. Inf. Syst.",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "ACM Transactions on Information Systems",
+  "year": 2025,
+  "volume": "43",
+  "pages": "1-55",
+  "doi": "10.1145/3703155",
+  "source": "https://doi.org/10.1145/3703155",
+  "checked": "2026-11-18"
+ },
+ "wice": {
+  "title": "WiCE: Real-World Entailment for Claims in Wikipedia",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+  "workshop": false,
+  "source": "https://aclanthology.org/2023.emnlp-main.470",
+  "checked": "2026-11-18",
+  "year": "2023",
+  "bibtex": "@inproceedings{kamoi-etal-2023-wice,\n    title = \"{W}i{CE}: Real-World Entailment for Claims in {W}ikipedia\",\n    author = \"Kamoi, Ryo  and\n      Goyal, Tanya  and\n      Diego Rodriguez, Juan  and\n      Durrett, Greg\",\n    editor = \"Bouamor, Houda  and\n      Pino, Juan  and\n      Bali, Kalika\",\n    booktitle = \"Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing\",\n    month = dec,\n    year = \"2023\",\n    address = \"Singapore\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2023.emnlp-main.470/\",\n    doi = \"10.18653/v1/2023.emnlp-main.470\",\n    pages = \"7561--7583\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "molecular_facts": {
+  "title": "Molecular Facts: Desiderata for Decontextualization in LLM Fact Verification",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "venue": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+  "year": 2024,
+  "volume": null,
+  "pages": "3751-3768",
+  "doi": "10.18653/v1/2024.findings-emnlp.215",
+  "source": "https://doi.org/10.18653/v1/2024.findings-emnlp.215",
+  "checked": "2026-11-18"
+ },
+ "ever_or_low_conf": {
+  "title": "A Stitch in Time Saves Nine: Detecting and Mitigating Hallucinations of LLMs by Validating Low-Confidence Generation",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2023,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "ICLR 2024 Conference Withdrawn Submission",
+   "ICLR 2026",
+   "CoRR 2025",
+   "ICLR 2026 Poster",
+   "IEEE Trans. Comput. Soc. Syst. 2026"
+  ],
+  "checked": "2026-11-18"
+ },
+ "clasheval": {
+  "title": "ClashEval: Quantifying the tug-of-war between an LLM's internal prior and external evidence",
+  "s2_venue": "Neural Information Processing Systems",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "venue": "Advances in Neural Information Processing Systems 37",
+  "year": 2024,
+  "volume": null,
+  "pages": "33402-33422",
+  "doi": "10.52202/079017-1053",
+  "source": "https://doi.org/10.52202/079017-1053",
+  "checked": "2026-11-18"
+ },
+ "rag_survey_gao": {
+  "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2023,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "CoRR 2023",
+   "CoRR 2025",
+   "ACM Comput. Surv. 2026",
+   "CoRR 2024",
+   "ACM Comput. Surv. 2026"
+  ],
+  "checked": "2026-11-18"
+ },
+ "ret_robust": {
+  "title": "Making Retrieval-Augmented Language Models Robust to Irrelevant Context",
+  "s2_venue": "International Conference on Learning Representations",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "ICLR 2024",
+  "workshop": false,
+  "source": "https://openreview.net/forum?id=BxciKc7eUV",
+  "checked": "2026-11-18"
+ },
+ "modular_or_other": {
+  "title": "Modular RAG: Transforming RAG Systems into LEGO-like Reconfigurable Frameworks",
+  "s2_venue": "ACM Transactions on Information Systems",
+  "s2_year": 2024,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "CoRR 2024",
+   "Crossref",
+   "SIGIR 2024",
+   "CoRR 2025",
+   "CoRR 2024"
+  ],
+  "checked": "2026-11-18"
+ },
+ "qwen25": {
+  "title": "Qwen2.5 Technical Report",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2024,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "CoRR 2024",
+   "CoRR 2025",
+   "CoRR 2024",
+   "CoRR 2025",
+   "CoRR 2025"
+  ],
+  "checked": "2026-11-18"
+ },
+ "mistral7b": {
+  "title": "Mistral 7B",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2023,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "SemEval@NAACL 2024",
+   "CLEF (Working Notes) 2024",
+   "AAAI 2024 SSS on Clinical FMs",
+   "BASE - Bielefeld Academic Search Engine",
+   "CoRR 2024"
+  ],
+  "checked": "2026-11-18"
+ },
+ "phi4": {
+  "title": "Phi-4 Technical Report",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2024,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "CoRR 2024",
+   "CoRR 2026",
+   "CoRR 2026",
+   "CoRR 2025",
+   "CoRR 2025"
+  ],
+  "checked": "2026-11-18"
+ },
+ "dpr": {
+  "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2020,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing ({EMNLP})",
+  "year": "2020",
+  "source": "https://aclanthology.org/2020.emnlp-main.550",
+  "bibtex": "@inproceedings{karpukhin-etal-2020-dense,\n    title = \"Dense Passage Retrieval for Open-Domain Question Answering\",\n    author = \"Karpukhin, Vladimir  and\n      Oguz, Barlas  and\n      Min, Sewon  and\n      Lewis, Patrick  and\n      Wu, Ledell  and\n      Edunov, Sergey  and\n      Chen, Danqi  and\n      Yih, Wen-tau\",\n    editor = \"Webber, Bonnie  and\n      Cohn, Trevor  and\n      He, Yulan  and\n      Liu, Yang\",\n    booktitle = \"Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing ({EMNLP})\",\n    month = nov,\n    year = \"2020\",\n    address = \"Online\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2020.emnlp-main.550/\",\n    doi = \"10.18653/v1/2020.emnlp-main.550\",\n    pages = \"6769--6781\"\n}",
+  "checked": "2026-11-18"
+ },
+ "bm25s": {
+  "title": "BM25S: Orders of magnitude faster lexical search via eager sparse scoring",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2024,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "RV 2014",
+   "ECIR (4) 2026",
+   "Crossref",
+   "Crossref",
+   "SIGIR 2025"
+  ],
+  "checked": "2026-11-18"
+ },
+ "cpack_bge": {
+  "title": "C-Pack: Packed Resources For General Chinese Embeddings",
+  "s2_venue": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+  "year": 2024,
+  "volume": null,
+  "pages": "641-649",
+  "doi": "10.1145/3626772.3657878",
+  "source": "https://doi.org/10.1145/3626772.3657878",
+  "checked": "2026-11-18"
+ },
+ "vllm": {
+  "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+  "s2_venue": "Symposium on Operating Systems Principles",
+  "s2_year": 2023,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 29th Symposium on Operating Systems Principles",
+  "year": 2023,
+  "volume": null,
+  "pages": "611-626",
+  "doi": "10.1145/3600006.3613165",
+  "source": "https://doi.org/10.1145/3600006.3613165",
+  "checked": "2026-11-18"
+ },
+ "triviaqa": {
+  "title": "TriviaQA: A Large Scale Distantly Supervised Challenge Dataset for Reading Comprehension",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2017,
+  "status": "CONFIRMED",
+  "note": "ACL id P17-1147 title mismatch",
+  "venue": "Proceedings of the 55th Annual Meeting of the Association for\n          Computational Linguistics (Volume 1: Long Papers)",
+  "year": 2017,
+  "volume": null,
+  "pages": "1601-1611",
+  "doi": "10.18653/v1/P17-1147",
+  "source": "https://doi.org/10.18653/v1/P17-1147",
+  "checked": "2026-11-18"
+ },
+ "hotpotqa": {
+  "title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2018,
+  "status": "CONFIRMED",
+  "note": "ACL id D18-1259 title mismatch",
+  "venue": "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+  "year": 2018,
+  "volume": null,
+  "pages": "2369-2380",
+  "doi": "10.18653/v1/D18-1259",
+  "source": "https://doi.org/10.18653/v1/D18-1259",
+  "checked": "2026-11-18"
+ },
+ "twowiki": {
+  "title": "Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps",
+  "s2_venue": "International Conference on Computational Linguistics",
+  "s2_year": 2020,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 28th International Conference on Computational Linguistics",
+  "year": "2020",
+  "source": "https://aclanthology.org/2020.coling-main.580",
+  "bibtex": "@inproceedings{ho-etal-2020-constructing,\n    title = \"Constructing A Multi-hop {QA} Dataset for Comprehensive Evaluation of Reasoning Steps\",\n    author = \"Ho, Xanh  and\n      Duong Nguyen, Anh-Khoa  and\n      Sugawara, Saku  and\n      Aizawa, Akiko\",\n    editor = \"Scott, Donia  and\n      Bel, Nuria  and\n      Zong, Chengqing\",\n    booktitle = \"Proceedings of the 28th International Conference on Computational Linguistics\",\n    month = dec,\n    year = \"2020\",\n    address = \"Barcelona, Spain (Online)\",\n    publisher = \"International Committee on Computational Linguistics\",\n    url = \"https://aclanthology.org/2020.coling-main.580/\",\n    doi = \"10.18653/v1/2020.coling-main.580\",\n    pages = \"6609--6625\"\n}",
+  "checked": "2026-11-18"
+ },
+ "asqa": {
+  "title": "ASQA: Factoid Questions Meet Long-Form Answers",
+  "s2_venue": "Conference on Empirical Methods in Natural Language Processing",
+  "s2_year": 2022,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+  "year": "2022",
+  "source": "https://aclanthology.org/2022.emnlp-main.566",
+  "bibtex": "@inproceedings{stelmakh-etal-2022-asqa,\n    title = \"{ASQA}: Factoid Questions Meet Long-Form Answers\",\n    author = \"Stelmakh, Ivan  and\n      Luan, Yi  and\n      Dhingra, Bhuwan  and\n      Chang, Ming-Wei\",\n    editor = \"Goldberg, Yoav  and\n      Kozareva, Zornitsa  and\n      Zhang, Yue\",\n    booktitle = \"Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing\",\n    month = dec,\n    year = \"2022\",\n    address = \"Abu Dhabi, United Arab Emirates\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2022.emnlp-main.566/\",\n    doi = \"10.18653/v1/2022.emnlp-main.566\",\n    pages = \"8273--8288\"\n}",
+  "checked": "2026-11-18"
+ },
+ "conformal_intro": {
+  "title": "A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2021,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "AAAI 2025",
+   "CoRR 2025",
+   "AAAI 2025",
+   "CoRR 2024",
+   "CVPR Workshops 2025"
+  ],
+  "checked": "2026-11-18"
+ },
+ "debertav3": {
+  "title": "DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing",
+  "s2_venue": "International Conference on Learning Representations",
+  "s2_year": 2021,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "ICLR 2024",
+   "CoRR 2023",
+   "ICLR 2024 poster",
+   "Frontiers Comput. Sci. 2024",
+   "ACL/IJCNLP (Findings) 2021"
+  ],
+  "checked": "2026-11-18"
+ },
+ "flan": {
+  "title": "Scaling Instruction-Finetuned Language Models",
+  "s2_venue": "Journal of machine learning research",
+  "s2_year": 2022,
+  "status": "CONFIRMED",
+  "venue": "J. Mach. Learn. Res. 2024",
+  "workshop": false,
+  "source": "https://openreview.net/forum?id=PsWmUCl9Dd",
+  "checked": "2026-11-18"
+ },
+ "arxiv2402_10978": {
+  "title": "Language Models with Conformal Factuality Guarantees",
+  "s2_venue": "International Conference on Machine Learning",
+  "s2_year": 2024,
+  "status": "CONFIRMED",
+  "venue": "ICML 2024 Poster",
+  "workshop": false,
+  "source": "https://openreview.net/forum?id=uYISs2tpwP",
+  "checked": "2026-11-18"
+ },
+ "arxiv2501_12835": {
+  "title": "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2025,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 63rd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+  "workshop": false,
+  "source": "https://aclanthology.org/2025.acl-long.319",
+  "checked": "2026-11-18",
+  "year": "2025",
+  "bibtex": "@inproceedings{moskvoretskii-etal-2025-adaptive,\n    title = \"Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home\",\n    author = \"Moskvoretskii, Viktor  and\n      Marina, Maria  and\n      Salnikov, Mikhail  and\n      Ivanov, Nikolay  and\n      Pletenev, Sergey  and\n      Galimzianova, Daria  and\n      Krayko, Nikita  and\n      Konovalov, Vasily  and\n      Nikishina, Irina  and\n      Panchenko, Alexander\",\n    editor = \"Che, Wanxiang  and\n      Nabende, Joyce  and\n      Shutova, Ekaterina  and\n      Pilehvar, Mohammad Taher\",\n    booktitle = \"Proceedings of the 63rd Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)\",\n    month = jul,\n    year = \"2025\",\n    address = \"Vienna, Austria\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2025.acl-long.319/\",\n    doi = \"10.18653/v1/2025.acl-long.319\",\n    pages = \"6355--6384\",\n    ISBN = \"979-8-89176-251-0\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "arxiv2505_21072": {
+  "title": "Faithfulness-Aware Uncertainty Quantification for Fact-Checking the Output of Retrieval Augmented Generation",
+  "s2_venue": "Annual Meeting of the Association for Computational Linguistics",
+  "s2_year": 2025,
+  "status": "CONFIRMED",
+  "venue": "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+  "workshop": false,
+  "source": "https://aclanthology.org/2026.findings-acl.338",
+  "checked": "2026-11-18",
+  "year": "2026",
+  "bibtex": "@inproceedings{fadeeva-etal-2026-faithfulness,\n    title = \"Faithfulness-Aware Uncertainty Quantification for Fact-Checking the Output of Retrieval-Augmented Generation\",\n    author = \"Fadeeva, Ekaterina  and\n      Rubashevskii, Aleksandr  and\n      Piatrashyn, Dzianis  and\n      Vashurin, Roman  and\n      Dhuliawala, Shehzaad  and\n      Shelmanov, Artem  and\n      Baldwin, Timothy  and\n      Nakov, Preslav  and\n      Sachan, Mrinmaya  and\n      Panov, Maxim\",\n    editor = \"Liakata, Maria  and\n      Moreira, Viviane P.  and\n      Zhang, Jiajun  and\n      Jurgens, David\",\n    booktitle = \"Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026\",\n    month = jul,\n    year = \"2026\",\n    address = \"San Diego, California, United States\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.findings-acl.338/\",\n    doi = \"10.18653/v1/2026.findings-acl.338\",\n    pages = \"6814--6836\",\n    ISBN = \"979-8-89176-395-1\"\n}",
+  "how": "title found on the ACL Anthology volume page; official .bib fetched"
+ },
+ "arxiv2506_20978": {
+  "title": "Response Quality Assessment for Retrieval-Augmented Generation via Conditional Conformal Factuality",
+  "s2_venue": "Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+  "s2_year": 2025,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+  "year": 2025,
+  "volume": null,
+  "pages": "2832-2836",
+  "doi": "10.1145/3726302.3730244",
+  "source": "https://doi.org/10.1145/3726302.3730244",
+  "checked": "2026-11-18"
+ },
+ "arxiv2510_11394": {
+  "title": "VeriCite: Towards Reliable Citations in Retrieval-Augmented Generation via Rigorous Verification",
+  "s2_venue": "SIGIR-AP",
+  "s2_year": 2025,
+  "status": "CONFIRMED",
+  "venue": "Proceedings of the 2025 Annual International ACM SIGIR Conference on Research and Development in Information Retrieval in the Asia Pacific Region",
+  "year": 2025,
+  "volume": null,
+  "pages": "47-54",
+  "doi": "10.1145/3767695.3769505",
+  "source": "https://doi.org/10.1145/3767695.3769505",
+  "checked": "2026-11-18"
+ },
+ "arxiv2603_16817": {
+  "title": "Is Conformal Factuality for RAG-based LLMs Robust? Novel Metrics and Systematic Insights",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2026,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "CoRR 2026",
+   "Submitted to ICLR 2026",
+   "ICML 2025 R2-FM Workshop Poster",
+   "Crossref",
+   "ACL ARR 2025 May Submission"
+  ],
+  "checked": "2026-11-18"
+ },
+ "arxiv2609_38222": {
+  "title": "Conformal Factuality Control for Multi-Hop Retrieval-Augmented Generation",
+  "s2_venue": "arXiv.org",
+  "s2_year": 2026,
+  "status": "UNCONFIRMED",
+  "openreview_rejected_venues": [
+   "ICLR 2027 Conference Submission",
+   "CoRR 2025",
+   "SIGIR 2025",
+   "Crossref",
+   "ICML 2026 regular"
+  ],
+  "checked": "2026-11-18"
+ }
+}

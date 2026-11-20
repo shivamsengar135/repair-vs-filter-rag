@@ -1,0 +1,93 @@
+# Prompt set v2 — 2026-11-14. Identical to v1 except `decompose` (EXPERIMENT_PLAN.md §14, deviation D3):
+# v1's "No claims." escape was over-used on answers that also contain statements about the passages
+# (35% of ASQA dev responses and 4% of biography dev responses got zero claims despite factual content,
+# scripts/audit_decomposition.py). Changed before any judged result; applies to every method.
+version: v2
+
+short_closed_book: |
+  Answer the question with a short phrase of a few words. Do not explain.
+
+  Question: {question}
+  Answer:
+
+short_rag: |
+  Answer the question with a short phrase of a few words, using the passages below when they are relevant. Do not explain.
+
+  Passages:
+  {passages}
+
+  Question: {question}
+  Answer:
+
+long_closed_book: |
+  {question}
+
+long_rag: |
+  Use the passages below when they are relevant to write an accurate answer.
+
+  Passages:
+  {passages}
+
+  {question}
+
+decompose: |
+  Break the following text into independent atomic facts about the world. Each fact must be a single short
+  sentence that can be checked on its own, with pronouns replaced by the names they refer to. Do not add facts
+  that are not in the text. Skip sentences that only talk about the passages, the sources, or what is or is not
+  known (for example "the passages do not mention X"), but still extract every fact about the world that the text
+  states, even if the text also hedges or says that information is missing.
+  Output one fact per line, each line starting with "- ". Output "No claims." only if the text states no fact
+  about the world at all.
+
+  Example text: Marie Curie was a physicist born in Warsaw in 1867. She won two Nobel Prizes.
+  Example output:
+  - Marie Curie was a physicist.
+  - Marie Curie was born in Warsaw.
+  - Marie Curie was born in 1867.
+  - Marie Curie won two Nobel Prizes.
+
+  Example text: The passages do not say when the bridge opened. However, the Golden Gate Bridge is in San
+  Francisco and was designed by Joseph Strauss.
+  Example output:
+  - The Golden Gate Bridge is in San Francisco.
+  - The Golden Gate Bridge was designed by Joseph Strauss.
+
+  Example text: The provided passages do not contain any information about this topic.
+  Example output:
+  No claims.
+
+  Topic or question: {question}
+  Text: {text}
+  Output:
+
+closed_book_truth: |
+  Is the following statement true? Answer with exactly one word: True or False.
+
+  Statement: {claim}
+  Answer:
+
+revise_claim: |
+  The statement below is contradicted by the passage. Rewrite the statement as one short sentence that keeps the
+  same subject and is fully supported by the passage. If the passage does not allow this, output exactly "DELETE".
+
+  Passage: {passage}
+  Statement: {claim}
+  Rewritten statement:
+
+recompose: |
+  Write a fluent answer to the request using only the facts listed below. Do not add any information that is not
+  in the list. Do not mention the list.
+
+  Request: {question}
+  Facts:
+  {facts}
+
+  Answer:
+
+verify_yes_no: |
+  Passage: {passage}
+
+  Statement: {claim}
+
+  Is the statement fully supported by the passage? Answer with exactly one word: Yes or No.
+  Answer:

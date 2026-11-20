@@ -1,0 +1,49 @@
+{
+ "label": "EXPLORATORY",
+ "script": "scripts/figures_extra.py",
+ "git_commit": "268f125+dirty",
+ "judge_tag": "phi-4-FP8-dynamic",
+ "note": "CF / C thresholds at target 0.90 over partitions seeded 0-99 (cal_frac 0.5), Qwen2.5-7B default runs",
+ "values": {
+  "bio/Qwen2.5-7B-Instruct/s": {
+   "q_hat_median": 0.9794033169746399,
+   "q_hat_min": 0.9763690233230591,
+   "q_hat_max": 0.9817896485328674,
+   "n_supported": 5177,
+   "n_unsupported": 1053,
+   "share_supported_above_median_q": 0.05060846049835812,
+   "share_unsupported_above_median_q": 0.0389363722697056,
+   "one_minus_q_hat_median": 0.020596683025360107
+  },
+  "bio/Qwen2.5-7B-Instruct/score_c": {
+   "q_hat_median": 0.999999869571274,
+   "q_hat_min": 0.9999972145050081,
+   "q_hat_max": 0.9999999965198674,
+   "n_supported": 5177,
+   "n_unsupported": 1053,
+   "share_supported_above_median_q": 0.13463395789067029,
+   "share_unsupported_above_median_q": 0.055080721747388414,
+   "one_minus_q_hat_median": 1.304287260417425e-07
+  },
+  "asqa/Qwen2.5-7B-Instruct/s": {
+   "q_hat_median": 0.973861813545227,
+   "q_hat_min": 0.9675034284591675,
+   "q_hat_max": 0.9759541749954224,
+   "n_supported": 1185,
+   "n_unsupported": 507,
+   "share_supported_above_median_q": 0.3206751054852321,
+   "share_unsupported_above_median_q": 0.1854043392504931,
+   "one_minus_q_hat_median": 0.02613818645477295
+  },
+  "asqa/Qwen2.5-7B-Instruct/score_c": {
+   "q_hat_median": 0.9999059798601581,
+   "q_hat_min": 0.9988220739338013,
+   "q_hat_max": 0.9999985896370999,
+   "n_supported": 1185,
+   "n_unsupported": 507,
+   "share_supported_above_median_q": 0.40675105485232066,
+   "share_unsupported_above_median_q": 0.21499013806706113,
+   "one_minus_q_hat_median": 9.40201398419438e-05
+  }
+ }
+}

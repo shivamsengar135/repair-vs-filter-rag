@@ -1,0 +1,11 @@
+ok   saber                93418 chars  tables~25  https://arxiv.org/html/2605.18792
+ok   conf_robust         118687 chars  tables~12  https://arxiv.org/html/2603.16817
+ok   conf_multihop        44134 chars  tables~7  https://arxiv.org/html/2609.38222
+ok   conformal_rag        34193 chars  tables~0  https://arxiv.org/html/2506.20978
+ok   eaver                68274 chars  tables~20  https://arxiv.org/html/2609.22223
+ok   cove_ragplus         32913 chars  tables~4  https://arxiv.org/html/2609.26229
+  med_atomic: https://arxiv.org/html/2505.24830 error failed after 2 tries: https://arxiv.org/html/2505.24830: HTTP Error 404: Not Found
+  med_atomic: https://ar5iv.labs.arxiv.org/html/2505.24830 too short / failed (5430 chars)
+FAIL med_atomic 2505.24830
+ok   arbgraph             86206 chars  tables~8  https://arxiv.org/html/2604.18362
+ok   conf_mohri           80969 chars  tables~12  https://arxiv.org/html/2402.10978

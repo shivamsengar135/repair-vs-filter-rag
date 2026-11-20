@@ -1,0 +1,68 @@
+VLLM_READY
+(EngineCore pid=338) INFO 11-16 05:26:41 [model_runner.py:428] Model loading took 14.74 GiB memory and 7.336459 seconds
+(EngineCore pid=338) INFO 11-16 05:27:32 [kv_cache_utils.py:1147] GPU KV cache size: 9,792 tokens, Maximum concurrency for 4,096 tokens per request: 2.39x
+##### judge longform -> results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7/
+{"run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "n_claims": 443, "n_supported": 289, "supported_rate": 0.6523702031602708, "n_unreadable": 0, "cost": {"judge": {"calls": 443, "cache_hits": 0, "prompt_tokens": 447805, "completion_tokens": 443}}, "git_commit": "a63797d+dirty"}
+##### judge cove-closed_book -> results/dev/asqa/cove-closed_book__Qwen2.5-7B-Instruct__515f55fc1215/
+{"run": "results/dev/asqa/cove-closed_book__Qwen2.5-7B-Instruct__515f55fc1215", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "n_claims": 451, "n_supported": 210, "supported_rate": 0.4656319290465632, "n_unreadable": 0, "cost": {"judge": {"calls": 451, "cache_hits": 7, "prompt_tokens": 451252, "completion_tokens": 451}}, "git_commit": "a63797d+dirty"}
+##### judge cove-rag_verify -> results/dev/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__375c900c29f7/
+{"run": "results/dev/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__375c900c29f7", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "n_claims": 417, "n_supported": 214, "supported_rate": 0.513189448441247, "n_unreadable": 0, "cost": {"judge": {"calls": 417, "cache_hits": 176, "prompt_tokens": 415518, "completion_tokens": 417}}, "git_commit": "a63797d+dirty"}
+##### judge rarr -> results/dev/asqa/rarr__Qwen2.5-7B-Instruct__253ebf694f1d/
+{"run": "results/dev/asqa/rarr__Qwen2.5-7B-Instruct__253ebf694f1d", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "n_claims": 904, "n_supported": 401, "supported_rate": 0.4435840707964602, "n_unreadable": 0, "cost": {"judge": {"calls": 904, "cache_hits": 148, "prompt_tokens": 900495, "completion_tokens": 904}}, "git_commit": "a63797d+dirty"}
+##### judge flare -> results/dev/asqa/flare__Qwen2.5-7B-Instruct__180338fd77ba/
+{"run": "results/dev/asqa/flare__Qwen2.5-7B-Instruct__180338fd77ba", "judge_model": "RedHatAI/phi-4-FP8-dynamic", "judge_prompts": "judge_v1", "n_claims": 456, "n_supported": 288, "supported_rate": 0.631578947368421, "n_unreadable": 0, "cost": {"judge": {"calls": 456, "cache_hits": 106, "prompt_tokens": 456862, "completion_tokens": 456}}, "git_commit": "a63797d+dirty"}
+##### analysis results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7/
+B (budget 1)                                0.925±0.214                1.355±0.377                0.508±0.093                0.798±0.060                0.693±0.058
+B (budget 2)                                0.929±0.212                1.363±0.375                0.512±0.093                0.798±0.060                0.691±0.057
+B (budget 4)                                0.933±0.211                1.367±0.374                0.512±0.093                0.798±0.060                0.692±0.057
+A (repair all)                              0.933±0.212                1.367±0.374                0.512±0.093                0.798±0.060                0.692±0.057
+--- target 0.85
+CF (score s)                                0.655±0.181                0.944±0.309                0.396±0.092                0.848±0.055                0.705±0.061
+C (two-signal)                              0.649±0.149                0.917±0.248                0.383±0.079                0.847±0.054                0.717±0.065
+B (budget 0)                                0.655±0.181                0.944±0.309                0.396±0.092                0.848±0.055                0.705±0.061
+B (budget 1)                                0.651±0.165                0.932±0.280                0.392±0.087                0.849±0.054                0.709±0.059
+B (budget 2)                                0.655±0.167                0.942±0.282                0.396±0.088                0.849±0.054                0.706±0.059
+B (budget 4)                                0.659±0.168                0.946±0.283                0.396±0.088                0.849±0.054                0.707±0.059
+A (repair all)                              0.659±0.168                0.946±0.283                0.396±0.088                0.849±0.054                0.707±0.059
+--- target 0.9
+CF (score s)                                0.454±0.116                0.640±0.190                0.299±0.070                0.894±0.047                0.720±0.072
+C (two-signal)                              0.468±0.149                0.626±0.232                0.268±0.080                0.896±0.048                0.764±0.068
+B (budget 0)                                0.454±0.116                0.640±0.190                0.299±0.070                0.894±0.047                0.720±0.072
+B (budget 1)                                0.459±0.117                0.644±0.189                0.299±0.070                0.894±0.047                0.722±0.070
+B (budget 2)                                0.455±0.121                0.644±0.197                0.302±0.071                0.893±0.046                0.717±0.068
+B (budget 4)                                0.459±0.121                0.648±0.197                0.302±0.071                0.893±0.046                0.719±0.068
+A (repair all)                              0.459±0.121                0.648±0.197                0.302±0.071                0.893±0.046                0.719±0.068
+--- target 0.95
+CF (score s)                                0.246±0.089                0.346±0.142                0.176±0.064                0.948±0.035                0.735±0.097
+C (two-signal)                              0.273±0.092                0.333±0.129                0.161±0.047                0.953±0.030                0.835±0.075
+B (budget 0)                                0.246±0.089                0.346±0.142                0.176±0.064                0.948±0.035                0.735±0.097
+B (budget 1)                                0.247±0.090                0.347±0.144                0.176±0.064                0.948±0.035                0.736±0.097
+B (budget 2)                                0.237±0.086                0.335±0.140                0.173±0.064                0.948±0.035                0.732±0.100
+B (budget 4)                                0.241±0.088                0.338±0.142                0.175±0.064                0.948±0.035                0.735±0.099
+A (repair all)                              0.241±0.088                0.338±0.142                0.175±0.064                0.948±0.035                0.735±0.099
+A vs CF @0.90, partition 0: {"supported_per_response": {"diff": 0.02, "ci_low": 0.0, "ci_high": 0.06, "p_value": 0.7452, "n": 100, "n_resamples": 10000, "seed": 0}, "precision_micro_diff": {"diff": -0.011122345803842304, "one_sided_95_lower": -0.049632352941176516, "n_valid_resamples": 10000}, "non_inferiority_margin": -0.02, "guard_holds": false}
+pilot: {"q_cf_full_dev_at_0.90": 0.9750639796257019, "claims_dropped_by_CF": 319, "of_which_judge_supported_originally": 198, "repair_attempted": 53, "repair_output_judge_supported": 15, "R": 0.047021943573667714, "note": "R counts repaired claims the judge supports, whether or not they later pass A's filter"}
+method                                       supported_claims_per_r   claims_kept_per_respon           non_empty_rate   factual_precision_micr   all_retained_correct_r
+standard RAG (all claims)                              1.436±0.139             2.219±0.190             0.675±0.034             0.648±0.043             0.693±0.033
+CoVe factor+revise (closed-book)                       1.067±0.105             2.280±0.188             0.730±0.032             0.469±0.034             0.528±0.033
+CoVe factor+revise (retrieval-verified)                1.085±0.106             2.086±0.209             0.629±0.033             0.522±0.037             0.617±0.033
+RARR-style revise-all                                  2.016±0.184             4.530±0.294             0.863±0.023             0.445±0.028             0.251±0.032
+FLARE-direct                                           1.436±0.127             2.281±0.221             0.687±0.038             0.632±0.038             0.667±0.037
+CF (score s) @0.8                                      0.962±0.217             1.416±0.380             0.525±0.089             0.689±0.056             0.796±0.060
+C (two-signal) @0.8                                    0.857±0.217             1.262±0.373             0.481±0.082             0.688±0.056             0.794±0.062
+A (repair all) @0.8                                    0.933±0.212             1.367±0.374             0.512±0.093             0.692±0.057             0.798±0.060
+CF (score s) @0.85                                     0.655±0.181             0.944±0.309             0.396±0.092             0.705±0.061             0.848±0.055
+C (two-signal) @0.85                                   0.649±0.149             0.917±0.248             0.383±0.079             0.717±0.065             0.847±0.054
+A (repair all) @0.85                                   0.659±0.168             0.946±0.283             0.396±0.088             0.707±0.059             0.849±0.054
+CF (score s) @0.9                                      0.454±0.116             0.640±0.190             0.299±0.070             0.720±0.072             0.894±0.047
+C (two-signal) @0.9                                    0.468±0.149             0.626±0.232             0.268±0.080             0.764±0.068             0.896±0.048
+A (repair all) @0.9                                    0.459±0.121             0.648±0.197             0.302±0.071             0.719±0.068             0.893±0.046
+CF (score s) @0.95                                     0.246±0.089             0.346±0.142             0.176±0.064             0.735±0.097             0.948±0.035
+C (two-signal) @0.95                                   0.273±0.092             0.333±0.129             0.161±0.047             0.835±0.075             0.953±0.030
+A (repair all) @0.95                                   0.241±0.088             0.338±0.142             0.175±0.064             0.735±0.099             0.948±0.035
+wrote results/dev/asqa/comparison__v2__phi-4-FP8-dynamic.json
+repaired  : pool     0 -> picked 0 (judge-supported 0)
+kept_by_A : pool   416 -> picked 50 (judge-supported 25)
+rag       : pool   393 -> picked 50 (judge-supported 25)
+wrote labelling/claims_to_label.csv (100 rows)
+JUDGE_ASQA_END

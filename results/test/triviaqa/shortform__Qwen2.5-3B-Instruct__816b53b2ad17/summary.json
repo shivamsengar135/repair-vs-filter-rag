@@ -1,0 +1,90 @@
+{
+ "config": {
+  "pipeline": "shortform-v1",
+  "dataset": "triviaqa",
+  "split": "test",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "prompts": [
+   "v1",
+   "shortform_v1"
+  ],
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100",
+  "max_tokens": 64,
+  "temperature": 0.0,
+  "seed": 0,
+  "tau_s": 0.5,
+  "tau_c": 0.5,
+  "tau_con": 0.5,
+  "verifier": "MiniCheck-Flan-T5-Large",
+  "nli": "DeBERTa-v3-large-mnli-fever-anli-ling-wanli"
+ },
+ "config_hash": "816b53b2ad17",
+ "git_commit": "8123ab7+dirty",
+ "n": 1000,
+ "rag_match": 0.626,
+ "A_match_no_abstention": 0.604,
+ "actions": {
+  "keep": 530,
+  "revise": 252,
+  "reretrieve": 71,
+  "low": 147
+ },
+ "answers_changed_by_repair": 288,
+ "repair_effect_on_match": {
+  "fixed": 28,
+  "broken": 50
+ },
+ "mean_s": 0.5318647354687565,
+ "closed_book_unreadable": 0,
+ "auroc_note": "selective metrics computed by scripts/analyze_shortform.py",
+ "cost": {
+  "llm_by_stage": {
+   "1_answer": {
+    "calls": 1000,
+    "cache_hits": 1000,
+    "prompt_tokens": 844234,
+    "completion_tokens": 5311
+   },
+   "2_qa_to_claim": {
+    "calls": 1000,
+    "cache_hits": 0,
+    "prompt_tokens": 84299,
+    "completion_tokens": 22199
+   },
+   "3_closed_book_truth": {
+    "calls": 1000,
+    "cache_hits": 3,
+    "prompt_tokens": 70008,
+    "completion_tokens": 1000
+   },
+   "4_reanswer_reretrieve": {
+    "calls": 71,
+    "cache_hits": 5,
+    "prompt_tokens": 60300,
+    "completion_tokens": 385
+   },
+   "4_reanswer_revise": {
+    "calls": 252,
+    "cache_hits": 0,
+    "prompt_tokens": 58849,
+    "completion_tokens": 1155
+   },
+   "5_qa_to_claim_repaired": {
+    "calls": 323,
+    "cache_hits": 113,
+    "prompt_tokens": 28200,
+    "completion_tokens": 8063
+   }
+  },
+  "retrieval_queries": 1071,
+  "verifier_pairs": {
+   "minicheck": 5607,
+   "nli": 5000
+  },
+  "seconds_total": 1538.49,
+  "verifier_device": "cpu"
+ },
+ "finished_utc": "2026-11-17T22:52:20Z"
+}

@@ -1,0 +1,52 @@
+rag2020                  CONFIRMED   Advances in Neural Information Processing Systems 2020       2020 https://papers.nips.cc/paper_files/paper/2020
+selfrag                  CONFIRMED   ICLR 2024 oral                                                https://openreview.net/forum?id=hSyW5go0v8
+crag                     UNCONFIRMED                                                               
+flare                    CONFIRMED   EMNLP 2023 Main                                               https://openreview.net/forum?id=WLZX3et7VT
+cove                     CONFIRMED   ICLR 2024 R2-FM Workshop Poster                               https://openreview.net/forum?id=ek3GqAs2uO
+rarr                     CONFIRMED   Proceedings of the 61st Annual Meeting of the {A}ssociation  2023 https://aclanthology.org/2023.acl-long.910
+selfcheckgpt             CONFIRMED   EMNLP 2023                                                    https://openreview.net/forum?id=UMUeeSnsZm
+factscore                CONFIRMED   EMNLP 2023                                                    https://openreview.net/forum?id=Di9Smu9TqN
+semantic_entropy         UNCONFIRMED                                                               
+sep                      CONFIRMED   ICML 2024 FM-Wild Workshop Poster                             https://openreview.net/forum?id=Zd0XLr6JKn
+alce                     CONFIRMED   EMNLP 2023                                                    https://openreview.net/forum?id=2S7caOG4YS
+ais                      CONFIRMED   Computational Linguistics                                    2023 https://doi.org/10.1162/coli_a_00486
+attributed_qa            UNCONFIRMED                                                               
+safe_longfact            CONFIRMED   Advances in Neural Information Processing Systems 2024       2024 https://papers.nips.cc/paper_files/paper/2024
+veriscore                UNCONFIRMED                                                               
+ragtruth                 CONFIRMED   ACL (1) 2024                                                  https://openreview.net/forum?id=Xh6yEYDzCF
+halueval                 CONFIRMED   EMNLP 2023                                                    https://openreview.net/forum?id=CsoN9LNSNo
+adaptive_rag             CONFIRMED   Proceedings of the 2024 Conference of the {N}orth {A}merican 2024 https://aclanthology.org/2024.naacl-long.389
+dragin                   UNCONFIRMED                                                               
+seakr                    CONFIRMED   ACL (1) 2025                                                  https://openreview.net/forum?id=zc1EkSQgCW
+summac                   UNCONFIRMED                                                               DOI 10.1162/tacl_a_00453 title mismatch
+alignscore               CONFIRMED   ACL (1) 2023                                                  https://openreview.net/forum?id=17S8aQ447e
+minicheck                CONFIRMED   EMNLP 2024                                                    https://openreview.net/forum?id=QucIFjporK
+popqa                    CONFIRMED   Proceedings of the 61st Annual Meeting of the {A}ssociation  2023 https://aclanthology.org/2023.acl-long.546
+astute_rag               CONFIRMED   ACL (1) 2025                                                  https://openreview.net/forum?id=PwDQYZGKew
+instructrag              CONFIRMED   AFM 2024 Poster                                               https://openreview.net/forum?id=EY45IFgVC5
+chain_of_note            CONFIRMED   Proceedings of the 2024 Conference on Empirical Methods in N 2024 https://aclanthology.org/2024.emnlp-main.813
+r_tuning                 CONFIRMED   Proceedings of the 2024 Conference of the {N}orth {A}merican 2024 https://aclanthology.org/2024.naacl-long.394
+fava                     CONFIRMED   COLM                                                          https://openreview.net/forum?id=dJMTn3QOWO
+ragas                    CONFIRMED   EACL (Demonstrations) 2024                                    https://openreview.net/forum?id=V1GCMKllOe
+survey_huang             CONFIRMED   ACM Transactions on Information Systems                      2025 https://doi.org/10.1145/3703155
+wice                     CONFIRMED   EMNLP 2023 Main                                               https://openreview.net/forum?id=YGK9cd0bHz
+molecular_facts          CONFIRMED   Findings of the Association for Computational Linguistics: E 2024 https://doi.org/10.18653/v1/2024.findings-emnlp.215
+ever_or_low_conf         UNCONFIRMED                                                               
+clasheval                CONFIRMED   Advances in Neural Information Processing Systems 37         2024 https://doi.org/10.52202/079017-1053
+rag_survey_gao           UNCONFIRMED                                                               
+ret_robust               CONFIRMED   ICLR 2024                                                     https://openreview.net/forum?id=BxciKc7eUV
+modular_or_other         UNCONFIRMED                                                               
+qwen25                   UNCONFIRMED                                                               
+mistral7b                UNCONFIRMED                                                               
+phi4                     UNCONFIRMED                                                               
+dpr                      CONFIRMED   Proceedings of the 2020 Conference on Empirical Methods in N 2020 https://aclanthology.org/2020.emnlp-main.550
+bm25s                    UNCONFIRMED                                                               
+cpack_bge                CONFIRMED   Proceedings of the 47th International ACM SIGIR Conference o 2024 https://doi.org/10.1145/3626772.3657878
+vllm                     CONFIRMED   Proceedings of the 29th Symposium on Operating Systems Princ 2023 https://doi.org/10.1145/3600006.3613165
+triviaqa                 CONFIRMED   Proceedings of the 55th Annual Meeting of the Association fo 2017 https://doi.org/10.18653/v1/P17-1147
+hotpotqa                 CONFIRMED   Proceedings of the 2018 Conference on Empirical Methods in N 2018 https://doi.org/10.18653/v1/D18-1259
+twowiki                  CONFIRMED   Proceedings of the 28th International Conference on Computat 2020 https://aclanthology.org/2020.coling-main.580
+asqa                     CONFIRMED   Proceedings of the 2022 Conference on Empirical Methods in N 2022 https://aclanthology.org/2022.emnlp-main.566
+conformal_intro          UNCONFIRMED                                                               
+debertav3                UNCONFIRMED                                                               
+flan                     CONFIRMED   J. Mach. Learn. Res. 2024                                     https://openreview.net/forum?id=PsWmUCl9Dd

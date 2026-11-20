@@ -1,0 +1,34 @@
+=== attempt 1 2026-11-12T10:40:30Z
+short read: expected 2459840474 bytes but got 1134740824: unexpected EOF
+=== attempt 2 2026-11-12T10:50:00Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 3 2026-11-12T10:51:15Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 4 2026-11-12T10:52:30Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 5 2026-11-12T10:53:45Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 6 2026-11-12T10:55:01Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 7 2026-11-12T10:56:16Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 8 2026-11-12T10:57:31Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 9 2026-11-12T10:58:46Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 10 2026-11-12T11:00:01Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 11 2026-11-12T11:01:17Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 12 2026-11-12T11:02:32Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 13 2026-11-12T11:03:47Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 14 2026-11-12T11:05:02Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 15 2026-11-12T11:06:18Z
+Error response from daemon: failed to resolve reference "docker.io/vllm/vllm-openai:v0.33.0": failed to do request: Head "https://registry-1.docker.io/v2/vllm/vllm-openai/manifests/v0.33.0": context deadline exceeded
+=== attempt 16 2026-11-12T11:07:33Z
+docker.io/vllm/vllm-openai:v0.33.0
+id=sha256:d825baf9ce4b1b6bfc5ecc7b79880c7e6748c65a72d697ce3d47607aafa84c6e size=9738549569 digests=[vllm/vllm-openai@sha256:d825baf9ce4b1b6bfc5ecc7b79880c7e6748c65a72d697ce3d47607aafa84c6e]
+PULL_OK

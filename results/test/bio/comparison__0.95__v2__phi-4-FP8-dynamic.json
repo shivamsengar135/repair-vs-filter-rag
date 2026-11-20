@@ -1,0 +1,675 @@
+{
+ "dataset": "bio",
+ "split": "test",
+ "judge_tag": "phi-4-FP8-dynamic",
+ "prompts": "v2",
+ "rows": {
+  "standard RAG (all claims)": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 14.888514285714287,
+    "std": 0.45637561517161895
+   },
+   "claims_kept_per_response": {
+    "mean": 17.88662857142857,
+    "std": 0.4949954250604306
+   },
+   "non_empty_rate": {
+    "mean": 0.8902285714285715,
+    "std": 0.016330840494836137
+   },
+   "factual_precision_micro": {
+    "mean": 0.8323697536679003,
+    "std": 0.009902388848006984
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.2638857142857143,
+    "std": 0.02239621842803633
+   }
+  },
+  "CoVe factor+revise (closed-book)": {
+   "run": "results/test/bio/cove-closed_book__Qwen2.5-7B-Instruct__c7fd56e96a83",
+   "supported_claims_per_response": {
+    "mean": 2.404514285714286,
+    "std": 0.20500968799226646
+   },
+   "claims_kept_per_response": {
+    "mean": 5.414171428571429,
+    "std": 0.29968661429959215
+   },
+   "non_empty_rate": {
+    "mean": 0.6185142857142858,
+    "std": 0.0262944963057284
+   },
+   "factual_precision_micro": {
+    "mean": 0.4437941421336679,
+    "std": 0.023497828209037324
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.40759999999999996,
+    "std": 0.02778193495999917
+   }
+  },
+  "CoVe factor+revise (retrieval-verified)": {
+   "run": "results/test/bio/cove-rag_verify__Qwen2.5-7B-Instruct__0006f33b638c",
+   "supported_claims_per_response": {
+    "mean": 2.7715428571428573,
+    "std": 0.19984241163152475
+   },
+   "claims_kept_per_response": {
+    "mean": 4.9636000000000005,
+    "std": 0.27674660236623205
+   },
+   "non_empty_rate": {
+    "mean": 0.6268,
+    "std": 0.029122478232534617
+   },
+   "factual_precision_micro": {
+    "mean": 0.5581201181737895,
+    "std": 0.01928193062231836
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.4295428571428571,
+    "std": 0.029453120233453898
+   }
+  },
+  "RARR-style revise-all": {
+   "run": "results/test/bio/rarr__Qwen2.5-7B-Instruct__23a9fb6f10bd",
+   "supported_claims_per_response": {
+    "mean": 5.476800000000001,
+    "std": 0.3332836771919395
+   },
+   "claims_kept_per_response": {
+    "mean": 12.913885714285712,
+    "std": 0.5752044111579319
+   },
+   "non_empty_rate": {
+    "mean": 0.7487999999999999,
+    "std": 0.025502349316397013
+   },
+   "factual_precision_micro": {
+    "mean": 0.4241193373232664,
+    "std": 0.01799693279430736
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.35862857142857135,
+    "std": 0.02646952483908946
+   }
+  },
+  "FLARE-direct": {
+   "run": "results/test/bio/flare__Qwen2.5-7B-Instruct__28a6eee53ce5",
+   "supported_claims_per_response": {
+    "mean": 5.677542857142857,
+    "std": 0.31738184253730845
+   },
+   "claims_kept_per_response": {
+    "mean": 8.594514285714286,
+    "std": 0.4293183832195801
+   },
+   "non_empty_rate": {
+    "mean": 0.6024,
+    "std": 0.025865261455369187
+   },
+   "factual_precision_micro": {
+    "mean": 0.6605881215534746,
+    "std": 0.01643238047581524
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.43691428571428576,
+    "std": 0.028338676785230194
+   }
+  },
+  "CF (score s) @ target 0.8": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 2.1284000000000005,
+    "std": 0.3408681653714198
+   },
+   "claims_kept_per_response": {
+    "mean": 2.414342857142857,
+    "std": 0.4111514980134417
+   },
+   "non_empty_rate": {
+    "mean": 0.7053714285714286,
+    "std": 0.04880814906732556
+   },
+   "factual_precision_micro": {
+    "mean": 0.8832424873516719,
+    "std": 0.015103291542008821
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.798857142857143,
+    "std": 0.045576994417354494
+   }
+  },
+  "C (two-signal) @ target 0.8": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 3.7814857142857146,
+    "std": 0.4031270226778536
+   },
+   "claims_kept_per_response": {
+    "mean": 4.149942857142857,
+    "std": 0.46884876880140836
+   },
+   "non_empty_rate": {
+    "mean": 0.7425142857142859,
+    "std": 0.040624439485215554
+   },
+   "factual_precision_micro": {
+    "mean": 0.9120233036256217,
+    "std": 0.015535902261708454
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8038857142857141,
+    "std": 0.040274301700314416
+   }
+  },
+  "A (repair all) @ target 0.8": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 2.172285714285714,
+    "std": 0.3483252034097552
+   },
+   "claims_kept_per_response": {
+    "mean": 2.460914285714286,
+    "std": 0.4191760684676607
+   },
+   "non_empty_rate": {
+    "mean": 0.7110857142857145,
+    "std": 0.05061286731318765
+   },
+   "factual_precision_micro": {
+    "mean": 0.8843737770115958,
+    "std": 0.014982474335226927
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.798857142857143,
+    "std": 0.045576994417354494
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.8": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 3.074514285714286,
+    "std": 0.39477846951392154
+   },
+   "claims_kept_per_response": {
+    "mean": 3.377314285714285,
+    "std": 0.45352060957651924
+   },
+   "non_empty_rate": {
+    "mean": 0.7497142857142859,
+    "std": 0.03985543863083166
+   },
+   "factual_precision_micro": {
+    "mean": 0.9111543873865916,
+    "std": 0.010352574273734245
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8050285714285716,
+    "std": 0.03891990517407537
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 1) @ target 0.8": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 3.0638857142857137,
+    "std": 0.441377786998274
+   },
+   "claims_kept_per_response": {
+    "mean": 3.355885714285715,
+    "std": 0.5025534173921302
+   },
+   "non_empty_rate": {
+    "mean": 0.7545714285714287,
+    "std": 0.04413113645375633
+   },
+   "factual_precision_micro": {
+    "mean": 0.9138577506483786,
+    "std": 0.011054213175284277
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8037714285714285,
+    "std": 0.040797815633459605
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 2) @ target 0.8": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 3.1526285714285716,
+    "std": 0.3926215334414992
+   },
+   "claims_kept_per_response": {
+    "mean": 3.4492000000000003,
+    "std": 0.45880354561104353
+   },
+   "non_empty_rate": {
+    "mean": 0.7453142857142858,
+    "std": 0.04293311208107791
+   },
+   "factual_precision_micro": {
+    "mean": 0.915099073239066,
+    "std": 0.012133893044683222
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8039428571428572,
+    "std": 0.047931064358407355
+   }
+  },
+  "CF (score s) @ target 0.85": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 1.439542857142857,
+    "std": 0.3071955644564001
+   },
+   "claims_kept_per_response": {
+    "mean": 1.6362857142857141,
+    "std": 0.36832793952794235
+   },
+   "non_empty_rate": {
+    "mean": 0.6180571428571429,
+    "std": 0.05861154435188628
+   },
+   "factual_precision_micro": {
+    "mean": 0.8823095738394612,
+    "std": 0.016388383387759515
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8496571428571429,
+    "std": 0.04168138020980829
+   }
+  },
+  "C (two-signal) @ target 0.85": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 2.908342857142858,
+    "std": 0.49690622820502306
+   },
+   "claims_kept_per_response": {
+    "mean": 3.1662285714285714,
+    "std": 0.5748595956674841
+   },
+   "non_empty_rate": {
+    "mean": 0.6311428571428571,
+    "std": 0.06519020582478031
+   },
+   "factual_precision_micro": {
+    "mean": 0.920419925842421,
+    "std": 0.01893931624759697
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8570857142857143,
+    "std": 0.03829811778146503
+   }
+  },
+  "A (repair all) @ target 0.85": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 1.4748571428571426,
+    "std": 0.3130185658264556
+   },
+   "claims_kept_per_response": {
+    "mean": 1.6742857142857142,
+    "std": 0.3747477403441037
+   },
+   "non_empty_rate": {
+    "mean": 0.6233142857142857,
+    "std": 0.059193674970072475
+   },
+   "factual_precision_micro": {
+    "mean": 0.8834080821956657,
+    "std": 0.016296816936060974
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8496000000000001,
+    "std": 0.0415560461070086
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.85": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 2.237657142857143,
+    "std": 0.3238768404690397
+   },
+   "claims_kept_per_response": {
+    "mean": 2.4513714285714285,
+    "std": 0.36781637482662444
+   },
+   "non_empty_rate": {
+    "mean": 0.664057142857143,
+    "std": 0.05287555546857243
+   },
+   "factual_precision_micro": {
+    "mean": 0.913645899095069,
+    "std": 0.011099731210539898
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8570857142857143,
+    "std": 0.03187788491235359
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 1) @ target 0.85": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 2.1890857142857145,
+    "std": 0.3291147725311761
+   },
+   "claims_kept_per_response": {
+    "mean": 2.3773714285714287,
+    "std": 0.3790732180439802
+   },
+   "non_empty_rate": {
+    "mean": 0.6670857142857142,
+    "std": 0.04982671270213698
+   },
+   "factual_precision_micro": {
+    "mean": 0.9220487196081425,
+    "std": 0.012780025782947648
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8597714285714286,
+    "std": 0.036938454107853014
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 2) @ target 0.85": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 2.3623999999999996,
+    "std": 0.4286058129544809
+   },
+   "claims_kept_per_response": {
+    "mean": 2.5658857142857143,
+    "std": 0.4861283049996902
+   },
+   "non_empty_rate": {
+    "mean": 0.6651428571428571,
+    "std": 0.054676952740599326
+   },
+   "factual_precision_micro": {
+    "mean": 0.9221827876155525,
+    "std": 0.011044377718802427
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8553142857142856,
+    "std": 0.03726258868298951
+   }
+  },
+  "CF (score s) @ target 0.9": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 0.7384000000000001,
+    "std": 0.21899352616496337
+   },
+   "claims_kept_per_response": {
+    "mean": 0.8598857142857145,
+    "std": 0.25890813662708423
+   },
+   "non_empty_rate": {
+    "mean": 0.4496,
+    "std": 0.08391131166361437
+   },
+   "factual_precision_micro": {
+    "mean": 0.8605879368122206,
+    "std": 0.018593304828632102
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9014857142857143,
+    "std": 0.033370369035740824
+   }
+  },
+  "C (two-signal) @ target 0.9": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 2.0364000000000004,
+    "std": 0.35249246392847283
+   },
+   "claims_kept_per_response": {
+    "mean": 2.2012000000000005,
+    "std": 0.40315252851136146
+   },
+   "non_empty_rate": {
+    "mean": 0.5003428571428571,
+    "std": 0.057075400299214776
+   },
+   "factual_precision_micro": {
+    "mean": 0.9271514704778028,
+    "std": 0.024116723107477353
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9065714285714286,
+    "std": 0.03138656513272448
+   }
+  },
+  "A (repair all) @ target 0.9": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 0.7377142857142858,
+    "std": 0.23107503325904985
+   },
+   "claims_kept_per_response": {
+    "mean": 0.8594285714285713,
+    "std": 0.27169289173076905
+   },
+   "non_empty_rate": {
+    "mean": 0.4485714285714286,
+    "std": 0.08566039672027555
+   },
+   "factual_precision_micro": {
+    "mean": 0.8599871031413722,
+    "std": 0.018034183242909476
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9012000000000002,
+    "std": 0.03281396246654971
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.9": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 1.216457142857143,
+    "std": 0.37613427603658384
+   },
+   "claims_kept_per_response": {
+    "mean": 1.342,
+    "std": 0.420703830561187
+   },
+   "non_empty_rate": {
+    "mean": 0.4983428571428572,
+    "std": 0.07469658822679354
+   },
+   "factual_precision_micro": {
+    "mean": 0.9077239564282045,
+    "std": 0.014352564776709811
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9063428571428571,
+    "std": 0.029395279505820566
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 1) @ target 0.9": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 1.4375428571428572,
+    "std": 0.31704495713441333
+   },
+   "claims_kept_per_response": {
+    "mean": 1.560857142857143,
+    "std": 0.35614961452774624
+   },
+   "non_empty_rate": {
+    "mean": 0.5413142857142857,
+    "std": 0.06274346272742548
+   },
+   "factual_precision_micro": {
+    "mean": 0.9227010851995088,
+    "std": 0.013558544984924361
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9076000000000001,
+    "std": 0.030183169257920514
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 2) @ target 0.9": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 1.3508000000000002,
+    "std": 0.3397045001060337
+   },
+   "claims_kept_per_response": {
+    "mean": 1.479542857142857,
+    "std": 0.37958427932176686
+   },
+   "non_empty_rate": {
+    "mean": 0.5351428571428571,
+    "std": 0.06354536002628298
+   },
+   "factual_precision_micro": {
+    "mean": 0.9143209523414617,
+    "std": 0.011910076032763048
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9037142857142857,
+    "std": 0.031291844793941474
+   }
+  },
+  "CF (score s) @ target 0.95": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 0.28040000000000004,
+    "std": 0.07173673208446793
+   },
+   "claims_kept_per_response": {
+    "mean": 0.3327428571428571,
+    "std": 0.09406675349215637
+   },
+   "non_empty_rate": {
+    "mean": 0.2362285714285714,
+    "std": 0.05465414581259345
+   },
+   "factual_precision_micro": {
+    "mean": 0.8508095679956645,
+    "std": 0.04486442137723159
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9548000000000001,
+    "std": 0.021149720035886325
+   }
+  },
+  "C (two-signal) @ target 0.95": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 1.0552571428571431,
+    "std": 0.29537497734541734
+   },
+   "claims_kept_per_response": {
+    "mean": 1.1310857142857145,
+    "std": 0.3314681968649177
+   },
+   "non_empty_rate": {
+    "mean": 0.3561714285714286,
+    "std": 0.05735058922555771
+   },
+   "factual_precision_micro": {
+    "mean": 0.9374243161917419,
+    "std": 0.03252379076167155
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9564571428571428,
+    "std": 0.022694660584543207
+   }
+  },
+  "A (repair all) @ target 0.95": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 0.28034285714285706,
+    "std": 0.07239835744255048
+   },
+   "claims_kept_per_response": {
+    "mean": 0.33251428571428576,
+    "std": 0.0935034936187056
+   },
+   "non_empty_rate": {
+    "mean": 0.23177142857142852,
+    "std": 0.055712665089094615
+   },
+   "factual_precision_micro": {
+    "mean": 0.8505392075895195,
+    "std": 0.04416239273784528
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9543428571428569,
+    "std": 0.02076254020235733
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.95": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 0.5493142857142856,
+    "std": 0.12605399464133668
+   },
+   "claims_kept_per_response": {
+    "mean": 0.5973714285714287,
+    "std": 0.14986982876519353
+   },
+   "non_empty_rate": {
+    "mean": 0.32565714285714287,
+    "std": 0.051428539361862695
+   },
+   "factual_precision_micro": {
+    "mean": 0.9244640955991891,
+    "std": 0.026869700292496898
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9586857142857141,
+    "std": 0.020957968558369122
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 1) @ target 0.95": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 0.7276,
+    "std": 0.1780705680068159
+   },
+   "claims_kept_per_response": {
+    "mean": 0.7852571428571428,
+    "std": 0.20404514437774607
+   },
+   "non_empty_rate": {
+    "mean": 0.38245714285714294,
+    "std": 0.056101654062411084
+   },
+   "factual_precision_micro": {
+    "mean": 0.9301738759066882,
+    "std": 0.022794674116971173
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9570285714285715,
+    "std": 0.021846034582127544
+   }
+  },
+  "SelfCheckGPT-NLI (seed set 2) @ target 0.95": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "supported_claims_per_response": {
+    "mean": 0.6702285714285715,
+    "std": 0.20946287189409793
+   },
+   "claims_kept_per_response": {
+    "mean": 0.7259428571428572,
+    "std": 0.23829383232820944
+   },
+   "non_empty_rate": {
+    "mean": 0.3673142857142857,
+    "std": 0.07597406494738829
+   },
+   "factual_precision_micro": {
+    "mean": 0.9278113979425386,
+    "std": 0.01906667774314069
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9547999999999999,
+    "std": 0.022815185155407584
+   }
+  }
+ }
+}

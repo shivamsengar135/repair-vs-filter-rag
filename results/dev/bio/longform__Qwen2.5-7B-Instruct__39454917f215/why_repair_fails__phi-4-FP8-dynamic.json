@@ -1,0 +1,42 @@
+{
+ "run": "results/dev/bio/longform__Qwen2.5-7B-Instruct__39454917f215",
+ "n_claims": 2814,
+ "judge_supported_rate": 0.8248045486851457,
+ "auroc_vs_judge": {
+  "s (CF score: MiniCheck support)": 0.6153001128246988,
+  "score_c (C: two-signal)": 0.6275570175476927,
+  "c (closed-book confidence alone)": 0.5825787653604578,
+  "1 - SelfCheckGPT contradiction": 0.6873549818090929
+ },
+ "cf_threshold_at_0.90": 0.9804443120956421,
+ "claims_above_cf_threshold": 106,
+ "support_score_quantiles": {
+  "0.1": 0.25250881910324097,
+  "0.25": 0.9021599143743515,
+  "0.5": 0.9537252187728882,
+  "0.75": 0.96933314204216,
+  "0.9": 0.9763141512870789
+ },
+ "revise": {
+  "n": 162,
+  "original_judge_supported": 82,
+  "returned_DELETE": 157,
+  "revised_text_judge_supported": 2
+ },
+ "reretrieve": {
+  "n": 96,
+  "original_judge_supported": 76,
+  "support_increased": 42,
+  "crossed_cf_threshold": 1,
+  "median_s_before": 0.06956460699439049,
+  "median_s_after": 0.21655891090631485
+ },
+ "low": {
+  "n": 102,
+  "judge_supported": 69
+ },
+ "keep": {
+  "n": 2454,
+  "judge_supported": 2094
+ }
+}

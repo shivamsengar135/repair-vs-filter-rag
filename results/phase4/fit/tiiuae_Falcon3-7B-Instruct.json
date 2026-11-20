@@ -1,0 +1,3 @@
+{"model": "tiiuae/Falcon3-7B-Instruct", "revision": "1e57a0ecd176c7c139f289c60a74e57f887c3dfb", "extra_args": "", "status": "VLLM_READY", "model_load_GiB": 13.93,
+ "kv_cache_tokens": 25344, "gpu_used_MiB_with_server": 18614, "fits_rule_ge_16000_kv_tokens": true,
+ "bench": "results/phase4/fit/tiiuae_Falcon3-7B-Instruct_bench.json", "server_log": "logs/vllm_docker_20261116_080623.log", "errors": "", "date_utc": "2026-11-16T08:07:18Z", "git_commit": "f7fa182"}

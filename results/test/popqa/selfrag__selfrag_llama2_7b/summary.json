@@ -1,0 +1,26 @@
+{
+ "n": 1000,
+ "dataset": "popqa",
+ "split": "test",
+ "match_official": 0.379,
+ "match_ours_normalised": 0.389,
+ "retrieval_frequency": 1.0,
+ "passages": "our BM25 top-10",
+ "model": "selfrag/selfrag_llama2_7b",
+ "settings": {
+  "threshold": 0.2,
+  "ndocs": 10,
+  "max_new_tokens": 100,
+  "w_rel": 1.0,
+  "w_sup": 1.0,
+  "w_use": 1.0,
+  "dtype": "float16"
+ },
+ "cost": {
+  "calls": 11000,
+  "prompt_tokens": 1939245,
+  "completion_tokens": 221915,
+  "seconds": 614.4
+ },
+ "git_commit": "6e49154+dirty"
+}

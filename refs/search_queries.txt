@@ -1,0 +1,11 @@
+# arXiv API queries for 2025-2026 work (date filter added by scripts/lit/arxiv_search.py)
+abs:"retrieval-augmented" AND abs:hallucination AND abs:"claim" AND abs:verification
+abs:"retrieval-augmented" AND abs:"adaptive retrieval" AND abs:hallucination
+abs:"retrieval-augmented" AND abs:abstention
+abs:"corrective" AND abs:"retrieval-augmented" AND abs:hallucination
+abs:"semantic entropy" AND abs:hallucination
+abs:"hallucination detection" AND abs:"retrieval-augmented generation" AND abs:benchmark
+abs:"retrieval-augmented" AND abs:attribution AND abs:citation AND abs:verification
+abs:"post-hoc" AND abs:"revision" AND abs:hallucination AND abs:retrieval
+abs:"cost" AND abs:"verification" AND abs:"retrieval-augmented" AND abs:"selective"
+abs:"long-form" AND abs:factuality AND abs:"atomic" AND abs:retrieval

@@ -1,0 +1,15 @@
+2412.15115	qwen25	Qwen2.5|Technical Report
+2310.06825	mistral7b	Mistral 7B
+2412.08905	phi4	Phi-4|Technical Report
+2004.04906	dpr	Dense Passage Retrieval
+2407.03618	bm25s	BM25S
+2309.07597	cpack_bge	C-Pack
+2309.06180	vllm	PagedAttention
+1705.03551	triviaqa	TriviaQA
+1809.09600	hotpotqa	HotpotQA
+2011.01060	twowiki	Multi-hop QA|Comprehensive Evaluation of Reasoning Steps
+2204.06092	asqa	ASQA
+2107.07511	conformal_intro	Conformal Prediction
+2111.09543	debertav3	DeBERTaV3
+2210.11416	flan	Scaling Instruction-Finetuned Language Models
+2305.16739	alignscore	AlignScore

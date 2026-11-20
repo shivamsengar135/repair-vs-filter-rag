@@ -1,0 +1,65 @@
+{
+ "config": {
+  "pipeline": "cove-factor-revise-v1",
+  "variant": "closed_book",
+  "dataset": "bio",
+  "split": "dev",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "prompts": "v2",
+  "baseline_prompts": "baselines_v1",
+  "max_tokens": 512,
+  "temperature": 0.0,
+  "seed": 0
+ },
+ "config_hash": "0eeb0eb0edd8",
+ "git_commit": "0771763+dirty",
+ "n": 150,
+ "planned_facts_per_response": 7.873333333333333,
+ "responses_with_no_parsable_plan": 0,
+ "verdicts": {
+  "CONSISTENT": 363,
+  "PARTIALLY CONSISTENT": 263,
+  "INCONSISTENT": 555,
+  "UNPARSED": 0
+ },
+ "final_claims_per_response": 5.333333333333333,
+ "empty_final_answers": 9,
+ "cost": {
+  "llm_by_stage": {
+   "1_draft": {
+    "calls": 150,
+    "cache_hits": 150,
+    "prompt_tokens": 6175,
+    "completion_tokens": 49497
+   },
+   "2_plan": {
+    "calls": 150,
+    "cache_hits": 150,
+    "prompt_tokens": 66630,
+    "completion_tokens": 48846
+   },
+   "3_execute": {
+    "calls": 1181,
+    "cache_hits": 1181,
+    "prompt_tokens": 66503,
+    "completion_tokens": 40758
+   },
+   "4_crosscheck": {
+    "calls": 1181,
+    "cache_hits": 1181,
+    "prompt_tokens": 192022,
+    "completion_tokens": 32635
+   },
+   "5_decompose_final": {
+    "calls": 150,
+    "cache_hits": 0,
+    "prompt_tokens": 69955,
+    "completion_tokens": 13191
+   }
+  },
+  "retrieval_queries": 0,
+  "seconds_total": 31.96,
+  "note": "seconds include cache hits"
+ },
+ "finished_utc": "2026-11-14T10:30:35Z"
+}

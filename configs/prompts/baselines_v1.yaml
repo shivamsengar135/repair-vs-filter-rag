@@ -1,0 +1,75 @@
+# Baseline prompts v1 — written 2026-11-14 before any baseline was run or tuned.
+#
+# CoVe (Dhuliawala et al., arXiv:2309.11495): the paper gives prompt TEMPLATES (its §8, Tables 5-9) but not the
+# few-shot examples, and used a non-instruction-tuned Llama 65B. These prompts follow the templates' structure
+# (plan "fact, verification question" pairs; answer each question in a separate prompt that does not contain the
+# draft; cross-check each fact as CONSISTENT / INCONSISTENT / PARTIALLY CONSISTENT; splice consistent facts) as
+# zero-shot instructions for instruction-tuned models. This is OUR implementation, to be labelled as such.
+version: baselines_v1
+
+cove_plan: |
+  Below is a question and a draft answer. List every fact stated in the draft answer, and for each fact write one
+  question that would verify it. The question must be understandable on its own (use full names, no pronouns).
+  Output one line per fact in exactly this format:
+  <fact> ||| <verification question>
+
+  Question: {question}
+  Draft answer: {answer}
+  Output:
+
+cove_execute: |
+  Answer the question briefly and factually.
+
+  Q: {vq}
+  A:
+
+cove_execute_rag: |
+  Answer the question briefly and factually, using the passages below when they are relevant.
+
+  Passages:
+  {passages}
+
+  Q: {vq}
+  A:
+
+cove_crosscheck: |
+  Context: {fact}
+  From another source,
+  Q: {vq}
+  A: {va}
+
+  Is the context consistent with the other source? Respond in exactly one of these three forms:
+  CONSISTENT. <the fact>
+  PARTIALLY CONSISTENT. <only the part of the fact that is consistent>
+  INCONSISTENT.
+  Response:
+
+# RARR-style revise-all (Gao et al., arXiv:2210.08726): research (questions -> retrieval) then revise.
+# Our retriever replaces web search; our prompts replace the paper's few-shot prompts. OUR implementation.
+rarr_questions: |
+  Below is a text. Write the questions someone would need to answer in order to check every fact in the text.
+  Each question must be understandable on its own (use full names, no pronouns). Output one question per line,
+  each line starting with "- ".
+
+  Topic or question: {question}
+  Text: {text}
+  Output:
+
+rarr_agreement: |
+  Passage: {passage}
+
+  Text: {text}
+
+  Question: {vq}
+
+  Does the passage disagree with the text about the answer to the question? Answer with exactly one word: Yes or No.
+  Answer:
+
+rarr_edit: |
+  The text below disagrees with the passage about the question. Edit the text so that it agrees with the passage,
+  changing as little as possible and keeping everything else unchanged. Output only the edited text.
+
+  Passage: {passage}
+  Question: {vq}
+  Text: {text}
+  Edited text:

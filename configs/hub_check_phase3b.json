@@ -1,0 +1,15 @@
+{
+  "models": [
+    "ibm-granite/granite-4.1-8b", "ibm-granite/granite-4.2-8b", "mistralai/Ministral-3-8B-Instruct-2512",
+    "Qwen/Qwen3-8B-FP8", "RedHatAI/Mistral-7B-Instruct-v0.3-AWQ", "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4", "liuyanyi/AlignScore-large-hf", "selfrag/self_rag_critic",
+    "Qwen/Qwen3-Embedding-0.6B", "BAAI/bge-large-en-v1.5", "facebook/contriever"
+  ],
+  "datasets": [
+    "RUC-NLPIR/FlashRAG_datasets", "blue-guardrails/ragtruth-plus-plus", "dgslibisey/MuSiQue", "voidful/2WikiMultihopQA",
+    "dskar/FActScore", "s-nlp/popqa_kilt", "Tevatron/wikipedia-nq-corpus", "castorini/odqa-wiki-corpora", "wikimedia/wikipedia"
+  ],
+  "model_searches": ["Qwen3.5", "Qwen3.6", "gemma-4 e4b", "gemma-4-it", "Llama-4-8B", "Mistral-7B-Instruct-v0.3-AWQ", "granite-4.2", "!bge-m3", "Ministral-3-8B"],
+  "dataset_searches": ["wiki18 100w", "psgs_w100", "FlashRAG", "hotpotqa fullwiki dev"],
+  "github": ["blue-guardrails/ragtruth-plus-plus", "facebookresearch/atlas", "castorini/anserini"]
+}

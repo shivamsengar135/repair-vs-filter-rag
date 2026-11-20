@@ -1,0 +1,6 @@
+=== attempt 1 2026-11-12T10:00:20Z
+Fetching 14 files:   0%|          | 0/14 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 14 files:  86%|████████▌ | 12/14 [13:50<02:18, 69.18s/it]Fetching 14 files:  93%|█████████▎| 13/14 [16:53<01:21, 81.37s/it]Fetching 14 files: 100%|██████████| 14/14 [17:09<00:00, 72.66s/it]Fetching 14 files: 100%|██████████| 14/14 [17:09<00:00, 73.52s/it]
+[32m✓ Downloaded[0m
+  path: /home/diat/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28
+DOWNLOAD_OK

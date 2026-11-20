@@ -1,0 +1,1183 @@
+{
+ "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+ "judge_tag": "phi-4-FP8-dynamic",
+ "n_responses": 350,
+ "git_commit": "4b94969+dirty",
+ "n_partitions": 100,
+ "cal_frac": 0.5,
+ "unfiltered": {
+  "standard RAG (all claims)": {
+   "supported_claims_per_response": {
+    "mean": 14.888514285714287,
+    "std": 0.45637561517161895
+   },
+   "claims_kept_per_response": {
+    "mean": 17.88662857142857,
+    "std": 0.4949954250604306
+   },
+   "non_empty_rate": {
+    "mean": 0.8902285714285715,
+    "std": 0.016330840494836137
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.2638857142857143,
+    "std": 0.02239621842803633
+   },
+   "factual_precision_micro": {
+    "mean": 0.8323697536679003,
+    "std": 0.009902388848006984
+   },
+   "factual_precision_macro": {
+    "mean": 0.8273219148360549,
+    "std": 0.012260060062674674
+   },
+   "n_partitions": 100
+  },
+  "A without filter": {
+   "supported_claims_per_response": {
+    "mean": 14.2996,
+    "std": 0.4534768262116006
+   },
+   "claims_kept_per_response": {
+    "mean": 16.895542857142857,
+    "std": 0.4828139055242229
+   },
+   "non_empty_rate": {
+    "mean": 0.8902285714285715,
+    "std": 0.016330840494836137
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.30411428571428567,
+    "std": 0.024909053291715194
+   },
+   "factual_precision_micro": {
+    "mean": 0.8463316298070316,
+    "std": 0.009850261584652414
+   },
+   "factual_precision_macro": {
+    "mean": 0.8377211741159057,
+    "std": 0.012882599694470628
+   },
+   "n_partitions": 100
+  }
+ },
+ "targets": {
+  "0.8": {
+   "CF (score s)": {
+    "supported_claims_per_response": {
+     "mean": 2.1284000000000005,
+     "std": 0.3408681653714198
+    },
+    "claims_kept_per_response": {
+     "mean": 2.414342857142857,
+     "std": 0.4111514980134417
+    },
+    "non_empty_rate": {
+     "mean": 0.7053714285714286,
+     "std": 0.04880814906732556
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.798857142857143,
+     "std": 0.045576994417354494
+    },
+    "factual_precision_micro": {
+     "mean": 0.8832424873516719,
+     "std": 0.015103291542008821
+    },
+    "factual_precision_macro": {
+     "mean": 0.8766893874359561,
+     "std": 0.01730328934555359
+    },
+    "n_partitions": 100
+   },
+   "C (two-signal)": {
+    "supported_claims_per_response": {
+     "mean": 3.7814857142857146,
+     "std": 0.4031270226778536
+    },
+    "claims_kept_per_response": {
+     "mean": 4.149942857142857,
+     "std": 0.46884876880140836
+    },
+    "non_empty_rate": {
+     "mean": 0.7425142857142859,
+     "std": 0.040624439485215554
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8038857142857141,
+     "std": 0.040274301700314416
+    },
+    "factual_precision_micro": {
+     "mean": 0.9120233036256217,
+     "std": 0.015535902261708454
+    },
+    "factual_precision_macro": {
+     "mean": 0.9195798077915599,
+     "std": 0.012668293423732898
+    },
+    "n_partitions": 100
+   },
+   "B (budget 0)": {
+    "supported_claims_per_response": {
+     "mean": 2.1284000000000005,
+     "std": 0.3408681653714198
+    },
+    "claims_kept_per_response": {
+     "mean": 2.414342857142857,
+     "std": 0.4111514980134417
+    },
+    "non_empty_rate": {
+     "mean": 0.7053714285714286,
+     "std": 0.04880814906732556
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.798857142857143,
+     "std": 0.045576994417354494
+    },
+    "factual_precision_micro": {
+     "mean": 0.8832424873516719,
+     "std": 0.015103291542008821
+    },
+    "factual_precision_macro": {
+     "mean": 0.8766893874359561,
+     "std": 0.01730328934555359
+    },
+    "n_partitions": 100
+   },
+   "B (budget 1)": {
+    "supported_claims_per_response": {
+     "mean": 2.1368000000000005,
+     "std": 0.34315506056087597
+    },
+    "claims_kept_per_response": {
+     "mean": 2.422742857142857,
+     "std": 0.41344860841917447
+    },
+    "non_empty_rate": {
+     "mean": 0.7053714285714286,
+     "std": 0.04880814906732556
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.798857142857143,
+     "std": 0.045576994417354494
+    },
+    "factual_precision_micro": {
+     "mean": 0.8836444743990937,
+     "std": 0.015020114924521998
+    },
+    "factual_precision_macro": {
+     "mean": 0.8775163337299051,
+     "std": 0.017214626127614256
+    },
+    "n_partitions": 100
+   },
+   "B (budget 2)": {
+    "supported_claims_per_response": {
+     "mean": 2.1453142857142855,
+     "std": 0.3439916343251287
+    },
+    "claims_kept_per_response": {
+     "mean": 2.431257142857143,
+     "std": 0.4142610969448745
+    },
+    "non_empty_rate": {
+     "mean": 0.7053714285714286,
+     "std": 0.04880814906732556
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.798857142857143,
+     "std": 0.045576994417354494
+    },
+    "factual_precision_micro": {
+     "mean": 0.8840538021543759,
+     "std": 0.014991919314355341
+    },
+    "factual_precision_macro": {
+     "mean": 0.8793153843159063,
+     "std": 0.017044403005700166
+    },
+    "n_partitions": 100
+   },
+   "B (budget 4)": {
+    "supported_claims_per_response": {
+     "mean": 2.160285714285714,
+     "std": 0.34695898906762135
+    },
+    "claims_kept_per_response": {
+     "mean": 2.4489142857142854,
+     "std": 0.4178347816564638
+    },
+    "non_empty_rate": {
+     "mean": 0.7078857142857143,
+     "std": 0.050344711553917204
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.798857142857143,
+     "std": 0.045576994417354494
+    },
+    "factual_precision_micro": {
+     "mean": 0.8838048394533318,
+     "std": 0.01502849350933564
+    },
+    "factual_precision_macro": {
+     "mean": 0.8801035225541114,
+     "std": 0.01680597380593306
+    },
+    "n_partitions": 100
+   },
+   "A (repair all)": {
+    "supported_claims_per_response": {
+     "mean": 2.172285714285714,
+     "std": 0.3483252034097552
+    },
+    "claims_kept_per_response": {
+     "mean": 2.460914285714286,
+     "std": 0.4191760684676607
+    },
+    "non_empty_rate": {
+     "mean": 0.7110857142857145,
+     "std": 0.05061286731318765
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.798857142857143,
+     "std": 0.045576994417354494
+    },
+    "factual_precision_micro": {
+     "mean": 0.8843737770115958,
+     "std": 0.014982474335226927
+    },
+    "factual_precision_macro": {
+     "mean": 0.8806395651629668,
+     "std": 0.01676497129054694
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI": {
+    "supported_claims_per_response": {
+     "mean": 3.074514285714286,
+     "std": 0.39477846951392154
+    },
+    "claims_kept_per_response": {
+     "mean": 3.377314285714285,
+     "std": 0.45352060957651924
+    },
+    "non_empty_rate": {
+     "mean": 0.7497142857142859,
+     "std": 0.03985543863083166
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8050285714285716,
+     "std": 0.03891990517407537
+    },
+    "factual_precision_micro": {
+     "mean": 0.9111543873865916,
+     "std": 0.010352574273734245
+    },
+    "factual_precision_macro": {
+     "mean": 0.9009688109089669,
+     "std": 0.014407769145371167
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI (seed set 1)": {
+    "supported_claims_per_response": {
+     "mean": 3.0638857142857137,
+     "std": 0.441377786998274
+    },
+    "claims_kept_per_response": {
+     "mean": 3.355885714285715,
+     "std": 0.5025534173921302
+    },
+    "non_empty_rate": {
+     "mean": 0.7545714285714287,
+     "std": 0.04413113645375633
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8037714285714285,
+     "std": 0.040797815633459605
+    },
+    "factual_precision_micro": {
+     "mean": 0.9138577506483786,
+     "std": 0.011054213175284277
+    },
+    "factual_precision_macro": {
+     "mean": 0.9054115878404606,
+     "std": 0.013435014127179257
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI (seed set 2)": {
+    "supported_claims_per_response": {
+     "mean": 3.1526285714285716,
+     "std": 0.3926215334414992
+    },
+    "claims_kept_per_response": {
+     "mean": 3.4492000000000003,
+     "std": 0.45880354561104353
+    },
+    "non_empty_rate": {
+     "mean": 0.7453142857142858,
+     "std": 0.04293311208107791
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8039428571428572,
+     "std": 0.047931064358407355
+    },
+    "factual_precision_micro": {
+     "mean": 0.915099073239066,
+     "std": 0.012133893044683222
+    },
+    "factual_precision_macro": {
+     "mean": 0.9097149983900304,
+     "std": 0.016810320010733043
+    },
+    "n_partitions": 100
+   }
+  },
+  "0.85": {
+   "CF (score s)": {
+    "supported_claims_per_response": {
+     "mean": 1.439542857142857,
+     "std": 0.3071955644564001
+    },
+    "claims_kept_per_response": {
+     "mean": 1.6362857142857141,
+     "std": 0.36832793952794235
+    },
+    "non_empty_rate": {
+     "mean": 0.6180571428571429,
+     "std": 0.05861154435188628
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8496571428571429,
+     "std": 0.04168138020980829
+    },
+    "factual_precision_micro": {
+     "mean": 0.8823095738394612,
+     "std": 0.016388383387759515
+    },
+    "factual_precision_macro": {
+     "mean": 0.86982903707665,
+     "std": 0.02019835524691764
+    },
+    "n_partitions": 100
+   },
+   "C (two-signal)": {
+    "supported_claims_per_response": {
+     "mean": 2.908342857142858,
+     "std": 0.49690622820502306
+    },
+    "claims_kept_per_response": {
+     "mean": 3.1662285714285714,
+     "std": 0.5748595956674841
+    },
+    "non_empty_rate": {
+     "mean": 0.6311428571428571,
+     "std": 0.06519020582478031
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8570857142857143,
+     "std": 0.03829811778146503
+    },
+    "factual_precision_micro": {
+     "mean": 0.920419925842421,
+     "std": 0.01893931624759697
+    },
+    "factual_precision_macro": {
+     "mean": 0.9245272575577483,
+     "std": 0.013313927485639147
+    },
+    "n_partitions": 100
+   },
+   "B (budget 0)": {
+    "supported_claims_per_response": {
+     "mean": 1.439542857142857,
+     "std": 0.3071955644564001
+    },
+    "claims_kept_per_response": {
+     "mean": 1.6362857142857141,
+     "std": 0.36832793952794235
+    },
+    "non_empty_rate": {
+     "mean": 0.6180571428571429,
+     "std": 0.05861154435188628
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8496571428571429,
+     "std": 0.04168138020980829
+    },
+    "factual_precision_micro": {
+     "mean": 0.8823095738394612,
+     "std": 0.016388383387759515
+    },
+    "factual_precision_macro": {
+     "mean": 0.86982903707665,
+     "std": 0.02019835524691764
+    },
+    "n_partitions": 100
+   },
+   "B (budget 1)": {
+    "supported_claims_per_response": {
+     "mean": 1.4458857142857142,
+     "std": 0.3084168871731049
+    },
+    "claims_kept_per_response": {
+     "mean": 1.642628571428571,
+     "std": 0.3695366802774806
+    },
+    "non_empty_rate": {
+     "mean": 0.6180571428571429,
+     "std": 0.05861154435188628
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8496571428571429,
+     "std": 0.04168138020980829
+    },
+    "factual_precision_micro": {
+     "mean": 0.8827651367593004,
+     "std": 0.01633397207346016
+    },
+    "factual_precision_macro": {
+     "mean": 0.8710710929910271,
+     "std": 0.020238521595492102
+    },
+    "n_partitions": 100
+   },
+   "B (budget 2)": {
+    "supported_claims_per_response": {
+     "mean": 1.4524000000000001,
+     "std": 0.3099121692827706
+    },
+    "claims_kept_per_response": {
+     "mean": 1.6491428571428568,
+     "std": 0.3710354229664016
+    },
+    "non_empty_rate": {
+     "mean": 0.6180571428571429,
+     "std": 0.05861154435188628
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8496571428571429,
+     "std": 0.04168138020980829
+    },
+    "factual_precision_micro": {
+     "mean": 0.8832297702025811,
+     "std": 0.016279681315555194
+    },
+    "factual_precision_macro": {
+     "mean": 0.8737597722046049,
+     "std": 0.020325866395539065
+    },
+    "n_partitions": 100
+   },
+   "B (budget 4)": {
+    "supported_claims_per_response": {
+     "mean": 1.4637142857142857,
+     "std": 0.3126241002812887
+    },
+    "claims_kept_per_response": {
+     "mean": 1.6631428571428568,
+     "std": 0.3743879221121577
+    },
+    "non_empty_rate": {
+     "mean": 0.6180571428571429,
+     "std": 0.05948293661635632
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8496000000000001,
+     "std": 0.0415560461070086
+    },
+    "factual_precision_micro": {
+     "mean": 0.8826077939619712,
+     "std": 0.016306207064059105
+    },
+    "factual_precision_macro": {
+     "mean": 0.8740709335153026,
+     "std": 0.01992512435629041
+    },
+    "n_partitions": 100
+   },
+   "A (repair all)": {
+    "supported_claims_per_response": {
+     "mean": 1.4748571428571426,
+     "std": 0.3130185658264556
+    },
+    "claims_kept_per_response": {
+     "mean": 1.6742857142857142,
+     "std": 0.3747477403441037
+    },
+    "non_empty_rate": {
+     "mean": 0.6233142857142857,
+     "std": 0.059193674970072475
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8496000000000001,
+     "std": 0.0415560461070086
+    },
+    "factual_precision_micro": {
+     "mean": 0.8834080821956657,
+     "std": 0.016296816936060974
+    },
+    "factual_precision_macro": {
+     "mean": 0.8751259533136978,
+     "std": 0.019916452839278658
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI": {
+    "supported_claims_per_response": {
+     "mean": 2.237657142857143,
+     "std": 0.3238768404690397
+    },
+    "claims_kept_per_response": {
+     "mean": 2.4513714285714285,
+     "std": 0.36781637482662444
+    },
+    "non_empty_rate": {
+     "mean": 0.664057142857143,
+     "std": 0.05287555546857243
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8570857142857143,
+     "std": 0.03187788491235359
+    },
+    "factual_precision_micro": {
+     "mean": 0.913645899095069,
+     "std": 0.011099731210539898
+    },
+    "factual_precision_macro": {
+     "mean": 0.9127935596522232,
+     "std": 0.014611764167915896
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI (seed set 1)": {
+    "supported_claims_per_response": {
+     "mean": 2.1890857142857145,
+     "std": 0.3291147725311761
+    },
+    "claims_kept_per_response": {
+     "mean": 2.3773714285714287,
+     "std": 0.3790732180439802
+    },
+    "non_empty_rate": {
+     "mean": 0.6670857142857142,
+     "std": 0.04982671270213698
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8597714285714286,
+     "std": 0.036938454107853014
+    },
+    "factual_precision_micro": {
+     "mean": 0.9220487196081425,
+     "std": 0.012780025782947648
+    },
+    "factual_precision_macro": {
+     "mean": 0.9128661548180592,
+     "std": 0.01567404300649566
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI (seed set 2)": {
+    "supported_claims_per_response": {
+     "mean": 2.3623999999999996,
+     "std": 0.4286058129544809
+    },
+    "claims_kept_per_response": {
+     "mean": 2.5658857142857143,
+     "std": 0.4861283049996902
+    },
+    "non_empty_rate": {
+     "mean": 0.6651428571428571,
+     "std": 0.054676952740599326
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.8553142857142856,
+     "std": 0.03726258868298951
+    },
+    "factual_precision_micro": {
+     "mean": 0.9221827876155525,
+     "std": 0.011044377718802427
+    },
+    "factual_precision_macro": {
+     "mean": 0.9156194303634322,
+     "std": 0.014849108031296063
+    },
+    "n_partitions": 100
+   }
+  },
+  "0.9": {
+   "CF (score s)": {
+    "supported_claims_per_response": {
+     "mean": 0.7384000000000001,
+     "std": 0.21899352616496337
+    },
+    "claims_kept_per_response": {
+     "mean": 0.8598857142857145,
+     "std": 0.25890813662708423
+    },
+    "non_empty_rate": {
+     "mean": 0.4496,
+     "std": 0.08391131166361437
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9014857142857143,
+     "std": 0.033370369035740824
+    },
+    "factual_precision_micro": {
+     "mean": 0.8605879368122206,
+     "std": 0.018593304828632102
+    },
+    "factual_precision_macro": {
+     "mean": 0.8526291455410372,
+     "std": 0.025493798123594844
+    },
+    "n_partitions": 100
+   },
+   "C (two-signal)": {
+    "supported_claims_per_response": {
+     "mean": 2.0364000000000004,
+     "std": 0.35249246392847283
+    },
+    "claims_kept_per_response": {
+     "mean": 2.2012000000000005,
+     "std": 0.40315252851136146
+    },
+    "non_empty_rate": {
+     "mean": 0.5003428571428571,
+     "std": 0.057075400299214776
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9065714285714286,
+     "std": 0.03138656513272448
+    },
+    "factual_precision_micro": {
+     "mean": 0.9271514704778028,
+     "std": 0.024116723107477353
+    },
+    "factual_precision_macro": {
+     "mean": 0.9310321272725882,
+     "std": 0.020035190953505446
+    },
+    "n_partitions": 100
+   },
+   "B (budget 0)": {
+    "supported_claims_per_response": {
+     "mean": 0.7384000000000001,
+     "std": 0.21899352616496337
+    },
+    "claims_kept_per_response": {
+     "mean": 0.8598857142857145,
+     "std": 0.25890813662708423
+    },
+    "non_empty_rate": {
+     "mean": 0.4496,
+     "std": 0.08391131166361437
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9014857142857143,
+     "std": 0.033370369035740824
+    },
+    "factual_precision_micro": {
+     "mean": 0.8605879368122206,
+     "std": 0.018593304828632102
+    },
+    "factual_precision_macro": {
+     "mean": 0.8526291455410372,
+     "std": 0.025493798123594844
+    },
+    "n_partitions": 100
+   },
+   "B (budget 1)": {
+    "supported_claims_per_response": {
+     "mean": 0.7446857142857142,
+     "std": 0.22031686481865367
+    },
+    "claims_kept_per_response": {
+     "mean": 0.8661714285714287,
+     "std": 0.2602432048388802
+    },
+    "non_empty_rate": {
+     "mean": 0.4496,
+     "std": 0.08391131166361437
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9014857142857143,
+     "std": 0.033370369035740824
+    },
+    "factual_precision_micro": {
+     "mean": 0.8616345861086703,
+     "std": 0.01839148595546569
+    },
+    "factual_precision_macro": {
+     "mean": 0.8555576954343853,
+     "std": 0.025034588042499573
+    },
+    "n_partitions": 100
+   },
+   "B (budget 2)": {
+    "supported_claims_per_response": {
+     "mean": 0.7503428571428572,
+     "std": 0.2217654766032564
+    },
+    "claims_kept_per_response": {
+     "mean": 0.8718285714285713,
+     "std": 0.26173958427667043
+    },
+    "non_empty_rate": {
+     "mean": 0.4496,
+     "std": 0.08391131166361437
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9014857142857143,
+     "std": 0.033370369035740824
+    },
+    "factual_precision_micro": {
+     "mean": 0.8625611663732724,
+     "std": 0.01811153572440686
+    },
+    "factual_precision_macro": {
+     "mean": 0.8594264997959266,
+     "std": 0.024080598308422838
+    },
+    "n_partitions": 100
+   },
+   "B (budget 4)": {
+    "supported_claims_per_response": {
+     "mean": 0.7304,
+     "std": 0.2289598143299936
+    },
+    "claims_kept_per_response": {
+     "mean": 0.8521142857142857,
+     "std": 0.26955550882072676
+    },
+    "non_empty_rate": {
+     "mean": 0.4426285714285714,
+     "std": 0.0848515309993
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9012000000000002,
+     "std": 0.03281396246654971
+    },
+    "factual_precision_micro": {
+     "mean": 0.858785984175078,
+     "std": 0.018237614277799657
+    },
+    "factual_precision_macro": {
+     "mean": 0.854779183225503,
+     "std": 0.02341910617844422
+    },
+    "n_partitions": 100
+   },
+   "A (repair all)": {
+    "supported_claims_per_response": {
+     "mean": 0.7377142857142858,
+     "std": 0.23107503325904985
+    },
+    "claims_kept_per_response": {
+     "mean": 0.8594285714285713,
+     "std": 0.27169289173076905
+    },
+    "non_empty_rate": {
+     "mean": 0.4485714285714286,
+     "std": 0.08566039672027555
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9012000000000002,
+     "std": 0.03281396246654971
+    },
+    "factual_precision_micro": {
+     "mean": 0.8599871031413722,
+     "std": 0.018034183242909476
+    },
+    "factual_precision_macro": {
+     "mean": 0.8567047542627181,
+     "std": 0.023120450510564088
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI": {
+    "supported_claims_per_response": {
+     "mean": 1.216457142857143,
+     "std": 0.37613427603658384
+    },
+    "claims_kept_per_response": {
+     "mean": 1.342,
+     "std": 0.420703830561187
+    },
+    "non_empty_rate": {
+     "mean": 0.4983428571428572,
+     "std": 0.07469658822679354
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9063428571428571,
+     "std": 0.029395279505820566
+    },
+    "factual_precision_micro": {
+     "mean": 0.9077239564282045,
+     "std": 0.014352564776709811
+    },
+    "factual_precision_macro": {
+     "mean": 0.9072984106379455,
+     "std": 0.014638423179873848
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI (seed set 1)": {
+    "supported_claims_per_response": {
+     "mean": 1.4375428571428572,
+     "std": 0.31704495713441333
+    },
+    "claims_kept_per_response": {
+     "mean": 1.560857142857143,
+     "std": 0.35614961452774624
+    },
+    "non_empty_rate": {
+     "mean": 0.5413142857142857,
+     "std": 0.06274346272742548
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9076000000000001,
+     "std": 0.030183169257920514
+    },
+    "factual_precision_micro": {
+     "mean": 0.9227010851995088,
+     "std": 0.013558544984924361
+    },
+    "factual_precision_macro": {
+     "mean": 0.9110461756592292,
+     "std": 0.01660103226655958
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI (seed set 2)": {
+    "supported_claims_per_response": {
+     "mean": 1.3508000000000002,
+     "std": 0.3397045001060337
+    },
+    "claims_kept_per_response": {
+     "mean": 1.479542857142857,
+     "std": 0.37958427932176686
+    },
+    "non_empty_rate": {
+     "mean": 0.5351428571428571,
+     "std": 0.06354536002628298
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9037142857142857,
+     "std": 0.031291844793941474
+    },
+    "factual_precision_micro": {
+     "mean": 0.9143209523414617,
+     "std": 0.011910076032763048
+    },
+    "factual_precision_macro": {
+     "mean": 0.9188146201035032,
+     "std": 0.015708352089423637
+    },
+    "n_partitions": 100
+   }
+  },
+  "0.95": {
+   "CF (score s)": {
+    "supported_claims_per_response": {
+     "mean": 0.28040000000000004,
+     "std": 0.07173673208446793
+    },
+    "claims_kept_per_response": {
+     "mean": 0.3327428571428571,
+     "std": 0.09406675349215637
+    },
+    "non_empty_rate": {
+     "mean": 0.2362285714285714,
+     "std": 0.05465414581259345
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9548000000000001,
+     "std": 0.021149720035886325
+    },
+    "factual_precision_micro": {
+     "mean": 0.8508095679956645,
+     "std": 0.04486442137723159
+    },
+    "factual_precision_macro": {
+     "mean": 0.8555227528935384,
+     "std": 0.044825116171655646
+    },
+    "n_partitions": 100
+   },
+   "C (two-signal)": {
+    "supported_claims_per_response": {
+     "mean": 1.0552571428571431,
+     "std": 0.29537497734541734
+    },
+    "claims_kept_per_response": {
+     "mean": 1.1310857142857145,
+     "std": 0.3314681968649177
+    },
+    "non_empty_rate": {
+     "mean": 0.3561714285714286,
+     "std": 0.05735058922555771
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9564571428571428,
+     "std": 0.022694660584543207
+    },
+    "factual_precision_micro": {
+     "mean": 0.9374243161917419,
+     "std": 0.03252379076167155
+    },
+    "factual_precision_macro": {
+     "mean": 0.9460427312366089,
+     "std": 0.02056908308498022
+    },
+    "n_partitions": 100
+   },
+   "B (budget 0)": {
+    "supported_claims_per_response": {
+     "mean": 0.28040000000000004,
+     "std": 0.07173673208446793
+    },
+    "claims_kept_per_response": {
+     "mean": 0.3327428571428571,
+     "std": 0.09406675349215637
+    },
+    "non_empty_rate": {
+     "mean": 0.2362285714285714,
+     "std": 0.05465414581259345
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9548000000000001,
+     "std": 0.021149720035886325
+    },
+    "factual_precision_micro": {
+     "mean": 0.8508095679956645,
+     "std": 0.04486442137723159
+    },
+    "factual_precision_macro": {
+     "mean": 0.8555227528935384,
+     "std": 0.044825116171655646
+    },
+    "n_partitions": 100
+   },
+   "B (budget 1)": {
+    "supported_claims_per_response": {
+     "mean": 0.28668571428571427,
+     "std": 0.07269040706533325
+    },
+    "claims_kept_per_response": {
+     "mean": 0.33902857142857146,
+     "std": 0.0948669999572588
+    },
+    "non_empty_rate": {
+     "mean": 0.2362285714285714,
+     "std": 0.05465414581259345
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9548000000000001,
+     "std": 0.021149720035886325
+    },
+    "factual_precision_micro": {
+     "mean": 0.8535259766197748,
+     "std": 0.04458818795288208
+    },
+    "factual_precision_macro": {
+     "mean": 0.8619355845739516,
+     "std": 0.044795826837153115
+    },
+    "n_partitions": 100
+   },
+   "B (budget 2)": {
+    "supported_claims_per_response": {
+     "mean": 0.28731428571428574,
+     "std": 0.07382510099554676
+    },
+    "claims_kept_per_response": {
+     "mean": 0.3396571428571428,
+     "std": 0.0960015117038951
+    },
+    "non_empty_rate": {
+     "mean": 0.2362285714285714,
+     "std": 0.05465414581259345
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9548000000000001,
+     "std": 0.021149720035886325
+    },
+    "factual_precision_micro": {
+     "mean": 0.8537517444020708,
+     "std": 0.04440192518393918
+    },
+    "factual_precision_macro": {
+     "mean": 0.86226520373867,
+     "std": 0.04454600650967775
+    },
+    "n_partitions": 100
+   },
+   "B (budget 4)": {
+    "supported_claims_per_response": {
+     "mean": 0.2772,
+     "std": 0.07214587023839386
+    },
+    "claims_kept_per_response": {
+     "mean": 0.3293714285714286,
+     "std": 0.09326623615231493
+    },
+    "non_empty_rate": {
+     "mean": 0.22862857142857138,
+     "std": 0.055482338064892146
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9543428571428569,
+     "std": 0.02076254020235733
+    },
+    "factual_precision_micro": {
+     "mean": 0.8490698552772917,
+     "std": 0.044365995289584625
+    },
+    "factual_precision_macro": {
+     "mean": 0.851786610135203,
+     "std": 0.04372314190876254
+    },
+    "n_partitions": 100
+   },
+   "A (repair all)": {
+    "supported_claims_per_response": {
+     "mean": 0.28034285714285706,
+     "std": 0.07239835744255048
+    },
+    "claims_kept_per_response": {
+     "mean": 0.33251428571428576,
+     "std": 0.0935034936187056
+    },
+    "non_empty_rate": {
+     "mean": 0.23177142857142852,
+     "std": 0.055712665089094615
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9543428571428569,
+     "std": 0.02076254020235733
+    },
+    "factual_precision_micro": {
+     "mean": 0.8505392075895195,
+     "std": 0.04416239273784528
+    },
+    "factual_precision_macro": {
+     "mean": 0.8538010708799989,
+     "std": 0.04348441448883168
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI": {
+    "supported_claims_per_response": {
+     "mean": 0.5493142857142856,
+     "std": 0.12605399464133668
+    },
+    "claims_kept_per_response": {
+     "mean": 0.5973714285714287,
+     "std": 0.14986982876519353
+    },
+    "non_empty_rate": {
+     "mean": 0.32565714285714287,
+     "std": 0.051428539361862695
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9586857142857141,
+     "std": 0.020957968558369122
+    },
+    "factual_precision_micro": {
+     "mean": 0.9244640955991891,
+     "std": 0.026869700292496898
+    },
+    "factual_precision_macro": {
+     "mean": 0.9241194254610822,
+     "std": 0.027624362838830654
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI (seed set 1)": {
+    "supported_claims_per_response": {
+     "mean": 0.7276,
+     "std": 0.1780705680068159
+    },
+    "claims_kept_per_response": {
+     "mean": 0.7852571428571428,
+     "std": 0.20404514437774607
+    },
+    "non_empty_rate": {
+     "mean": 0.38245714285714294,
+     "std": 0.056101654062411084
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9570285714285715,
+     "std": 0.021846034582127544
+    },
+    "factual_precision_micro": {
+     "mean": 0.9301738759066882,
+     "std": 0.022794674116971173
+    },
+    "factual_precision_macro": {
+     "mean": 0.9373006706013863,
+     "std": 0.02625352544834484
+    },
+    "n_partitions": 100
+   },
+   "SelfCheckGPT-NLI (seed set 2)": {
+    "supported_claims_per_response": {
+     "mean": 0.6702285714285715,
+     "std": 0.20946287189409793
+    },
+    "claims_kept_per_response": {
+     "mean": 0.7259428571428572,
+     "std": 0.23829383232820944
+    },
+    "non_empty_rate": {
+     "mean": 0.3673142857142857,
+     "std": 0.07597406494738829
+    },
+    "all_retained_correct_rate": {
+     "mean": 0.9547999999999999,
+     "std": 0.022815185155407584
+    },
+    "factual_precision_micro": {
+     "mean": 0.9278113979425386,
+     "std": 0.01906667774314069
+    },
+    "factual_precision_macro": {
+     "mean": 0.9385511448958603,
+     "std": 0.020423798246937838
+    },
+    "n_partitions": 100
+   }
+  }
+ },
+ "A_vs_CF_at_0.90": {
+  "supported_per_response": {
+   "diff": 0.03428571428571429,
+   "ci_low": 0.0,
+   "ci_high": 0.08,
+   "p_value": 0.1002,
+   "n": 175,
+   "n_resamples": 10000,
+   "seed": 0
+  },
+  "precision_micro_diff": {
+   "diff": 0.0019911504424778848,
+   "one_sided_95_lower": -0.01479592462375815,
+   "n_valid_resamples": 10000
+  },
+  "non_inferiority_margin": -0.02,
+  "guard_holds": true
+ },
+ "pilot": {
+  "q_cf_full_dev_at_0.90": 0.9792956113815308,
+  "claims_dropped_by_CF": 5923,
+  "of_which_judge_supported_originally": 4912,
+  "repair_attempted": 638,
+  "repair_output_judge_supported": 237,
+  "R": 0.04001350666891778,
+  "R_net": 0.00016883336147222692,
+  "R_kept": 0.001857166976194496,
+  "note": "R = preregistered definition (repair output judge-supported); R_net = original was unsupported; R_kept = also passes the CF threshold after repair"
+ }
+}

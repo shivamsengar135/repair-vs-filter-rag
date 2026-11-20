@@ -1,0 +1,17 @@
+# Phase 2 novelty-check queries (all years: run with ARXIV_DATE=none).
+# --- Candidate A: evidence-grounded claim triage (faithful vs factual -> different actions)
+abs:"retrieval-augmented" AND abs:"claim" AND abs:"unsupported" AND (abs:"re-retrieval" OR abs:"re-retrieve" OR abs:"targeted retrieval")
+abs:"parametric knowledge" AND abs:"retrieved" AND abs:"claim-level" AND (abs:revise OR abs:revision OR abs:abstain OR abs:abstention)
+abs:faithfulness AND abs:factuality AND abs:"retrieval-augmented" AND (abs:mitigation OR abs:correction OR abs:revision)
+abs:"atomic" AND abs:"claims" AND abs:"retrieval-augmented" AND (abs:"post-hoc" OR abs:"revision" OR abs:"correction") AND abs:hallucination
+# --- Candidate B: cost-aware / budgeted verification
+abs:"verification" AND abs:"budget" AND abs:"claims" AND (abs:hallucination OR abs:factuality)
+abs:"selective verification" AND (abs:"language model" OR abs:"LLM")
+abs:"cascade" AND abs:"fact-checking" AND (abs:"cost" OR abs:"efficient") AND abs:"language model"
+abs:"cost-aware" AND abs:"retrieval-augmented" AND (abs:verification OR abs:hallucination)
+abs:"which claims" AND abs:"verify" AND abs:"language model"
+# --- Candidate C: calibrated claim-level abstention / conformal factuality with retrieval
+abs:"conformal" AND abs:"factuality"
+abs:"conformal" AND abs:"retrieval-augmented" AND (abs:"claims" OR abs:"abstention" OR abs:"risk control")
+abs:"selective" AND abs:"claim-level" AND abs:"abstention" AND abs:"long-form"
+abs:"risk-coverage" AND abs:"retrieval-augmented"

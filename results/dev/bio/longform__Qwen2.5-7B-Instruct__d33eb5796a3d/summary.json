@@ -1,0 +1,92 @@
+{
+ "config": {
+  "pipeline": "longform-v1",
+  "dataset": "bio",
+  "split": "dev",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "prompts": "v1",
+  "k": 5,
+  "retriever": "bm25",
+  "index": "bm25_psgs_w100",
+  "max_tokens": 512,
+  "temperature": 0.0,
+  "seed": 0,
+  "tau_s": 0.5,
+  "tau_c": 0.5,
+  "tau_con": 0.5,
+  "verifier": "MiniCheck-Flan-T5-Large",
+  "nli": "DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+  "limit": 8
+ },
+ "config_hash": "d33eb5796a3d",
+ "git_commit": "a187cf7+dirty",
+ "n": 8,
+ "claims_per_response_mean": 17.375,
+ "responses_with_zero_claims": 1,
+ "answers_truncated": 0,
+ "decompositions_truncated": 0,
+ "actions": {
+  "keep": 122,
+  "revise": 5,
+  "reretrieve": 4,
+  "low": 8
+ },
+ "closed_book_unreadable": 0,
+ "repair": {
+  "revise_attempted": 5,
+  "revise_deleted": 4,
+  "revise_now_supported": 0,
+  "reretrieve_attempted": 4,
+  "reretrieve_now_supported": 1
+ },
+ "mean_support_all_claims": 0.8384351690681718,
+ "cost": {
+  "llm_by_stage": {
+   "1_generate": {
+    "calls": 8,
+    "cache_hits": 0,
+    "prompt_tokens": 7148,
+    "completion_tokens": 2569
+   },
+   "2_decompose": {
+    "calls": 8,
+    "cache_hits": 0,
+    "prompt_tokens": 4098,
+    "completion_tokens": 2612
+   },
+   "3_closed_book_truth": {
+    "calls": 139,
+    "cache_hits": 0,
+    "prompt_tokens": 9273,
+    "completion_tokens": 139
+   },
+   "4_revise": {
+    "calls": 5,
+    "cache_hits": 0,
+    "prompt_tokens": 1241,
+    "completion_tokens": 22
+   }
+  },
+  "retrieval_queries": 12,
+  "verifier_pairs": {
+   "minicheck": 720,
+   "nli": 695
+  },
+  "seconds_by_stage": {
+   "retrieve": 26.92,
+   "generate": 22.63,
+   "decompose": 25.81,
+   "load_verifiers": 8.04,
+   "minicheck": 92.19,
+   "nli": 79.65,
+   "closed_book_truth": 2.08,
+   "revise": 12.43,
+   "rescore_revised": 0.87,
+   "reretrieve": 2.5,
+   "rescore_reretrieved": 2.83
+  },
+  "verifier_device": "cpu",
+  "note": "stage seconds include cache hits; use a cold cache for timing claims"
+ },
+ "finished_utc": "2026-11-13T07:44:13Z"
+}

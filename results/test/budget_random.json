@@ -1,0 +1,59 @@
+{
+ "label": "EXPLORATORY (\u00a75.3)",
+ "results": {
+  "bio": {
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "1": {
+    "risk_ordered": {
+     "mean": 0.7446857142857142,
+     "std": 0.22031686481865367
+    },
+    "random_mean_over_10_draws": 0.7396171428571429,
+    "random_std_over_draws": 0.012561324944198492
+   },
+   "2": {
+    "risk_ordered": {
+     "mean": 0.7503428571428572,
+     "std": 0.2217654766032564
+    },
+    "random_mean_over_10_draws": 0.7404171428571429,
+    "random_std_over_draws": 0.01644422001440277
+   },
+   "4": {
+    "risk_ordered": {
+     "mean": 0.7304,
+     "std": 0.2289598143299936
+    },
+    "random_mean_over_10_draws": 0.7539199999999999,
+    "random_std_over_draws": 0.015488049961501854
+   }
+  },
+  "asqa": {
+   "run": "results/test/asqa/longform__Qwen2.5-7B-Instruct__ceeba04af770",
+   "1": {
+    "risk_ordered": {
+     "mean": 0.5397593582887701,
+     "std": 0.07536205578118337
+    },
+    "random_mean_over_10_draws": 0.5401871657754012,
+    "random_std_over_draws": 0.003232014660570884
+   },
+   "2": {
+    "risk_ordered": {
+     "mean": 0.5357754010695187,
+     "std": 0.07398312701236831
+    },
+    "random_mean_over_10_draws": 0.5374679144385026,
+    "random_std_over_draws": 0.002548335485274236
+   },
+   "4": {
+    "risk_ordered": {
+     "mean": 0.5372192513368984,
+     "std": 0.07410883793633868
+    },
+    "random_mean_over_10_draws": 0.5393449197860962,
+    "random_std_over_draws": 0.002240651283274338
+   }
+  }
+ }
+}

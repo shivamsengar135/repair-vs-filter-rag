@@ -1,0 +1,12 @@
+# Prompts used only by Phase 6 ablations (EXPERIMENT_PLAN.md §8.6: verifier replaced by the generator itself).
+# Written 2026-11-17 before any ablation run; same wording style and answer format as `closed_book_truth` (v1/v2),
+# with the passage added, so the only change from the closed-book signal is the evidence.
+version: ablation_v1
+
+generator_verify: |
+  Read the passage, then decide whether the passage supports the statement. Answer with exactly one word: True or False.
+
+  Passage: {passage}
+
+  Statement: {claim}
+  Answer:

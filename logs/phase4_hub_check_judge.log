@@ -1,0 +1,20 @@
+## MODELS
+{"id": "microsoft/phi-4", "gated": false, "license": "mit", "license_name": null, "params_B": 14.66, "weights_GB": 29.3, "lastModified": "2026-07-14", "downloads": 245258, "sha": "2db69c1c3e91", "pipeline": "text-generation", "library": "transformers"}
+{"id": "Qwen/Qwen3-14B", "gated": false, "license": "apache-2.0", "license_name": null, "params_B": 14.77, "weights_GB": 29.5, "lastModified": "2025-07-26", "downloads": 12965376, "sha": "40c069824f42", "pipeline": "text-generation", "library": "transformers"}
+{"id": "Qwen/Qwen3-14B-AWQ", "gated": false, "license": "apache-2.0", "license_name": null, "params_B": 14.77, "weights_GB": 10.0, "lastModified": "2025-05-21", "downloads": 1797732, "sha": "31c69efc2946", "pipeline": "text-generation", "library": "transformers"}
+{"id": "mistralai/Mistral-Nemo-Instruct-2407", "gated": false, "license": "apache-2.0", "license_name": null, "params_B": 12.25, "weights_GB": 49.0, "lastModified": "2025-07-28", "downloads": 94901, "sha": "04d8a90549d2", "pipeline": null, "library": "vllm"}
+{"id": "google/gemma-3-12b-it-qat-q4_0-unquantized", "gated": "manual", "license": "gemma", "license_name": null, "params_B": 12.19, "weights_GB": 24.4, "lastModified": "2025-04-15", "downloads": 7825, "sha": "68f7ee4fbd59", "pipeline": "image-text-to-text", "library": "transformers"}
+{"id": "ibm-granite/granite-4.2-30b", "gated": false, "license": "apache-2.0", "license_name": null, "params_B": 29.28, "weights_GB": 58.6, "lastModified": "2026-09-04", "downloads": 36287, "sha": "9e668ce1c538", "pipeline": "text-generation", "library": "transformers"}
+{"id": "meta-llama/Llama-3.3-70B-Instruct", "gated": "manual", "license": "llama3.3", "license_name": null, "params_B": 70.55, "weights_GB": 141.1, "lastModified": "2024-12-21", "downloads": 349398, "sha": "6f6073b42301", "pipeline": "text-generation", "library": "transformers"}
+## DATASETS
+## MODEL SEARCHES (top by downloads)
+phi-4 AWQ -> stelterlab/phi-4-AWQ (1698, 2025-01-11); Sreenington/Phi-3-mini-4k-instruct-AWQ (278, 2024-05-05); drawais/Phi-4-mini-instruct-AWQ-INT4 (189, 2026-05-03); pytorch/Phi-4-mini-instruct-AWQ-INT4 (164, 2025-08-28); curiousmind147/microsoft-phi-4-AWQ-4bit-GEMM (76, 2025-02-04); danieldk/Phi-3.5-MoE-instruct-AWQ-INT4 (63, 2024-11-18)
+phi-4 FP8 -> RedHatAI/phi-4-FP8-dynamic (16730, 2025-03-03); RedHatAI/Phi-4-mini-instruct-FP8-dynamic (1933, 2025-03-03); pytorch/Phi-4-mini-instruct-FP8 (187, 2025-04-08); RedHatAI/Phi-4-reasoning-FP8-dynamic (66, 2026-01-27); liodon-ai/Phi-3-mini-4k-instruct-FP8 (16, 2026-08-30); SicariusSicariiStuff/Phi-lthy4_FP8 (13, 2025-02-12)
+phi-4 NVFP4 -> Shoolife/Phi-4-mini-instruct-TensorRT-LLM-Checkpoint-NVFP4 (14, 2026-03-26); drawais/Phi-4-reasoning-NVFP4 (10, 2026-05-06); drawais/Phi-4-NVFP4 (8, 2026-05-06)
+Mistral-Nemo-Instruct-2407 AWQ -> casperhansen/mistral-nemo-instruct-2407-awq (1485, 2024-07-23); Ichigo2899/mistralai-Mistral-Nemo-Instruct-2407-AWQ (6, 2024-07-18)
+Qwen3-14B AWQ -> Qwen/Qwen3-14B-AWQ (1797732, 2025-05-01); warshanks/Huihui-Qwen3-14B-abliterated-v2-AWQ (1075, 2025-08-05); mlx-community/Qwen3-14B-4bit-AWQ (192, 2025-05-06); stelterlab/Qwen3-14B-AWQ (23, 2025-04-30); drawais/Qwen3-14B-AWQ-INT4 (23, 2026-04-27); nicklas373/Qwen3-14B-AWQ (15, 2025-12-31)
+gemma-3-12b-it AWQ -> 
+Phi-4-reasoning -> microsoft/Phi-4-reasoning (36934, 2025-04-09); microsoft/Phi-4-mini-reasoning (36157, 2025-04-29); lmstudio-community/Phi-4-mini-reasoning-MLX-4bit (25934, 2025-05-01); lmstudio-community/Phi-4-reasoning-plus-MLX-4bit (14987, 2025-05-01); unsloth/Phi-4-mini-reasoning-GGUF (11941, 2025-05-01); unsloth/Phi-4-reasoning-plus-GGUF (11587, 2025-05-01)
+## DATASET SEARCHES
+## GITHUB
+wrote results/phase3/hub_check_judge.json

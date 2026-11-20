@@ -1,0 +1,164 @@
+
+### abs:"retrieval-augmented" AND abs:hallucination AND abs:"claim" AND abs:verification  (20 hits)
+* 2608.13706v3  2026-08-13 Fatema Tuj Johor CLAIR-Fin: An Adversarial Multi-Agent Framework for Claim-Level Verification and Adaptive Debate in Cross-Moda
+* 2604.08549v1  2026-01-16 Miloš Košprdić   VerifAI: A Verifiable Open-Source Search Engine for Biomedical Question Answering
+* 2603.27752v2  2026-03-29 Boxi Yu          Retromorphic Testing with Hierarchical Verification for Hallucination Detection in RAG
+* 2603.28488v3  2026-03-30 Masnun Nuha Chow Courtroom-Style Multi-Agent Debate with Progressive RAG and Role-Switching for Controversial Claim Verificatio
+* 2609.26229v1  2026-08-12 Ashly Joseph     Reducing Hallucinations in Large Language Models Through Integrated Self-Verification and Retrieval-Augmented 
+* 2609.04442v1  2026-09-03 John Seon Keun Y GRACE: Graph-Grounded Reflective Agent Copilot Engine for Expert-in-the-Loop Knowledge Expansion
+* 2504.06438v2  2025-04-08 Yuehan Qin       Don't Let It Hallucinate: Premise Verification via Retrieval-Augmented Logical Reasoning
+* 2509.06902v1  2025-09-08 Aivin V. Solator Proof-Carrying Numbers (PCN): A Protocol for Trustworthy Numeric Answers from LLMs via Claim Verification
+* 2605.22963v1  2026-05-21 Paul Landes      Graph Alignment Topology as an Inductive Bias for Grounding Detection
+* 2608.15574v1  2026-08-16 Yogesh Kumar     Catching Hallucinated Citations in Video-LLM Question Answering: A Self-Verification Pipeline and Verifier Abl
+* 2607.09349v1  2026-07-10 Cedric Caruzzo   Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation
+* 2605.03534v2  2026-05-05 Jingxi Qiu       SURE-RAG: Sufficiency and Uncertainty-Aware Evidence Verification for Selective Retrieval-Augmented Generation
+* 2510.11394v1  2025-10-13 Haosheng Qian    VeriCite: Towards Reliable Citations in Retrieval-Augmented Generation via Rigorous Verification
+* 2606.18385v1  2026-06-16 Sneha Rao        CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework
+* 2603.10143v1  2026-03-10 Eeham Khan       Reason and Verify: A Framework for Faithful Retrieval-Augmented Generation
+* 2607.15738v2  2026-07-17 S M Asif Hossain EduGuard: A Safe RAG-Based LLM Tutor for Programming Education
+* 2604.18362v1  2026-04-20 Qingying Niu     ArbGraph: Conflict-Aware Evidence Arbitration for Reliable Long-Form Retrieval-Augmented Generation
+* 2601.04531v1  2026-01-08 Jessica Ryan     Self-MedRAG: a Self-Reflective Hybrid Retrieval-Augmented Generation Framework for Reliable Medical Question A
+* 2606.24902v1  2026-06-12 Arnesh Banerjee  Failure Modes of Large Language Models on Research-Level Mathematics: A Taxonomy and an Empirical Characterisa
+* 2603.20637v1  2026-03-21 Sen Fang         AEGIS: From Clues to Verdicts -- Graph-Guided Deep Vulnerability Reasoning via Dialectics and Meta-Auditing
+
+### abs:"retrieval-augmented" AND abs:"adaptive retrieval" AND abs:hallucination  (20 hits)
+* 2502.01142v2  2025-02-03 Xinyan Guan      DeepRAG: Thinking to Retrieve Step by Step for Large Language Models
+* 2505.04253v1  2025-05-07 Maria Marina     LLM-Independent Adaptive RAG: Let the Question Speak for Itself
+* 2501.12835v2  2025-01-22 Viktor Moskvoret Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home
+* 2608.00419v1  2026-08-01 Muhammad Faizan  Unleashing the Potential of Large Language Models: A Blueprint for Real-Time, Enterprise-Ready Deployments
+* 2505.12662v1  2025-05-19 Xukai Liu        Know3-RAG: A Knowledge-aware RAG Framework with Adaptive Retrieval, Generation, and Filtering
+* 2501.04899v1  2025-01-09 Hanna Zubkova    SUGAR: Leveraging Contextual Confidence for Smarter Retrieval
+* 2602.07213v1  2026-02-06 Srijan Shakya    Adaptive Retrieval helps Reasoning in LLMs -- but mostly if it's not used
+* 2503.20757v2  2025-03-26 Yunhai Hu        MCTS-RAG: Enhancing Retrieval-Augmented Generation with Monte Carlo Tree Search
+* 2605.26926v1  2026-05-26 Youssef Al Mouat From Norms to Indicators (N2I-RAG): An Agentic Retrieval-Augmented Generation Framework for Legal Indicator Co
+* 2603.00511v1  2026-02-28 Ruoshuang Du     Multimodal Adaptive Retrieval Augmented Generation through Internal Representation Learning
+* 2503.02692v1  2025-03-04 Congluo Xu       FinArena: A Human-Agent Collaboration Framework for Financial Market Analysis and Forecasting
+* 2502.12145v2  2025-02-17 Jinyan Su        Fast or Better? Balancing Accuracy and Cost in Retrieval-Augmented Generation with Flexible User Control
+* 2603.18470v1  2026-03-19 Baiqiang Wang    CyberJustice Tutor: An Agentic AI Framework for Cybersecurity Learning via Think-Plan-Act Reasoning and Pedago
+* 2603.07379v2  2026-03-07 Saroj Mishra     SoK: Agentic Retrieval-Augmented Generation (RAG): Taxonomy, Architectures, Evaluation, and Research Direction
+* 2509.16369v1  2025-09-19 Akshay Govind Sr Enhancing Financial RAG with Agentic AI and Multi-HyDE: A Novel Approach to Knowledge Retrieval and Hallucinat
+* 2603.06604v1  2026-02-18 Xie Xiaohu       Know When You're Wrong: Aligning Confidence with Correctness for LLM Error Detection
+* 2511.14769v1  2025-10-02 Yifan Xu         Cluster-based Adaptive Retrieval: Dynamic Context Selection for RAG Applications
+* 2504.05312v4  2025-02-19 Qitao Qin        Towards Adaptive Memory-Based Optimization for Enhanced Retrieval-Augmented Generation
+* 2501.09957v2  2025-01-17 Zengyi Gao       FRAG: A Flexible Modular Framework for Retrieval-Augmented Generation based on Knowledge Graphs
+* 2604.06179v1  2026-02-04 Yue Luo          ARIA: Adaptive Retrieval Intelligence Assistant -- A Multimodal RAG Framework for Domain-Specific Engineering 
+
+### abs:"retrieval-augmented" AND abs:abstention  (20 hits)
+* 2608.22228v1  2026-08-23 Yohanes Andre Se Prompt-Based Abstention Fails Under Misleading Context: A Controlled Study of Small Frozen RAG Models
+* 2509.04482v2  2025-08-31 Ravi Shankar     Energy Landscapes Enable Reliable Abstention in Retrieval-Augmented Large Language Models for Healthcare
+* 2609.35794v1  2026-09-17 Jongbin Won      Sieve and Sage: Efficient Distraction Filtering for Reliable RALM Abstention
+* 2605.29523v1  2026-05-28 Eunbyeol Cho     K-FinHallu: A Hallucination Detection Benchmark for Multi-Turn RAG in Korean Finance
+* 2610.35142v1  2026-10-26 Qianchi Zhang    CalibraRL: Confidence-Calibrated Reinforcement Learning for Mitigating Hallucinations in RAG
+* 2605.14115v1  2026-05-13 Yikun Han        When Evidence Conflicts: Uncertainty and Order Effects in Retrieval-Augmented Biomedical Question Answering
+* 2505.20871v1  2025-05-27 Xin Sun          Divide-Then-Align: Honest Alignment based on the Knowledge Boundary of RAG
+* 2511.15005v1  2025-11-19 Moses Kiprono    Mathematical Analysis of Hallucination Dynamics in Large Language Models: Uncertainty Quantification, Advanced
+* 2510.11483v3  2025-10-13 Heydar Soudani   Uncertainty Quantification for Retrieval-Augmented Reasoning
+* 2604.20854v1  2026-02-24 Sunguk Shin      ERA: Evidence-based Reliability Alignment for Honest Retrieval-Augmented Generation
+* 2603.14170v1  2026-03-11 Akhil Chandra Sh Citation-Enforced RAG for Fiscal Document Intelligence: Cited, Explainable Knowledge Retrieval in Tax Complian
+* 2507.21753v1  2025-07-29 Grégoire Martino Towards a rigorous evaluation of RAG systems: the challenge of due diligence
+* 2610.12666v1  2026-10-08 Federico Mazzoni Incremental Retrieval-Augmented Generation for Human-in-the-Loop Decision Support
+* 2610.28340v1  2026-10-20 Atharva Thakur   DeclineCraft: A RAG Abstention Benchmark for Jointly Measuring Combined Retrieval and Parametric Knowledge
+* 2603.06198v2  2026-03-06 Koki Itai        LIT-RAGBench: Benchmarking Generator Capabilities of Large Language Models in Retrieval-Augmented Generation
+* 2610.02926v1  2026-10-02 Riju Marwah      Output Language Confusion under Multilingual Prompt Contamination
+* 2607.24875v1  2026-07-27 Dorothy Torres   FinAbstain: Uncertainty-Calibrated Multimodal RAG for Selective Financial Forecasting
+* 2511.21729v1  2025-11-21 Jithin Krishnan  Beyond Component Strength: Synergistic Integration and Adaptive Calibration in Multi-Agent RAG Systems
+* 2512.12694v2  2025-12-14 Souhail Bakkali  MTRACE: Multilingual Retrieval-Augmented Generation for Temporally Diverse Text Corpora
+* 2511.06073v1  2025-11-08 Simeon Emanuilov Stemming Hallucination in Language Models Using a Licensing Oracle
+
+### abs:"corrective" AND abs:"retrieval-augmented" AND abs:hallucination  (20 hits)
+* 2605.28837v1  2026-04-12 Gyumin Kim       SERC: LDPC-Inspired Semantic Error Correction for Retrieval-Augmented Generation
+* 2601.21969v2  2026-01-29 Yifan Zhu        Token-Guard: Towards Token-Level Hallucination Control via Self-Checking Decoding
+* 2606.24915v1  2026-06-19 Mohammad Aref Ja Error-Aware TF-IDF Retrieval-Augmented Generation for ASR Error Correction
+* 2602.23374v1  2025-12-30 Weixi Lin        Higress-RAG: A Holistic Optimization Framework for Enterprise Retrieval-Augmented Generation via Dual Hybrid R
+* 2606.01222v1  2026-05-31 İrşat Emin Sarıd RAG-driven Multi-Agent LLM Framework with Task Decomposition for Beyond 5G Auto-Configuration
+* 2601.03052v1  2026-01-06 Jianpeng Hu      Detecting Hallucinations in Retrieval-Augmented Generation via Semantic-level Internal Reasoning Graph
+* 2510.08945v3  2025-10-10 Samuel Hildebran FATHOMS-RAG: A Framework for the Assessment of Thinking and Observation in Multimodal Systems that use Retriev
+* 2505.21072v5  2025-05-27 Ekaterina Fadeev Faithfulness-Aware Uncertainty Quantification for Fact-Checking the Output of Retrieval Augmented Generation
+* 2512.20182v4  2025-12-23 Shuzheng Si      FaithLens: Detecting and Explaining Faithfulness Hallucination
+* 2507.10586v1  2025-07-11 Kaushik Dwivedi  AutoRAG-LoRA: Hallucination-Triggered Knowledge Retuning via Lightweight Adapters
+* 2607.00895v1  2026-07-01 Ádám Kovács      Beyond Document Grounding: Span-Level Hallucination Detection over Code, Tool Output, and Documents
+* 2508.19272v1  2025-08-22 Kshitij Fadnis   RAGAPHENE: A RAG Annotation Platform with Human Enhancements and Edits
+* 2509.21875v3  2025-09-26 Samuel Yeh       LUMINA: Detecting Hallucinations in RAG System with Context-Knowledge Signals
+* 2507.02949v2  2025-06-28 Vipula Rawte     RADIANT: Retrieval AugmenteD entIty-context AligNmenT -- Introducing RAG-ability and Entity-Context Divergence
+* 2502.09073v1  2025-02-13 Xuzhao Geng      Enhancing RAG with Active Learning on Conversation Records: Reject Incapables and Answer Capables
+* 2607.10491v1  2026-07-11 S M Asif Hossain EvidentialRAG: Quantifying and Mitigating Information Conflict in Multi-Source Retrieval-Augmented Generation 
+* 2606.01301v1  2026-05-31 Yiming Liao      Med-HEAL: Analyzing and Mitigating Hallucinations in Medical LLMs with Hallucination-Aware In-Context Learning
+* 2510.01237v1  2025-09-23 Nandakishor M    Confidence-Aware Routing for Large Language Model Reliability Enhancement: A Multi-Signal Approach to Pre-Gene
+* 2606.17449v1  2026-06-16 Zehang Wei       MODE-RAG: Manifold Outlier Diagnosis and Energy-based Retrieval-Augmented Generation Evaluation
+* 2504.01248v1  2025-04-01 Rafael Giebisch  Automated Factual Benchmarking for In-Car Conversational Systems using Large Language Models
+
+### abs:"semantic entropy" AND abs:hallucination  (20 hits)
+* 2508.14496v3  2025-08-20 Huan Ma          Semantic Energy: Detecting LLM Hallucination Beyond Entropy
+* 2605.20772v2  2026-05-20 Jiayi Chen       VIHD: Visual Intervention-based Hallucination Detection for Medical Visual Question Answering
+* 2606.07528v1  2026-04-20 Naveen Bera      BEACON: Behavioral Entropy Aggregation for Cross-Model Hallucination Detection in Large Language Models
+* 2512.03107v1  2025-12-02 Mainak Singha    Detecting AI Hallucinations in Finance: An Information-Theoretic Method Cuts Hallucination Rate by 92%
+* 2607.16643v1  2026-07-18 Qiuyuan Li       Diversity-Oriented Fine-Tuning for Uncertainty-Based Hallucination Detection
+* 2504.03579v2  2025-04-04 Kamil Ciosek     Hallucination Detection on a Budget: Efficient Bayesian Estimation of Semantic Entropy
+* 2503.20504v2  2025-03-26 Zehui Liao       UniVRSE: Unified Vision-conditioned Response Semantic Entropy for Hallucination Detection in Medical Vision-La
+* 2511.10837v1  2025-11-13 Elyes Hajji      The Map of Misbelief: Tracing Intrinsic and Extrinsic Hallucinations Through Attention Patterns
+* 2601.08557v1  2026-01-13 Sushant Gautam   VideoHEDGE: Entropy-Based Hallucination Detection for Video-VLMs via Semantic Clustering and Spatiotemporal Pe
+* 2603.21693v2  2026-03-23 Mohammad Asadi   Deterministic Hallucination Detection in Medical VQA via Confidence-Evidence Bayesian Gain
+* 2606.09800v1  2026-06-08 Shizhe Lin       FASE: Fast Adaptive Semantic Entropy for Code Quality
+* 2509.14478v2  2025-09-17 Lucas H. McCabe  Estimating Semantic Alphabet Size for LLM Uncertainty Quantification
+* 2604.25591v1  2026-04-28 Chun-Yi Kuan     Walking Through Uncertainty: An Empirical Study of Uncertainty Estimation for Audio-Aware Large Language Model
+* 2609.28570v1  2026-09-23 Yingxuan Zhuang  DEEPO: Dual-Entropy Enhanced Policy Optimization for Hallucination in MLLMs
+* 2505.07528v1  2025-05-12 Lei Wang         SEReDeEP: Hallucination Detection in Retrieval-Augmented Models via Semantic Entropy and Context-Parameter Fus
+* 2506.00245v1  2025-05-30 Dang Nguyen      Beyond Semantic Entropy: Boosting LLM Uncertainty Quantification with Pairwise Semantic Similarity
+* 2606.24115v1  2026-06-23 Aminu Lawal      A Benchmark for Hallucination Detection in VLMs for Gastrointestinal Endoscopy
+* 2510.04933v1  2025-10-06 Amir Hameed Mir  The Geometry of Truth: Layer-wise Semantic Dynamics for Hallucination Detection in Large Language Models
+* 2607.16868v2  2026-07-18 Yanni Dong       Beyond Semantic Equivalence: Logical Graphs for LLM Uncertainty Quantification
+* 2608.14707v1  2026-08-11 John Knowlton    Semantic Uncertainty-Guided Orchestration in Hierarchical Multi-Agent Systems
+
+### abs:"hallucination detection" AND abs:"retrieval-augmented generation" AND abs:benchmark  (20 hits)
+  2607.00895v1  2026-07-01 Ádám Kovács      Beyond Document Grounding: Span-Level Hallucination Detection over Code, Tool Output, and Documents
+* 2505.00506v1  2025-05-01 Deanna Emery     HalluMix: A Task-Agnostic, Multi-Domain Benchmark for Real-World Hallucination Detection
+* 2505.04847v2  2025-05-07 Manveer Singh Ta Benchmarking LLM Faithfulness in RAG with Evolving Leaderboards
+* 2604.15945v1  2026-04-17 Fabian Ridder    RAGognizer: Hallucination-Aware Fine-Tuning via Detection Head Integration
+* 2505.04844v1  2025-05-07 Alex Shan        Osiris: A Lightweight Open-Source Hallucination Detection System
+* 2609.08267v1  2026-09-08 Runsong Jia      Evidence-Aligned Entity Verification for Hallucination Detection in Retrieval-Augmented Generation
+  2605.29523v1  2026-05-28 Eunbyeol Cho     K-FinHallu: A Hallucination Detection Benchmark for Multi-Turn RAG in Korean Finance
+* 2606.31033v1  2026-06-30 Kazuaki Furumai  CORTEX: Token-Level Hallucination Detection in RAG via Comparative Internal Representations
+* 2502.19209v1  2025-02-26 Zhouyu Jiang     Bi'an: A Bilingual Benchmark and Model for Hallucination Detection in Retrieval-Augmented Generation
+* 2504.14429v1  2025-04-20 Ahmad Khalil     ResNetVLLM-2: Addressing ResNetVLLM's Multi-Modal Hallucinations
+  2510.01237v1  2025-09-23 Nandakishor M    Confidence-Aware Routing for Large Language Model Reliability Enhancement: A Multi-Signal Approach to Pre-Gene
+* 2502.17125v1  2025-02-24 Ádám Kovács      LettuceDetect: A Hallucination Detection Framework for RAG Applications
+* 2505.23299v1  2025-05-29 Julia Belikova   Data-efficient Meta-models for Evaluation of Context-based Questions and Answers in LLMs
+* 2509.13702v1  2025-09-17 Xiao Zheng       DSCC-HS: A Dynamic Self-Reinforcing Framework for Hallucination Suppression in Large Language Models
+  2509.21875v3  2025-09-26 Samuel Yeh       LUMINA: Detecting Hallucinations in RAG System with Context-Knowledge Signals
+* 2509.17671v1  2025-09-22 Selva Taş        Turk-LettuceDetect: A Hallucination Detection Models for Turkish RAG Applications
+  2510.08945v3  2025-10-10 Samuel Hildebran FATHOMS-RAG: A Framework for the Assessment of Thinking and Observation in Multimodal Systems that use Retriev
+* 2603.21607v3  2026-03-23 Alexandra Kulesh INTRYGUE: Induction-Aware Entropy Gating for Reliable RAG Uncertainty Estimation
+* 2606.12903v1  2026-06-11 Yongqi Kang      X-MADAM-RAG: Diagnosing and Handling Chinese-English Evidence Conflict in Retrieval-Augmented Generation
+* 2603.24579v1  2026-03-25 Zhuo Li          MARCH: Multi-Agent Reinforced Self-Check for LLM Hallucination
+
+### abs:"retrieval-augmented" AND abs:attribution AND abs:citation AND abs:verification  (6 hits)
+* 2509.21557v2  2025-09-25 Yash Saxena      Generation-Time vs. Post-hoc Citation: A Holistic Evaluation of LLM Attribution
+* 2609.14245v1  2026-09-13 Deepanshu Mody   The Attribution-Compression Frontier in Retrieval-Augmented Generation
+  2510.11394v1  2025-10-13 Haosheng Qian    VeriCite: Towards Reliable Citations in Retrieval-Augmented Generation via Rigorous Verification
+  2606.18385v1  2026-06-16 Sneha Rao        CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework
+  2607.09349v1  2026-07-10 Cedric Caruzzo   Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation
+* 2606.15646v1  2026-04-05 Deepa Tilwani    NeuroSymbolic AI for Legal AI-TRISM: Trustworthy, Reliable, Interpretable, Safe Models
+
+### abs:"post-hoc" AND abs:"revision" AND abs:hallucination AND abs:retrieval  (1 hits)
+* 2608.05302v1  2026-08-05 Zhuo Xie         Cross-platform epistemic verification for improving factual reliability in AI-generated news summarization
+
+### abs:"cost" AND abs:"verification" AND abs:"retrieval-augmented" AND abs:"selective"  (7 hits)
+* 2608.18681v1  2026-08-19 Roie Kazoom      Learning What to Fail On: Failure-Mode Contextual Bandits for Adversarial Data Curation
+  2607.24875v1  2026-07-27 Dorothy Torres   FinAbstain: Uncertainty-Calibrated Multimodal RAG for Selective Financial Forecasting
+* 2505.04195v2  2025-05-07 Minjae Seo       AutoPatch: Multi-Agent Framework for Patching Real-World CVE Vulnerabilities
+* 2607.26805v1  2026-07-29 Peiding Wang     MRCoder: An Efficient Context Selecting Approach for Repository-Level Code Generation
+  2609.04442v1  2026-09-03 John Seon Keun Y GRACE: Graph-Grounded Reflective Agent Copilot Engine for Expert-in-the-Loop Knowledge Expansion
+* 2605.16535v1  2026-05-15 Lasal Jayawarden RAPT: Retrieval-Augmented Post-hoc Thresholding for Multi-Label Classification
+* 2606.22738v1  2026-06-22 Saber Zerhoudi   PA-User: Simulating Trust and Verification under AI-Generated Content
+
+### abs:"long-form" AND abs:factuality AND abs:"atomic" AND abs:retrieval  (8 hits)
+  2604.18362v1  2026-04-20 Qingying Niu     ArbGraph: Conflict-Aware Evidence Arbitration for Reliable Long-Form Retrieval-Augmented Generation
+* 2502.18573v3  2025-02-25 Radu Marinescu   FactReasoner: A Probabilistic Approach to Long-Form Factuality Assessment for Large Language Models
+* 2501.03545v4  2025-01-07 Chris Samarinas  Beyond Factual Accuracy: Evaluating Coverage of Diverse Factual Information in Long-form Text Generation
+* 2509.25459v4  2025-09-29 Haozhou Xu       SimulRAG: Simulator-based RAG for Grounding LLMs in Long-form Scientific QA
+* 2608.26118v2  2026-06-17 Xinming Wang     ElementCheck: Complexity-Aware Long-Form Text Factuality Evaluation via Sentence Elements
+* 2509.01455v4  2025-09-01 Markus Oehri     Trusted Uncertainty in Large Language Models: A Unified Framework for Confidence Calibration and Risk-Controll
+* 2505.24830v3  2025-05-30 Juraj Vladika    Improving Reliability and Explainability of Medical Question Answering through Atomic Fact Checking in Retriev
+* 2505.16973v3  2025-05-22 Rishanth Rajendh VeriFastScore: Speeding up long-form factuality evaluation
+
+131 unique papers; wrote refs/raw/arxiv_search.json  (* = first time seen)

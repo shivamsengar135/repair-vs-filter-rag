@@ -1,0 +1,19 @@
+{
+ "run": "results/test/asqa/longform__Mistral-7B-Instruct-v0.3__42d6faf1c66b",
+ "judge_model": "RedHatAI/phi-4-FP8-dynamic",
+ "judge_prompts": "judge_v1",
+ "claims_without_kb_page": 0,
+ "n_claims": 3321,
+ "n_supported": 1844,
+ "supported_rate": 0.5552544414333033,
+ "n_unreadable": 0,
+ "cost": {
+  "judge": {
+   "calls": 3321,
+   "cache_hits": 3321,
+   "prompt_tokens": 3342424,
+   "completion_tokens": 3321
+  }
+ },
+ "git_commit": "1da0a4c+dirty"
+}

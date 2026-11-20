@@ -1,0 +1,125 @@
+{
+ "10.1162/tacl_a_00276": {
+  "title": "Natural Questions: A Benchmark for Question Answering                     Research",
+  "authors": [
+   "Tom Kwiatkowski",
+   "Jennimaria Palomaki",
+   "Olivia Redfield",
+   "Michael Collins",
+   "Ankur Parikh",
+   "Chris Alberti",
+   "Danielle Epstein",
+   "Illia Polosukhin",
+   "Jacob Devlin",
+   "Kenton Lee",
+   "Kristina Toutanova",
+   "Llion Jones",
+   "Matthew Kelcey",
+   "Ming-Wei Chang",
+   "Andrew M. Dai",
+   "Jakob Uszkoreit",
+   "Quoc Le",
+   "Slav Petrov"
+  ],
+  "container": "Transactions of the Association for Computational Linguistics",
+  "issued": [
+   [
+    2019,
+    11
+   ]
+  ],
+  "volume": "7",
+  "page": "453-466",
+  "type": "journal-article",
+  "publisher": "MIT Press"
+ },
+ "10.1561/1500000019": {
+  "title": "The Probabilistic Relevance Framework: BM25 and Beyond",
+  "authors": [
+   "Stephen Robertson",
+   "Hugo Zaragoza"
+  ],
+  "container": "Foundations and Trends\u00ae in Information Retrieval",
+  "issued": [
+   [
+    2009,
+    9,
+    17
+   ]
+  ],
+  "volume": "4",
+  "page": "1-174",
+  "type": "journal-article",
+  "publisher": "Emerald"
+ },
+ "10.1007/BF02295996": {
+  "title": "Note on the Sampling Error of the Difference Between Correlated Proportions or Percentages",
+  "authors": [
+   "Quinn McNemar"
+  ],
+  "container": "Psychometrika",
+  "issued": [
+   [
+    1947,
+    6
+   ]
+  ],
+  "volume": "12",
+  "page": "153-157",
+  "type": "journal-article",
+  "publisher": "Cambridge University Press (CUP)"
+ },
+ "10.1214/aos/1176344552": {
+  "title": "Bootstrap Methods: Another Look at the Jackknife",
+  "authors": [
+   "B. Efron"
+  ],
+  "container": "The Annals of Statistics",
+  "issued": [
+   [
+    1979,
+    1,
+    1
+   ]
+  ],
+  "volume": "7",
+  "page": "1-26",
+  "type": "journal-article",
+  "publisher": "Institute of Mathematical Statistics"
+ },
+ "10.1007/b106715": {
+  "title": "Algorithmic Learning in a Random World",
+  "authors": [],
+  "container": "",
+  "issued": [
+   [
+    2005
+   ]
+  ],
+  "volume": null,
+  "page": null,
+  "type": "book",
+  "publisher": "Springer-Verlag"
+ },
+ "10.1017/pan.2023.20": {
+  "title": "Less Annotating, More Classifying: Addressing the Data Scarcity Issue of Supervised Machine Learning with Deep Transfer Learning and BERT-NLI",
+  "authors": [
+   "Moritz Laurer",
+   "Wouter van Atteveldt",
+   "Andreu Casas",
+   "Kasper Welbers"
+  ],
+  "container": "Political Analysis",
+  "issued": [
+   [
+    2023,
+    6,
+    9
+   ]
+  ],
+  "volume": "32",
+  "page": "84-100",
+  "type": "journal-article",
+  "publisher": "Cambridge University Press (CUP)"
+ }
+}

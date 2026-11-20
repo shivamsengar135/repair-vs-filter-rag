@@ -1,0 +1,24 @@
+Resolved 221 packages in 5.40s
+Downloading scipy (33.7MiB)
+Downloading pandas (11.5MiB)
+Downloading pyarrow (52.5MiB)
+ Downloaded pandas
+ Downloaded scipy
+ Downloaded pyarrow
+Prepared 9 packages in 1m 56s
+Installed 9 packages in 411ms
+ + bm25s==0.3.16
+ + datasets==5.2.0
+ + multiprocess==0.70.19
+ + pandas==3.1.1
+ + pyarrow==26.0.1
+ + python-dateutil==4.0.0
+ + scipy==1.18.1
+ + tzdata==2026.6
+ + xxhash==4.1.0
+--- now installed:
+bm25s                                    0.3.16
+datasets                                 5.2.0
+pyyaml                                   6.0.3
+scipy                                    1.18.1
+UV_ADD_OK

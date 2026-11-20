@@ -1,0 +1,215 @@
+{
+ "checked_utc": "2026-11-16T05:39:51Z",
+ "models": [
+  {
+   "id": "allenai/OLMo-2-1124-7B-Instruct",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 7.3,
+   "weights_GB": 14.6,
+   "lastModified": "2025-01-06",
+   "downloads": 42183,
+   "sha": "470b1fba1ae0",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "allenai/OLMo-2-1124-13B-Instruct",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 13.72,
+   "weights_GB": 27.4,
+   "lastModified": "2025-01-06",
+   "downloads": 14293,
+   "sha": "3a5c85baefbb",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "tiiuae/Falcon3-7B-Instruct",
+   "gated": false,
+   "license": "other",
+   "license_name": "falcon-llm-license",
+   "params_B": 7.46,
+   "weights_GB": 14.9,
+   "lastModified": "2025-05-31",
+   "downloads": 11435,
+   "sha": "1e57a0ecd176",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "allenai/Olmo-3-7B-Instruct",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 7.3,
+   "weights_GB": 14.6,
+   "lastModified": "2026-06-25",
+   "downloads": 128721,
+   "sha": "6e5971d9eba4",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "meta-llama/Llama-3.1-8B-Instruct",
+   "gated": "manual",
+   "license": "llama3.1",
+   "license_name": null,
+   "params_B": 8.03,
+   "weights_GB": 16.1,
+   "lastModified": "2024-09-25",
+   "downloads": 4238569,
+   "sha": "0e9e39f249a1",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "ibm-granite/granite-3.3-8b-instruct",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 8.17,
+   "weights_GB": 16.3,
+   "lastModified": "2025-05-12",
+   "downloads": 100747,
+   "sha": "51dd4bc2ade4",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "internlm/internlm3-8b-instruct",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 8.8,
+   "weights_GB": 17.6,
+   "lastModified": "2025-02-11",
+   "downloads": 45870,
+   "sha": "28c99415adaf",
+   "pipeline": "text-generation",
+   "library": null
+  }
+ ],
+ "datasets": [],
+ "model_searches": {
+  "OLMo-2 Instruct": [
+   {
+    "id": "allenai/OLMo-2-0425-1B-Instruct",
+    "downloads": 61106,
+    "gated": null,
+    "created": "2025-04-29"
+   },
+   {
+    "id": "allenai/OLMo-2-1124-7B-Instruct",
+    "downloads": 42183,
+    "gated": null,
+    "created": "2024-12-18"
+   },
+   {
+    "id": "allenai/OLMo-2-1124-13B-Instruct",
+    "downloads": 14293,
+    "gated": null,
+    "created": "2024-12-18"
+   },
+   {
+    "id": "allenai/OLMo-2-0325-32B-Instruct",
+    "downloads": 9151,
+    "gated": null,
+    "created": "2025-03-12"
+   },
+   {
+    "id": "bartowski/OLMo-2-1124-13B-Instruct-GGUF",
+    "downloads": 5056,
+    "gated": null,
+    "created": "2024-11-26"
+   },
+   {
+    "id": "bartowski/OLMo-2-1124-7B-Instruct-GGUF",
+    "downloads": 3738,
+    "gated": null,
+    "created": "2024-11-26"
+   }
+  ],
+  "Olmo-3": [
+   {
+    "id": "allenai/Olmo-3-7B-Instruct",
+    "downloads": 128721,
+    "gated": null,
+    "created": "2025-11-19"
+   },
+   {
+    "id": "allenai/Olmo-3-1025-7B",
+    "downloads": 106291,
+    "gated": null,
+    "created": "2025-09-12"
+   },
+   {
+    "id": "allenai/Olmo-3-7B-Think",
+    "downloads": 61704,
+    "gated": null,
+    "created": "2025-11-18"
+   },
+   {
+    "id": "allenai/Olmo-3-7B-Instruct-SFT",
+    "downloads": 53472,
+    "gated": null,
+    "created": "2025-11-17"
+   },
+   {
+    "id": "allenai/Olmo-3-7B-Instruct-DPO",
+    "downloads": 24877,
+    "gated": null,
+    "created": "2025-11-19"
+   },
+   {
+    "id": "allenai/Olmo-3.1-32B-Instruct",
+    "downloads": 21183,
+    "gated": null,
+    "created": "2025-12-10"
+   }
+  ],
+  "OLMo-3 7B": [
+   {
+    "id": "allenai/Olmo-3-7B-Instruct",
+    "downloads": 128721,
+    "gated": null,
+    "created": "2025-11-19"
+   },
+   {
+    "id": "allenai/Olmo-3-1025-7B",
+    "downloads": 106291,
+    "gated": null,
+    "created": "2025-09-12"
+   },
+   {
+    "id": "allenai/Olmo-3-7B-Think",
+    "downloads": 61704,
+    "gated": null,
+    "created": "2025-11-18"
+   },
+   {
+    "id": "allenai/Olmo-3-7B-Instruct-SFT",
+    "downloads": 53472,
+    "gated": null,
+    "created": "2025-11-17"
+   },
+   {
+    "id": "allenai/Olmo-3-7B-Instruct-DPO",
+    "downloads": 24877,
+    "gated": null,
+    "created": "2025-11-19"
+   },
+   {
+    "id": "allenai/Olmo-3-7B-Think-DPO",
+    "downloads": 8966,
+    "gated": null,
+    "created": "2025-11-18"
+   }
+  ]
+ },
+ "dataset_searches": {},
+ "github": []
+}

@@ -1,0 +1,7 @@
+tables: [('documents',)]
+schema: ('CREATE TABLE documents (title PRIMARY KEY, text)',)
+quick_check: ('ok',)
+documents: 6187531
+bio dev+test: 500 topics, 1 missing from KB ['Francisco Urroz']
+labeled: 183 topics, 0 missing from KB []
+{"topic": "Johann Christian von Engel", "n_passages": 2, "first": "<s>Johann Christian von Engel Johann Christian von Engel (1770\u20131814) was an Austrian historian of Ukrainian, Romanian, Hungarian, Croatian, and German history.</s><s>Biography. He was born in Leutschau (today Levo\u010da, Slovakia), then belonging to Kingdom of Hungary under Habsburg monarchy, and receiv"}

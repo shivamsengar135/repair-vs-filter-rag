@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.env
+*.log.tmp
+# large artefacts never go in git (they live under $DATA_ROOT on the WSL disk)
+data/*
+!data/splits/
+cache/
+*.safetensors
+*.faiss
+*.npy
+refs/raw/fulltext/
+labelling/.key_DO_NOT_OPEN.json

@@ -1,0 +1,124 @@
+{
+ "checked_utc": "2026-11-14T06:04:29Z",
+ "models": [
+  {
+   "id": "meta-llama/Llama-2-7b-chat-hf",
+   "gated": "manual",
+   "license": "llama2",
+   "license_name": null,
+   "params_B": 6.74,
+   "weights_GB": 27.0,
+   "lastModified": "2024-04-17",
+   "downloads": 126817,
+   "sha": "f5db02db7245",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  }
+ ],
+ "datasets": [
+  {
+   "id": "selfrag/selfrag_train_data",
+   "gated": false,
+   "license": "mit",
+   "lastModified": "2023-10-31",
+   "downloads": 153,
+   "sha": "cfa0c0f91d22",
+   "configs": []
+  },
+  {
+   "id": "akariasai/popqa_longtail_w_gs",
+   "error": 401
+  }
+ ],
+ "model_searches": {},
+ "dataset_searches": {
+  "popqa_longtail": [
+   {
+    "id": "awinml/popqa_longtail_w_gs",
+    "downloads": 34,
+    "gated": false,
+    "created": "2024-10-22"
+   },
+   {
+    "id": "jacquelinehe/long-tail-popqa",
+    "downloads": 30,
+    "gated": false,
+    "created": "2024-03-30"
+   },
+   {
+    "id": "awinml/popqa_longtail",
+    "downloads": 28,
+    "gated": false,
+    "created": "2024-10-22"
+   },
+   {
+    "id": "Self-GRIT/popqa_long_tail_eval",
+    "downloads": 22,
+    "gated": false,
+    "created": "2024-09-26"
+   },
+   {
+    "id": "Self-GRIT/popqa_long_tail_random_subsample_eval",
+    "downloads": 20,
+    "gated": false,
+    "created": "2024-09-26"
+   }
+  ],
+  "selfrag eval": [
+   {
+    "id": "jesse-tong/selfrag-eval-data",
+    "downloads": 80,
+    "gated": false,
+    "created": "2025-03-08"
+   }
+  ],
+  "self-rag eval_data": [
+   {
+    "id": "jesse-tong/selfrag-eval-data",
+    "downloads": 80,
+    "gated": false,
+    "created": "2025-03-08"
+   }
+  ],
+  "popqa contriever": [],
+  "selfrag": [
+   {
+    "id": "selfrag/selfrag_train_data",
+    "downloads": 153,
+    "gated": false,
+    "created": "2023-10-18"
+   },
+   {
+    "id": "jesse-tong/selfrag-eval-data",
+    "downloads": 80,
+    "gated": false,
+    "created": "2025-03-08"
+   },
+   {
+    "id": "sms1097/self_rag_tokens_train_data",
+    "downloads": 48,
+    "gated": false,
+    "created": "2024-01-31"
+   },
+   {
+    "id": "Yibaii/selfrag_train_data",
+    "downloads": 27,
+    "gated": false,
+    "created": "2026-03-09"
+   },
+   {
+    "id": "open-llm-leaderboard-old/details_selfrag__selfrag_llama2_7b",
+    "downloads": 25,
+    "gated": false,
+    "created": "2024-03-04"
+   },
+   {
+    "id": "Self-GRIT/selfrag_dataset-embed_query_instruct-Meta-Llama-3-70B-Instruct_temp-1.0",
+    "downloads": 20,
+    "gated": false,
+    "created": "2024-05-05"
+   }
+  ]
+ },
+ "github": []
+}

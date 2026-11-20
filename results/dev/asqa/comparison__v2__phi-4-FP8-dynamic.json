@@ -1,0 +1,491 @@
+{
+ "dataset": "asqa",
+ "split": "dev",
+ "judge_tag": "phi-4-FP8-dynamic",
+ "prompts": "v2",
+ "rows": {
+  "standard RAG (all claims)": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 1.4357999999999997,
+    "std": 0.13879845136387545
+   },
+   "claims_kept_per_response": {
+    "mean": 2.2194,
+    "std": 0.18967180586316448
+   },
+   "non_empty_rate": {
+    "mean": 0.6754999999999997,
+    "std": 0.03391537299297362
+   },
+   "factual_precision_micro": {
+    "mean": 0.6475571908382745,
+    "std": 0.04272892084889142
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.6933000000000001,
+    "std": 0.03330468465849841
+   }
+  },
+  "CoVe factor+revise (closed-book)": {
+   "run": "results/dev/asqa/cove-closed_book__Qwen2.5-7B-Instruct__515f55fc1215",
+   "supported_claims_per_response": {
+    "mean": 1.0675,
+    "std": 0.10529779799514452
+   },
+   "claims_kept_per_response": {
+    "mean": 2.2803000000000004,
+    "std": 0.18807614512116194
+   },
+   "non_empty_rate": {
+    "mean": 0.73,
+    "std": 0.03197221015541814
+   },
+   "factual_precision_micro": {
+    "mean": 0.4687317640096736,
+    "std": 0.03442968319868998
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.5282,
+    "std": 0.03340537669177212
+   }
+  },
+  "CoVe factor+revise (retrieval-verified)": {
+   "run": "results/dev/asqa/cove-rag_verify__Qwen2.5-7B-Instruct__375c900c29f7",
+   "supported_claims_per_response": {
+    "mean": 1.0852000000000004,
+    "std": 0.10602534478780878
+   },
+   "claims_kept_per_response": {
+    "mean": 2.0861,
+    "std": 0.20850548039208794
+   },
+   "non_empty_rate": {
+    "mean": 0.6285000000000001,
+    "std": 0.033405225503042056
+   },
+   "factual_precision_micro": {
+    "mean": 0.5216141614502746,
+    "std": 0.03708299445539651
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.6174000000000001,
+    "std": 0.033169902385180826
+   }
+  },
+  "RARR-style revise-all": {
+   "run": "results/dev/asqa/rarr__Qwen2.5-7B-Instruct__253ebf694f1d",
+   "supported_claims_per_response": {
+    "mean": 2.0158,
+    "std": 0.18356833423369437
+   },
+   "claims_kept_per_response": {
+    "mean": 4.530200000000001,
+    "std": 0.293563890108708
+   },
+   "non_empty_rate": {
+    "mean": 0.8629000000000001,
+    "std": 0.023367723574420032
+   },
+   "factual_precision_micro": {
+    "mean": 0.44495963319517334,
+    "std": 0.028208808301638445
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.25120000000000003,
+    "std": 0.03232661598451191
+   }
+  },
+  "FLARE-direct": {
+   "run": "results/dev/asqa/flare__Qwen2.5-7B-Instruct__180338fd77ba",
+   "supported_claims_per_response": {
+    "mean": 1.4364000000000001,
+    "std": 0.12661498148068234
+   },
+   "claims_kept_per_response": {
+    "mean": 2.2805999999999997,
+    "std": 0.22138599227538672
+   },
+   "non_empty_rate": {
+    "mean": 0.6865999999999999,
+    "std": 0.03830288645926193
+   },
+   "factual_precision_micro": {
+    "mean": 0.6315113194472715,
+    "std": 0.03823368925236189
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.6675,
+    "std": 0.03701965080135879
+   }
+  },
+  "CF (score s) @ target 0.8": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.9616,
+    "std": 0.2174123299450176
+   },
+   "claims_kept_per_response": {
+    "mean": 1.4157,
+    "std": 0.380234523589446
+   },
+   "non_empty_rate": {
+    "mean": 0.5248999999999999,
+    "std": 0.08916554799638114
+   },
+   "factual_precision_micro": {
+    "mean": 0.6885091956438265,
+    "std": 0.05638855482152095
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.7959999999999999,
+    "std": 0.06006730232065369
+   }
+  },
+  "C (two-signal) @ target 0.8": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.8570000000000002,
+    "std": 0.21678784490134517
+   },
+   "claims_kept_per_response": {
+    "mean": 1.2621,
+    "std": 0.3731040827512566
+   },
+   "non_empty_rate": {
+    "mean": 0.4810000000000001,
+    "std": 0.08166821272500685
+   },
+   "factual_precision_micro": {
+    "mean": 0.6876510759764481,
+    "std": 0.056171155410935515
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.7943999999999999,
+    "std": 0.06228510530965123
+   }
+  },
+  "A (repair all) @ target 0.8": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.9329,
+    "std": 0.21167105698143143
+   },
+   "claims_kept_per_response": {
+    "mean": 1.3672,
+    "std": 0.37384996720582714
+   },
+   "non_empty_rate": {
+    "mean": 0.5122,
+    "std": 0.09286223096282975
+   },
+   "factual_precision_micro": {
+    "mean": 0.6919691534333297,
+    "std": 0.05734365312156106
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.7982,
+    "std": 0.0598040571577318
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.8": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.9111000000000001,
+    "std": 0.2495769956700272
+   },
+   "claims_kept_per_response": {
+    "mean": 1.2952,
+    "std": 0.3980672497876902
+   },
+   "non_empty_rate": {
+    "mean": 0.5688,
+    "std": 0.0920724352525409
+   },
+   "factual_precision_micro": {
+    "mean": 0.7118903597660404,
+    "std": 0.050707015352382874
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.7945,
+    "std": 0.06526364557962905
+   }
+  },
+  "CF (score s) @ target 0.85": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.6548,
+    "std": 0.18051822147037755
+   },
+   "claims_kept_per_response": {
+    "mean": 0.9441999999999999,
+    "std": 0.3087451958486091
+   },
+   "non_empty_rate": {
+    "mean": 0.39630000000000004,
+    "std": 0.09232851973012215
+   },
+   "factual_precision_micro": {
+    "mean": 0.7053370382626807,
+    "std": 0.060853970431346605
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8483000000000002,
+    "std": 0.05490220874657526
+   }
+  },
+  "C (two-signal) @ target 0.85": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.6486,
+    "std": 0.14896287924828586
+   },
+   "claims_kept_per_response": {
+    "mean": 0.9175,
+    "std": 0.24762865241112444
+   },
+   "non_empty_rate": {
+    "mean": 0.3833,
+    "std": 0.07903528172642746
+   },
+   "factual_precision_micro": {
+    "mean": 0.7169541020269703,
+    "std": 0.06527495284528942
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8465000000000003,
+    "std": 0.05398044913567215
+   }
+  },
+  "A (repair all) @ target 0.85": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.6593000000000002,
+    "std": 0.16757482875516608
+   },
+   "claims_kept_per_response": {
+    "mean": 0.9460000000000001,
+    "std": 0.2827998542711039
+   },
+   "non_empty_rate": {
+    "mean": 0.39630000000000004,
+    "std": 0.08773991639666025
+   },
+   "factual_precision_micro": {
+    "mean": 0.7071762734433569,
+    "std": 0.05888687908647811
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8489999999999999,
+    "std": 0.05388914922357194
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.85": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.5757,
+    "std": 0.17713919083391153
+   },
+   "claims_kept_per_response": {
+    "mean": 0.8334,
+    "std": 0.28732208372831314
+   },
+   "non_empty_rate": {
+    "mean": 0.44199999999999995,
+    "std": 0.09994948218924893
+   },
+   "factual_precision_micro": {
+    "mean": 0.7004535951654245,
+    "std": 0.05880392356403206
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8461000000000002,
+    "std": 0.05952497141723146
+   }
+  },
+  "CF (score s) @ target 0.9": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.4538,
+    "std": 0.11601793661396334
+   },
+   "claims_kept_per_response": {
+    "mean": 0.6398,
+    "std": 0.18982703450853103
+   },
+   "non_empty_rate": {
+    "mean": 0.2993,
+    "std": 0.07025573775051179
+   },
+   "factual_precision_micro": {
+    "mean": 0.7197548525092404,
+    "std": 0.07162429913223102
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8936,
+    "std": 0.047173010602387135
+   }
+  },
+  "C (two-signal) @ target 0.9": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.46819999999999995,
+    "std": 0.14918891826584618
+   },
+   "claims_kept_per_response": {
+    "mean": 0.6257999999999999,
+    "std": 0.23202307443594283
+   },
+   "non_empty_rate": {
+    "mean": 0.2677,
+    "std": 0.07989709290421934
+   },
+   "factual_precision_micro": {
+    "mean": 0.7638989225427261,
+    "std": 0.06766427945593288
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8957,
+    "std": 0.047784342983276794
+   }
+  },
+  "A (repair all) @ target 0.9": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.4593,
+    "std": 0.12137474318336695
+   },
+   "claims_kept_per_response": {
+    "mean": 0.6481,
+    "std": 0.19724207041966058
+   },
+   "non_empty_rate": {
+    "mean": 0.3024,
+    "std": 0.0706838172441332
+   },
+   "factual_precision_micro": {
+    "mean": 0.7191113962685131,
+    "std": 0.06783710064664605
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8926000000000001,
+    "std": 0.04556314299957807
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.9": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.3489999999999999,
+    "std": 0.10263694965432008
+   },
+   "claims_kept_per_response": {
+    "mean": 0.5052,
+    "std": 0.17536962408155254
+   },
+   "non_empty_rate": {
+    "mean": 0.30879999999999996,
+    "std": 0.0807575245892157
+   },
+   "factual_precision_micro": {
+    "mean": 0.7056089211251413,
+    "std": 0.0847135600982178
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.8987,
+    "std": 0.049023906763368354
+   }
+  },
+  "CF (score s) @ target 0.95": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.2462,
+    "std": 0.08854354632585931
+   },
+   "claims_kept_per_response": {
+    "mean": 0.34619999999999995,
+    "std": 0.14242332688293743
+   },
+   "non_empty_rate": {
+    "mean": 0.17620000000000002,
+    "std": 0.0642718343200868
+   },
+   "factual_precision_micro": {
+    "mean": 0.7353960800391832,
+    "std": 0.09732266411878662
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9478,
+    "std": 0.03471616512825287
+   }
+  },
+  "C (two-signal) @ target 0.95": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.2729,
+    "std": 0.0923026970287861
+   },
+   "claims_kept_per_response": {
+    "mean": 0.33340000000000003,
+    "std": 0.12864656775032668
+   },
+   "non_empty_rate": {
+    "mean": 0.16069999999999995,
+    "std": 0.04744491755731273
+   },
+   "factual_precision_micro": {
+    "mean": 0.8345960040305109,
+    "std": 0.07533671613844238
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9525999999999999,
+    "std": 0.03033882734128733
+   }
+  },
+  "A (repair all) @ target 0.95": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.2407,
+    "std": 0.08767772715110628
+   },
+   "claims_kept_per_response": {
+    "mean": 0.3384,
+    "std": 0.14156927133336028
+   },
+   "non_empty_rate": {
+    "mean": 0.17540000000000003,
+    "std": 0.06410880901981719
+   },
+   "factual_precision_micro": {
+    "mean": 0.7348165647291326,
+    "std": 0.09850553026515008
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9484999999999999,
+    "std": 0.03488436887660706
+   }
+  },
+  "SelfCheckGPT-NLI @ target 0.95": {
+   "run": "results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7",
+   "supported_claims_per_response": {
+    "mean": 0.2202,
+    "std": 0.06231202033948088
+   },
+   "claims_kept_per_response": {
+    "mean": 0.2956,
+    "std": 0.10094823155729601
+   },
+   "non_empty_rate": {
+    "mean": 0.1973,
+    "std": 0.05896163793073211
+   },
+   "factual_precision_micro": {
+    "mean": 0.7646615028119098,
+    "std": 0.09703094236891174
+   },
+   "all_retained_correct_rate": {
+    "mean": 0.9467,
+    "std": 0.03384620594048402
+   }
+  }
+ }
+}

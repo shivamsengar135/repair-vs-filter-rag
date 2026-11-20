@@ -1,0 +1,58 @@
+{
+ "config": {
+  "pipeline": "flare-direct-v1",
+  "dataset": "asqa",
+  "split": "test",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "prompts": "v2",
+  "k": 5,
+  "retriever": "bm25",
+  "max_tokens": 512,
+  "theta": 0.8,
+  "beta": 0.4,
+  "lookahead": 64,
+  "max_steps": 20,
+  "temperature": 0.0,
+  "seed": 0
+ },
+ "config_hash": "2dc14b1e5f08",
+ "git_commit": "4b94969+dirty",
+ "n": 748,
+ "sentences_per_response": 3.9572192513368982,
+ "retrievals_per_response": 3.927807486631016,
+ "retrieval_rate_after_first": 0.9900542495479204,
+ "hit_max_steps": 0,
+ "final_claims_per_response": 2.0681818181818183,
+ "cost": {
+  "llm_by_stage": {
+   "1_first_sentence": {
+    "calls": 748,
+    "cache_hits": 748,
+    "prompt_tokens": 607032,
+    "completion_tokens": 44599
+   },
+   "2_lookahead": {
+    "calls": 2249,
+    "cache_hits": 2249,
+    "prompt_tokens": 239323,
+    "completion_tokens": 118938
+   },
+   "3_regenerate": {
+    "calls": 2190,
+    "cache_hits": 2190,
+    "prompt_tokens": 1899150,
+    "completion_tokens": 108824
+   },
+   "4_decompose_final": {
+    "calls": 748,
+    "cache_hits": 748,
+    "prompt_tokens": 332146,
+    "completion_tokens": 30696
+   }
+  },
+  "retrieval_queries": 2938,
+  "seconds_total": 1.86,
+  "note": "seconds include cache hits"
+ },
+ "finished_utc": "2026-11-17T13:16:13Z"
+}

@@ -1,0 +1,18 @@
+{
+ "run": "results/dev/asqa/cove-closed_book__Qwen2.5-7B-Instruct__515f55fc1215",
+ "judge_model": "RedHatAI/phi-4-FP8-dynamic",
+ "judge_prompts": "judge_v1",
+ "n_claims": 451,
+ "n_supported": 210,
+ "supported_rate": 0.4656319290465632,
+ "n_unreadable": 0,
+ "cost": {
+  "judge": {
+   "calls": 451,
+   "cache_hits": 7,
+   "prompt_tokens": 451252,
+   "completion_tokens": 451
+  }
+ },
+ "git_commit": "a63797d+dirty"
+}

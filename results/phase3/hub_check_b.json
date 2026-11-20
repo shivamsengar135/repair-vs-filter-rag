@@ -1,0 +1,705 @@
+{
+ "checked_utc": "2026-11-13T06:05:47Z",
+ "models": [
+  {
+   "id": "ibm-granite/granite-4.1-8b",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 8.79,
+   "weights_GB": 17.6,
+   "lastModified": "2026-05-04",
+   "downloads": 85804,
+   "sha": "1504002f650e",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "ibm-granite/granite-4.2-8b",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 8.79,
+   "weights_GB": 17.6,
+   "lastModified": "2026-10-20",
+   "downloads": 61674,
+   "sha": "a7042144125c",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "mistralai/Ministral-3-8B-Instruct-2512",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 8.92,
+   "weights_GB": 20.8,
+   "lastModified": "2026-07-15",
+   "downloads": 94147,
+   "sha": "5b26027e7b19",
+   "pipeline": null,
+   "library": "vllm"
+  },
+  {
+   "id": "Qwen/Qwen3-8B-FP8",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 8.19,
+   "weights_GB": 9.4,
+   "lastModified": "2025-07-26",
+   "downloads": 268195,
+   "sha": "220b46e3b218",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "RedHatAI/Mistral-7B-Instruct-v0.3-AWQ",
+   "error": 401
+  },
+  {
+   "id": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 7.25,
+   "weights_GB": 4.2,
+   "lastModified": "2024-09-03",
+   "downloads": 5657,
+   "sha": "95b1295ddd1a",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+   "gated": false,
+   "license": "llama3.1",
+   "license_name": null,
+   "params_B": 8.03,
+   "weights_GB": 5.7,
+   "lastModified": "2024-08-07",
+   "downloads": 319630,
+   "sha": "db1f81ad4b8c",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "liuyanyi/AlignScore-large-hf",
+   "gated": false,
+   "license": "mit",
+   "license_name": null,
+   "params_B": 0.36,
+   "weights_GB": 1.4,
+   "lastModified": "2025-06-05",
+   "downloads": 1651,
+   "sha": "cc13dc572fce",
+   "pipeline": "text-classification",
+   "library": "transformers"
+  },
+  {
+   "id": "selfrag/self_rag_critic",
+   "gated": false,
+   "license": "mit",
+   "license_name": null,
+   "params_B": null,
+   "weights_GB": 27.0,
+   "lastModified": "2023-11-02",
+   "downloads": 43,
+   "sha": "6b453dff8202",
+   "pipeline": "text-generation",
+   "library": "transformers"
+  },
+  {
+   "id": "Qwen/Qwen3-Embedding-0.6B",
+   "gated": false,
+   "license": "apache-2.0",
+   "license_name": null,
+   "params_B": 0.6,
+   "weights_GB": 1.2,
+   "lastModified": "2026-04-20",
+   "downloads": 8761091,
+   "sha": "97b0c614be4d",
+   "pipeline": "feature-extraction",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "BAAI/bge-large-en-v1.5",
+   "gated": false,
+   "license": "mit",
+   "license_name": null,
+   "params_B": 0.34,
+   "weights_GB": 2.7,
+   "lastModified": "2024-02-21",
+   "downloads": 7860279,
+   "sha": "d4aa6901d3a4",
+   "pipeline": "feature-extraction",
+   "library": "sentence-transformers"
+  },
+  {
+   "id": "facebook/contriever",
+   "gated": false,
+   "license": null,
+   "license_name": null,
+   "params_B": null,
+   "weights_GB": 0.4,
+   "lastModified": "2022-01-19",
+   "downloads": 8315854,
+   "sha": "2bd46a25019a",
+   "pipeline": null,
+   "library": "transformers"
+  }
+ ],
+ "datasets": [
+  {
+   "id": "RUC-NLPIR/FlashRAG_datasets",
+   "gated": false,
+   "license": "cc-by-sa-4.0",
+   "lastModified": "2025-05-06",
+   "downloads": 12933,
+   "sha": "bcafb8dd07d4",
+   "configs": [
+    "nq",
+    "triviaqa",
+    "popqa",
+    "domainrag",
+    "squad",
+    "msmarco-qa",
+    "narrativeqa",
+    "wikiqa",
+    "web_questions",
+    "ambig_qa",
+    "siqa",
+    "commonsenseqa"
+   ]
+  },
+  {
+   "id": "blue-guardrails/ragtruth-plus-plus",
+   "gated": false,
+   "license": null,
+   "lastModified": "2025-11-21",
+   "downloads": 169,
+   "sha": "afaec19e6412",
+   "configs": []
+  },
+  {
+   "id": "dgslibisey/MuSiQue",
+   "gated": false,
+   "license": null,
+   "lastModified": "2023-06-16",
+   "downloads": 26294,
+   "sha": "c8f4f8c9465f",
+   "configs": []
+  },
+  {
+   "id": "voidful/2WikiMultihopQA",
+   "gated": false,
+   "license": null,
+   "lastModified": "2023-05-20",
+   "downloads": 10604,
+   "sha": "16852fde9d85",
+   "configs": []
+  },
+  {
+   "id": "dskar/FActScore",
+   "gated": false,
+   "license": "mit",
+   "lastModified": "2025-07-30",
+   "downloads": 156,
+   "sha": "991ea43a24a2",
+   "configs": []
+  },
+  {
+   "id": "s-nlp/popqa_kilt",
+   "gated": false,
+   "license": null,
+   "lastModified": "2026-04-01",
+   "downloads": 219,
+   "sha": "3e6b506f6b2c",
+   "configs": []
+  },
+  {
+   "id": "Tevatron/wikipedia-nq-corpus",
+   "gated": false,
+   "license": null,
+   "lastModified": "2021-10-13",
+   "downloads": 241,
+   "sha": "56c6e2438c13",
+   "configs": []
+  },
+  {
+   "id": "castorini/odqa-wiki-corpora",
+   "gated": false,
+   "license": [
+    "cc-by-sa-3.0"
+   ],
+   "lastModified": "2023-01-05",
+   "downloads": 149,
+   "sha": "35162e5aeeb2",
+   "configs": []
+  },
+  {
+   "id": "wikimedia/wikipedia",
+   "gated": false,
+   "license": [
+    "cc-by-sa-3.0",
+    "gfdl"
+   ],
+   "lastModified": "2024-01-09",
+   "downloads": 319193,
+   "sha": "b04c8d1ceb2f",
+   "configs": [
+    "20231101.ab",
+    "20231101.ace",
+    "20231101.ady",
+    "20231101.af",
+    "20231101.als",
+    "20231101.alt",
+    "20231101.am",
+    "20231101.ami",
+    "20231101.an",
+    "20231101.ang",
+    "20231101.anp",
+    "20231101.ar"
+   ]
+  }
+ ],
+ "model_searches": {
+  "Qwen3.5": [
+   {
+    "id": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B-MTP-GGUF",
+    "downloads": 168074,
+    "gated": null,
+    "created": "2026-08-01"
+   },
+   {
+    "id": "bumbuk/Qwen3.5-4B-AWQ-text-flat",
+    "downloads": 79047,
+    "gated": null,
+    "created": "2026-08-24"
+   },
+   {
+    "id": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+    "downloads": 49225,
+    "gated": null,
+    "created": "2026-11-01"
+   },
+   {
+    "id": "nvidia/Qwen3.5-122B-A10B-NVFP4",
+    "downloads": 42905,
+    "gated": null,
+    "created": "2026-05-13"
+   },
+   {
+    "id": "Jackrong/Qwen3.5-4B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
+    "downloads": 40385,
+    "gated": null,
+    "created": "2026-03-03"
+   },
+   {
+    "id": "nvidia/Qwen3.5-397B-A17B-NVFP4-V2",
+    "downloads": 39804,
+    "gated": null,
+    "created": "2026-06-29"
+   }
+  ],
+  "Qwen3.6": [
+   {
+    "id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+    "downloads": 4104345,
+    "gated": null,
+    "created": "2026-05-27"
+   },
+   {
+    "id": "Bahushruth/Qwen3.6-35B-A3B-abliterated-v4",
+    "downloads": 417599,
+    "gated": null,
+    "created": "2026-06-11"
+   },
+   {
+    "id": "Alennnndy/Qwen3.6-27B-AWQ-4bit",
+    "downloads": 395457,
+    "gated": null,
+    "created": "2026-07-03"
+   },
+   {
+    "id": "tvall43/Qwen3.6-14B-A3B-FableVibes-GGUF",
+    "downloads": 158872,
+    "gated": null,
+    "created": "2026-06-14"
+   },
+   {
+    "id": "nvidia/Qwen3.6-27B-NVFP4",
+    "downloads": 155806,
+    "gated": null,
+    "created": "2026-06-22"
+   },
+   {
+    "id": "z-lab/Qwen3.6-27B-DFlash",
+    "downloads": 94953,
+    "gated": null,
+    "created": "2026-04-23"
+   }
+  ],
+  "gemma-4 e4b": [
+   {
+    "id": "OBLITERATUS/gemma-4-E4B-it-OBLITERATED",
+    "downloads": 41719,
+    "gated": null,
+    "created": "2026-04-15"
+   },
+   {
+    "id": "google/gemma-4-E4B-it-assistant",
+    "downloads": 23986,
+    "gated": null,
+    "created": "2026-04-23"
+   },
+   {
+    "id": "TrevorJS/gemma-4-E4B-it-uncensored-GGUF",
+    "downloads": 21696,
+    "gated": null,
+    "created": "2026-04-04"
+   },
+   {
+    "id": "AEON-7/Gemma-4-E4B-it-Uncensored-NVFP4",
+    "downloads": 12887,
+    "gated": null,
+    "created": "2026-04-13"
+   },
+   {
+    "id": "AEON-7/Gemma-4-E4B-DECKARD-HERETIC-NVFP4",
+    "downloads": 12768,
+    "gated": null,
+    "created": "2026-04-13"
+   },
+   {
+    "id": "Aimeeluvssya/gemma-4-E4B-it-OBLITERATED",
+    "downloads": 10838,
+    "gated": null,
+    "created": "2026-09-22"
+   }
+  ],
+  "gemma-4-it": [
+   {
+    "id": "nvidia/Gemma-4-31B-IT-NVFP4",
+    "downloads": 1141468,
+    "gated": null,
+    "created": "2026-04-02"
+   },
+   {
+    "id": "hugging-quants/gemma-2-9b-it-AWQ-INT4",
+    "downloads": 796610,
+    "gated": null,
+    "created": "2024-10-15"
+   },
+   {
+    "id": "melcheikh/gemma-4-31B-it-qat-NVFP4-Blackwell",
+    "downloads": 615483,
+    "gated": null,
+    "created": "2026-06-05"
+   },
+   {
+    "id": "google/gemma-4-26B-A4B-it-assistant",
+    "downloads": 398171,
+    "gated": null,
+    "created": "2026-04-23"
+   },
+   {
+    "id": "google/gemma-4-31B-it-assistant",
+    "downloads": 197427,
+    "gated": null,
+    "created": "2026-04-23"
+   },
+   {
+    "id": "google/gemma-4-E2B-it-assistant",
+    "downloads": 49872,
+    "gated": null,
+    "created": "2026-04-23"
+   }
+  ],
+  "Llama-4-8B": [
+   {
+    "id": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "downloads": 472041,
+    "gated": null,
+    "created": "2024-04-18"
+   },
+   {
+    "id": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "downloads": 319630,
+    "gated": null,
+    "created": "2024-07-19"
+   },
+   {
+    "id": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "downloads": 83035,
+    "gated": null,
+    "created": "2024-07-23"
+   },
+   {
+    "id": "unsloth/Meta-Llama-3.1-8B-Instruct-unsloth-bnb-4bit",
+    "downloads": 28381,
+    "gated": null,
+    "created": "2025-02-02"
+   },
+   {
+    "id": "unsloth/llama-3-8b-bnb-4bit",
+    "downloads": 15564,
+    "gated": null,
+    "created": "2024-04-18"
+   },
+   {
+    "id": "RedHatAI/Llama-3.1-8B-Instruct-NVFP4",
+    "downloads": 14072,
+    "gated": null,
+    "created": "2025-10-23"
+   }
+  ],
+  "Mistral-7B-Instruct-v0.3-AWQ": [
+   {
+    "id": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "downloads": 5657,
+    "gated": null,
+    "created": "2024-05-23"
+   },
+   {
+    "id": "TechxGenus/Mistral-7B-Instruct-v0.3-AWQ",
+    "downloads": 869,
+    "gated": null,
+    "created": "2024-05-23"
+   },
+   {
+    "id": "fbaldassarri/mistralai_Mistral-7B-Instruct-v0.3-auto_awq-int4-gs64-asym",
+    "downloads": 70,
+    "gated": null,
+    "created": "2026-10-10"
+   },
+   {
+    "id": "BareMetalAI/Mistral-7B-Instruct-v0.3-W4A16-AWQ",
+    "downloads": 15,
+    "gated": null,
+    "created": "2026-06-12"
+   },
+   {
+    "id": "fbaldassarri/mistralai_Mistral-7B-Instruct-v0.3-auto_awq-int4-gs64-sym",
+    "downloads": 14,
+    "gated": null,
+    "created": "2026-10-10"
+   },
+   {
+    "id": "ai-and-society/mistral-7B-Instruct-v0.3-awq",
+    "downloads": 10,
+    "gated": null,
+    "created": "2024-12-03"
+   }
+  ],
+  "granite-4.2": [
+   {
+    "id": "taronaeo/Granite-4.2-3B-BE-GGUF",
+    "downloads": 144071,
+    "gated": null,
+    "created": "2026-10-18"
+   },
+   {
+    "id": "ibm-granite/granite-4.2-8b",
+    "downloads": 61674,
+    "gated": null,
+    "created": "2026-08-07"
+   },
+   {
+    "id": "ibm-granite/granite-4.2-3b",
+    "downloads": 41238,
+    "gated": null,
+    "created": "2026-08-07"
+   },
+   {
+    "id": "ibm-granite/granite-4.2-30b",
+    "downloads": 36287,
+    "gated": null,
+    "created": "2026-08-07"
+   },
+   {
+    "id": "bartowski/granite-4.2-3b-GGUF",
+    "downloads": 6922,
+    "gated": null,
+    "created": "2026-08-25"
+   },
+   {
+    "id": "bartowski/granite-4.2-30b-GGUF",
+    "downloads": 6588,
+    "gated": null,
+    "created": "2026-08-25"
+   }
+  ],
+  "!bge-m3": [
+   {
+    "id": "BAAI/bge-m3",
+    "downloads": 29282167,
+    "gated": null,
+    "created": "2024-01-27"
+   },
+   {
+    "id": "BAAI/bge-reranker-v2-m3",
+    "downloads": 14685230,
+    "gated": null,
+    "created": "2024-03-15"
+   },
+   {
+    "id": "deepvk/USER-bge-m3",
+    "downloads": 287775,
+    "gated": null,
+    "created": "2024-07-05"
+   },
+   {
+    "id": "dragonkue/bge-reranker-v2-m3-ko",
+    "downloads": 195079,
+    "gated": null,
+    "created": "2024-10-16"
+   },
+   {
+    "id": "dragonkue/BGE-m3-ko",
+    "downloads": 169425,
+    "gated": null,
+    "created": "2024-09-17"
+   },
+   {
+    "id": "littlejohn-ai/bge-m3-spa-law-qa",
+    "downloads": 96235,
+    "gated": null,
+    "created": "2024-07-22"
+   }
+  ],
+  "Ministral-3-8B": [
+   {
+    "id": "mradermacher/Ministral-3-8B-Claude-Opus-Reasoning-Distilled-i1-GGUF",
+    "downloads": 5356,
+    "gated": null,
+    "created": "2026-10-22"
+   },
+   {
+    "id": "xtools-at/Ministral-3-8B-Claude-Opus-Reasoning-Distilled-GGUF",
+    "downloads": 1806,
+    "gated": null,
+    "created": "2026-10-21"
+   },
+   {
+    "id": "mradermacher/Ministral-3-8B-Claude-Opus-Reasoning-Distilled-GGUF",
+    "downloads": 1680,
+    "gated": null,
+    "created": "2026-10-22"
+   },
+   {
+    "id": "nile-academy/ministral-3-8b-reasoning-2512-gguf",
+    "downloads": 1235,
+    "gated": null,
+    "created": "2026-10-19"
+   },
+   {
+    "id": "mradermacher/Ministral-3-8B-Reasoning-2512-Uncensored-GGUF",
+    "downloads": 1154,
+    "gated": null,
+    "created": "2026-04-21"
+   },
+   {
+    "id": "mradermacher/Ministral-3-8B-Reasoning-2512-Uncensored-i1-GGUF",
+    "downloads": 666,
+    "gated": null,
+    "created": "2026-04-21"
+   }
+  ]
+ },
+ "dataset_searches": {
+  "wiki18 100w": [
+   {
+    "id": "zhengyijia142/wiki18_100w_qwen3-embedding-0.6b_fp16_shard",
+    "downloads": 1214,
+    "gated": false,
+    "created": "2026-10-16"
+   },
+   {
+    "id": "zhengyijia142/wiki18_100w_F2LLM-v2-330M_fp16_shard",
+    "downloads": 1115,
+    "gated": false,
+    "created": "2026-10-17"
+   },
+   {
+    "id": "zhengyijia142/wiki18_100w_jina-embeddings-v5-text-nano_fp16_shard",
+    "downloads": 1034,
+    "gated": false,
+    "created": "2026-10-17"
+   },
+   {
+    "id": "zhengyijia142/wiki18_100w_e5-base-v2_fp16_shard",
+    "downloads": 1010,
+    "gated": false,
+    "created": "2026-10-17"
+   },
+   {
+    "id": "zhengyijia142/wiki18_100w_harrier-oss-v1-270m_fp16_shard",
+    "downloads": 891,
+    "gated": false,
+    "created": "2026-10-17"
+   },
+   {
+    "id": "nd-khoa/wiki18-100w",
+    "downloads": 15,
+    "gated": false,
+    "created": "2026-08-07"
+   }
+  ],
+  "psgs_w100": [
+   {
+    "id": "princeton-nlp/gtr-t5-xxl-wikipedia-psgs_w100-index",
+    "downloads": 1167,
+    "gated": false,
+    "created": "2023-06-26"
+   }
+  ],
+  "FlashRAG": [
+   {
+    "id": "RUC-NLPIR/FlashRAG_datasets",
+    "downloads": 12933,
+    "gated": false,
+    "created": "2024-07-16"
+   },
+   {
+    "id": "minkyungpark/flashrag_wiki18_aligned",
+    "downloads": 764,
+    "gated": false,
+    "created": "2026-05-03"
+   },
+   {
+    "id": "ragrawal36/flashrag-msmarco-qa-with-ids-dev",
+    "downloads": 13,
+    "gated": false,
+    "created": "2026-04-19"
+   },
+   {
+    "id": "underfrog/flashrag-msmarco-qa-with-ids-dev",
+    "downloads": 12,
+    "gated": false,
+    "created": "2026-04-26"
+   }
+  ],
+  "hotpotqa fullwiki dev": []
+ },
+ "github": [
+  {
+   "repo": "blue-guardrails/ragtruth-plus-plus",
+   "error": 404
+  },
+  {
+   "repo": "facebookresearch/atlas",
+   "license": "NOASSERTION",
+   "pushed": "2026-07-02",
+   "stars": 568,
+   "archived": false
+  },
+  {
+   "repo": "castorini/anserini",
+   "license": "Apache-2.0",
+   "pushed": "2026-11-11",
+   "stars": 1236,
+   "archived": false
+  }
+ ]
+}

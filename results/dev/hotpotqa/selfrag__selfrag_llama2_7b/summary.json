@@ -1,0 +1,26 @@
+{
+ "n": 500,
+ "dataset": "hotpotqa",
+ "split": "dev",
+ "match_official": 0.378,
+ "match_ours_normalised": 0.412,
+ "retrieval_frequency": 1.0,
+ "passages": "our BM25 top-10",
+ "model": "selfrag/selfrag_llama2_7b",
+ "settings": {
+  "threshold": 0.2,
+  "ndocs": 10,
+  "max_new_tokens": 100,
+  "w_rel": 1.0,
+  "w_sup": 1.0,
+  "w_use": 1.0,
+  "dtype": "float16"
+ },
+ "cost": {
+  "calls": 5500,
+  "prompt_tokens": 1091848,
+  "completion_tokens": 129185,
+  "seconds": 348.8
+ },
+ "git_commit": "76edcca+dirty"
+}

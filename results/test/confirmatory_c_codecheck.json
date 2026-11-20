@@ -1,0 +1,185 @@
+{
+ "prereg": "docs/PREREG_C_CONFIRMATORY.md",
+ "alpha": 0.05,
+ "correction": "Holm over {H3, H4, H5}",
+ "bootstrap": "paired, 10,000 resamples, seed 0, partition 0, calibration fraction 0.5",
+ "target": 0.9,
+ "judge_tag": "phi-4-FP8-dynamic",
+ "git_commit": "0f5c835+dirty",
+ "results": {
+  "H3": {
+   "generator": "Qwen2.5-7B-Instruct",
+   "run": "results/test/bio/longform__Qwen2.5-7B-Instruct__5aa2ad1482e5",
+   "n_answers": 350,
+   "n_claims": 6230,
+   "n_eval": 175,
+   "diff_supported_per_answer": 1.822857142857143,
+   "ci95": [
+    1.2971428571428572,
+    2.394285714285714
+   ],
+   "p_value": 0.0,
+   "precision_diff": 0.07070047799128487,
+   "precision_lower_bound_95": -0.01888433800578887,
+   "guard_holds": true,
+   "partitions_0.90": {
+    "mean_diff": 1.2979999999999998,
+    "std_diff": 0.41128775448120075,
+    "share_positive": 1.0
+   },
+   "other_targets_descriptive": {
+    "0.8": {
+     "diff": 2.0742857142857143,
+     "ci_low": 1.457142857142857,
+     "ci_high": 2.737142857142857,
+     "p_value": 0.0,
+     "n": 175,
+     "n_resamples": 10000,
+     "seed": 0
+    },
+    "0.85": {
+     "diff": 2.0285714285714285,
+     "ci_low": 1.4228571428571428,
+     "ci_high": 2.68,
+     "p_value": 0.0,
+     "n": 175,
+     "n_resamples": 10000,
+     "seed": 0
+    },
+    "0.95": {
+     "diff": 1.2,
+     "ci_low": 0.8114285714285714,
+     "ci_high": 1.64,
+     "p_value": 0.0,
+     "n": 175,
+     "n_resamples": 10000,
+     "seed": 0
+    }
+   },
+   "auroc": {
+    "s": 0.6220206402744552,
+    "c": 0.6039494396007177,
+    "C": 0.6555485665008555
+   },
+   "judge_supported_rate": 0.8309791332263242,
+   "holm_reject": true,
+   "SUPPORTED": true
+  },
+  "H4": {
+   "generator": "Mistral-7B-Instruct-v0.3",
+   "run": "results/test/bio/longform__Mistral-7B-Instruct-v0.3__3f20b417147d",
+   "n_answers": 350,
+   "n_claims": 6200,
+   "n_eval": 175,
+   "diff_supported_per_answer": 1.2742857142857142,
+   "ci95": [
+    0.96,
+    1.6114285714285714
+   ],
+   "p_value": 0.0,
+   "precision_diff": 0.14529679107560944,
+   "precision_lower_bound_95": 0.06932726647246396,
+   "guard_holds": true,
+   "partitions_0.90": {
+    "mean_diff": 0.7105142857142858,
+    "std_diff": 0.26422159200277,
+    "share_positive": 1.0
+   },
+   "other_targets_descriptive": {
+    "0.8": {
+     "diff": 1.4057142857142857,
+     "ci_low": 1.0,
+     "ci_high": 1.84,
+     "p_value": 0.0,
+     "n": 175,
+     "n_resamples": 10000,
+     "seed": 0
+    },
+    "0.85": {
+     "diff": 1.52,
+     "ci_low": 1.1657142857142857,
+     "ci_high": 1.9085714285714286,
+     "p_value": 0.0,
+     "n": 175,
+     "n_resamples": 10000,
+     "seed": 0
+    },
+    "0.95": {
+     "diff": 0.35428571428571426,
+     "ci_low": 0.18857142857142858,
+     "ci_high": 0.5314285714285715,
+     "p_value": 0.0,
+     "n": 175,
+     "n_resamples": 10000,
+     "seed": 0
+    }
+   },
+   "auroc": {
+    "s": 0.5934487231549411,
+    "c": 0.5887830984072157,
+    "C": 0.6120603085759857
+   },
+   "judge_supported_rate": 0.7825806451612903,
+   "holm_reject": true,
+   "SUPPORTED": true
+  },
+  "H5": {
+   "generator": "Falcon3-7B-Instruct",
+   "run": "results/test/bio/longform__Falcon3-7B-Instruct__0b9ff4861d3b",
+   "n_answers": 350,
+   "n_claims": 4656,
+   "n_eval": 175,
+   "diff_supported_per_answer": -0.2057142857142857,
+   "ci95": [
+    -0.4685714285714286,
+    0.05714285714285714
+   ],
+   "p_value": 0.136,
+   "precision_diff": 0.03191489361702127,
+   "precision_lower_bound_95": -0.03504926166694542,
+   "guard_holds": false,
+   "partitions_0.90": {
+    "mean_diff": 0.02657142857142858,
+    "std_diff": 0.2823541229598431,
+    "share_positive": 0.57
+   },
+   "other_targets_descriptive": {
+    "0.8": {
+     "diff": 0.30857142857142855,
+     "ci_low": -0.07428571428571429,
+     "ci_high": 0.702999999999998,
+     "p_value": 0.1226,
+     "n": 175,
+     "n_resamples": 10000,
+     "seed": 0
+    },
+    "0.85": {
+     "diff": 0.08571428571428572,
+     "ci_low": -0.2342857142857143,
+     "ci_high": 0.4001428571428551,
+     "p_value": 0.6102,
+     "n": 175,
+     "n_resamples": 10000,
+     "seed": 0
+    },
+    "0.95": {
+     "diff": 0.2914285714285714,
+     "ci_low": 0.10857142857142857,
+     "ci_high": 0.49714285714285716,
+     "p_value": 0.0026,
+     "n": 175,
+     "n_resamples": 10000,
+     "seed": 0
+    }
+   },
+   "auroc": {
+    "s": 0.6404823156603516,
+    "c": 0.5373235099621906,
+    "C": 0.6189935335362622
+   },
+   "judge_supported_rate": 0.8221649484536082,
+   "holm_reject": false,
+   "SUPPORTED": false
+  }
+ }
+}

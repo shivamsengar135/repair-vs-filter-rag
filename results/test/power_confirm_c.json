@@ -1,0 +1,26 @@
+{
+ "Qwen2.5-7B-Instruct": {
+  "draws": 400,
+  "n": 183,
+  "power_sig_positive_at_alpha_over_3": 0.87,
+  "p_guard_holds": 0.5075,
+  "p_both": 0.41,
+  "mean_diff": 1.349945054945055
+ },
+ "Mistral-7B-Instruct-v0.3": {
+  "draws": 400,
+  "n": 183,
+  "power_sig_positive_at_alpha_over_3": 0.8075,
+  "p_guard_holds": 0.5975,
+  "p_both": 0.4675,
+  "mean_diff": 0.6635989010989011
+ },
+ "Falcon3-7B-Instruct": {
+  "draws": 400,
+  "n": 183,
+  "power_sig_positive_at_alpha_over_3": 0.185,
+  "p_guard_holds": 0.1725,
+  "p_both": 0.005,
+  "mean_diff": 0.0576923076923077
+ }
+}

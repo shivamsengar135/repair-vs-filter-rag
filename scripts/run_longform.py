@@ -38,7 +38,7 @@ def retrieval_query(item: dict) -> str:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dataset", required=True, choices=["bio", "asqa"])
-    ap.add_argument("--split", required=True, choices=["dev", "test"])
+    ap.add_argument("--split", required=True, choices=["dev", "test", "confirm"])  # confirm: docs/PREREG_C_CONFIRMATORY.md
     ap.add_argument("--model", required=True)
     ap.add_argument("--k", type=int, default=5)
     ap.add_argument("--max-tokens", type=int, default=512)

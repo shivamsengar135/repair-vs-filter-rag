@@ -140,9 +140,53 @@ Facts labelled IR by the annotators are excluded. κ CI = bootstrap (2,000 resam
 | PerplexityAI | 5,568 | 0.470 [0.437, 0.504] | 0.861 | 0.840 / 0.811 | 0.029 | 489 | 283 |
 | Pooled | 14,525 | 0.652 [0.638, 0.665] | 0.854 | — | — | — | — |
 
-Plan rule (κ ≥ 0.60 on both validations → accept): validation 1 passes on the pooled set. Validation 2 (150 user
-labels on our ASQA outputs) is pending. Caveats: κ for PerplexityAI is low under strong class imbalance; the judge
+Plan rule (κ ≥ 0.60 on both validations → accept): validation 1 passes on the pooled set. Validation 2: see below
+(κ = 0.785, accepted). Caveats: κ for PerplexityAI is low under strong class imbalance; the judge
 is lenient (it over-estimates FActScore for InstructGPT and ChatGPT by 3.9 and 5.5 points).
+
+### Judge validation 2: Phi-4 FP8 judge vs 150 human labels on our outputs (EXPERIMENT_PLAN.md §7) — 2026-11-20
+
+Sample: `scripts/make_labelling_sample.py` (seed 20261113) from the ASQA **dev** run
+`results/dev/asqa/longform__Qwen2.5-7B-Instruct__33f74812f8a7`, judge tag `phi-4-FP8-dynamic`; stratified by judge
+label (76 judge-supported, 74 not). Sources: 75 original claims (what standard RAG and CF filter) and 75 claims of
+A's final candidate set; the "repaired text" pool was empty in that run (no repair produced new claim text), so its
+quota moved to the other two (deviation from "50 each from A, CF and RAG"). Labels: one human labeller, Shivam Sengar (first
+author), blind to source and judge label (did not open the key file; confirmed by the user 2026-11-20) (`labelling/human_labels.csv`, filled with `docs/LABELLING_GUIDE.md`; received 2026-11-20,
+sha256 cf00c574165096db…). Script `scripts/score_labelling.py labelling/human_labels.csv` at commit df95f34 (+ the
+labels file); output `labelling/agreement.json`. κ CI = bootstrap, 10,000 resamples, seed 0.
+
+| Items | Human labels S / NS / U | Used (U excluded) | Cohen's κ [95% CI] | Raw agreement | Verdict (plan rule) |
+|---|---|---|---|---|---|
+| 150 | 71 / 78 / 1 | 149 | 0.785 [0.678, 0.879] | 0.893 | ACCEPT (κ ≥ 0.60) |
+
+| Source | n | Agreement | Human supported rate | Judge supported rate |
+|---|---|---|---|---|
+| Original claims (RAG / CF) | 75 | 0.867 | 0.507 | 0.507 |
+| A's final candidate claims | 74 | 0.919 | 0.446 | 0.500 |
+
+Caveats: the sample is balanced by judge label, so κ is not on the natural label distribution; one labeller (no
+human-human agreement); ASQA only (biographies are covered by validation 1). On A's claims the judge's supported rate
+is 5.4 points above the human rate (lenient, as in validation 1).
+
+### Failure analysis — human categorisation (EXPERIMENT_PLAN.md §8), test, G1, target 0.90, partition 0 — 2026-11-20
+
+Sample: `scripts/failure_sample.py` (seed 0): 96 errors of A (50 correct-but-dropped, 46 wrong-but-kept; 21 bio +
+25 ASQA kept). Categorised by Shivam Sengar (first author) in `labelling/failure_categories.csv` (built by
+`scripts/make_failure_label_csv.py`, WITHOUT the assistant's pre-annotation; received 2026-11-20, sha256
+f5daf6de41c3f7ea…, a note on every row). Script `scripts/score_failure_categories.py` at commit 57beab6 (+ the file);
+output `results/test/failure_analysis_human.json`. These HUMAN counts replace the assistant pre-annotation in the paper.
+
+| Cell | JE | RM | VFP | VFN | DE | UNC |
+|---|---|---|---|---|---|---|
+| bio, removed but supported (25) | 0 | 2 | 0 | 22 | 0 | 1 |
+| ASQA, removed but supported (25) | 1 | 0 | 0 | 22 | 2 | 0 |
+| bio, kept but unsupported (21) | 15 | 6 | 0 | 0 | 0 | 0 |
+| ASQA, kept but unsupported (25) | 13 | 6 | 2 | 0 | 4 | 0 |
+
+Agreement with the assistant pre-annotation: 66/96 = 0.688, Cohen's κ = 0.559 (main differences: the assistant's 11
+UNC were mostly VFN (7) or JE (4) for the human; 4 assistant-JE kept claims are DE for the human). Kept RM (12), from
+the annotator's notes: 9 different entity/work with a similar name (cases 003, 012, 016–019, 049, 050, 065), 3
+misleading/outdated passage (052, 059, 063); re-retrieval raised 012 and 063 above the threshold.
 
 ### Pilot quantity R (EXPERIMENT_PLAN.md §1), dev, G1
 

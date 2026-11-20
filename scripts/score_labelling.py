@@ -20,7 +20,9 @@ def kappa(a: np.ndarray, b: np.ndarray) -> float:
 def main() -> None:
     path = Path(sys.argv[1] if len(sys.argv) > 1 else "labelling/claims_to_label.csv")
     key = {r["row"]: r for r in json.loads((path.parent / ".key_DO_NOT_OPEN.json").read_text())["rows"]}
-    rows = list(csv.DictReader(path.open(encoding="utf-8")))
+    rows = list(csv.DictReader(path.open(encoding="utf-8-sig")))  # -sig: a file re-saved by Excel starts with a BOM
+    if len(rows) != len(key):
+        raise SystemExit(f"expected {len(key)} rows, found {len(rows)} (was the file cut or re-sorted?)")
     labels = {int(r["row"]): r["label"].strip().upper() for r in rows}
     missing = [i for i, l in labels.items() if l not in ("S", "NS", "U")]
     if missing:

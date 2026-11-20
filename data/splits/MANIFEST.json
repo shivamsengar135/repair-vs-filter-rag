@@ -25,6 +25,11 @@
   "seed": "20261113-asqa",
   "sha256": "f70f34e34870814785fa4f07a68d73e7f8e1d0df02e94b50b57c02814e5bc3c2"
  },
+ "bio_confirm": {
+  "n": 183,
+  "sha256": "8fb76a61b229f797df8ce3ae751bc8feb6c1dc87a22f6bcafea490fea8c800ff",
+  "source": "factscore/data/labeled/prompt_entities.txt (all 183)"
+ },
  "bio_dev": {
   "n": 150,
   "seed": "20261113-bio",

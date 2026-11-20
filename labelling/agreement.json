@@ -1,0 +1,32 @@
+{
+ "n_labelled": 150,
+ "n_unclear": 1,
+ "n_used": 149,
+ "cohen_kappa": 0.7853025936599425,
+ "kappa_95ci": [
+  0.6781278127812781,
+  0.8790038798159343
+ ],
+ "raw_agreement": 0.8926174496644296,
+ "by_source": {
+  "rag": {
+   "n": 75,
+   "agreement": 0.8666666666666667,
+   "human_supported_rate": 0.5066666666666667,
+   "judge_supported_rate": 0.5066666666666667
+  },
+  "repaired": {
+   "n": 0,
+   "agreement": null,
+   "human_supported_rate": null,
+   "judge_supported_rate": null
+  },
+  "kept_by_A": {
+   "n": 74,
+   "agreement": 0.918918918918919,
+   "human_supported_rate": 0.44594594594594594,
+   "judge_supported_rate": 0.5
+  }
+ },
+ "verdict": "ACCEPT"
+}

@@ -1,0 +1,74 @@
+{
+ "annotator": "human (see results/RESULTS_LEDGER.md)",
+ "n": 96,
+ "counts_human": {
+  "asqa/correct_but_dropped": {
+   "JE": 1,
+   "VFN": 22,
+   "DE": 2
+  },
+  "asqa/wrong_but_kept": {
+   "JE": 13,
+   "VFP": 2,
+   "RM": 6,
+   "DE": 4
+  },
+  "bio/correct_but_dropped": {
+   "VFN": 22,
+   "UNC": 1,
+   "RM": 2
+  },
+  "bio/wrong_but_kept": {
+   "JE": 15,
+   "RM": 6
+  }
+ },
+ "totals_human": {
+  "JE": 29,
+  "RM": 14,
+  "VFN": 44,
+  "UNC": 1,
+  "VFP": 2,
+  "DE": 6
+ },
+ "totals_assistant": {
+  "JE": 30,
+  "RM": 11,
+  "UNC": 11,
+  "VFP": 5,
+  "VFN": 37,
+  "DE": 2
+ },
+ "agreement_with_assistant": 0.6875,
+ "cohen_kappa_vs_assistant": 0.559026182820395,
+ "confusion_human_x_assistant": {
+  "JE": {
+   "JE": 22,
+   "VFP": 2,
+   "VFN": 1,
+   "UNC": 4
+  },
+  "RM": {
+   "JE": 2,
+   "RM": 8,
+   "VFP": 3,
+   "VFN": 1
+  },
+  "VFP": {
+   "JE": 2
+  },
+  "VFN": {
+   "RM": 3,
+   "VFN": 34,
+   "UNC": 7
+  },
+  "DE": {
+   "JE": 4,
+   "DE": 2
+  },
+  "UNC": {
+   "VFN": 1
+  }
+ },
+ "notes_written": 96
+}

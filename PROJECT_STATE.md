@@ -21,8 +21,15 @@ shortlist with SJR quartiles in `docs/TARGET_JOURNAL.md`. **Code released 2026-1
 (public), single fresh commit 7615288 of a paper-free export (`scripts/export_release.sh` → `~/release/repair-vs-filter-rag`;
 user rule: never upload the paper or its LaTeX/Overleaf files to GitHub). Push over SSH with `~/.ssh/id_ed25519_github`
 (added to the account as "DIAT WSL" with the user's OK): `bash scripts/push_release.sh`. Link is on the title page; the
-anonymised manuscript keeps a placeholder (use an anonymising mirror for review). Still open: LICENSE (user's choice),
-150 judge labels, failure-annotation check, JCR quartile (if required).
+anonymised manuscript keeps a placeholder (use an anonymising mirror for review). MIT LICENSE added and pushed (516e5c4).
+**Journal decided 2026-11-20: Information Processing & Management** (user wanted hybrid; verified hybrid, see
+docs/TARGET_JOURNAL.md). Corresponding author = Bansidhar Joshi (user); emails confirmed correct; DIAT postal address
+(Girinagar, Pune 411025) from diat.ac.in. **Judge validation 2 DONE 2026-11-20:** 150 human labels (labelling/human_labels.csv) → κ = 0.785 [0.678,
+0.879], raw 0.893, ACCEPT (ledger "Judge validation 2"); paper Sections 4, 7, appendix and Fig. 1 updated. Labeller:
+Shivam Sengar, blind (user, 2026-11-20); paper says "one of the authors" (anonymised). **Failure categorisation DONE 2026-11-20** by Shivam Sengar, blind to the
+assistant pre-annotation (agreement 68.8%, κ 0.56); paper Section 6 now reports the human counts (ledger "Failure
+analysis — human categorisation"). All human tasks done. Still open: anonymised code link for review, Overleaf
+check of the hyperref warning, optional confirmatory test of C.
 
 ### ★ Phase 6 GATE summary (2026-11-18)
 All §8 runs done (`PHASE6_RUNS_END` 12:30:33Z). Exploratory findings: repair ≈ CF in every configuration (|Δ| < 0.07;

@@ -17,9 +17,12 @@ page, CRediT, competing interests, data/code deposit (needs the user's approval)
 **2026-11-20 update:** authors given (Shivam Sengar, Bansidhar Joshi; CSE, DIAT Pune) → `paper/title_page.tex`
 (compiles to `title_page_preview.pdf`; corresponding author = first author, assistant's choice — to confirm; CRediT
 drafted by the assistant at the user's request — to confirm). No funding, no competing interests (user). Journal
-shortlist with SJR quartiles in `docs/TARGET_JOURNAL.md`. Still open: repository name/push by the user (needs README +
-LICENSE; double-anonymised link via an anonymising mirror for review), 150 judge labels, failure-annotation check,
-JCR quartile (if required).
+shortlist with SJR quartiles in `docs/TARGET_JOURNAL.md`. **Code released 2026-11-20:** https://github.com/shivamsengar135/repair-vs-filter-rag
+(public), single fresh commit 7615288 of a paper-free export (`scripts/export_release.sh` → `~/release/repair-vs-filter-rag`;
+user rule: never upload the paper or its LaTeX/Overleaf files to GitHub). Push over SSH with `~/.ssh/id_ed25519_github`
+(added to the account as "DIAT WSL" with the user's OK): `bash scripts/push_release.sh`. Link is on the title page; the
+anonymised manuscript keeps a placeholder (use an anonymising mirror for review). Still open: LICENSE (user's choice),
+150 judge labels, failure-annotation check, JCR quartile (if required).
 
 ### ★ Phase 6 GATE summary (2026-11-18)
 All §8 runs done (`PHASE6_RUNS_END` 12:30:33Z). Exploratory findings: repair ≈ CF in every configuration (|Δ| < 0.07;

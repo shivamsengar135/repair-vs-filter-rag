@@ -45,7 +45,7 @@ Runs are long (GPU-hours); the drivers checkpoint and resume. The outputs we obt
 
 ## Data and licences
 
-The retrieval corpus is the DPR Wikipedia split (CC-BY-NC-4.0, research use). The datasets (biographies from
+The code in this repository is released under the MIT License (see `LICENSE`). The retrieval corpus is the DPR Wikipedia split (CC-BY-NC-4.0, research use). The datasets (biographies from
 FActScore, ASQA, Natural Questions, TriviaQA, PopQA, HotpotQA, 2WikiMultihopQA) and the models are used under
 their own licences. The splits in `data/splits/` are subsets of those datasets.
 
